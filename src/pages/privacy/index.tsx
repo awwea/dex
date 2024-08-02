@@ -1,6 +1,6 @@
 import { Page } from 'components/common/page';
-import config from 'config';
 import { NewTabLink, externalLinks } from 'libs/routing';
+import config from 'config';
 
 const content = [
   {
@@ -489,7 +489,7 @@ const content = [
         <br />
         <p>
           To request exercise one or more of your consumer rights, please submit
-          a verifiable consumer request to: privacy@bancor.network.
+          a verifiable consumer request to: privacy@daofinance.me.
         </p>
         <br />
         <p>
@@ -529,7 +529,7 @@ const content = [
         >
           <u>Cookie Settings</u>
         </button>
-        , or by emailing us at privacy@bancor.network.
+        , or by emailing us at privacy@daofinance.me.
       </p>
     ),
   },
@@ -566,7 +566,7 @@ const content = [
       <p>
         For any questions about this Privacy Policy or any other issue regarding
         the Foundation or the Site relating hereto, please contact us at:
-        privacy@bancor.network.
+        privacy@daofinance.me.
       </p>
     ),
   },
@@ -601,12 +601,12 @@ export const PrivacyPage = () => {
         <p className="mt-40">
           By accessing or using{' '}
           <a
-            href="https://www.carbondefi.xyz"
+            href="https://www.daofinance.me"
             target={'_blank'}
             rel="noreferrer"
             className="text-primary underline"
           >
-            https://www.carbondefi.xyz
+            https://www.daofinance.me
           </a>{' '}
           , and any linked or directed subdomain therein (collectively, the
           “Site”) and any content made available on or through the Site, you

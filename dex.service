@@ -10,7 +10,7 @@ Restart=on-failure
 
 Environment=NODE_PORT=4040
 WorkingDirectory=/opt/dex
-ExecStart=yarn start:ethereum
+ExecStart=yarn start:dfi
 
 StandardOutput=append:/opt/dex/log
 StandardError=append:/opt/dex/log

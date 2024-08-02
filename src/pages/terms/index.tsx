@@ -1,7 +1,8 @@
 import { Page } from 'components/common/page';
-import config from 'config';
 import { NewTabLink, externalLinks } from 'libs/routing';
+import config from 'config';
 
+const SiteName = 'DFI';
 const content = [
   {
     id: 1,
@@ -77,56 +78,56 @@ const content = [
         </p>
         <p>
           iv. Interact with an instance of an open-source Software Development
-          Kit (the “Carbon SDK”) that facilitates interaction with Carbon, as
-          defined below.
+          Kit (the “{SiteName} SDK”) that facilitates interaction with{' '}
+          {SiteName}, as defined below.
         </p>
         <p>
-          v. Access the Bancor Network site (
+          v. Access the Daofinance Network site (
           <a
             className="text-primary underline"
-            href="https://bancor.network"
+            href="https://daofinance.me"
             target="_blank"
             rel="noreferrer"
           >
-            https://bancor.network/
+            https://daofinance.me/
           </a>
           ), which has its own terms of use available at{' '}
           <a
             className="text-primary underline"
-            href="https://app.bancor.network/terms-of-use"
+            href="https://app.daofinance.me/terms-of-use"
             target="_blank"
             rel="noreferrer"
           >
-            https://app.bancor.network/terms-of-use
+            https://app.daofinance.me/terms-of-use
           </a>{' '}
           and privacy policy available at{' '}
           <a
-            href="https://app.bancor.network/privacy-policy"
+            href="https://app.daofinance.me/privacy-policy"
             target="_blank"
             rel="noreferrer"
           >
-            https://app.bancor.network/privacy-policy
+            https://app.daofinance.me/privacy-policy
           </a>
           ;
         </p>
         <p>
-          vi. Access the Bancor Governance Forum (
+          vi. Access the Daofinance Governance Forum (
           <a
             className="text-primary underline"
-            href="https://gov.bancor.network"
+            href="https://gov.daofinance.me"
             target="_blank"
             rel="noreferrer"
           >
-            https://gov.bancor.network/
+            https://gov.daofinance.me/
           </a>
           ), which has its own terms of use available at{' '}
           <a
             className="text-primary underline"
-            href="https://gov.bancor.network/tos"
+            href="https://gov.daofinance.me/tos"
             target="_blank"
             rel="noreferrer"
           >
-            https://gov.bancor.network/tos
+            https://gov.daofinance.me/tos
           </a>
           ;
         </p>
@@ -141,11 +142,11 @@ const content = [
           of the Site (available at{' '}
           <a
             className="text-primary underline"
-            href="https://faq.carbondefi.xyz"
+            href="https://faq.daofinance.me"
             target="_blank"
             rel="noreferrer"
           >
-            https://faq.carbondefi.xyz
+            https://faq.daofinance.me
           </a>{' '}
           (the “FAQ”)).
         </p>
@@ -159,57 +160,57 @@ const content = [
   },
   {
     id: 3,
-    subtitle: 'Carbon',
+    subtitle: SiteName,
     html: (
       <>
         <p>
-          Carbon is made up of smart contracts designed to facilitate
-          peer-to-peer trades (“Carbon”). Users create permissionless strategies
-          with one or more orders, and are issued a transferable NFT token. The
-          NFT serves as the credentials for interacting with the underlying
-          position. For more information on Carbon, please visit{' '}
+          {SiteName} is made up of smart contracts designed to facilitate
+          peer-to-peer trades (“{SiteName}”). Users create permissionless
+          strategies with one or more orders, and are issued a transferable NFT
+          token. The NFT serves as the credentials for interacting with the
+          underlying position. For more information on {SiteName}, please visit{' '}
           <a
             className="text-primary underline"
-            href="https://docs.carbondefi.xyz"
+            href="https://docs.daofinance.me"
             target="_blank"
             rel="noreferrer"
           >
-            https://docs.carbondefi.xyz
+            https://docs.daofinance.me
           </a>
         </p>
         <br />
         <p>
-          Carbon is deployed on public blockchains to provide a variety of
+          {SiteName} is deployed on public blockchains to provide a variety of
           functions as described more fully in the FAQ, and governed through a
-          decentralized autonomous organization referred to as “BancorDAO”. For
-          more information on BancorDAO, please visit{' '}
+          decentralized autonomous organization referred to as “Daofinance DAO”.
+          For more information on Daofinance DAO, please visit{' '}
           <a
             className="text-primary underline"
-            href="https://support.bancor.network/hc/en-us/sections/4415839473682-Bancor-DAO"
+            href="https://support.daofinance.me/hc/en-us/sections/4415839473682-Daofinance-DAO"
             target="_blank"
             rel="noreferrer"
           >
-            https://support.bancor.network/hc/en-us/sections/4415839473682-Bancor-DAO
+            https://support.daofinance.me/hc/en-us/sections/4415839473682-Daofinance-DAO
           </a>
           .
         </p>
         <br />
         <p>
-          BancorDAO may determine to update or deploy additional smart contracts
-          in order to, among other things, add new features or functionalities,
-          or respond to events such as chain migrations, security incidents,
-          vulnerabilities, “forks” or other changes to the underlying
-          blockchain.
+          Daofinance DAO may determine to update or deploy additional smart
+          contracts in order to, among other things, add new features or
+          functionalities, or respond to events such as chain migrations,
+          security incidents, vulnerabilities, “forks” or other changes to the
+          underlying blockchain.
         </p>
         <br />
         <p>
-          Because Carbon is deployed on public blockchain networks, it is
+          Because {SiteName} is deployed on public blockchain networks, it is
           directly accessible through command lines, command prompts or through
           other decentralized applications (dApps) or third party interfaces.
-          The User does not need to use the Site to use the Carbon SDK, and also
-          does not need the Carbon SDK in order to interact with Carbon. It is
-          the User’s sole responsibility to accurately communicate and effect
-          transactions to interact with Carbon.
+          The User does not need to use the Site to use the {SiteName} SDK, and
+          also does not need the {SiteName} SDK in order to interact with{' '}
+          {SiteName}. It is the User’s sole responsibility to accurately
+          communicate and effect transactions to interact with {SiteName}.
         </p>
       </>
     ),
@@ -220,16 +221,16 @@ const content = [
     html: (
       <>
         <p>
-          Fees for use of Carbon, including potential maker and taker fees, are
-          subject to determination by BancorDAO. For more information on the
-          current fee structure, please visit{' '}
+          Fees for use of {SiteName}, including potential maker and taker fees,
+          are subject to determination by Daofinance DAO. For more information
+          on the current fee structure, please visit{' '}
           <a
             className="text-primary underline"
-            href="https://docs.carbondefi.xyz/carbon/introducing-carbon/fees-and-payments"
+            href="https://docs.daofinance.me/carbon/introducing-carbon/fees-and-payments"
             target="_blank"
             rel="noreferrer"
           >
-            https://docs.carbondefi.xyz/carbon/introducing-carbon/fees-and-payments
+            https://docs.daofinance.me/carbon/introducing-carbon/fees-and-payments
           </a>
           .
         </p>
@@ -323,7 +324,7 @@ const content = [
           <p>
             ii. institute, assist or become involved in any type of attack
             (deliberate or other) upon the Site or Content that prevents or
-            disrupts the access to or the use of the Carbon.
+            disrupts the access to or the use of the {SiteName}.
           </p>
           <p>
             iii. enter or make an attempt to enter the Site and Content
@@ -638,12 +639,12 @@ const content = [
           Token Deployment and Conversion Risks. You represent and warrant you
           accept the risk of deploying orders and/or strategies that involve
           converting Tokens. You represent and warrant you understand that
-          Carbon may use untested code and protocols. You accept the risk of
-          loss of assets deployed using Carbon, conversion failure or fault. You
-          agree not to hold the Foundation accountable for any related losses.
-          Neither you nor we, can reverse, change or cancel a conversion of
-          Tokens transaction marked as complete or pending. Conversion of Tokens
-          using the Site and the Content is managed and confirmed via the
+          {SiteName} may use untested code and protocols. You accept the risk of
+          loss of assets deployed using {SiteName}, conversion failure or fault.
+          You agree not to hold the Foundation accountable for any related
+          losses. Neither you nor we, can reverse, change or cancel a conversion
+          of Tokens transaction marked as complete or pending. Conversion of
+          Tokens using the Site and the Content is managed and confirmed via the
           relevant blockchain. You represent and warrant you understand that
           your relevant blockchain public address will be made publicly visible
           whenever you use the Site or the Content.
@@ -764,18 +765,19 @@ const content = [
         <p>
           {' '}
           i. failure, malfunction or breakdown of, or disruption to, the
-          operation of the Foundation, the Site, the Content, Carbon, Tokens, or
-          any technology on which any of the foregoing rely or relies, including
-          due to occurrences of a “fork”, network attacks, vulnerabilities,
-          defects, flaws in programming or source code or otherwise, regardless
-          of when such failure, malfunction, breakdown, or disruption occurs;
+          operation of the Foundation, the Site, the Content, {SiteName},
+          Tokens, or any technology on which any of the foregoing rely or
+          relies, including due to occurrences of a “fork”, network attacks,
+          vulnerabilities, defects, flaws in programming or source code or
+          otherwise, regardless of when such failure, malfunction, breakdown, or
+          disruption occurs;
         </p>
         <p>
           {' '}
           ii. any virus, error, bug, flaw or similar defect adversely affecting
           the operation, functionality, usage, storage, transmission mechanisms,
           transferability, tradeability and other material characteristics of
-          the Site, the Content, any Tokens or Carbon;
+          the Site, the Content, any Tokens or {SiteName};
         </p>
         <p>
           {' '}
@@ -786,12 +788,12 @@ const content = [
           {' '}
           iv. any prohibition, restriction or regulation by any Governmental
           Authority in any jurisdiction of the operation, functionality, usage,
-          transmission mechanisms of the Content, the Site or Carbon;
+          transmission mechanisms of the Content, the Site or {SiteName};
         </p>
         <p>
           {' '}
           v. any risks (whether direct, indirect or ancillary) associated with
-          the Site, the Content, the Foundation or Carbon; and
+          the Site, the Content, the Foundation or {SiteName}; and
         </p>
         <p>
           {' '}
@@ -803,12 +805,12 @@ const content = [
           You acknowledge and agree that you shall access and use the Site and
           the Content at your own risk. The risks associated with handling
           Tokens can be substantial. You should, therefore, carefully consider
-          whether use of Carbon is suitable for you in light of your
+          whether use of {SiteName} is suitable for you in light of your
           circumstances and financial resources. Neither the Foundation or any
           Foundation Party at any point in time assumes the risk of losses
           arising from or in connection with your use of the Site, the Content
-          or Carbon, whether or not such loss was due to factors beyond your or
-          the Foundation’s control.
+          or {SiteName}, whether or not such loss was due to factors beyond your
+          or the Foundation’s control.
         </p>
         <br />
         <p>
@@ -847,8 +849,8 @@ const content = [
           COMPLETENESS OF THE CONTENT OF THE SITE OR THE CONTENT, OF THE CONTENT
           OF ANY SITES LINKED TO THE SITE OR THE CONTENT, OF ANY THIRD PARTY
           MATERIALS OR THE UNDERLYING SOFTWARE PROTOCOL THAT GOVERNS THE
-          CONTENT, THE SITE AND CARBON. WITHOUT LIMITING THE FOREGOING, NONE OF
-          THE FOUNDATION OR ANY OF ITS RESPECTIVE DIRECTORS, OFFICERS,
+          CONTENT, THE SITE AND {SiteName}. WITHOUT LIMITING THE FOREGOING, NONE
+          OF THE FOUNDATION OR ANY OF ITS RESPECTIVE DIRECTORS, OFFICERS,
           EMPLOYEES, AGENTS, ATTORNEYS, THIRD-PARTY CONTENT PROVIDERS,
           DISTRIBUTORS, JOINT-VENTURES, REPRESENTATIVES, LICENSEES OR LICENSORS
           (COLLECTIVELY, “FOUNDATION PARTIES”) REPRESENT OR WARRANT THAT THE
@@ -1066,8 +1068,8 @@ export const TermsPage = () => {
           THESE TERMS OF USE PROVIDE FOR MANDATORY INDIVIDUAL ARBITRATION IN
           SWITZERLAND. BY ACCEPTING THESE TERMS, YOU HEREBY IRREVOCABLY WAIVE
           ALL RIGHTS TO TRIAL BY JURY OR TO PROCEED IN A COLLECTIVE ACTION IN
-          RELATION TO YOUR USE OF THE WWW.CARBONDEFI.XYZ SITE OR THE CONTENT
-          MADE AVAILABLE THROUGH THE SITE.
+          RELATION TO YOUR USE OF THE WWW.daofinance.me SITE OR THE CONTENT MADE
+          AVAILABLE THROUGH THE SITE.
         </p>
         <p className="mt-30">
           YOU HEREBY AGREE NOT TO USE THE SITE OR THE CONTENT FOR RESTRICTED
@@ -1084,13 +1086,13 @@ export const TermsPage = () => {
         <p className="mt-40">
           By accessing or using{' '}
           <a
-            href="https://www.carbondefi.xyz"
+            href="https://www.daofinance.me"
             target="_blank"
             rel="noreferrer"
             className="text-primary underline"
           >
             {' '}
-            https://www.carbondefi.xyz
+            https://www.daofinance.me
           </a>
           , and any linked or directed subdomain therein (collectively, the
           "Site") and any content made available on or through the Site, you
@@ -1111,7 +1113,7 @@ export const TermsPage = () => {
             className="text-primary underline"
             to={externalLinks.privacy}
           >
-            CARBON PRIVACY POLICY
+            {SiteName} PRIVACY POLICY
           </NewTabLink>
           , which is incorporated herein by reference and which may be modified
           from time to time. In the event of any change, amendment or update to

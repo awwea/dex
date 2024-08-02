@@ -1087,3 +1087,157 @@ $ cross-env VITE_NETWORK=ethereum vite --host 127.0.0.1 --port 4040
 8:02:11 PM [vite] page reload index.html
 8:02:11 PM [vite] page reload index.html
 8:02:11 PM [vite] page reload index.html
+8:17:53 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+8:17:53 PM [vite] hmr update /src/index.css, /src/App.tsx, /src/components/core/menu/mobileMenu/MobileMenu.tsx, /src/components/core/menu/mainMenu/MainMenuLeft.tsx
+8:17:53 PM [vite] hmr update /src/components/core/menu/mainMenu/MainMenuRight.tsx, /src/index.css
+8:17:55 PM [vite] hmr update /src/index.css, /src/App.tsx, /src/components/core/menu/mobileMenu/MobileMenu.tsx, /src/components/core/menu/mainMenu/MainMenuLeft.tsx
+9:22:27 PM [vite] hmr update /src/components/common/walletConnect/index.tsx, /src/index.css
+9:22:27 PM [vite] hmr update /src/components/common/walletConnect/index.tsx, /src/index.css
+9:22:27 PM [vite] hmr update /src/components/common/walletConnect/index.tsx, /src/index.css
+9:23:21 PM [vite] hmr update /src/components/common/walletConnect/index.tsx, /src/index.css
+9:23:21 PM [vite] hmr update /src/components/common/walletConnect/index.tsx, /src/index.css
+9:23:22 PM [vite] hmr update /src/components/common/walletConnect/index.tsx, /src/index.css
+9:45:51 PM [vite] page reload index.html
+9:45:51 PM [vite] page reload index.html
+9:45:52 PM [vite] page reload index.html
+9:51:40 PM [vite] hmr update /src/index.css, /src/App.tsx, /src/components/core/menu/mobileMenu/MobileMenu.tsx, /src/components/core/menu/mainMenu/MainMenuLeft.tsx
+9:51:40 PM [vite] hmr update /src/index.css, /src/App.tsx, /src/components/core/menu/mobileMenu/MobileMenu.tsx, /src/components/core/menu/mainMenu/MainMenuLeft.tsx
+9:51:41 PM [vite] hmr update /src/index.css, /src/App.tsx, /src/components/core/menu/mobileMenu/MobileMenu.tsx, /src/components/core/menu/mainMenu/MainMenuLeft.tsx
+9:53:32 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+9:53:32 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+9:53:33 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+9:54:32 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+9:54:32 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+9:54:33 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+9:56:11 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+9:56:11 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+9:56:11 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+9:57:12 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+9:57:12 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+9:57:13 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+9:57:33 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+9:57:33 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+9:57:34 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+10:00:45 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+10:00:45 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+10:00:45 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+10:01:37 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+10:01:38 PM [vite] hmr update /src/index.css, /src/App.tsx
+10:01:38 PM [vite] hmr update /src/index.css, /src/App.tsx
+10:01:38 PM [vite] hmr invalidate /src/components/common/Footer/Footer.tsx Could not Fast Refresh (export removed)
+10:01:38 PM [vite] hmr update /src/index.css, /src/App.tsx
+10:02:19 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+10:02:19 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+10:02:19 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+10:03:41 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+10:03:41 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+10:03:41 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+10:04:25 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+10:04:25 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+10:04:26 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+10:04:43 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+10:04:43 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+10:04:44 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+10:05:29 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+10:05:29 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+10:05:29 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+10:05:58 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+10:05:58 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+10:05:59 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+10:06:40 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+10:06:40 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+10:06:41 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+10:07:15 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+10:07:15 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+10:07:15 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+10:07:40 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+10:07:40 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+10:07:40 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+10:07:58 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+10:07:58 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+10:07:59 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+10:08:36 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+10:08:36 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+10:08:36 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+10:09:08 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+10:09:08 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+10:09:08 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+10:09:26 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+10:09:26 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+10:09:27 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+10:09:58 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+10:09:58 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+10:09:58 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+10:11:29 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+10:11:29 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+10:11:30 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+10:12:22 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+10:12:22 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+10:12:23 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+10:12:55 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+10:12:55 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+10:12:55 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+10:28:04 PM [vite] hmr update /src/index.css, /src/components/common/walletConnect/index.tsx
+10:28:04 PM [vite] hmr update /src/index.css, /src/components/common/walletConnect/index.tsx
+10:28:04 PM [vite] hmr update /src/index.css, /src/components/common/walletConnect/index.tsx
+10:28:55 PM [vite] hmr update /src/index.css, /src/components/common/walletConnect/index.tsx
+10:28:56 PM [vite] hmr update /src/index.css, /src/components/common/walletConnect/index.tsx
+10:28:56 PM [vite] hmr update /src/index.css, /src/components/common/walletConnect/index.tsx
+10:32:25 PM [vite] hmr update /src/index.css, /src/components/common/walletConnect/index.tsx
+10:32:25 PM [vite] hmr update /src/index.css, /src/components/common/walletConnect/index.tsx
+10:32:25 PM [vite] hmr update /src/index.css, /src/components/common/walletConnect/index.tsx
+10:32:51 PM [vite] hmr update /src/index.css, /src/components/common/walletConnect/index.tsx
+10:32:52 PM [vite] hmr update /src/index.css, /src/components/common/walletConnect/index.tsx
+10:32:52 PM [vite] hmr update /src/index.css, /src/components/common/walletConnect/index.tsx
+10:33:23 PM [vite] hmr update /src/index.css, /src/components/common/walletConnect/index.tsx
+10:33:23 PM [vite] hmr update /src/index.css, /src/components/common/walletConnect/index.tsx
+10:33:23 PM [vite] hmr update /src/index.css, /src/components/common/walletConnect/index.tsx
+10:34:15 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+10:34:15 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+10:34:15 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+10:34:56 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+10:34:57 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+10:34:57 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+10:35:15 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+10:35:15 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+10:35:15 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+10:35:53 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+10:35:53 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+10:35:54 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+10:40:41 PM [vite] hmr update /src/pages/terms/index.tsx, /src/index.css
+10:40:41 PM [vite] page reload src/pages/terms/index.tsx
+10:40:42 PM [vite] hmr invalidate /src/pages/terms/index.tsx Could not Fast Refresh (export removed)
+10:40:42 PM [vite] page reload src/pages/terms/index.tsx
+10:43:37 PM [vite] hmr update /src/pages/terms/index.tsx, /src/index.css
+10:43:38 PM [vite] hmr update /src/pages/terms/index.tsx, /src/index.css
+10:43:38 PM [vite] hmr update /src/pages/terms/index.tsx, /src/index.css
+10:44:58 PM [vite] hmr update /src/pages/privacy/index.tsx, /src/index.css
+10:44:58 PM [vite] page reload src/pages/privacy/index.tsx
+10:45:19 PM [vite] hmr update /src/pages/privacy/index.tsx, /src/index.css
+10:45:19 PM [vite] hmr update /src/pages/privacy/index.tsx, /src/index.css
+10:45:19 PM [vite] hmr update /src/pages/privacy/index.tsx, /src/index.css
+10:45:23 PM [vite] hmr update /src/pages/privacy/index.tsx, /src/index.css
+10:45:24 PM [vite] page reload src/pages/privacy/index.tsx
+10:45:24 PM [vite] page reload src/pages/privacy/index.tsx
+10:48:25 PM [vite] page reload src/config/dfi/common.ts
+10:48:25 PM [vite] page reload src/config/dfi/common.ts
+10:48:25 PM [vite] page reload src/config/dfi/common.ts
+yarn run v1.22.22
+$ cross-env VITE_NETWORK=dfi vite --host 127.0.0.1 --port 4040
+[33mThe CJS build of Vite's Node API is deprecated. See https://vitejs.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+
+  VITE v5.3.2  ready in 399 ms
+
+  ➜  Local:   http://127.0.0.1:4040/
+The request url "/opt/dex/.env" is outside of Vite serving allow list.
+
+- /opt/dex
+
+Refer to docs https://vitejs.dev/config/server-options.html#server-fs-allow for configurations and more details.
+
+11:52:31 PM [vite] hmr update /src/components/strategies/create/CreateStrategyOption.tsx, /src/index.css
+11:52:32 PM [vite] hmr update /src/components/strategies/create/CreateStrategyOption.tsx, /src/index.css
+11:52:32 PM [vite] hmr update /src/components/strategies/create/CreateStrategyOption.tsx, /src/index.css
+11:54:25 PM [vite] hmr update /src/index.css, /src/components/strategies/create/CreateStrategyOption.tsx
+11:54:26 PM [vite] hmr update /src/index.css, /src/components/strategies/create/CreateStrategyOption.tsx
+11:54:26 PM [vite] hmr update /src/index.css, /src/components/strategies/create/CreateStrategyOption.tsx

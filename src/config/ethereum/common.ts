@@ -24,25 +24,25 @@ const addresses = {
 
 export const commonConfig: AppConfig = {
   mode: 'development',
-  appName: 'Carbon DeFi',
-  appUrl: 'https://app.carbondefi.xyz',
-  carbonApi: 'https://api.carbondefi.xyz/v1/',
+  appName: 'DFI',
+  appUrl: 'https://app.daofinance.me',
+  carbonApi: 'https://explorer.daofinance.me/api/v1/',
   externalLinks: {
-    analytics: 'http://analytics.carbondefi.xyz',
-    interactiveSim: 'https://simulator.carbondefi.xyz/',
-    simulatorRepo: 'https://github.com/bancorprotocol/carbon-simulator',
-    duneDashboard: 'https://dune.com/bancor/carbon-by-bancor',
+    analytics: 'http://analytics.daofinance.me',
+    interactiveSim: 'https://simulator.daofinance.me/',
+    simulatorRepo: 'https://github.com/awwea/daofinance/simulator',
+    duneDashboard: 'https://dune.com/daofinance/app',
   },
   selectedConnectors: ['MetaMask', 'WalletConnect', 'Coinbase Wallet', 'Safe'],
   blockedConnectors: ['Tailwind', 'Compass Wallet', 'Seif'],
-  walletConnectProjectId: 'f9d8863ab6c03f2293d7d56d7c0c0853',
-  isSimulatorEnabled: true,
-  policiesLastUpdated: '18 April, 2023',
+  walletConnectProjectId: '309e76c34b87bec6e59d27a064ae8a69',
+  isSimulatorEnabled: false,
+  policiesLastUpdated: '2 August, 2024',
   network: {
-    name: 'Ethereum Network',
+    name: 'DFI Network',
     logoUrl: IconETHLogo,
     chainId: 1,
-    blockExplorer: { name: 'Etherscan', url: 'https://etherscan.io' },
+    blockExplorer: { name: 'Explorer', url: 'https://explorer.daofinance.me' },
     rpc: {
       url: 'https://ethereum-rpc.publicnode.com',
     },
@@ -139,7 +139,7 @@ export const commonConfig: AppConfig = {
     },
   ],
   tokenLists: [
-    // Bancor
+    // Daofinance
     {
       uri: 'https://d1wmp5nysbq9xl.cloudfront.net/ethereum/tokens.json',
     },

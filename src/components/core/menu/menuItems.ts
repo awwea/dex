@@ -18,6 +18,10 @@ export const menuItems: MenuItem[] = [
     label: 'Explore',
     href: '/explore',
   },
+  {
+    label: 'Scanner',
+    href: 'https://explorer.daofinance.me',
+  },
   // ...(!config.isSimulatorEnabled
   // ? []
   // : [{

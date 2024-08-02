@@ -93,6 +93,7 @@
     "prepare": "yarn husky install",
     "analyze": "source-map-explorer 'build/static/js/*.js'",
     "start": "vite",
+    "start:dfi": "cross-env VITE_NETWORK=dfi vite --host 127.0.0.1 --port 4040",
     "start:ethereum": "cross-env VITE_NETWORK=ethereum vite --host 127.0.0.1 --port 4040",
     "start:sei": "cross-env VITE_NETWORK=sei vite",
     "start:celo": "cross-env VITE_NETWORK=celo vite",

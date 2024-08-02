@@ -16,7 +16,7 @@ upstream @exchange{
 # }
 server {
 	listen 443 ssl; listen [::]:443 ssl;
-	server_name	exchange.daofinance.me;
+	server_name	dex.daofinance.me exchange.daofinance.me;
     client_max_body_size 200M;
 	include common/ssl;
     http2 on;

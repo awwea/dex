@@ -3,7 +3,6 @@ import IconETHLogo from 'assets/logos/ethlogo.svg';
 import { ONE_HOUR_IN_MS } from 'utils/time';
 
 const addresses = {
-  DFI: '0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE',
   ETH: '0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE',
   WETH: '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2',
   BNT: '0x1F573D6Fb3F13d689FF844B4cE37794d79a7FF1C',
@@ -26,33 +25,33 @@ const addresses = {
 export const commonConfig: AppConfig = {
   mode: 'development',
   appName: 'DFI',
-  appUrl: 'https://app.carbondefi.xyz',
-  carbonApi: 'https://api.carbondefi.xyz/v1/',
+  appUrl: 'https://app.daofinance.me',
+  carbonApi: 'https://explorer.daofinance.me/api/v1/',
   externalLinks: {
-    analytics: 'http://analytics.carbondefi.xyz',
-    interactiveSim: 'https://simulator.carbondefi.xyz/',
-    simulatorRepo: 'https://github.com/bancorprotocol/carbon-simulator',
-    duneDashboard: 'https://dune.com/bancor/carbon-by-bancor',
+    analytics: 'http://analytics.daofinance.me',
+    interactiveSim: 'https://simulator.daofinance.me/',
+    simulatorRepo: 'https://github.com/awwea/daofinance/simulator',
+    duneDashboard: 'https://dune.com/daofinance/app',
   },
   selectedConnectors: ['MetaMask', 'WalletConnect', 'Coinbase Wallet', 'Safe'],
   blockedConnectors: ['Tailwind', 'Compass Wallet', 'Seif'],
   walletConnectProjectId: '309e76c34b87bec6e59d27a064ae8a69',
-  isSimulatorEnabled: true,
-  policiesLastUpdated: '18 April, 2023',
+  isSimulatorEnabled: false,
+  policiesLastUpdated: '2 August, 2024',
   network: {
     name: 'DFI Network',
     logoUrl: IconETHLogo,
     chainId: 1,
     blockExplorer: { name: 'Explorer', url: 'https://explorer.daofinance.me' },
     rpc: {
-      url: 'https://chain.daofinance.me/rpc',
+      url: 'https://ethereum-rpc.publicnode.com',
     },
     defaultLimitedApproval: false,
     gasToken: {
-      name: 'DFI',
-      symbol: 'DFI',
+      name: 'Ether',
+      symbol: 'ETH',
       decimals: 18,
-      address: addresses.DFI,
+      address: addresses.ETH,
       logoURI:
         'https://d1wmp5nysbq9xl.cloudfront.net/ethereum/tokens/0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.svg',
     },
@@ -140,7 +139,7 @@ export const commonConfig: AppConfig = {
     },
   ],
   tokenLists: [
-    // Bancor
+    // Daofinance
     {
       uri: 'https://d1wmp5nysbq9xl.cloudfront.net/ethereum/tokens.json',
     },

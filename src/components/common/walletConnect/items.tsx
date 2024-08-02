@@ -12,19 +12,19 @@ export const items = [
   },
   {
     icon: <IconWallet2 className="text-primary size-20" />,
-    title: 'Automated and Recurring strategies',
+    title: 'Automated & Recurring Strategies',
+  },
+  {
+    icon: <IconWallet5 className="text-primary size-20" />,
+    title: 'Support for ERC-20 Tokens',
   },
   {
     icon: <IconWallet3 className="text-primary size-20" />,
-    title: 'Easily Adjustable',
+    title: 'Easily Adjustable by User',
   },
   {
     icon: <IconWallet4 className="text-primary size-20" />,
     title: 'Rotating Liquidity',
-  },
-  {
-    icon: <IconWallet5 className="text-primary size-20" />,
-    title: 'All standard ERC-20 tokens',
   },
   {
     icon: <IconWallet6 className="text-primary size-20" />,
