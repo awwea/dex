@@ -1,0 +1,19 @@
+[Unit]
+Description=DEX Server (Carbon DeFi)
+After=syslog.target network.target
+StartLimitIntervalSec=3
+
+[Service]
+User=root
+Type=simple
+Restart=on-failure
+
+Environment=NODE_PORT=4040
+WorkingDirectory=/opt/dex
+ExecStart=yarn start:ethereum
+
+StandardOutput=append:/opt/dex/log
+StandardError=append:/opt/dex/log
+
+[Install]
+WantedBy=multi-user.target

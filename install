@@ -1,0 +1,14 @@
+#!/bin/bash
+
+npm install -g npm pnpm yarn;
+service dex stop;
+cd /opt/dex;
+
+rm -rf /opt/dex/{.husky,node_modules,package-lock.json,pnpm-lock.yaml};
+rm -rf /opt/dex/log;
+
+yarn install;
+npx prettier --write .;
+chown -R admin:admin /opt/dex;
+
+# service dom restart;

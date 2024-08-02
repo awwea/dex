@@ -43,7 +43,7 @@ export const MainMenuRightWallet: FC = () => {
   const buttonText = useMemo(() => {
     if (isUserBlocked) return 'Wallet Blocked';
     if (!isSupportedNetwork) return 'Wrong Network';
-    if (!user) return 'Connect Wallet';
+    if (!user) return 'Connect';
     return shortenString(ensName || user);
   }, [ensName, isSupportedNetwork, isUserBlocked, user]);
 
@@ -72,13 +72,13 @@ export const MainMenuRightWallet: FC = () => {
     return (
       <DropdownMenu
         placement="bottom-end"
-        className="rounded-[10px] p-8"
+        className="rounded-[5px] p-8"
         button={(attr) => (
           <button
             {...attr}
             className={cn(
               buttonStyles({ variant: buttonVariant }),
-              'flex items-center space-x-10 pl-20'
+              'flex items-center space-x-5 pl-16'
             )}
             onClick={(e) => {
               carbonEvents.navigation.navWalletClick(undefined);
@@ -100,7 +100,7 @@ export const MainMenuRightWallet: FC = () => {
     <Button
       variant={buttonVariant}
       onClick={onClickOpenModal}
-      className="flex items-center space-x-10"
+      className="flex items-center space-x-5"
     >
       {buttonIcon}
       <span>{buttonText}</span>

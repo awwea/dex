@@ -27,7 +27,7 @@ export const MainMenuLeft: FC = () => {
         <LogoCarbon className="w-34" />
       </Link>
 
-      <div className="hidden space-x-24 md:block">
+      <div className="hidden space-x-16 md:block">
         {menuItems.map(({ label, href }, index) => {
           const isSamePage = isSamePageLink(href);
 

@@ -1,0 +1,82 @@
+proxy_cache_path /var/cache/exchange levels=1:2 keys_zone=exchange:100m max_size=1g inactive=24h use_temp_path=off loader_threshold=300 loader_files=300;
+
+upstream @exchange{
+    server 127.0.0.1:4040 weight=1 fail_timeout=0; keepalive 60;
+}
+# server {
+    # include	common/ssl;
+    # server_name ~^www[^.]*\.daofinance.me exchange.daofinance.me;
+	# listen 443 ssl; listen [::]:443 ssl;
+    # http2 on;
+
+	# ssl_certificate /etc/letsencrypt/live/daofinance.me/fullchain.pem;
+	# ssl_certificate_key /etc/letsencrypt/live/daofinance.me/privkey.pem;
+	# ssl_trusted_certificate /etc/letsencrypt/live/daofinance.me/chain.pem;
+    # return 301 https://exchange.daofinance.me$request_uri;
+# }
+server {
+	listen 443 ssl; listen [::]:443 ssl;
+	server_name	exchange.daofinance.me;
+    client_max_body_size 200M;
+	include common/ssl;
+    http2 on;
+
+    include ssl_proxy_headers;
+    include common/proxy_params_adv;
+	add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" always;
+
+	access_log /var/log/nginx/access.daofinance.me;
+	error_log /var/log/nginx/error.daofinance.me;
+
+	ssl_certificate /etc/letsencrypt/live/daofinance.me/fullchain.pem;
+	ssl_certificate_key /etc/letsencrypt/live/daofinance.me/privkey.pem;
+	ssl_trusted_certificate /etc/letsencrypt/live/daofinance.me/chain.pem;
+
+    error_page 403 /maintenace.html;
+    error_page 502 /maintenace.html;
+    error_page 503 /maintenace.html;
+    location = /maintenace.html {
+        root /var/www/html;
+        internal;
+    }
+	location @proxy {
+        internal;
+        proxy_cache exchange;
+        include proxy_params;
+		proxy_pass http://@exchange;
+        include common/proxy_cache_params;
+    }
+    # location ~* \.(?:css|js|scss|less)$ {
+        # try_files $uri @proxy;
+        # include common/headers;
+        # access_log off; log_not_found off;
+        # add_header Cache-Control "public, max-age=31536000";
+        # expires 1d;
+    # }
+    # location ~* \.(?:asf|asx|wax|wmv|wmx|avi|bmp|class|divx|doc|docx|eot|exe|gif|gz|gzip|ico|jff|jpg|jpeg|jpe|json|html|mdb|mid|midi|mov|qt|mp3|m4a|mp4|m4v|mpeg|mpg|mpe|mpp|odb|odc|odf|odg|odp|ods|odt|ogg|ogv|otf|pdf|png|pot|pps|ppt|pptx|ra|ram|svg|svgz|swf|tar|t?gz|tif|tiff|ttf|wav|webm|webp|wma|woff|woff2|wri|xla|xls|xlsx|xlt|xlw|zip)$ {
+        # access_log off; log_not_found off;
+        # try_files $uri @proxy;
+        # expires 21d;
+    # }
+    location / {
+        proxy_cookie_path / "/; secure; HttpOnly; SameSite=lax";
+        # include proxy_params;
+        # include common/headers;
+        proxy_read_timeout     60;
+        proxy_connect_timeout  60;
+        proxy_redirect         off;
+        proxy_pass http://@exchange;
+
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+
+        # Allow the use of websockets
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+    }
+}

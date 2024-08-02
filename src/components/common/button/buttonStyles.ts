@@ -10,11 +10,11 @@ type ButtonVariants = VariantColor & VariantSize & VariantFullWidth;
 export const buttonStyles = cva<ButtonVariants>(
   [
     'font-title font-weight-500',
-    'rounded-full px-30',
+    'flex justify-center items-center',
     'transition duration-300 ease-in-out',
     'disabled:cursor-not-allowed',
     'disabled:opacity-40',
-    'flex justify-center items-center',
+    'rounded px-16',
   ],
   {
     variants: {
@@ -32,16 +32,16 @@ export const buttonStyles = cva<ButtonVariants>(
           'hover:border-background-700 hover:disabled:border-background-800',
         ],
         success: [
-          'bg-primary border-2 border-primary text-black',
+          'bg-primary border-2 border-primary text-white',
           'hover:border-primary-light hover:disabled:border-primary',
         ],
         buy: [
-          'bg-buy border-2 border-buy text-black',
-          'hover:border-buy-light hover:text-black hover:bg-buy hover:disabled:border-buy',
+          'bg-buy border-2 border-buy text-white',
+          'hover:border-buy-light hover:bg-buy hover:disabled:border-buy',
         ],
         sell: [
-          'bg-sell border-2 border-sell text-black',
-          'hover:border-sell-light hover:text-black hover:bg-sell hover:disabled:border-sell',
+          'bg-sell border-2 border-sell text-white',
+          'hover:border-sell-light hover:bg-sell hover:disabled:border-sell',
         ],
         error: [
           'bg-error border-2 border-error text-black',

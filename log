@@ -1,0 +1,1089 @@
+yarn run v1.22.22
+$ cross-env VITE_NETWORK=ethereum vite
+/bin/sh: 1: cross-env: not found
+error Command failed with exit code 127.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+yarn run v1.22.22
+$ cross-env VITE_NETWORK=ethereum vite
+/bin/sh: 1: cross-env: not found
+error Command failed with exit code 127.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+yarn run v1.22.22
+$ cross-env VITE_NETWORK=ethereum vite
+/bin/sh: 1: cross-env: not found
+error Command failed with exit code 127.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+yarn run v1.22.22
+$ cross-env VITE_NETWORK=ethereum vite
+/bin/sh: 1: cross-env: not found
+error Command failed with exit code 127.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+yarn run v1.22.22
+$ cross-env VITE_NETWORK=ethereum vite
+/bin/sh: 1: cross-env: not found
+error Command failed with exit code 127.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+yarn run v1.22.22
+$ cross-env VITE_NETWORK=ethereum vite --host 127.0.0.1 --port 4040
+[33mThe CJS build of Vite's Node API is deprecated. See https://vitejs.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+
+  VITE v5.3.2  ready in 414 ms
+
+  ➜  Local:   http://127.0.0.1:4040/
+6:24:45 PM [vite] ✨ new dependencies optimized: @bancor/carbon-sdk/chain-cache, @bancor/carbon-sdk/contracts-api
+6:24:45 PM [vite] ✨ optimized dependencies changed. reloading
+6:26:25 PM [vite] page reload tailwind.config.ts
+6:26:25 PM [vite] page reload tailwind.config.ts
+6:29:21 PM [vite] hmr update /src/components/core/menu/mainMenu/MainMenuLeft.tsx, /src/index.css
+6:29:21 PM [vite] hmr update /src/components/core/menu/mainMenu/MainMenuLeft.tsx, /src/index.css
+6:29:22 PM [vite] hmr update /src/components/core/menu/mainMenu/MainMenuLeft.tsx, /src/index.css
+6:31:58 PM [vite] page reload tailwind.config.ts
+6:31:58 PM [vite] page reload tailwind.config.ts
+6:31:59 PM [vite] page reload tailwind.config.ts
+6:33:36 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+6:33:37 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+6:33:37 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+yarn run v1.22.22
+$ cross-env VITE_NETWORK=ethereum vite --host 127.0.0.1 --port 4040
+[33mThe CJS build of Vite's Node API is deprecated. See https://vitejs.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+
+  VITE v5.3.2  ready in 397 ms
+
+  ➜  Local:   http://127.0.0.1:4040/
+6:35:36 PM [vite] hmr update /src/index.css, /src/components/strategies/create/CreateStrategyCTA.tsx, /src/components/strategies/create/CreateStrategyOption.tsx, /src/components/simulator/mobile-placeholder.tsx, /src/components/simulator/result/SimResultChart.tsx, /src/components/simulator/result/SimResultSummary.tsx, /src/components/common/button/index.tsx, /src/components/common/walletConnect/index.tsx, /src/components/simulator/input/SimInputChart.tsx, /src/components/strategies/overview/strategyBlock/StrategyBlockManage.tsx, /src/components/simulator/result/SimResultChartDownload.tsx, /src/components/core/menu/mainMenu/MainMenuRightChainSelector.tsx, /src/components/core/menu/mainMenu/MainMenuRightWallet.tsx, /src/components/core/menu/mainMenu/MainMenuRightBurger/index.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmWithdraw.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmDelete.tsx
+6:35:36 PM [vite] hmr update /src/index.css, /src/components/strategies/create/CreateStrategyCTA.tsx, /src/components/strategies/create/CreateStrategyOption.tsx, /src/components/simulator/mobile-placeholder.tsx, /src/components/simulator/result/SimResultChart.tsx, /src/components/simulator/result/SimResultSummary.tsx, /src/components/common/button/index.tsx, /src/components/common/walletConnect/index.tsx, /src/components/simulator/input/SimInputChart.tsx, /src/components/strategies/overview/strategyBlock/StrategyBlockManage.tsx, /src/components/simulator/result/SimResultChartDownload.tsx, /src/components/core/menu/mainMenu/MainMenuRightChainSelector.tsx, /src/components/core/menu/mainMenu/MainMenuRightWallet.tsx, /src/components/core/menu/mainMenu/MainMenuRightBurger/index.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmWithdraw.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmDelete.tsx
+6:35:36 PM [vite] hmr update /src/index.css, /src/components/strategies/create/CreateStrategyCTA.tsx, /src/components/strategies/create/CreateStrategyOption.tsx, /src/components/simulator/mobile-placeholder.tsx, /src/components/simulator/result/SimResultChart.tsx, /src/components/simulator/result/SimResultSummary.tsx, /src/components/common/button/index.tsx, /src/components/common/walletConnect/index.tsx, /src/components/simulator/input/SimInputChart.tsx, /src/components/strategies/overview/strategyBlock/StrategyBlockManage.tsx, /src/components/simulator/result/SimResultChartDownload.tsx, /src/components/core/menu/mainMenu/MainMenuRightChainSelector.tsx, /src/components/core/menu/mainMenu/MainMenuRightWallet.tsx, /src/components/core/menu/mainMenu/MainMenuRightBurger/index.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmWithdraw.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmDelete.tsx
+6:38:41 PM [vite] hmr update /src/components/core/menu/mobileMenu/MobileMenu.tsx, /src/index.css
+6:38:41 PM [vite] hmr update /src/components/core/menu/mainMenu/MainMenuLeft.tsx, /src/index.css
+6:38:41 PM [vite] hmr update /src/components/core/menu/mainMenu/MainMenu.tsx, /src/index.css
+6:38:41 PM [vite] hmr update /src/components/core/menu/mainMenu/MainMenuRight.tsx, /src/index.css
+6:38:41 PM [vite] hmr update /src/components/core/menu/mainMenu/MainMenuRightChainSelector.tsx, /src/index.css
+6:38:41 PM [vite] page reload src/components/core/menu/mainMenu/MainMenuRightModals.tsx
+6:38:41 PM [vite] hmr update /src/components/core/menu/mainMenu/MainMenuRightNotifications.tsx, /src/index.css
+6:38:41 PM [vite] hmr update /src/components/core/menu/mainMenu/MainMenuRightWallet.tsx, /src/index.css
+6:38:41 PM [vite] hmr update /src/components/core/menu/mainMenu/MainMenuTrade.tsx, /src/index.css
+6:38:41 PM [vite] hmr update /src/components/core/menu/mainMenu/MainMenuTradePairs.tsx, /src/index.css
+6:38:41 PM [vite] hmr update /src/components/core/menu/mainMenu/MainMenuTradeSettings.tsx, /src/index.css
+6:38:41 PM [vite] hmr update /src/components/core/menu/mainMenu/MainMenuTradeSwitch.tsx, /src/index.css
+6:38:41 PM [vite] hmr update /src/components/core/menu/mainMenu/MainMenuRightBurger/MenuItem.tsx, /src/index.css
+6:38:41 PM [vite] hmr update /src/components/core/menu/mainMenu/MainMenuRightBurger/index.tsx, /src/index.css
+6:38:41 PM [vite] hmr update /src/components/core/menu/mainMenu/MainMenuRightBurger/useBurgerMenuItems.tsx, /src/index.css
+6:38:41 PM [vite] hmr update /src/components/core/menu/mainMenu/MainMenuRightBurger/useMenuContext.tsx, /src/index.css
+6:38:41 PM [vite] hmr update /src/index.css, /src/App.tsx
+6:38:41 PM [vite] page reload src/components/core/menu/utils.ts
+6:38:41 PM [vite] hmr update /src/index.css, /src/App.tsx
+6:38:42 PM [vite] Pre-transform error: Failed to load url /src/components/core/menu/index.ts (resolved id: /opt/dex/src/components/core/menu/index.ts) in /opt/dex/src/App.tsx. Does the file exist?
+6:38:42 PM [vite] Pre-transform error: Failed to load url /src/components/core/menu/mainMenu/MainMenuTrade.tsx (resolved id: /opt/dex/src/components/core/menu/mainMenu/MainMenuTrade.tsx) in /opt/dex/src/pages/trade/index.tsx. Does the file exist?
+6:38:42 PM [vite] Pre-transform error: Failed to load url /src/components/core/menu/mainMenu/MainMenuRightBurger/MenuItem.tsx (resolved id: /opt/dex/src/components/core/menu/mainMenu/MainMenuRightBurger/MenuItem.tsx) in /opt/dex/src/libs/modals/modals/ModalBurgerMenu.tsx. Does the file exist?
+6:38:42 PM [vite] Pre-transform error: Failed to load url /src/components/core/menu/mainMenu/MainMenuRightBurger/useBurgerMenuItems.tsx (resolved id: /opt/dex/src/components/core/menu/mainMenu/MainMenuRightBurger/useBurgerMenuItems.tsx) in /opt/dex/src/libs/modals/modals/ModalBurgerMenu.tsx. Does the file exist?
+6:38:42 PM [vite] Pre-transform error: Failed to load url /src/components/core/menu/mainMenu/MainMenuRightBurger/useMenuContext.tsx (resolved id: /opt/dex/src/components/core/menu/mainMenu/MainMenuRightBurger/useMenuContext.tsx) in /opt/dex/src/libs/modals/modals/ModalBurgerMenu.tsx. Does the file exist?
+6:38:43 PM [vite] hmr update /src/App.tsx, /src/index.css
+6:38:43 PM [vite] hmr update /src/components/core/menu/mainMenu/MainMenu.tsx
+6:38:43 PM [vite] hmr update /src/components/core/menu/mainMenu/MainMenuLeft.tsx
+6:38:43 PM [vite] hmr update /src/components/core/menu/mainMenu/MainMenuRight.tsx
+6:38:43 PM [vite] hmr update /src/components/core/menu/mainMenu/MainMenuRightChainSelector.tsx
+6:38:43 PM [vite] page reload src/components/core/menu/mainMenu/MainMenuRightModals.tsx
+6:38:43 PM [vite] hmr update /src/components/core/menu/mainMenu/MainMenuRightNotifications.tsx
+6:38:43 PM [vite] hmr update /src/components/core/menu/mainMenu/MainMenuRightWallet.tsx
+6:38:43 PM [vite] hmr update /src/components/core/menu/mainMenu/MainMenuTrade.tsx
+6:38:43 PM [vite] hmr update /src/components/core/menu/mainMenu/MainMenuTradePairs.tsx
+6:38:43 PM [vite] hmr update /src/components/core/menu/mainMenu/MainMenuTradeSettings.tsx
+6:38:43 PM [vite] hmr update /src/components/core/menu/mainMenu/MainMenuTradeSwitch.tsx
+6:38:43 PM [vite] hmr update /src/components/core/menu/mainMenu/MainMenuRightBurger/MenuItem.tsx
+6:38:43 PM [vite] hmr update /src/components/core/menu/mainMenu/MainMenuRightBurger/index.tsx
+6:38:43 PM [vite] hmr update /src/components/core/menu/mainMenu/MainMenuRightBurger/useBurgerMenuItems.tsx
+6:38:43 PM [vite] hmr update /src/components/core/menu/mainMenu/MainMenuRightBurger/useMenuContext.tsx
+6:40:04 PM [vite] hmr update /src/components/common/walletConnect/index.tsx, /src/index.css
+6:40:04 PM [vite] page reload src/components/common/walletConnect/items.tsx
+6:40:05 PM [vite] Pre-transform error: Failed to load url /src/components/common/walletConnect/index.tsx (resolved id: /opt/dex/src/components/common/walletConnect/index.tsx) in /opt/dex/src/pages/strategies/index.tsx. Does the file exist?
+6:40:06 PM [vite] hmr update /src/components/common/walletConnect/index.tsx
+6:40:06 PM [vite] page reload src/components/common/walletConnect/items.tsx
+6:44:12 PM [vite] page reload tailwind.config.ts
+6:44:12 PM [vite] page reload tailwind.config.ts
+Error in error handler:
+Error: offset is longer than source length! offset 1078 > length 89
+    at numberToPos (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:16851:11)
+    at TransformPluginContext._formatError (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49758:25)
+    at TransformPluginContext.error (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49741:16)
+    at PluginContainer.transform (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49591:13)
+    at async file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:62468:22
+    at async Promise.all (index 0)
+    at async devHtmlHook (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:62463:3)
+    at async applyHtmlTransforms (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:35486:17)
+    at async viteIndexHtmlMiddleware (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:62531:20)
+
+6:44:12 PM [vite] Internal server error: [postcss] Unexpected token, expected "," (41:26)
+  Plugin: vite:css
+  File: /opt/dex/index.html?html-proxy&direct&index=0.css:undefined:NaN
+      at unexpected (/opt/dex/node_modules/sucrase/dist/parser/traverser/util.js:99:15)
+      at expect (/opt/dex/node_modules/sucrase/dist/parser/traverser/util.js:86:5)
+      at parseObj (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:759:20)
+      at parseExprAtom (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:553:7)
+      at parseExprSubscripts (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:276:20)
+      at parseMaybeUnary (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:257:20)
+      at parseExprOps (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:185:20)
+      at parseMaybeConditional (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:157:20)
+      at baseParseMaybeAssign (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:142:20)
+      at tsParseMaybeAssignWithoutJSX (/opt/dex/node_modules/sucrase/dist/parser/plugins/typescript.js:1580:45)
+      at tsParseMaybeAssign (/opt/dex/node_modules/sucrase/dist/parser/plugins/typescript.js:1548:12)
+      at parseMaybeAssign (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:121:43)
+      at parseObjectProperty (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:851:7)
+      at parseObjPropValue (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:892:5)
+      at parseObj (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:808:5)
+      at parseExprAtom (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:553:7)
+      at parseExprSubscripts (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:276:20)
+      at parseMaybeUnary (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:257:20)
+      at parseExprOps (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:185:20)
+      at parseMaybeConditional (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:157:20)
+      at baseParseMaybeAssign (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:142:20)
+      at tsParseMaybeAssignWithoutJSX (/opt/dex/node_modules/sucrase/dist/parser/plugins/typescript.js:1580:45)
+      at tsParseMaybeAssign (/opt/dex/node_modules/sucrase/dist/parser/plugins/typescript.js:1548:12)
+      at parseMaybeAssign (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:121:43)
+      at parseExportDefaultExpression (/opt/dex/node_modules/sucrase/dist/parser/traverser/statement.js:1024:34)
+      at parseExport (/opt/dex/node_modules/sucrase/dist/parser/traverser/statement.js:988:5)
+      at parseStatementContent (/opt/dex/node_modules/sucrase/dist/parser/traverser/statement.js:200:9)
+      at parseStatement (/opt/dex/node_modules/sucrase/dist/parser/traverser/statement.js:116:3)
+      at parseBlockBody (/opt/dex/node_modules/sucrase/dist/parser/traverser/statement.js:586:5)
+      at parseTopLevel (/opt/dex/node_modules/sucrase/dist/parser/traverser/statement.js:92:3)
+      at parseFile (/opt/dex/node_modules/sucrase/dist/parser/traverser/index.js:17:35)
+      at parse (/opt/dex/node_modules/sucrase/dist/parser/index.js:26:35)
+      at getSucraseContext (/opt/dex/node_modules/sucrase/dist/index.js:95:30)
+      at transform (/opt/dex/node_modules/sucrase/dist/index.js:38:28)
+      at Object.transform (/opt/dex/node_modules/tailwindcss/lib/lib/load-config.js:38:43)
+      at /opt/dex/node_modules/jiti/dist/jiti.js:1:252235
+      at opts.transform.Object.assign.Object.assign.Object.assign.legacy (/opt/dex/node_modules/jiti/dist/jiti.js:1:252056)
+      at transform (/opt/dex/node_modules/jiti/dist/jiti.js:1:252178)
+      at evalModule (/opt/dex/node_modules/jiti/dist/jiti.js:1:255358)
+      at jiti (/opt/dex/node_modules/jiti/dist/jiti.js:1:254371)
+      at /opt/dex/node_modules/tailwindcss/lib/lib/load-config.js:52:30
+      at loadConfig (/opt/dex/node_modules/tailwindcss/lib/lib/load-config.js:54:6)
+      at getTailwindConfig (/opt/dex/node_modules/tailwindcss/lib/lib/setupTrackingContext.js:71:116)
+      at /opt/dex/node_modules/tailwindcss/lib/lib/setupTrackingContext.js:100:92
+      at /opt/dex/node_modules/tailwindcss/lib/processTailwindFeatures.js:46:11
+      at plugins (/opt/dex/node_modules/tailwindcss/lib/plugin.js:38:69)
+      at LazyResult.runOnRoot (/opt/dex/node_modules/vite/node_modules/postcss/lib/lazy-result.js:329:16)
+      at LazyResult.runAsync (/opt/dex/node_modules/vite/node_modules/postcss/lib/lazy-result.js:258:26)
+      at LazyResult.async (/opt/dex/node_modules/vite/node_modules/postcss/lib/lazy-result.js:160:30)
+      at LazyResult.then (/opt/dex/node_modules/vite/node_modules/postcss/lib/lazy-result.js:404:17)
+6:44:12 PM [vite] page reload tailwind.config.ts
+6:44:12 PM [vite] Pre-transform error: [postcss] Unexpected token, expected "," (41:26)
+6:44:12 PM [vite] Pre-transform error: [postcss] Unexpected token, expected "," (41:26)
+Error in error handler:
+Error: offset is longer than source length! offset 1078 > length 565
+    at numberToPos (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:16851:11)
+    at TransformPluginContext._formatError (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49758:25)
+    at TransformPluginContext.error (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49741:16)
+    at PluginContainer.transform (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49591:13)
+    at async loadAndTransform (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:52409:27)
+
+6:44:12 PM [vite] Pre-transform error: [postcss] Unexpected token, expected "," (41:26)
+6:44:12 PM [vite] Pre-transform error: [postcss] Unexpected token, expected "," (41:26)
+6:44:12 PM [vite] Pre-transform error: [postcss] Unexpected token, expected "," (41:26)
+Error in error handler:
+Error: offset is longer than source length! offset 1078 > length 389
+    at numberToPos (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:16851:11)
+    at TransformPluginContext._formatError (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49758:25)
+    at TransformPluginContext.error (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49741:16)
+    at PluginContainer.transform (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49591:13)
+    at async loadAndTransform (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:52409:27)
+    at async Object.warmupRequest (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:63130:9)
+
+6:44:12 PM [vite] Pre-transform error: [postcss] Unexpected token, expected "," (41:26)
+Error in error handler:
+Error: offset is longer than source length! offset 1078 > length 100
+    at numberToPos (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:16851:11)
+    at TransformPluginContext._formatError (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49758:25)
+    at TransformPluginContext.error (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49741:16)
+    at PluginContainer.transform (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49591:13)
+    at async loadAndTransform (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:52409:27)
+    at async Object.warmupRequest (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:63130:9)
+
+6:44:12 PM [vite] Pre-transform error: [postcss] Unexpected token, expected "," (41:26)
+Error in error handler:
+Error: offset is longer than source length! offset 1078 > length 248
+    at numberToPos (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:16851:11)
+    at TransformPluginContext._formatError (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49758:25)
+    at TransformPluginContext.error (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49741:16)
+    at PluginContainer.transform (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49591:13)
+    at async loadAndTransform (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:52409:27)
+    at async Object.warmupRequest (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:63130:9)
+
+6:44:12 PM [vite] Pre-transform error: [postcss] Unexpected token, expected "," (41:26)
+Error in error handler:
+Error: offset is longer than source length! offset 1078 > length 459
+    at numberToPos (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:16851:11)
+    at TransformPluginContext._formatError (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49758:25)
+    at TransformPluginContext.error (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49741:16)
+    at PluginContainer.transform (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49591:13)
+    at async loadAndTransform (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:52409:27)
+    at async Object.warmupRequest (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:63130:9)
+
+6:44:12 PM [vite] Pre-transform error: [postcss] Unexpected token, expected "," (41:26)
+Error in error handler:
+Error: offset is longer than source length! offset 1078 > length 347
+    at numberToPos (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:16851:11)
+    at TransformPluginContext._formatError (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49758:25)
+    at TransformPluginContext.error (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49741:16)
+    at PluginContainer.transform (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49591:13)
+    at async loadAndTransform (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:52409:27)
+
+6:44:12 PM [vite] Pre-transform error: [postcss] Unexpected token, expected "," (41:26)
+6:44:12 PM [vite] Pre-transform error: [postcss] Unexpected token, expected "," (41:26)
+Error in error handler:
+Error: offset is longer than source length! offset 1078 > length 168
+    at numberToPos (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:16851:11)
+    at TransformPluginContext._formatError (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49758:25)
+    at TransformPluginContext.error (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49741:16)
+    at PluginContainer.transform (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49591:13)
+    at async loadAndTransform (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:52409:27)
+    at async Object.warmupRequest (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:63130:9)
+
+6:44:12 PM [vite] Pre-transform error: [postcss] Unexpected token, expected "," (41:26)
+Error in error handler:
+Error: offset is longer than source length! offset 1078 > length 295
+    at numberToPos (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:16851:11)
+    at TransformPluginContext._formatError (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49758:25)
+    at TransformPluginContext.error (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49741:16)
+    at PluginContainer.transform (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49591:13)
+    at async loadAndTransform (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:52409:27)
+    at async Object.warmupRequest (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:63130:9)
+
+6:44:12 PM [vite] Pre-transform error: [postcss] Unexpected token, expected "," (41:26)
+Error in error handler:
+Error: offset is longer than source length! offset 1078 > length 1001
+    at numberToPos (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:16851:11)
+    at TransformPluginContext._formatError (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49758:25)
+    at TransformPluginContext.error (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49741:16)
+    at PluginContainer.transform (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49591:13)
+    at async loadAndTransform (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:52409:27)
+    at async Object.warmupRequest (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:63130:9)
+
+6:44:12 PM [vite] Pre-transform error: [postcss] Unexpected token, expected "," (41:26)
+Error in error handler:
+Error: offset is longer than source length! offset 1078 > length 50
+    at numberToPos (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:16851:11)
+    at TransformPluginContext._formatError (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49758:25)
+    at TransformPluginContext.error (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49741:16)
+    at PluginContainer.transform (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49591:13)
+    at async loadAndTransform (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:52409:27)
+    at async Object.warmupRequest (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:63130:9)
+
+6:44:12 PM [vite] Pre-transform error: [postcss] Unexpected token, expected "," (41:26)
+Error in error handler:
+Error: offset is longer than source length! offset 1078 > length 89
+    at numberToPos (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:16851:11)
+    at TransformPluginContext._formatError (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49758:25)
+    at TransformPluginContext.error (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49741:16)
+    at PluginContainer.transform (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49591:13)
+    at async file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:62468:22
+    at async Promise.all (index 0)
+    at async devHtmlHook (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:62463:3)
+    at async applyHtmlTransforms (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:35486:17)
+    at async viteIndexHtmlMiddleware (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:62531:20)
+
+6:44:12 PM [vite] Internal server error: [postcss] Unexpected token, expected "," (41:26)
+  Plugin: vite:css
+  File: /opt/dex/index.html?html-proxy&direct&index=0.css:undefined:NaN
+      at unexpected (/opt/dex/node_modules/sucrase/dist/parser/traverser/util.js:99:15)
+      at expect (/opt/dex/node_modules/sucrase/dist/parser/traverser/util.js:86:5)
+      at parseObj (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:759:20)
+      at parseExprAtom (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:553:7)
+      at parseExprSubscripts (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:276:20)
+      at parseMaybeUnary (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:257:20)
+      at parseExprOps (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:185:20)
+      at parseMaybeConditional (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:157:20)
+      at baseParseMaybeAssign (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:142:20)
+      at tsParseMaybeAssignWithoutJSX (/opt/dex/node_modules/sucrase/dist/parser/plugins/typescript.js:1580:45)
+      at tsParseMaybeAssign (/opt/dex/node_modules/sucrase/dist/parser/plugins/typescript.js:1548:12)
+      at parseMaybeAssign (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:121:43)
+      at parseObjectProperty (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:851:7)
+      at parseObjPropValue (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:892:5)
+      at parseObj (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:808:5)
+      at parseExprAtom (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:553:7)
+      at parseExprSubscripts (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:276:20)
+      at parseMaybeUnary (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:257:20)
+      at parseExprOps (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:185:20)
+      at parseMaybeConditional (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:157:20)
+      at baseParseMaybeAssign (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:142:20)
+      at tsParseMaybeAssignWithoutJSX (/opt/dex/node_modules/sucrase/dist/parser/plugins/typescript.js:1580:45)
+      at tsParseMaybeAssign (/opt/dex/node_modules/sucrase/dist/parser/plugins/typescript.js:1548:12)
+      at parseMaybeAssign (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:121:43)
+      at parseExportDefaultExpression (/opt/dex/node_modules/sucrase/dist/parser/traverser/statement.js:1024:34)
+      at parseExport (/opt/dex/node_modules/sucrase/dist/parser/traverser/statement.js:988:5)
+      at parseStatementContent (/opt/dex/node_modules/sucrase/dist/parser/traverser/statement.js:200:9)
+      at parseStatement (/opt/dex/node_modules/sucrase/dist/parser/traverser/statement.js:116:3)
+      at parseBlockBody (/opt/dex/node_modules/sucrase/dist/parser/traverser/statement.js:586:5)
+      at parseTopLevel (/opt/dex/node_modules/sucrase/dist/parser/traverser/statement.js:92:3)
+      at parseFile (/opt/dex/node_modules/sucrase/dist/parser/traverser/index.js:17:35)
+      at parse (/opt/dex/node_modules/sucrase/dist/parser/index.js:26:35)
+      at getSucraseContext (/opt/dex/node_modules/sucrase/dist/index.js:95:30)
+      at transform (/opt/dex/node_modules/sucrase/dist/index.js:38:28)
+      at Object.transform (/opt/dex/node_modules/tailwindcss/lib/lib/load-config.js:38:43)
+      at /opt/dex/node_modules/jiti/dist/jiti.js:1:252235
+      at opts.transform.Object.assign.Object.assign.Object.assign.legacy (/opt/dex/node_modules/jiti/dist/jiti.js:1:252056)
+      at transform (/opt/dex/node_modules/jiti/dist/jiti.js:1:252178)
+      at evalModule (/opt/dex/node_modules/jiti/dist/jiti.js:1:255358)
+      at jiti (/opt/dex/node_modules/jiti/dist/jiti.js:1:254371)
+      at /opt/dex/node_modules/tailwindcss/lib/lib/load-config.js:52:30
+      at loadConfig (/opt/dex/node_modules/tailwindcss/lib/lib/load-config.js:54:6)
+      at getTailwindConfig (/opt/dex/node_modules/tailwindcss/lib/lib/setupTrackingContext.js:71:116)
+      at /opt/dex/node_modules/tailwindcss/lib/lib/setupTrackingContext.js:100:92
+      at /opt/dex/node_modules/tailwindcss/lib/processTailwindFeatures.js:46:11
+      at plugins (/opt/dex/node_modules/tailwindcss/lib/plugin.js:38:69)
+      at LazyResult.runOnRoot (/opt/dex/node_modules/vite/node_modules/postcss/lib/lazy-result.js:329:16)
+      at LazyResult.runAsync (/opt/dex/node_modules/vite/node_modules/postcss/lib/lazy-result.js:258:26)
+      at LazyResult.async (/opt/dex/node_modules/vite/node_modules/postcss/lib/lazy-result.js:160:30)
+      at LazyResult.then (/opt/dex/node_modules/vite/node_modules/postcss/lib/lazy-result.js:404:17)
+6:44:12 PM [vite] Pre-transform error: [postcss] Unexpected token, expected "," (41:26)
+6:44:12 PM [vite] Pre-transform error: [postcss] Unexpected token, expected "," (41:26)
+Error in error handler:
+Error: offset is longer than source length! offset 1078 > length 565
+    at numberToPos (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:16851:11)
+    at TransformPluginContext._formatError (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49758:25)
+    at TransformPluginContext.error (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49741:16)
+    at PluginContainer.transform (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49591:13)
+    at async loadAndTransform (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:52409:27)
+
+6:44:12 PM [vite] Pre-transform error: [postcss] Unexpected token, expected "," (41:26)
+6:44:12 PM [vite] Pre-transform error: [postcss] Unexpected token, expected "," (41:26)
+6:44:12 PM [vite] Pre-transform error: [postcss] Unexpected token, expected "," (41:26)
+Error in error handler:
+Error: offset is longer than source length! offset 1078 > length 389
+    at numberToPos (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:16851:11)
+    at TransformPluginContext._formatError (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49758:25)
+    at TransformPluginContext.error (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49741:16)
+    at PluginContainer.transform (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49591:13)
+    at async loadAndTransform (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:52409:27)
+    at async Object.warmupRequest (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:63130:9)
+
+6:44:12 PM [vite] Pre-transform error: [postcss] Unexpected token, expected "," (41:26)
+Error in error handler:
+Error: offset is longer than source length! offset 1078 > length 100
+    at numberToPos (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:16851:11)
+    at TransformPluginContext._formatError (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49758:25)
+    at TransformPluginContext.error (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49741:16)
+    at PluginContainer.transform (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49591:13)
+    at async loadAndTransform (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:52409:27)
+    at async Object.warmupRequest (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:63130:9)
+
+6:44:12 PM [vite] Pre-transform error: [postcss] Unexpected token, expected "," (41:26)
+Error in error handler:
+Error: offset is longer than source length! offset 1078 > length 248
+    at numberToPos (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:16851:11)
+    at TransformPluginContext._formatError (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49758:25)
+    at TransformPluginContext.error (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49741:16)
+    at PluginContainer.transform (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49591:13)
+    at async loadAndTransform (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:52409:27)
+    at async Object.warmupRequest (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:63130:9)
+
+6:44:12 PM [vite] Pre-transform error: [postcss] Unexpected token, expected "," (41:26)
+Error in error handler:
+Error: offset is longer than source length! offset 1078 > length 459
+    at numberToPos (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:16851:11)
+    at TransformPluginContext._formatError (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49758:25)
+    at TransformPluginContext.error (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49741:16)
+    at PluginContainer.transform (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49591:13)
+    at async loadAndTransform (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:52409:27)
+    at async Object.warmupRequest (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:63130:9)
+
+6:44:12 PM [vite] Pre-transform error: [postcss] Unexpected token, expected "," (41:26)
+Error in error handler:
+Error: offset is longer than source length! offset 1078 > length 347
+    at numberToPos (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:16851:11)
+    at TransformPluginContext._formatError (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49758:25)
+    at TransformPluginContext.error (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49741:16)
+    at PluginContainer.transform (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49591:13)
+    at async loadAndTransform (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:52409:27)
+
+6:44:12 PM [vite] Pre-transform error: [postcss] Unexpected token, expected "," (41:26)
+6:44:12 PM [vite] Pre-transform error: [postcss] Unexpected token, expected "," (41:26)
+Error in error handler:
+Error: offset is longer than source length! offset 1078 > length 168
+    at numberToPos (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:16851:11)
+    at TransformPluginContext._formatError (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49758:25)
+    at TransformPluginContext.error (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49741:16)
+    at PluginContainer.transform (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49591:13)
+    at async loadAndTransform (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:52409:27)
+    at async Object.warmupRequest (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:63130:9)
+
+6:44:12 PM [vite] Pre-transform error: [postcss] Unexpected token, expected "," (41:26)
+Error in error handler:
+Error: offset is longer than source length! offset 1078 > length 295
+    at numberToPos (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:16851:11)
+    at TransformPluginContext._formatError (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49758:25)
+    at TransformPluginContext.error (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49741:16)
+    at PluginContainer.transform (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49591:13)
+    at async loadAndTransform (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:52409:27)
+    at async Object.warmupRequest (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:63130:9)
+
+6:44:12 PM [vite] Pre-transform error: [postcss] Unexpected token, expected "," (41:26)
+Error in error handler:
+Error: offset is longer than source length! offset 1078 > length 1001
+    at numberToPos (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:16851:11)
+    at TransformPluginContext._formatError (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49758:25)
+    at TransformPluginContext.error (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49741:16)
+    at PluginContainer.transform (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49591:13)
+    at async loadAndTransform (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:52409:27)
+    at async Object.warmupRequest (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:63130:9)
+
+6:44:12 PM [vite] Pre-transform error: [postcss] Unexpected token, expected "," (41:26)
+Error in error handler:
+Error: offset is longer than source length! offset 1078 > length 50
+    at numberToPos (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:16851:11)
+    at TransformPluginContext._formatError (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49758:25)
+    at TransformPluginContext.error (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49741:16)
+    at PluginContainer.transform (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49591:13)
+    at async loadAndTransform (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:52409:27)
+    at async Object.warmupRequest (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:63130:9)
+
+6:44:12 PM [vite] Pre-transform error: [postcss] Unexpected token, expected "," (41:26)
+Error in error handler:
+Error: offset is longer than source length! offset 1078 > length 89
+    at numberToPos (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:16851:11)
+    at TransformPluginContext._formatError (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49758:25)
+    at TransformPluginContext.error (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49741:16)
+    at PluginContainer.transform (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49591:13)
+    at async file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:62468:22
+    at async Promise.all (index 0)
+    at async devHtmlHook (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:62463:3)
+    at async applyHtmlTransforms (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:35486:17)
+    at async viteIndexHtmlMiddleware (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:62531:20)
+
+6:44:12 PM [vite] Internal server error: [postcss] Unexpected token, expected "," (41:26)
+  Plugin: vite:css
+  File: /opt/dex/index.html?html-proxy&direct&index=0.css:undefined:NaN
+      at unexpected (/opt/dex/node_modules/sucrase/dist/parser/traverser/util.js:99:15)
+      at expect (/opt/dex/node_modules/sucrase/dist/parser/traverser/util.js:86:5)
+      at parseObj (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:759:20)
+      at parseExprAtom (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:553:7)
+      at parseExprSubscripts (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:276:20)
+      at parseMaybeUnary (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:257:20)
+      at parseExprOps (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:185:20)
+      at parseMaybeConditional (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:157:20)
+      at baseParseMaybeAssign (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:142:20)
+      at tsParseMaybeAssignWithoutJSX (/opt/dex/node_modules/sucrase/dist/parser/plugins/typescript.js:1580:45)
+      at tsParseMaybeAssign (/opt/dex/node_modules/sucrase/dist/parser/plugins/typescript.js:1548:12)
+      at parseMaybeAssign (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:121:43)
+      at parseObjectProperty (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:851:7)
+      at parseObjPropValue (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:892:5)
+      at parseObj (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:808:5)
+      at parseExprAtom (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:553:7)
+      at parseExprSubscripts (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:276:20)
+      at parseMaybeUnary (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:257:20)
+      at parseExprOps (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:185:20)
+      at parseMaybeConditional (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:157:20)
+      at baseParseMaybeAssign (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:142:20)
+      at tsParseMaybeAssignWithoutJSX (/opt/dex/node_modules/sucrase/dist/parser/plugins/typescript.js:1580:45)
+      at tsParseMaybeAssign (/opt/dex/node_modules/sucrase/dist/parser/plugins/typescript.js:1548:12)
+      at parseMaybeAssign (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:121:43)
+      at parseExportDefaultExpression (/opt/dex/node_modules/sucrase/dist/parser/traverser/statement.js:1024:34)
+      at parseExport (/opt/dex/node_modules/sucrase/dist/parser/traverser/statement.js:988:5)
+      at parseStatementContent (/opt/dex/node_modules/sucrase/dist/parser/traverser/statement.js:200:9)
+      at parseStatement (/opt/dex/node_modules/sucrase/dist/parser/traverser/statement.js:116:3)
+      at parseBlockBody (/opt/dex/node_modules/sucrase/dist/parser/traverser/statement.js:586:5)
+      at parseTopLevel (/opt/dex/node_modules/sucrase/dist/parser/traverser/statement.js:92:3)
+      at parseFile (/opt/dex/node_modules/sucrase/dist/parser/traverser/index.js:17:35)
+      at parse (/opt/dex/node_modules/sucrase/dist/parser/index.js:26:35)
+      at getSucraseContext (/opt/dex/node_modules/sucrase/dist/index.js:95:30)
+      at transform (/opt/dex/node_modules/sucrase/dist/index.js:38:28)
+      at Object.transform (/opt/dex/node_modules/tailwindcss/lib/lib/load-config.js:38:43)
+      at /opt/dex/node_modules/jiti/dist/jiti.js:1:252235
+      at opts.transform.Object.assign.Object.assign.Object.assign.legacy (/opt/dex/node_modules/jiti/dist/jiti.js:1:252056)
+      at transform (/opt/dex/node_modules/jiti/dist/jiti.js:1:252178)
+      at evalModule (/opt/dex/node_modules/jiti/dist/jiti.js:1:255358)
+      at jiti (/opt/dex/node_modules/jiti/dist/jiti.js:1:254371)
+      at /opt/dex/node_modules/tailwindcss/lib/lib/load-config.js:52:30
+      at loadConfig (/opt/dex/node_modules/tailwindcss/lib/lib/load-config.js:54:6)
+      at getTailwindConfig (/opt/dex/node_modules/tailwindcss/lib/lib/setupTrackingContext.js:71:116)
+      at /opt/dex/node_modules/tailwindcss/lib/lib/setupTrackingContext.js:100:92
+      at /opt/dex/node_modules/tailwindcss/lib/processTailwindFeatures.js:46:11
+      at plugins (/opt/dex/node_modules/tailwindcss/lib/plugin.js:38:69)
+      at LazyResult.runOnRoot (/opt/dex/node_modules/vite/node_modules/postcss/lib/lazy-result.js:329:16)
+      at LazyResult.runAsync (/opt/dex/node_modules/vite/node_modules/postcss/lib/lazy-result.js:258:26)
+      at LazyResult.async (/opt/dex/node_modules/vite/node_modules/postcss/lib/lazy-result.js:160:30)
+      at LazyResult.then (/opt/dex/node_modules/vite/node_modules/postcss/lib/lazy-result.js:404:17)
+6:44:22 PM [vite] page reload tailwind.config.ts
+6:44:22 PM [vite] page reload tailwind.config.ts
+6:44:22 PM [vite] page reload tailwind.config.ts
+6:46:12 PM [vite] page reload tailwind.config.ts
+6:46:12 PM [vite] page reload tailwind.config.ts
+6:46:13 PM [vite] page reload tailwind.config.ts
+Error in error handler:
+Error: offset is longer than source length! offset 1078 > length 89
+    at numberToPos (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:16851:11)
+    at TransformPluginContext._formatError (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49758:25)
+    at TransformPluginContext.error (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49741:16)
+    at PluginContainer.transform (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49591:13)
+    at async file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:62468:22
+    at async Promise.all (index 0)
+    at async devHtmlHook (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:62463:3)
+    at async applyHtmlTransforms (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:35486:17)
+    at async viteIndexHtmlMiddleware (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:62531:20)
+
+6:46:13 PM [vite] Internal server error: [postcss] Unexpected token, expected "," (41:26)
+  Plugin: vite:css
+  File: /opt/dex/index.html?html-proxy&direct&index=0.css:undefined:NaN
+      at unexpected (/opt/dex/node_modules/sucrase/dist/parser/traverser/util.js:99:15)
+      at expect (/opt/dex/node_modules/sucrase/dist/parser/traverser/util.js:86:5)
+      at parseObj (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:759:20)
+      at parseExprAtom (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:553:7)
+      at parseExprSubscripts (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:276:20)
+      at parseMaybeUnary (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:257:20)
+      at parseExprOps (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:185:20)
+      at parseMaybeConditional (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:157:20)
+      at baseParseMaybeAssign (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:142:20)
+      at tsParseMaybeAssignWithoutJSX (/opt/dex/node_modules/sucrase/dist/parser/plugins/typescript.js:1580:45)
+      at tsParseMaybeAssign (/opt/dex/node_modules/sucrase/dist/parser/plugins/typescript.js:1548:12)
+      at parseMaybeAssign (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:121:43)
+      at parseObjectProperty (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:851:7)
+      at parseObjPropValue (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:892:5)
+      at parseObj (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:808:5)
+      at parseExprAtom (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:553:7)
+      at parseExprSubscripts (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:276:20)
+      at parseMaybeUnary (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:257:20)
+      at parseExprOps (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:185:20)
+      at parseMaybeConditional (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:157:20)
+      at baseParseMaybeAssign (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:142:20)
+      at tsParseMaybeAssignWithoutJSX (/opt/dex/node_modules/sucrase/dist/parser/plugins/typescript.js:1580:45)
+      at tsParseMaybeAssign (/opt/dex/node_modules/sucrase/dist/parser/plugins/typescript.js:1548:12)
+      at parseMaybeAssign (/opt/dex/node_modules/sucrase/dist/parser/traverser/expression.js:121:43)
+      at parseExportDefaultExpression (/opt/dex/node_modules/sucrase/dist/parser/traverser/statement.js:1024:34)
+      at parseExport (/opt/dex/node_modules/sucrase/dist/parser/traverser/statement.js:988:5)
+      at parseStatementContent (/opt/dex/node_modules/sucrase/dist/parser/traverser/statement.js:200:9)
+      at parseStatement (/opt/dex/node_modules/sucrase/dist/parser/traverser/statement.js:116:3)
+      at parseBlockBody (/opt/dex/node_modules/sucrase/dist/parser/traverser/statement.js:586:5)
+      at parseTopLevel (/opt/dex/node_modules/sucrase/dist/parser/traverser/statement.js:92:3)
+      at parseFile (/opt/dex/node_modules/sucrase/dist/parser/traverser/index.js:17:35)
+      at parse (/opt/dex/node_modules/sucrase/dist/parser/index.js:26:35)
+      at getSucraseContext (/opt/dex/node_modules/sucrase/dist/index.js:95:30)
+      at transform (/opt/dex/node_modules/sucrase/dist/index.js:38:28)
+      at Object.transform (/opt/dex/node_modules/tailwindcss/lib/lib/load-config.js:38:43)
+      at /opt/dex/node_modules/jiti/dist/jiti.js:1:252235
+      at opts.transform.Object.assign.Object.assign.Object.assign.legacy (/opt/dex/node_modules/jiti/dist/jiti.js:1:252056)
+      at transform (/opt/dex/node_modules/jiti/dist/jiti.js:1:252178)
+      at evalModule (/opt/dex/node_modules/jiti/dist/jiti.js:1:255358)
+      at jiti (/opt/dex/node_modules/jiti/dist/jiti.js:1:254371)
+      at /opt/dex/node_modules/tailwindcss/lib/lib/load-config.js:52:30
+      at loadConfig (/opt/dex/node_modules/tailwindcss/lib/lib/load-config.js:54:6)
+      at getTailwindConfig (/opt/dex/node_modules/tailwindcss/lib/lib/setupTrackingContext.js:71:116)
+      at /opt/dex/node_modules/tailwindcss/lib/lib/setupTrackingContext.js:100:92
+      at /opt/dex/node_modules/tailwindcss/lib/processTailwindFeatures.js:46:11
+      at plugins (/opt/dex/node_modules/tailwindcss/lib/plugin.js:38:69)
+      at LazyResult.runOnRoot (/opt/dex/node_modules/vite/node_modules/postcss/lib/lazy-result.js:329:16)
+      at LazyResult.runAsync (/opt/dex/node_modules/vite/node_modules/postcss/lib/lazy-result.js:258:26)
+      at LazyResult.async (/opt/dex/node_modules/vite/node_modules/postcss/lib/lazy-result.js:160:30)
+      at LazyResult.then (/opt/dex/node_modules/vite/node_modules/postcss/lib/lazy-result.js:404:17)
+6:46:13 PM [vite] Pre-transform error: [postcss] Unexpected token, expected "," (41:26)
+6:46:13 PM [vite] Pre-transform error: [postcss] Unexpected token, expected "," (41:26)
+Error in error handler:
+Error: offset is longer than source length! offset 1078 > length 565
+    at numberToPos (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:16851:11)
+    at TransformPluginContext._formatError (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49758:25)
+    at TransformPluginContext.error (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49741:16)
+    at PluginContainer.transform (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49591:13)
+    at async loadAndTransform (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:52409:27)
+
+6:46:13 PM [vite] Pre-transform error: [postcss] Unexpected token, expected "," (41:26)
+6:46:13 PM [vite] Pre-transform error: [postcss] Unexpected token, expected "," (41:26)
+6:46:13 PM [vite] Pre-transform error: [postcss] Unexpected token, expected "," (41:26)
+Error in error handler:
+Error: offset is longer than source length! offset 1078 > length 389
+    at numberToPos (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:16851:11)
+    at TransformPluginContext._formatError (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49758:25)
+    at TransformPluginContext.error (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49741:16)
+    at PluginContainer.transform (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49591:13)
+    at async loadAndTransform (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:52409:27)
+    at async Object.warmupRequest (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:63130:9)
+
+6:46:13 PM [vite] Pre-transform error: [postcss] Unexpected token, expected "," (41:26)
+Error in error handler:
+Error: offset is longer than source length! offset 1078 > length 100
+    at numberToPos (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:16851:11)
+    at TransformPluginContext._formatError (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49758:25)
+    at TransformPluginContext.error (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49741:16)
+    at PluginContainer.transform (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49591:13)
+    at async loadAndTransform (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:52409:27)
+    at async Object.warmupRequest (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:63130:9)
+
+6:46:13 PM [vite] Pre-transform error: [postcss] Unexpected token, expected "," (41:26)
+Error in error handler:
+Error: offset is longer than source length! offset 1078 > length 248
+    at numberToPos (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:16851:11)
+    at TransformPluginContext._formatError (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49758:25)
+    at TransformPluginContext.error (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49741:16)
+    at PluginContainer.transform (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49591:13)
+    at async loadAndTransform (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:52409:27)
+    at async Object.warmupRequest (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:63130:9)
+
+6:46:13 PM [vite] Pre-transform error: [postcss] Unexpected token, expected "," (41:26)
+Error in error handler:
+Error: offset is longer than source length! offset 1078 > length 459
+    at numberToPos (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:16851:11)
+    at TransformPluginContext._formatError (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49758:25)
+    at TransformPluginContext.error (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49741:16)
+    at PluginContainer.transform (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49591:13)
+    at async loadAndTransform (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:52409:27)
+    at async Object.warmupRequest (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:63130:9)
+
+6:46:13 PM [vite] Pre-transform error: [postcss] Unexpected token, expected "," (41:26)
+Error in error handler:
+Error: offset is longer than source length! offset 1078 > length 347
+    at numberToPos (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:16851:11)
+    at TransformPluginContext._formatError (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49758:25)
+    at TransformPluginContext.error (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49741:16)
+    at PluginContainer.transform (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49591:13)
+    at async loadAndTransform (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:52409:27)
+
+6:46:13 PM [vite] Pre-transform error: [postcss] Unexpected token, expected "," (41:26)
+6:46:13 PM [vite] Pre-transform error: [postcss] Unexpected token, expected "," (41:26)
+Error in error handler:
+Error: offset is longer than source length! offset 1078 > length 168
+    at numberToPos (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:16851:11)
+    at TransformPluginContext._formatError (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49758:25)
+    at TransformPluginContext.error (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49741:16)
+    at PluginContainer.transform (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49591:13)
+    at async loadAndTransform (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:52409:27)
+    at async Object.warmupRequest (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:63130:9)
+
+6:46:13 PM [vite] Pre-transform error: [postcss] Unexpected token, expected "," (41:26)
+Error in error handler:
+Error: offset is longer than source length! offset 1078 > length 295
+    at numberToPos (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:16851:11)
+    at TransformPluginContext._formatError (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49758:25)
+    at TransformPluginContext.error (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49741:16)
+    at PluginContainer.transform (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49591:13)
+    at async loadAndTransform (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:52409:27)
+    at async Object.warmupRequest (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:63130:9)
+
+6:46:13 PM [vite] Pre-transform error: [postcss] Unexpected token, expected "," (41:26)
+Error in error handler:
+Error: offset is longer than source length! offset 1078 > length 1001
+    at numberToPos (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:16851:11)
+    at TransformPluginContext._formatError (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49758:25)
+    at TransformPluginContext.error (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49741:16)
+    at PluginContainer.transform (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49591:13)
+    at async loadAndTransform (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:52409:27)
+    at async Object.warmupRequest (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:63130:9)
+
+6:46:13 PM [vite] Pre-transform error: [postcss] Unexpected token, expected "," (41:26)
+Error in error handler:
+Error: offset is longer than source length! offset 1078 > length 50
+    at numberToPos (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:16851:11)
+    at TransformPluginContext._formatError (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49758:25)
+    at TransformPluginContext.error (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49741:16)
+    at PluginContainer.transform (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:49591:13)
+    at async loadAndTransform (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:52409:27)
+    at async Object.warmupRequest (file:///opt/dex/node_modules/vite/dist/node/chunks/dep-C1-ZB6nQ.js:63130:9)
+
+6:46:13 PM [vite] Pre-transform error: [postcss] Unexpected token, expected "," (41:26)
+6:46:22 PM [vite] page reload tailwind.config.ts
+6:46:22 PM [vite] page reload tailwind.config.ts
+6:46:23 PM [vite] page reload tailwind.config.ts
+6:50:34 PM [vite] hmr update /src/index.css, /src/components/strategies/create/CreateStrategyCTA.tsx, /src/components/strategies/create/CreateStrategyOption.tsx, /src/components/simulator/mobile-placeholder.tsx, /src/components/simulator/result/SimResultChart.tsx, /src/components/simulator/result/SimResultSummary.tsx, /src/components/common/button/index.tsx, /src/components/simulator/input/SimInputChart.tsx, /src/components/strategies/overview/strategyBlock/StrategyBlockManage.tsx, /src/components/simulator/result/SimResultChartDownload.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmWithdraw.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmDelete.tsx, /src/components/core/menu/mainMenu/MainMenuRightWallet.tsx, /src/components/common/walletConnect/index.tsx
+6:50:34 PM [vite] hmr update /src/index.css, /src/components/strategies/create/CreateStrategyCTA.tsx, /src/components/strategies/create/CreateStrategyOption.tsx, /src/components/simulator/mobile-placeholder.tsx, /src/components/simulator/result/SimResultChart.tsx, /src/components/simulator/result/SimResultSummary.tsx, /src/components/common/button/index.tsx, /src/components/simulator/input/SimInputChart.tsx, /src/components/strategies/overview/strategyBlock/StrategyBlockManage.tsx, /src/components/simulator/result/SimResultChartDownload.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmWithdraw.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmDelete.tsx, /src/components/core/menu/mainMenu/MainMenuRightWallet.tsx, /src/components/common/walletConnect/index.tsx
+6:50:35 PM [vite] hmr update /src/index.css, /src/components/strategies/create/CreateStrategyCTA.tsx, /src/components/strategies/create/CreateStrategyOption.tsx, /src/components/simulator/mobile-placeholder.tsx, /src/components/simulator/result/SimResultChart.tsx, /src/components/simulator/result/SimResultSummary.tsx, /src/components/common/button/index.tsx, /src/components/simulator/input/SimInputChart.tsx, /src/components/strategies/overview/strategyBlock/StrategyBlockManage.tsx, /src/components/simulator/result/SimResultChartDownload.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmWithdraw.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmDelete.tsx, /src/components/core/menu/mainMenu/MainMenuRightWallet.tsx, /src/components/common/walletConnect/index.tsx
+6:53:43 PM [vite] hmr update /src/index.css, /src/components/strategies/create/CreateStrategyCTA.tsx, /src/components/strategies/create/CreateStrategyOption.tsx, /src/components/simulator/mobile-placeholder.tsx, /src/components/simulator/result/SimResultChart.tsx, /src/components/simulator/result/SimResultSummary.tsx, /src/components/common/button/index.tsx, /src/components/simulator/input/SimInputChart.tsx, /src/components/strategies/overview/strategyBlock/StrategyBlockManage.tsx, /src/components/simulator/result/SimResultChartDownload.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmWithdraw.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmDelete.tsx, /src/components/core/menu/mainMenu/MainMenuRightWallet.tsx, /src/components/common/walletConnect/index.tsx
+6:53:43 PM [vite] hmr update /src/index.css, /src/components/strategies/create/CreateStrategyCTA.tsx, /src/components/strategies/create/CreateStrategyOption.tsx, /src/components/simulator/mobile-placeholder.tsx, /src/components/simulator/result/SimResultChart.tsx, /src/components/simulator/result/SimResultSummary.tsx, /src/components/common/button/index.tsx, /src/components/simulator/input/SimInputChart.tsx, /src/components/strategies/overview/strategyBlock/StrategyBlockManage.tsx, /src/components/simulator/result/SimResultChartDownload.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmWithdraw.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmDelete.tsx, /src/components/core/menu/mainMenu/MainMenuRightWallet.tsx, /src/components/common/walletConnect/index.tsx
+6:53:43 PM [vite] hmr update /src/index.css, /src/components/strategies/create/CreateStrategyCTA.tsx, /src/components/strategies/create/CreateStrategyOption.tsx, /src/components/simulator/mobile-placeholder.tsx, /src/components/simulator/result/SimResultChart.tsx, /src/components/simulator/result/SimResultSummary.tsx, /src/components/common/button/index.tsx, /src/components/simulator/input/SimInputChart.tsx, /src/components/strategies/overview/strategyBlock/StrategyBlockManage.tsx, /src/components/simulator/result/SimResultChartDownload.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmWithdraw.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmDelete.tsx, /src/components/core/menu/mainMenu/MainMenuRightWallet.tsx, /src/components/common/walletConnect/index.tsx
+6:53:59 PM [vite] page reload tailwind.config.ts
+
+warn - The `content` option in your Tailwind CSS configuration is missing or empty.
+warn - Configure your content sources or your generated CSS will be missing styles.
+warn - https://tailwindcss.com/docs/content-configuration
+6:54:00 PM [vite] page reload tailwind.config.ts
+6:54:54 PM [vite] hmr update /src/index.css, /src/components/strategies/create/CreateStrategyCTA.tsx, /src/components/strategies/create/CreateStrategyOption.tsx, /src/components/simulator/mobile-placeholder.tsx, /src/components/simulator/result/SimResultChart.tsx, /src/components/simulator/result/SimResultSummary.tsx, /src/components/common/button/index.tsx, /src/components/simulator/input/SimInputChart.tsx, /src/components/strategies/overview/strategyBlock/StrategyBlockManage.tsx, /src/components/simulator/result/SimResultChartDownload.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmWithdraw.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmDelete.tsx, /src/components/core/menu/mainMenu/MainMenuRightWallet.tsx, /src/components/common/walletConnect/index.tsx
+6:54:54 PM [vite] hmr update /src/index.css, /src/components/strategies/create/CreateStrategyCTA.tsx, /src/components/strategies/create/CreateStrategyOption.tsx, /src/components/simulator/mobile-placeholder.tsx, /src/components/simulator/result/SimResultChart.tsx, /src/components/simulator/result/SimResultSummary.tsx, /src/components/common/button/index.tsx, /src/components/simulator/input/SimInputChart.tsx, /src/components/strategies/overview/strategyBlock/StrategyBlockManage.tsx, /src/components/simulator/result/SimResultChartDownload.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmWithdraw.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmDelete.tsx, /src/components/core/menu/mainMenu/MainMenuRightWallet.tsx, /src/components/common/walletConnect/index.tsx
+6:54:55 PM [vite] hmr update /src/index.css, /src/components/strategies/create/CreateStrategyCTA.tsx, /src/components/strategies/create/CreateStrategyOption.tsx, /src/components/simulator/mobile-placeholder.tsx, /src/components/simulator/result/SimResultChart.tsx, /src/components/simulator/result/SimResultSummary.tsx, /src/components/common/button/index.tsx, /src/components/simulator/input/SimInputChart.tsx, /src/components/strategies/overview/strategyBlock/StrategyBlockManage.tsx, /src/components/simulator/result/SimResultChartDownload.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmWithdraw.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmDelete.tsx, /src/components/core/menu/mainMenu/MainMenuRightWallet.tsx, /src/components/common/walletConnect/index.tsx
+6:58:30 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+6:58:30 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+6:58:30 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+6:59:33 PM [vite] page reload src/config/celo/common.ts
+6:59:33 PM [vite] page reload src/config/celo/development.ts
+6:59:33 PM [vite] page reload src/config/celo/production.ts
+6:59:33 PM [vite] page reload src/config/ethereum/common.ts
+6:59:33 PM [vite] page reload src/config/ethereum/development.ts
+6:59:33 PM [vite] page reload src/config/ethereum/production.ts
+6:59:33 PM [vite] page reload src/config/sei/common.ts
+6:59:33 PM [vite] page reload src/config/sei/development.ts
+6:59:33 PM [vite] page reload src/config/sei/production.ts
+6:59:33 PM [vite] page reload src/config/sei/types.ts
+6:59:33 PM [vite] page reload src/config/sei/utils.ts
+6:59:33 PM [vite] page reload src/config/types.ts
+6:59:33 PM [vite] page reload src/config/utils.ts
+6:59:33 PM [vite] page reload src/config/index.ts
+6:59:34 PM [vite] Pre-transform error: Failed to load url /src/config/index.ts (resolved id: /opt/dex/src/config/index.ts) in /opt/dex/src/init-sentry.ts. Does the file exist?
+6:59:34 PM [vite] Pre-transform error: Failed to load url /src/config/index.ts (resolved id: /opt/dex/src/config/index.ts) in /opt/dex/src/init-sentry.ts. Does the file exist?
+6:59:34 PM [vite] Pre-transform error: Failed to load url /src/config/index.ts (resolved id: /opt/dex/src/config/index.ts) in /opt/dex/src/init-sentry.ts. Does the file exist?
+6:59:34 PM [vite] Pre-transform error: Failed to load url /src/config/index.ts (resolved id: /opt/dex/src/config/index.ts) in /opt/dex/src/init-sentry.ts. Does the file exist?
+6:59:34 PM [vite] Pre-transform error: Failed to load url /src/config/index.ts (resolved id: /opt/dex/src/config/index.ts) in /opt/dex/src/init-sentry.ts. Does the file exist?
+6:59:34 PM [vite] Pre-transform error: Failed to load url /src/config/index.ts (resolved id: /opt/dex/src/config/index.ts) in /opt/dex/src/init-sentry.ts. Does the file exist?
+6:59:34 PM [vite] Pre-transform error: Failed to load url /src/config/index.ts (resolved id: /opt/dex/src/config/index.ts) in /opt/dex/src/init-sentry.ts. Does the file exist?
+6:59:34 PM [vite] Pre-transform error: Failed to load url /src/config/index.ts (resolved id: /opt/dex/src/config/index.ts) in /opt/dex/src/init-sentry.ts. Does the file exist?
+6:59:34 PM [vite] Pre-transform error: Failed to load url /src/config/index.ts (resolved id: /opt/dex/src/config/index.ts) in /opt/dex/src/init-sentry.ts. Does the file exist?
+6:59:34 PM [vite] Pre-transform error: Failed to load url /src/config/index.ts (resolved id: /opt/dex/src/config/index.ts) in /opt/dex/src/init-sentry.ts. Does the file exist?
+6:59:34 PM [vite] Pre-transform error: Failed to load url /src/config/index.ts (resolved id: /opt/dex/src/config/index.ts) in /opt/dex/src/init-sentry.ts. Does the file exist?
+6:59:34 PM [vite] Pre-transform error: Failed to load url /src/config/index.ts (resolved id: /opt/dex/src/config/index.ts) in /opt/dex/src/init-sentry.ts. Does the file exist?
+6:59:34 PM [vite] Pre-transform error: Failed to load url /src/config/index.ts (resolved id: /opt/dex/src/config/index.ts) in /opt/dex/src/init-sentry.ts. Does the file exist?
+6:59:34 PM [vite] Pre-transform error: Failed to load url /src/config/index.ts (resolved id: /opt/dex/src/config/index.ts) in /opt/dex/src/init-sentry.ts. Does the file exist?
+6:59:34 PM [vite] Pre-transform error: Failed to load url /src/config/index.ts (resolved id: /opt/dex/src/config/index.ts) in /opt/dex/src/init-sentry.ts. Does the file exist?
+6:59:34 PM [vite] Pre-transform error: Failed to load url /src/config/index.ts (resolved id: /opt/dex/src/config/index.ts) in /opt/dex/src/init-sentry.ts. Does the file exist?
+6:59:34 PM [vite] Pre-transform error: Failed to load url /src/config/index.ts (resolved id: /opt/dex/src/config/index.ts) in /opt/dex/src/init-sentry.ts. Does the file exist?
+6:59:34 PM [vite] Pre-transform error: Failed to load url /src/config/index.ts (resolved id: /opt/dex/src/config/index.ts) in /opt/dex/src/init-sentry.ts. Does the file exist?
+6:59:34 PM [vite] Pre-transform error: Failed to load url /src/config/index.ts (resolved id: /opt/dex/src/config/index.ts) in /opt/dex/src/init-sentry.ts. Does the file exist?
+6:59:34 PM [vite] Pre-transform error: Failed to load url /src/config/index.ts (resolved id: /opt/dex/src/config/index.ts) in /opt/dex/src/init-sentry.ts. Does the file exist?
+6:59:34 PM [vite] Pre-transform error: Failed to load url /src/config/index.ts (resolved id: /opt/dex/src/config/index.ts) in /opt/dex/src/init-sentry.ts. Does the file exist?
+6:59:34 PM [vite] Pre-transform error: Failed to load url /src/config/index.ts (resolved id: /opt/dex/src/config/index.ts) in /opt/dex/src/init-sentry.ts. Does the file exist?
+6:59:34 PM [vite] Pre-transform error: Failed to load url /src/config/index.ts (resolved id: /opt/dex/src/config/index.ts) in /opt/dex/src/init-sentry.ts. Does the file exist?
+6:59:34 PM [vite] Pre-transform error: Failed to load url /src/config/index.ts (resolved id: /opt/dex/src/config/index.ts) in /opt/dex/src/init-sentry.ts. Does the file exist?
+6:59:34 PM [vite] Pre-transform error: Failed to load url /src/config/index.ts (resolved id: /opt/dex/src/config/index.ts) in /opt/dex/src/init-sentry.ts. Does the file exist?
+6:59:34 PM [vite] Pre-transform error: Failed to load url /src/config/index.ts (resolved id: /opt/dex/src/config/index.ts) in /opt/dex/src/init-sentry.ts. Does the file exist?
+6:59:34 PM [vite] Pre-transform error: Failed to load url /src/config/index.ts (resolved id: /opt/dex/src/config/index.ts) in /opt/dex/src/init-sentry.ts. Does the file exist?
+6:59:34 PM [vite] Pre-transform error: Failed to load url /src/config/index.ts (resolved id: /opt/dex/src/config/index.ts) in /opt/dex/src/init-sentry.ts. Does the file exist?
+6:59:34 PM [vite] Pre-transform error: Failed to load url /src/config/index.ts (resolved id: /opt/dex/src/config/index.ts) in /opt/dex/src/init-sentry.ts. Does the file exist?
+6:59:34 PM [vite] Pre-transform error: Failed to load url /src/config/index.ts (resolved id: /opt/dex/src/config/index.ts) in /opt/dex/src/init-sentry.ts. Does the file exist?
+6:59:34 PM [vite] Pre-transform error: Failed to load url /src/config/index.ts (resolved id: /opt/dex/src/config/index.ts) in /opt/dex/src/init-sentry.ts. Does the file exist?
+6:59:34 PM [vite] Pre-transform error: Failed to load url /src/config/index.ts (resolved id: /opt/dex/src/config/index.ts) in /opt/dex/src/init-sentry.ts. Does the file exist?
+6:59:34 PM [vite] Pre-transform error: Failed to load url /src/config/index.ts (resolved id: /opt/dex/src/config/index.ts) in /opt/dex/src/init-sentry.ts. Does the file exist?
+6:59:34 PM [vite] Pre-transform error: Failed to load url /src/config/index.ts (resolved id: /opt/dex/src/config/index.ts) in /opt/dex/src/init-sentry.ts. Does the file exist?
+6:59:34 PM [vite] Pre-transform error: Failed to load url /src/config/index.ts (resolved id: /opt/dex/src/config/index.ts) in /opt/dex/src/init-sentry.ts. Does the file exist?
+6:59:34 PM [vite] page reload src/config/index.ts
+6:59:34 PM [vite] page reload src/config/types.ts
+6:59:34 PM [vite] page reload src/config/utils.ts
+6:59:34 PM [vite] page reload src/config/celo/common.ts
+6:59:34 PM [vite] page reload src/config/celo/development.ts
+6:59:34 PM [vite] page reload src/config/celo/production.ts
+6:59:34 PM [vite] page reload src/config/ethereum/common.ts
+6:59:34 PM [vite] page reload src/config/ethereum/development.ts
+6:59:34 PM [vite] page reload src/config/ethereum/production.ts
+6:59:34 PM [vite] page reload src/config/sei/common.ts
+6:59:34 PM [vite] page reload src/config/sei/development.ts
+6:59:34 PM [vite] page reload src/config/sei/production.ts
+6:59:34 PM [vite] page reload src/config/sei/types.ts
+6:59:34 PM [vite] page reload src/config/sei/utils.ts
+7:00:45 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+7:00:46 PM [vite] hmr update /src/index.css, /src/App.tsx
+7:00:46 PM [vite] hmr update /src/index.css, /src/App.tsx
+7:00:47 PM [vite] hmr invalidate /src/components/common/Footer/Footer.tsx Could not Fast Refresh (export removed)
+7:00:47 PM [vite] hmr update /src/index.css, /src/App.tsx
+7:01:40 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+7:01:40 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+7:01:40 PM [vite] Internal server error: /opt/dex/src/components/common/Footer/Footer.tsx: Unterminated JSX contents. (17:13)
+
+  15 |         <LogoCarbonDeFi className="w-[100px] text-white" />
+  16 |       </NewTabLink>
+> 17 |     </footer>
+     |              ^
+  18 |   );
+  19 | };
+  20 |
+  Plugin: vite:react-babel
+  File: /opt/dex/src/components/common/Footer/Footer.tsx:17:13
+  15 |          <LogoCarbonDeFi className="w-[100px] text-white" />
+  16 |        </NewTabLink>
+  17 |      </footer>
+     |               ^
+  18 |    );
+  19 |  };
+      at constructor (/opt/dex/node_modules/@babel/parser/lib/index.js:351:19)
+      at TypeScriptParserMixin.raise (/opt/dex/node_modules/@babel/parser/lib/index.js:3233:19)
+      at TypeScriptParserMixin.jsxReadToken (/opt/dex/node_modules/@babel/parser/lib/index.js:6465:20)
+      at TypeScriptParserMixin.getTokenFromCode (/opt/dex/node_modules/@babel/parser/lib/index.js:6791:12)
+      at TypeScriptParserMixin.getTokenFromCode (/opt/dex/node_modules/@babel/parser/lib/index.js:9576:11)
+      at TypeScriptParserMixin.nextToken (/opt/dex/node_modules/@babel/parser/lib/index.js:2416:10)
+      at TypeScriptParserMixin.next (/opt/dex/node_modules/@babel/parser/lib/index.js:2329:10)
+      at TypeScriptParserMixin.eat (/opt/dex/node_modules/@babel/parser/lib/index.js:2333:12)
+      at TypeScriptParserMixin.expect (/opt/dex/node_modules/@babel/parser/lib/index.js:3557:10)
+      at TypeScriptParserMixin.jsxParseClosingElementAt (/opt/dex/node_modules/@babel/parser/lib/index.js:6697:10)
+      at TypeScriptParserMixin.jsxParseElementAt (/opt/dex/node_modules/@babel/parser/lib/index.js:6712:37)
+      at TypeScriptParserMixin.jsxParseElementAt (/opt/dex/node_modules/@babel/parser/lib/index.js:6715:32)
+      at TypeScriptParserMixin.jsxParseElementAt (/opt/dex/node_modules/@babel/parser/lib/index.js:6715:32)
+      at TypeScriptParserMixin.jsxParseElement (/opt/dex/node_modules/@babel/parser/lib/index.js:6766:17)
+      at TypeScriptParserMixin.parseExprAtom (/opt/dex/node_modules/@babel/parser/lib/index.js:6776:19)
+      at TypeScriptParserMixin.parseExprSubscripts (/opt/dex/node_modules/@babel/parser/lib/index.js:10568:23)
+      at TypeScriptParserMixin.parseUpdate (/opt/dex/node_modules/@babel/parser/lib/index.js:10551:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/opt/dex/node_modules/@babel/parser/lib/index.js:10529:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/opt/dex/node_modules/@babel/parser/lib/index.js:9430:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/opt/dex/node_modules/@babel/parser/lib/index.js:10383:61)
+      at TypeScriptParserMixin.parseExprOps (/opt/dex/node_modules/@babel/parser/lib/index.js:10388:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/opt/dex/node_modules/@babel/parser/lib/index.js:10365:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/opt/dex/node_modules/@babel/parser/lib/index.js:10326:21)
+      at /opt/dex/node_modules/@babel/parser/lib/index.js:9368:39
+      at TypeScriptParserMixin.tryParse (/opt/dex/node_modules/@babel/parser/lib/index.js:3564:20)
+      at TypeScriptParserMixin.parseMaybeAssign (/opt/dex/node_modules/@babel/parser/lib/index.js:9368:18)
+      at /opt/dex/node_modules/@babel/parser/lib/index.js:10296:39
+      at TypeScriptParserMixin.allowInAnd (/opt/dex/node_modules/@babel/parser/lib/index.js:11920:12)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (/opt/dex/node_modules/@babel/parser/lib/index.js:10296:17)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (/opt/dex/node_modules/@babel/parser/lib/index.js:11177:28)
+      at TypeScriptParserMixin.parseExprAtom (/opt/dex/node_modules/@babel/parser/lib/index.js:10835:23)
+      at TypeScriptParserMixin.parseExprAtom (/opt/dex/node_modules/@babel/parser/lib/index.js:6781:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/opt/dex/node_modules/@babel/parser/lib/index.js:10568:23)
+      at TypeScriptParserMixin.parseUpdate (/opt/dex/node_modules/@babel/parser/lib/index.js:10551:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/opt/dex/node_modules/@babel/parser/lib/index.js:10529:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/opt/dex/node_modules/@babel/parser/lib/index.js:9430:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/opt/dex/node_modules/@babel/parser/lib/index.js:10383:61)
+      at TypeScriptParserMixin.parseExprOps (/opt/dex/node_modules/@babel/parser/lib/index.js:10388:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/opt/dex/node_modules/@babel/parser/lib/index.js:10365:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/opt/dex/node_modules/@babel/parser/lib/index.js:10326:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/opt/dex/node_modules/@babel/parser/lib/index.js:9379:20)
+      at TypeScriptParserMixin.parseExpressionBase (/opt/dex/node_modules/@babel/parser/lib/index.js:10280:23)
+      at /opt/dex/node_modules/@babel/parser/lib/index.js:10276:39
+      at TypeScriptParserMixin.
+... and 6 lines more
+7:01:40 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+7:01:40 PM [vite] Internal server error: /opt/dex/src/components/common/Footer/Footer.tsx: Unterminated JSX contents. (17:13)
+
+  15 |         <LogoCarbonDeFi className="w-[100px] text-white" />
+  16 |       </NewTabLink>
+> 17 |     </footer>
+     |              ^
+  18 |   );
+  19 | };
+  20 |
+  Plugin: vite:react-babel
+  File: /opt/dex/src/components/common/Footer/Footer.tsx:17:13
+  15 |          <LogoCarbonDeFi className="w-[100px] text-white" />
+  16 |        </NewTabLink>
+  17 |      </footer>
+     |               ^
+  18 |    );
+  19 |  };
+      at constructor (/opt/dex/node_modules/@babel/parser/lib/index.js:351:19)
+      at TypeScriptParserMixin.raise (/opt/dex/node_modules/@babel/parser/lib/index.js:3233:19)
+      at TypeScriptParserMixin.jsxReadToken (/opt/dex/node_modules/@babel/parser/lib/index.js:6465:20)
+      at TypeScriptParserMixin.getTokenFromCode (/opt/dex/node_modules/@babel/parser/lib/index.js:6791:12)
+      at TypeScriptParserMixin.getTokenFromCode (/opt/dex/node_modules/@babel/parser/lib/index.js:9576:11)
+      at TypeScriptParserMixin.nextToken (/opt/dex/node_modules/@babel/parser/lib/index.js:2416:10)
+      at TypeScriptParserMixin.next (/opt/dex/node_modules/@babel/parser/lib/index.js:2329:10)
+      at TypeScriptParserMixin.eat (/opt/dex/node_modules/@babel/parser/lib/index.js:2333:12)
+      at TypeScriptParserMixin.expect (/opt/dex/node_modules/@babel/parser/lib/index.js:3557:10)
+      at TypeScriptParserMixin.jsxParseClosingElementAt (/opt/dex/node_modules/@babel/parser/lib/index.js:6697:10)
+      at TypeScriptParserMixin.jsxParseElementAt (/opt/dex/node_modules/@babel/parser/lib/index.js:6712:37)
+      at TypeScriptParserMixin.jsxParseElementAt (/opt/dex/node_modules/@babel/parser/lib/index.js:6715:32)
+      at TypeScriptParserMixin.jsxParseElementAt (/opt/dex/node_modules/@babel/parser/lib/index.js:6715:32)
+      at TypeScriptParserMixin.jsxParseElement (/opt/dex/node_modules/@babel/parser/lib/index.js:6766:17)
+      at TypeScriptParserMixin.parseExprAtom (/opt/dex/node_modules/@babel/parser/lib/index.js:6776:19)
+      at TypeScriptParserMixin.parseExprSubscripts (/opt/dex/node_modules/@babel/parser/lib/index.js:10568:23)
+      at TypeScriptParserMixin.parseUpdate (/opt/dex/node_modules/@babel/parser/lib/index.js:10551:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/opt/dex/node_modules/@babel/parser/lib/index.js:10529:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/opt/dex/node_modules/@babel/parser/lib/index.js:9430:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/opt/dex/node_modules/@babel/parser/lib/index.js:10383:61)
+      at TypeScriptParserMixin.parseExprOps (/opt/dex/node_modules/@babel/parser/lib/index.js:10388:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/opt/dex/node_modules/@babel/parser/lib/index.js:10365:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/opt/dex/node_modules/@babel/parser/lib/index.js:10326:21)
+      at /opt/dex/node_modules/@babel/parser/lib/index.js:9368:39
+      at TypeScriptParserMixin.tryParse (/opt/dex/node_modules/@babel/parser/lib/index.js:3564:20)
+      at TypeScriptParserMixin.parseMaybeAssign (/opt/dex/node_modules/@babel/parser/lib/index.js:9368:18)
+      at /opt/dex/node_modules/@babel/parser/lib/index.js:10296:39
+      at TypeScriptParserMixin.allowInAnd (/opt/dex/node_modules/@babel/parser/lib/index.js:11920:12)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (/opt/dex/node_modules/@babel/parser/lib/index.js:10296:17)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (/opt/dex/node_modules/@babel/parser/lib/index.js:11177:28)
+      at TypeScriptParserMixin.parseExprAtom (/opt/dex/node_modules/@babel/parser/lib/index.js:10835:23)
+      at TypeScriptParserMixin.parseExprAtom (/opt/dex/node_modules/@babel/parser/lib/index.js:6781:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/opt/dex/node_modules/@babel/parser/lib/index.js:10568:23)
+      at TypeScriptParserMixin.parseUpdate (/opt/dex/node_modules/@babel/parser/lib/index.js:10551:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/opt/dex/node_modules/@babel/parser/lib/index.js:10529:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/opt/dex/node_modules/@babel/parser/lib/index.js:9430:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/opt/dex/node_modules/@babel/parser/lib/index.js:10383:61)
+      at TypeScriptParserMixin.parseExprOps (/opt/dex/node_modules/@babel/parser/lib/index.js:10388:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/opt/dex/node_modules/@babel/parser/lib/index.js:10365:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/opt/dex/node_modules/@babel/parser/lib/index.js:10326:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/opt/dex/node_modules/@babel/parser/lib/index.js:9379:20)
+      at TypeScriptParserMixin.parseExpressionBase (/opt/dex/node_modules/@babel/parser/lib/index.js:10280:23)
+      at /opt/dex/node_modules/@babel/parser/lib/index.js:10276:39
+      at TypeScriptParserMixin.
+... and 6 lines more
+7:01:41 PM [vite] Internal server error: /opt/dex/src/components/common/Footer/Footer.tsx: Unterminated JSX contents. (17:13)
+
+  15 |         <LogoCarbonDeFi className="w-[100px] text-white" />
+  16 |       </NewTabLink>
+> 17 |     </footer>
+     |              ^
+  18 |   );
+  19 | };
+  20 |
+  Plugin: vite:react-babel
+  File: /opt/dex/src/components/common/Footer/Footer.tsx:17:13
+  15 |          <LogoCarbonDeFi className="w-[100px] text-white" />
+  16 |        </NewTabLink>
+  17 |      </footer>
+     |               ^
+  18 |    );
+  19 |  };
+      at constructor (/opt/dex/node_modules/@babel/parser/lib/index.js:351:19)
+      at TypeScriptParserMixin.raise (/opt/dex/node_modules/@babel/parser/lib/index.js:3233:19)
+      at TypeScriptParserMixin.jsxReadToken (/opt/dex/node_modules/@babel/parser/lib/index.js:6465:20)
+      at TypeScriptParserMixin.getTokenFromCode (/opt/dex/node_modules/@babel/parser/lib/index.js:6791:12)
+      at TypeScriptParserMixin.getTokenFromCode (/opt/dex/node_modules/@babel/parser/lib/index.js:9576:11)
+      at TypeScriptParserMixin.nextToken (/opt/dex/node_modules/@babel/parser/lib/index.js:2416:10)
+      at TypeScriptParserMixin.next (/opt/dex/node_modules/@babel/parser/lib/index.js:2329:10)
+      at TypeScriptParserMixin.eat (/opt/dex/node_modules/@babel/parser/lib/index.js:2333:12)
+      at TypeScriptParserMixin.expect (/opt/dex/node_modules/@babel/parser/lib/index.js:3557:10)
+      at TypeScriptParserMixin.jsxParseClosingElementAt (/opt/dex/node_modules/@babel/parser/lib/index.js:6697:10)
+      at TypeScriptParserMixin.jsxParseElementAt (/opt/dex/node_modules/@babel/parser/lib/index.js:6712:37)
+      at TypeScriptParserMixin.jsxParseElementAt (/opt/dex/node_modules/@babel/parser/lib/index.js:6715:32)
+      at TypeScriptParserMixin.jsxParseElementAt (/opt/dex/node_modules/@babel/parser/lib/index.js:6715:32)
+      at TypeScriptParserMixin.jsxParseElement (/opt/dex/node_modules/@babel/parser/lib/index.js:6766:17)
+      at TypeScriptParserMixin.parseExprAtom (/opt/dex/node_modules/@babel/parser/lib/index.js:6776:19)
+      at TypeScriptParserMixin.parseExprSubscripts (/opt/dex/node_modules/@babel/parser/lib/index.js:10568:23)
+      at TypeScriptParserMixin.parseUpdate (/opt/dex/node_modules/@babel/parser/lib/index.js:10551:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/opt/dex/node_modules/@babel/parser/lib/index.js:10529:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/opt/dex/node_modules/@babel/parser/lib/index.js:9430:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/opt/dex/node_modules/@babel/parser/lib/index.js:10383:61)
+      at TypeScriptParserMixin.parseExprOps (/opt/dex/node_modules/@babel/parser/lib/index.js:10388:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/opt/dex/node_modules/@babel/parser/lib/index.js:10365:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/opt/dex/node_modules/@babel/parser/lib/index.js:10326:21)
+      at /opt/dex/node_modules/@babel/parser/lib/index.js:9368:39
+      at TypeScriptParserMixin.tryParse (/opt/dex/node_modules/@babel/parser/lib/index.js:3564:20)
+      at TypeScriptParserMixin.parseMaybeAssign (/opt/dex/node_modules/@babel/parser/lib/index.js:9368:18)
+      at /opt/dex/node_modules/@babel/parser/lib/index.js:10296:39
+      at TypeScriptParserMixin.allowInAnd (/opt/dex/node_modules/@babel/parser/lib/index.js:11920:12)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (/opt/dex/node_modules/@babel/parser/lib/index.js:10296:17)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (/opt/dex/node_modules/@babel/parser/lib/index.js:11177:28)
+      at TypeScriptParserMixin.parseExprAtom (/opt/dex/node_modules/@babel/parser/lib/index.js:10835:23)
+      at TypeScriptParserMixin.parseExprAtom (/opt/dex/node_modules/@babel/parser/lib/index.js:6781:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/opt/dex/node_modules/@babel/parser/lib/index.js:10568:23)
+      at TypeScriptParserMixin.parseUpdate (/opt/dex/node_modules/@babel/parser/lib/index.js:10551:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/opt/dex/node_modules/@babel/parser/lib/index.js:10529:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/opt/dex/node_modules/@babel/parser/lib/index.js:9430:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/opt/dex/node_modules/@babel/parser/lib/index.js:10383:61)
+      at TypeScriptParserMixin.parseExprOps (/opt/dex/node_modules/@babel/parser/lib/index.js:10388:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/opt/dex/node_modules/@babel/parser/lib/index.js:10365:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/opt/dex/node_modules/@babel/parser/lib/index.js:10326:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/opt/dex/node_modules/@babel/parser/lib/index.js:9379:20)
+      at TypeScriptParserMixin.parseExpressionBase (/opt/dex/node_modules/@babel/parser/lib/index.js:10280:23)
+      at /opt/dex/node_modules/@babel/parser/lib/index.js:10276:39
+      at TypeScriptParserMixin.
+... and 6 lines more
+7:01:41 PM [vite] Pre-transform error: /opt/dex/src/components/common/Footer/Footer.tsx: Unterminated JSX contents. (17:13)
+
+  15 |         <LogoCarbonDeFi className="w-[100px] text-white" />
+  16 |       </NewTabLink>
+> 17 |     </footer>
+     |              ^
+  18 |   );
+  19 | };
+  20 |
+7:01:43 PM [vite] Internal server error: /opt/dex/src/components/common/Footer/Footer.tsx: Unterminated JSX contents. (17:13)
+
+  15 |         <LogoCarbonDeFi className="w-[100px] text-white" />
+  16 |       </NewTabLink>
+> 17 |     </footer>
+     |              ^
+  18 |   );
+  19 | };
+  20 |
+  Plugin: vite:react-babel
+  File: /opt/dex/src/components/common/Footer/Footer.tsx:17:13
+  15 |          <LogoCarbonDeFi className="w-[100px] text-white" />
+  16 |        </NewTabLink>
+  17 |      </footer>
+     |               ^
+  18 |    );
+  19 |  };
+      at constructor (/opt/dex/node_modules/@babel/parser/lib/index.js:351:19)
+      at TypeScriptParserMixin.raise (/opt/dex/node_modules/@babel/parser/lib/index.js:3233:19)
+      at TypeScriptParserMixin.jsxReadToken (/opt/dex/node_modules/@babel/parser/lib/index.js:6465:20)
+      at TypeScriptParserMixin.getTokenFromCode (/opt/dex/node_modules/@babel/parser/lib/index.js:6791:12)
+      at TypeScriptParserMixin.getTokenFromCode (/opt/dex/node_modules/@babel/parser/lib/index.js:9576:11)
+      at TypeScriptParserMixin.nextToken (/opt/dex/node_modules/@babel/parser/lib/index.js:2416:10)
+      at TypeScriptParserMixin.next (/opt/dex/node_modules/@babel/parser/lib/index.js:2329:10)
+      at TypeScriptParserMixin.eat (/opt/dex/node_modules/@babel/parser/lib/index.js:2333:12)
+      at TypeScriptParserMixin.expect (/opt/dex/node_modules/@babel/parser/lib/index.js:3557:10)
+      at TypeScriptParserMixin.jsxParseClosingElementAt (/opt/dex/node_modules/@babel/parser/lib/index.js:6697:10)
+      at TypeScriptParserMixin.jsxParseElementAt (/opt/dex/node_modules/@babel/parser/lib/index.js:6712:37)
+      at TypeScriptParserMixin.jsxParseElementAt (/opt/dex/node_modules/@babel/parser/lib/index.js:6715:32)
+      at TypeScriptParserMixin.jsxParseElementAt (/opt/dex/node_modules/@babel/parser/lib/index.js:6715:32)
+      at TypeScriptParserMixin.jsxParseElement (/opt/dex/node_modules/@babel/parser/lib/index.js:6766:17)
+      at TypeScriptParserMixin.parseExprAtom (/opt/dex/node_modules/@babel/parser/lib/index.js:6776:19)
+      at TypeScriptParserMixin.parseExprSubscripts (/opt/dex/node_modules/@babel/parser/lib/index.js:10568:23)
+      at TypeScriptParserMixin.parseUpdate (/opt/dex/node_modules/@babel/parser/lib/index.js:10551:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/opt/dex/node_modules/@babel/parser/lib/index.js:10529:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/opt/dex/node_modules/@babel/parser/lib/index.js:9430:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/opt/dex/node_modules/@babel/parser/lib/index.js:10383:61)
+      at TypeScriptParserMixin.parseExprOps (/opt/dex/node_modules/@babel/parser/lib/index.js:10388:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/opt/dex/node_modules/@babel/parser/lib/index.js:10365:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/opt/dex/node_modules/@babel/parser/lib/index.js:10326:21)
+      at /opt/dex/node_modules/@babel/parser/lib/index.js:9368:39
+      at TypeScriptParserMixin.tryParse (/opt/dex/node_modules/@babel/parser/lib/index.js:3564:20)
+      at TypeScriptParserMixin.parseMaybeAssign (/opt/dex/node_modules/@babel/parser/lib/index.js:9368:18)
+      at /opt/dex/node_modules/@babel/parser/lib/index.js:10296:39
+      at TypeScriptParserMixin.allowInAnd (/opt/dex/node_modules/@babel/parser/lib/index.js:11920:12)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (/opt/dex/node_modules/@babel/parser/lib/index.js:10296:17)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (/opt/dex/node_modules/@babel/parser/lib/index.js:11177:28)
+      at TypeScriptParserMixin.parseExprAtom (/opt/dex/node_modules/@babel/parser/lib/index.js:10835:23)
+      at TypeScriptParserMixin.parseExprAtom (/opt/dex/node_modules/@babel/parser/lib/index.js:6781:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/opt/dex/node_modules/@babel/parser/lib/index.js:10568:23)
+      at TypeScriptParserMixin.parseUpdate (/opt/dex/node_modules/@babel/parser/lib/index.js:10551:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/opt/dex/node_modules/@babel/parser/lib/index.js:10529:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/opt/dex/node_modules/@babel/parser/lib/index.js:9430:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/opt/dex/node_modules/@babel/parser/lib/index.js:10383:61)
+      at TypeScriptParserMixin.parseExprOps (/opt/dex/node_modules/@babel/parser/lib/index.js:10388:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/opt/dex/node_modules/@babel/parser/lib/index.js:10365:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/opt/dex/node_modules/@babel/parser/lib/index.js:10326:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/opt/dex/node_modules/@babel/parser/lib/index.js:9379:20)
+      at TypeScriptParserMixin.parseExpressionBase (/opt/dex/node_modules/@babel/parser/lib/index.js:10280:23)
+      at /opt/dex/node_modules/@babel/parser/lib/index.js:10276:39
+      at TypeScriptParserMixin.
+... and 6 lines more
+7:01:52 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+7:01:52 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+7:01:52 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+7:02:53 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+7:02:53 PM [vite] hmr update /src/index.css, /src/App.tsx
+7:02:53 PM [vite] hmr update /src/index.css, /src/App.tsx
+7:02:54 PM [vite] hmr invalidate /src/components/common/Footer/Footer.tsx Could not Fast Refresh (export removed)
+7:02:54 PM [vite] hmr update /src/index.css, /src/App.tsx
+7:04:15 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+7:04:15 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+7:04:15 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+7:05:02 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+7:05:02 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+7:05:02 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+7:05:46 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+7:05:46 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+7:05:47 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+7:10:56 PM [vite] hmr update /src/App.tsx, /src/index.css, /src/components/core/menu/mobileMenu/MobileMenu.tsx, /src/components/core/menu/mainMenu/MainMenuLeft.tsx
+7:10:56 PM [vite] hmr update /src/components/core/menu/mobileMenu/MobileMenu.tsx, /src/index.css, /src/components/core/menu/mainMenu/MainMenuLeft.tsx
+7:10:56 PM [vite] hmr update /src/components/core/menu/mobileMenu/MobileMenu.tsx, /src/index.css
+7:10:56 PM [vite] hmr update /src/App.tsx, /src/index.css, /src/components/core/menu/mobileMenu/MobileMenu.tsx, /src/components/core/menu/mainMenu/MainMenuLeft.tsx
+7:10:57 PM [vite] hmr update /src/App.tsx, /src/index.css, /src/components/core/menu/mobileMenu/MobileMenu.tsx, /src/components/core/menu/mainMenu/MainMenuLeft.tsx
+7:40:39 PM [vite] page reload src/config/ethereum/common.ts
+7:40:39 PM [vite] page reload src/config/ethereum/common.ts
+7:40:39 PM [vite] page reload src/config/ethereum/common.ts
+7:41:23 PM [vite] page reload src/config/ethereum/common.ts
+7:41:23 PM [vite] page reload src/config/ethereum/common.ts
+7:41:23 PM [vite] page reload src/config/ethereum/common.ts
+7:41:28 PM [vite] page reload src/config/ethereum/common.ts
+7:41:28 PM [vite] page reload src/config/ethereum/common.ts
+7:41:29 PM [vite] page reload src/config/ethereum/common.ts
+yarn run v1.22.22
+$ cross-env VITE_NETWORK=ethereum vite --host 127.0.0.1 --port 4040
+[33mThe CJS build of Vite's Node API is deprecated. See https://vitejs.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+
+  VITE v5.3.2  ready in 400 ms
+
+  ➜  Local:   http://127.0.0.1:4040/
+7:44:36 PM [vite] page reload src/config/ethereum/common.ts
+7:44:36 PM [vite] page reload src/config/ethereum/common.ts
+7:44:37 PM [vite] page reload src/config/ethereum/common.ts
+7:48:20 PM [vite] page reload index.html
+7:48:21 PM [vite] page reload index.html
+7:48:21 PM [vite] page reload index.html
+7:49:30 PM [vite] page reload index.html
+7:49:30 PM [vite] page reload index.html
+7:49:30 PM [vite] page reload index.html
+7:51:33 PM [vite] page reload index.html
+7:51:33 PM [vite] page reload index.html
+7:51:33 PM [vite] page reload index.html
+7:52:54 PM [vite] page reload index.html
+7:52:54 PM [vite] page reload index.html
+7:52:54 PM [vite] page reload index.html
+7:56:28 PM [vite] page reload index.html
+7:56:28 PM [vite] page reload index.html
+7:56:28 PM [vite] page reload index.html
+7:56:55 PM [vite] page reload index.html
+7:56:55 PM [vite] page reload index.html
+7:56:55 PM [vite] page reload index.html
+8:02:11 PM [vite] page reload index.html
+8:02:11 PM [vite] page reload index.html
+8:02:11 PM [vite] page reload index.html

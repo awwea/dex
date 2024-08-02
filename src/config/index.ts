@@ -4,6 +4,9 @@ import seiDev from './sei/development';
 import seiProd from './sei/production';
 import celoDev from './celo/development';
 import celoProd from './celo/production';
+
+import dfiDev from './dfi/development';
+import dfiProd from './dfi/production';
 export { pairsToExchangeMapping } from './utils';
 
 const configs = {
@@ -18,6 +21,10 @@ const configs = {
   celo: {
     development: celoDev,
     production: celoProd,
+  },
+  dfi: {
+    development: dfiDev,
+    production: dfiProd,
   },
 };
 type Network = keyof typeof configs;

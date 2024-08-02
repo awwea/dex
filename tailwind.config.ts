@@ -57,10 +57,10 @@ export default {
         },
         white: colors.white,
         transparent: colors.transparent,
-        primary: lightDark(0.68, 0.153, 160), // #00B578
+        primary: lightDark(0.59, 0.28, 313.98), // #00B578
         error: lightDark(0.65, 0.147, 15), // #D86371
-        sell: lightDark(0.65, 0.147, 15), // #D86371
-        buy: lightDark(0.68, 0.153, 160), // #00B578
+        sell: lightDark(0.7, 0.28, 335.98), // #D86371
+        buy: lightDark(0.7, 0.14, 171.18), // #00B578
         success: lightDark(0.68, 0.153, 160), // #00B578
         warning: lightDark(0.747, 0.18, 57.36), // #ff8a00
         black: oklch(0.13, chroma, hue),
@@ -92,15 +92,60 @@ export default {
       title: ['Carbon-Title', 'sans-serif'],
     },
     fontSize: {
-      10: ['0.625rem', { lineHeight: '0.875rem' }],
-      12: ['0.75rem', { lineHeight: '1rem' }],
-      14: ['0.875rem', { lineHeight: '1.25rem' }],
-      16: ['1rem', { lineHeight: '1.5rem' }],
-      18: ['1.125rem', { lineHeight: '1.75rem' }],
-      20: ['1.25rem', { lineHeight: '1.75rem' }],
-      24: ['1.5rem', { lineHeight: '2rem' }],
-      30: ['1.875rem', { lineHeight: '2.25rem' }],
-      36: ['2.25rem', { lineHeight: '2.5rem' }],
+      10: [
+        '0.625rem',
+        {
+          lineHeight: '0.875rem',
+        },
+      ],
+      12: [
+        '0.75rem',
+        {
+          lineHeight: '1rem',
+        },
+      ],
+      14: [
+        '0.875rem',
+        {
+          lineHeight: '1.25rem',
+        },
+      ],
+      16: [
+        '1rem',
+        {
+          lineHeight: '1.5rem',
+        },
+      ],
+      18: [
+        '1.125rem',
+        {
+          lineHeight: '1.75rem',
+        },
+      ],
+      20: [
+        '1.25rem',
+        {
+          lineHeight: '1.75rem',
+        },
+      ],
+      24: [
+        '1.5rem',
+        {
+          lineHeight: '2rem',
+        },
+      ],
+      30: [
+        '1.875rem',
+        {
+          lineHeight: '2.25rem',
+        },
+      ],
+      36: [
+        '2.25rem',
+        {
+          lineHeight: '2.5rem',
+        },
+      ],
     },
     fontWeight: {
       'weight-100': '100',

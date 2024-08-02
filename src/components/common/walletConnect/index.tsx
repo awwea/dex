@@ -10,7 +10,7 @@ export const WalletConnect = () => {
     >
       <article className="flex flex-col justify-center md:w-[360px] md:items-start">
         <h1 id="wallet-connect-title" className="text-30 md:text-36">
-          Automate your Trading Strategies
+          Automate your trading strategies
         </h1>
         <p className="mb-24 mt-16 text-white/60 md:mb-40 md:mt-24">
           A decentralized protocol for automating on-chain trading strategies.

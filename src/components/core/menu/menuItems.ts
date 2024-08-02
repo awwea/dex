@@ -1,6 +1,4 @@
 import { Pathnames } from 'libs/routing';
-import { isProduction } from 'utils/helpers';
-import config from 'config';
 
 export interface MenuItem {
   label: string;
@@ -9,7 +7,7 @@ export interface MenuItem {
 
 export const menuItems: MenuItem[] = [
   {
-    label: 'My Strategies',
+    label: 'Strategy',
     href: '/',
   },
   {
@@ -20,20 +18,18 @@ export const menuItems: MenuItem[] = [
     label: 'Explore',
     href: '/explore',
   },
-  ...(!config.isSimulatorEnabled
-    ? []
-    : [
-        {
-          label: 'Simulate',
-          href: '/simulate',
-        } as MenuItem,
-      ]),
-  ...(isProduction
-    ? []
-    : [
-        {
-          label: 'Debug',
-          href: '/debug',
-        } as MenuItem,
-      ]),
+  // ...(!config.isSimulatorEnabled
+  // ? []
+  // : [{
+  // label: 'Simulate',
+  // href: '/simulate',
+  // } as MenuItem,
+  // ]),
+  // ...(isProduction
+  // ? []
+  // : [{
+  // label: 'Debug',
+  // href: '/debug',
+  // } as MenuItem,
+  // ]),
 ];
