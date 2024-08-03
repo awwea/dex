@@ -1,98 +1,95 @@
 import { debugPage } from 'libs/routing/routes/debug';
 import {
-  explorerActivityPage,
-  explorerLayout,
-  explorerOverviewPage,
-  explorerPage,
-  explorerPortfolioLayout,
-  explorerPortfolioPage,
-  explorerPortfolioTokenPage,
-  explorerRedirect,
-  explorerResultLayout,
-  explorerTypePage,
-  oldExplorerLayout,
+    explorerActivityPage,
+    explorerLayout,
+    explorerOverviewPage,
+    explorerPage,
+    explorerPortfolioLayout,
+    explorerPortfolioPage,
+    explorerPortfolioTokenPage,
+    explorerRedirect,
+    explorerResultLayout,
+    explorerTypePage,
+    oldExplorerLayout,
 } from 'libs/routing/routes/explorer';
 import { privacyPage, termPage } from 'libs/routing/routes/legal';
 import {
-  myStrategyLayout,
-  strategyActivityPage,
-  strategyOverviewPage,
-  strategyPortfolioLayout,
-  strategyPortfolioPage,
-  strategyPortfolioTokenPage,
+    myStrategyLayout,
+    strategyActivityPage,
+    strategyOverviewPage,
+    strategyPortfolioLayout,
+    strategyPortfolioPage,
+    strategyPortfolioTokenPage,
 } from 'libs/routing/routes/myStrategies';
 import { rootRoute } from 'libs/routing/routes/root';
 import {
-  simulatorInputOverlappingRoute,
-  simulatorInputRecurringRoute,
-  simulatorInputRootRoute,
-  simulatorResultRoute,
-  simulatorRootRoute,
+    simulatorInputOverlappingRoute,
+    simulatorInputRecurringRoute,
+    simulatorInputRootRoute,
+    simulatorResultRoute,
+    simulatorRootRoute,
 } from 'libs/routing/routes/sim';
 import {
-  createDisposableStrategyPage,
-  createOverlappingStrategyPage,
-  createRecurringStrategyPage,
-  createStrategyPage,
+    createDisposableStrategyPage,
+    createOverlappingStrategyPage,
+    createRecurringStrategyPage,
+    createStrategyPage,
 } from 'libs/routing/routes/strategyCreate';
 import {
-  editStrategyLayout,
-  editPricesDisposable,
-  editPricesOverlapping,
-  editPricesRecurring,
-  editBudgetDisposable,
-  editBudgetOverlapping,
-  editBudgetRecurring,
-} from './strategyEdit';
-import { tradePage } from 'libs/routing/routes/trade';
-import { strategyPage } from 'libs/routing/routes/strategy';
-
-export const routeTree = rootRoute.addChildren([
-  termPage,
-  privacyPage,
-  debugPage,
-  tradePage,
-  strategyPage,
-  createStrategyPage,
-  createDisposableStrategyPage,
-  createRecurringStrategyPage,
-  createOverlappingStrategyPage,
-  editStrategyLayout.addChildren([
+    editStrategyLayout,
     editPricesDisposable,
     editPricesOverlapping,
     editPricesRecurring,
     editBudgetDisposable,
     editBudgetOverlapping,
     editBudgetRecurring,
-  ]),
-  oldExplorerLayout,
-  explorerLayout.addChildren([
-    explorerRedirect,
-    explorerPage.addChildren([
-      explorerTypePage,
-      explorerResultLayout.addChildren([
-        explorerOverviewPage,
-        explorerPortfolioLayout.addChildren([
-          explorerPortfolioPage,
-          explorerPortfolioTokenPage,
+} from './strategyEdit';
+import { tradePage } from 'libs/routing/routes/trade';
+import { strategyPage } from 'libs/routing/routes/strategy';
+
+export const routeTree = rootRoute.addChildren([
+    termPage,
+    privacyPage,
+    debugPage,
+    tradePage,
+    strategyPage,
+    createStrategyPage,
+    createDisposableStrategyPage,
+    createRecurringStrategyPage,
+    createOverlappingStrategyPage,
+    editStrategyLayout.addChildren([
+        editPricesDisposable,
+        editPricesOverlapping,
+        editPricesRecurring,
+        editBudgetDisposable,
+        editBudgetOverlapping,
+        editBudgetRecurring,
+    ]),
+    oldExplorerLayout,
+    explorerLayout.addChildren([
+        explorerRedirect,
+        explorerPage.addChildren([
+            explorerTypePage,
+            explorerResultLayout.addChildren([
+                explorerOverviewPage,
+                explorerPortfolioLayout.addChildren([
+                    explorerPortfolioPage,
+                    explorerPortfolioTokenPage,
+                ]),
+                explorerActivityPage,
+            ]),
         ]),
-        explorerActivityPage,
-      ]),
     ]),
-  ]),
-  myStrategyLayout.addChildren([
-    strategyOverviewPage,
-    strategyPortfolioLayout.addChildren([
-      strategyPortfolioPage,
-      strategyPortfolioTokenPage,
+    myStrategyLayout.addChildren([
+        strategyOverviewPage,
+        strategyPortfolioLayout.addChildren([strategyPortfolioPage, strategyPortfolioTokenPage]),
+        strategyActivityPage,
     ]),
-    strategyActivityPage,
-  ]),
-  simulatorRootRoute.addChildren([
-    simulatorInputRootRoute.addChildren([
-      simulatorInputRecurringRoute,
-      simulatorInputOverlappingRoute,
+    simulatorRootRoute.addChildren([
+        simulatorInputRootRoute.addChildren([
+            simulatorInputRecurringRoute,
+            simulatorInputOverlappingRoute,
+        ]),
+        simulatorResultRoute,
     ]),
-    simulatorResultRoute,
-  ]),
 ]);

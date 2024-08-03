@@ -16,284 +16,264 @@ import { ReactComponent as IconRouting } from 'assets/icons/routing.svg';
 
 type FormAttributes = Omit<JSX.IntrinsicElements['form'], 'target'>;
 export interface TradeWidgetBuySellProps extends FormAttributes {
-  source: Token;
-  target: Token;
-  buy?: boolean;
-  sourceBalanceQuery: UseQueryResult<string>;
+    source: Token;
+    target: Token;
+    buy?: boolean;
+    sourceBalanceQuery: UseQueryResult<string>;
 }
 
 export const TradeWidgetBuySell = (props: TradeWidgetBuySellProps) => {
-  const id = useId();
-  const { user } = useWagmi();
-  const {
-    sourceInput,
-    setSourceInput,
-    targetInput,
-    setTargetInput,
-    rate,
-    onInputChange,
-    handleCTAClick,
-    bySourceQuery,
-    byTargetQuery,
-    liquidityQuery,
-    errorMsgSource,
-    errorMsgTarget,
-    openTradeRouteModal,
-    calcSlippage,
-    isTradeBySource,
-    maxSourceAmountQuery,
-    isAwaiting,
-  } = useBuySell(props);
-  const {
-    source,
-    target,
-    sourceBalanceQuery,
-    buy = false,
-    ...formProps
-  } = props;
-  const hasEnoughLiquidity = +liquidityQuery?.data! > 0;
+    const id = useId();
+    const { user } = useWagmi();
+    const {
+        sourceInput,
+        setSourceInput,
+        targetInput,
+        setTargetInput,
+        rate,
+        onInputChange,
+        handleCTAClick,
+        bySourceQuery,
+        byTargetQuery,
+        liquidityQuery,
+        errorMsgSource,
+        errorMsgTarget,
+        openTradeRouteModal,
+        calcSlippage,
+        isTradeBySource,
+        maxSourceAmountQuery,
+        isAwaiting,
+    } = useBuySell(props);
+    const { source, target, sourceBalanceQuery, buy = false, ...formProps } = props;
+    const hasEnoughLiquidity = +liquidityQuery?.data! > 0;
 
-  const { getFiatValue: getFiatValueSource } = useFiatCurrency(source);
+    const { getFiatValue: getFiatValueSource } = useFiatCurrency(source);
 
-  useEffect(() => {
-    errorMsgSource &&
-      carbonEvents.trade.tradeErrorShow({
-        buy,
-        buyToken: target,
-        sellToken: source,
-        valueUsd: getFiatValueSource(sourceInput, true).toString(),
-        message: errorMsgSource || '',
-      });
+    useEffect(() => {
+        errorMsgSource &&
+            carbonEvents.trade.tradeErrorShow({
+                buy,
+                buyToken: target,
+                sellToken: source,
+                valueUsd: getFiatValueSource(sourceInput, true).toString(),
+                message: errorMsgSource || '',
+            });
 
-    errorMsgTarget &&
-      carbonEvents.trade.tradeErrorShow({
-        buy,
-        buyToken: target,
-        sellToken: source,
-        valueUsd: getFiatValueSource(sourceInput, true).toString(),
-        message: errorMsgTarget || '',
-      });
+        errorMsgTarget &&
+            carbonEvents.trade.tradeErrorShow({
+                buy,
+                buyToken: target,
+                sellToken: source,
+                valueUsd: getFiatValueSource(sourceInput, true).toString(),
+                message: errorMsgTarget || '',
+            });
 
-    !hasEnoughLiquidity &&
-      !liquidityQuery.isPending &&
-      carbonEvents.trade.tradeErrorShow({
-        buy,
-        buyToken: target,
-        sellToken: source,
-        message: 'No Liquidity Available',
-      });
-  }, [
-    buy,
-    errorMsgSource,
-    errorMsgTarget,
-    getFiatValueSource,
-    liquidityQuery.isPending,
-  ]);
+        !hasEnoughLiquidity &&
+            !liquidityQuery.isPending &&
+            carbonEvents.trade.tradeErrorShow({
+                buy,
+                buyToken: target,
+                sellToken: source,
+                message: 'No Liquidity Available',
+            });
+    }, [buy, errorMsgSource, errorMsgTarget, getFiatValueSource, liquidityQuery.isPending]);
 
-  useInitEffect(() => {
-    const tradeData = {
-      buy,
-      buyToken: target,
-      sellToken: source,
-      valueUsd: getFiatValueSource(sourceInput, true).toString(),
+    useInitEffect(() => {
+        const tradeData = {
+            buy,
+            buyToken: target,
+            sellToken: source,
+            valueUsd: getFiatValueSource(sourceInput, true).toString(),
+        };
+        if (isTradeBySource) {
+            buy
+                ? carbonEvents.trade.tradeBuyPaySet(tradeData)
+                : carbonEvents.trade.tradeSellPaySet(tradeData);
+        }
+    }, [buy, sourceInput]);
+
+    useInitEffect(() => {
+        const tradeData = {
+            buy,
+            buyToken: target,
+            sellToken: source,
+            valueUsd: getFiatValueSource(targetInput, true).toString(),
+        };
+
+        if (!isTradeBySource) {
+            buy
+                ? carbonEvents.trade.tradeBuyReceiveSet(tradeData)
+                : carbonEvents.trade.tradeSellReceiveSet(tradeData);
+        }
+    }, [buy, targetInput]);
+
+    const handleTrade = (e: FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        handleCTAClick();
+        buy
+            ? carbonEvents.trade.tradeBuyClick({
+                  buy,
+                  buyToken: target,
+                  sellToken: source,
+                  valueUsd: getFiatValueSource(sourceInput, true).toString(),
+              })
+            : carbonEvents.trade.tradeSellClick({
+                  buy,
+                  buyToken: target,
+                  sellToken: source,
+                  valueUsd: getFiatValueSource(sourceInput, true).toString(),
+              });
     };
-    if (isTradeBySource) {
-      buy
-        ? carbonEvents.trade.tradeBuyPaySet(tradeData)
-        : carbonEvents.trade.tradeSellPaySet(tradeData);
-    }
-  }, [buy, sourceInput]);
 
-  useInitEffect(() => {
-    const tradeData = {
-      buy,
-      buyToken: target,
-      sellToken: source,
-      valueUsd: getFiatValueSource(targetInput, true).toString(),
-    };
+    const ctaButtonText = useMemo(() => {
+        if (user) {
+            return buy ? `Buy ${target.symbol}` : `Sell ${source.symbol}`;
+        }
 
-    if (!isTradeBySource) {
-      buy
-        ? carbonEvents.trade.tradeBuyReceiveSet(tradeData)
-        : carbonEvents.trade.tradeSellReceiveSet(tradeData);
-    }
-  }, [buy, targetInput]);
+        return 'Connect Wallet';
+    }, [buy, source.symbol, target.symbol, user]);
 
-  const handleTrade = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    handleCTAClick();
-    buy
-      ? carbonEvents.trade.tradeBuyClick({
-          buy,
-          buyToken: target,
-          sellToken: source,
-          valueUsd: getFiatValueSource(sourceInput, true).toString(),
-        })
-      : carbonEvents.trade.tradeSellClick({
-          buy,
-          buyToken: target,
-          sellToken: source,
-          valueUsd: getFiatValueSource(sourceInput, true).toString(),
-        });
-  };
+    if (liquidityQuery?.isError) return <div>Error</div>;
 
-  const ctaButtonText = useMemo(() => {
-    if (user) {
-      return buy ? `Buy ${target.symbol}` : `Sell ${source.symbol}`;
-    }
+    if (!source || !target) return null;
 
-    return 'Connect Wallet';
-  }, [buy, source.symbol, target.symbol, user]);
+    const slippage = calcSlippage();
+    const getRate = () => {
+        if (!rate) return '...';
 
-  if (liquidityQuery?.isError) return <div>Error</div>;
-
-  if (!source || !target) return null;
-
-  const slippage = calcSlippage();
-  const getRate = () => {
-    if (!rate) return '...';
-
-    if (buy) {
-      return `1 ${target.symbol} = ${
-        rate && rate !== '0'
-          ? prettifyNumber(new SafeDecimal(1).div(rate), { decimals: 6 })
-          : '--'
-      } ${source.symbol}`;
-    }
-    return `1 ${source.symbol} =
+        if (buy) {
+            return `1 ${target.symbol} = ${
+                rate && rate !== '0'
+                    ? prettifyNumber(new SafeDecimal(1).div(rate), { decimals: 6 })
+                    : '--'
+            } ${source.symbol}`;
+        }
+        return `1 ${source.symbol} =
         ${rate ? prettifyNumber(rate, { decimals: 6 }) : '--'}
         ${target.symbol}`;
-  };
+    };
 
-  const showRouting = rate && rate !== '0';
-  const disabledCTA =
-    !!errorMsgSource ||
-    !!errorMsgTarget ||
-    !hasEnoughLiquidity ||
-    !maxSourceAmountQuery.data;
+    const showRouting = rate && rate !== '0';
+    const disabledCTA =
+        !!errorMsgSource || !!errorMsgTarget || !hasEnoughLiquidity || !maxSourceAmountQuery.data;
 
-  const getLiquidity = () => {
-    const value = liquidityQuery.isPending
-      ? 'loading'
-      : prettifyNumber(liquidityQuery.data);
-    return `Liquidity: ${value} ${target.symbol}`;
-  };
+    const getLiquidity = () => {
+        const value = liquidityQuery.isPending ? 'loading' : prettifyNumber(liquidityQuery.data);
+        return `Liquidity: ${value} ${target.symbol}`;
+    };
 
-  return (
-    <form
-      {...formProps}
-      onSubmit={handleTrade}
-      className="rounded-12 bg-background-900 flex flex-col p-20"
-    >
-      <h2 className="mb-20">
-        {buy
-          ? `Buy ${target.symbol} with ${source.symbol}`
-          : `Sell ${source.symbol} for ${target.symbol}`}
-      </h2>
-      {hasEnoughLiquidity || liquidityQuery.isPending ? (
-        <>
-          <header className="text-14 flex justify-between">
-            <label htmlFor={`${id}-pay`} className="text-white/50">
-              You pay
-            </label>
-            {errorMsgSource && (
-              <output
-                htmlFor={`${id}-pay`}
-                className="text-12 font-weight-500 text-error"
-              >
-                {errorMsgSource}
-              </output>
+    return (
+        <form
+            {...formProps}
+            onSubmit={handleTrade}
+            className="rounded-12 bg-background-900 flex flex-col p-20"
+        >
+            <h2 className="mb-20">
+                {buy
+                    ? `Buy ${target.symbol} with ${source.symbol}`
+                    : `Sell ${source.symbol} for ${target.symbol}`}
+            </h2>
+            {hasEnoughLiquidity || liquidityQuery.isPending ? (
+                <>
+                    <header className="text-14 flex justify-between">
+                        <label htmlFor={`${id}-pay`} className="text-white/50">
+                            You pay
+                        </label>
+                        {errorMsgSource && (
+                            <output
+                                htmlFor={`${id}-pay`}
+                                className="text-12 font-weight-500 text-error"
+                            >
+                                {errorMsgSource}
+                            </output>
+                        )}
+                    </header>
+                    <TokenInputField
+                        id={`${id}-pay`}
+                        className="rounded-12 mb-20 mt-5 bg-black p-16"
+                        token={source}
+                        isBalanceLoading={sourceBalanceQuery.isPending}
+                        value={sourceInput}
+                        setValue={(value) => {
+                            setSourceInput(value);
+                        }}
+                        balance={sourceBalanceQuery.data}
+                        onKeystroke={() => onInputChange(true)}
+                        isLoading={byTargetQuery.isFetching}
+                        isError={!!errorMsgSource}
+                        disabled={!hasEnoughLiquidity}
+                    />
+                    <header className="text-14 flex justify-between">
+                        <label htmlFor={`${id}-receive`} className="text-white/50">
+                            You receive
+                        </label>
+                        {errorMsgTarget && (
+                            <button
+                                type="button"
+                                className="font-weight-500 text-error cursor-pointer"
+                                onClick={() => {
+                                    onInputChange(false);
+                                    setTargetInput(liquidityQuery.data || '0');
+                                }}
+                            >
+                                {errorMsgTarget}
+                            </button>
+                        )}
+                    </header>
+                    <TokenInputField
+                        id={`${id}-receive`}
+                        className="rounded-b-4 rounded-t-12 mt-5 bg-black p-16"
+                        token={target}
+                        value={targetInput}
+                        setValue={(value) => setTargetInput(value)}
+                        placeholder="Total Amount"
+                        onKeystroke={() => onInputChange(false)}
+                        isLoading={bySourceQuery.isFetching}
+                        isError={!!errorMsgTarget}
+                        slippage={slippage}
+                        disabled={!hasEnoughLiquidity}
+                    />
+                    <footer className="rounded-b-12 rounded-t-4 text-14 mt-5 flex justify-between bg-black p-16 text-white/80">
+                        <p>{getRate()}</p>
+                        {showRouting && (
+                            <button
+                                type="button"
+                                onClick={openTradeRouteModal}
+                                className="flex space-x-10 text-left hover:text-white md:flex"
+                                data-testid="routing"
+                            >
+                                <IconRouting className="w-12" />
+                                <Tooltip
+                                    placement="left"
+                                    element="You can view and manage the orders that are included in the trade."
+                                >
+                                    <span>Routing</span>
+                                </Tooltip>
+                            </button>
+                        )}
+                    </footer>
+                    {IS_TENDERLY_FORK && (
+                        <div className="text-14 mt-5 text-right text-white/60">
+                            DEBUG: {getLiquidity()}
+                        </div>
+                    )}
+                </>
+            ) : (
+                <NotEnoughLiquidity source={buy ? target : source} target={buy ? source : target} />
             )}
-          </header>
-          <TokenInputField
-            id={`${id}-pay`}
-            className="rounded-12 mb-20 mt-5 bg-black p-16"
-            token={source}
-            isBalanceLoading={sourceBalanceQuery.isPending}
-            value={sourceInput}
-            setValue={(value) => {
-              setSourceInput(value);
-            }}
-            balance={sourceBalanceQuery.data}
-            onKeystroke={() => onInputChange(true)}
-            isLoading={byTargetQuery.isFetching}
-            isError={!!errorMsgSource}
-            disabled={!hasEnoughLiquidity}
-          />
-          <header className="text-14 flex justify-between">
-            <label htmlFor={`${id}-receive`} className="text-white/50">
-              You receive
-            </label>
-            {errorMsgTarget && (
-              <button
-                type="button"
-                className="font-weight-500 text-error cursor-pointer"
-                onClick={() => {
-                  onInputChange(false);
-                  setTargetInput(liquidityQuery.data || '0');
-                }}
-              >
-                {errorMsgTarget}
-              </button>
-            )}
-          </header>
-          <TokenInputField
-            id={`${id}-receive`}
-            className="rounded-b-4 rounded-t-12 mt-5 bg-black p-16"
-            token={target}
-            value={targetInput}
-            setValue={(value) => setTargetInput(value)}
-            placeholder="Total Amount"
-            onKeystroke={() => onInputChange(false)}
-            isLoading={bySourceQuery.isFetching}
-            isError={!!errorMsgTarget}
-            slippage={slippage}
-            disabled={!hasEnoughLiquidity}
-          />
-          <footer className="rounded-b-12 rounded-t-4 text-14 mt-5 flex justify-between bg-black p-16 text-white/80">
-            <p>{getRate()}</p>
-            {showRouting && (
-              <button
-                type="button"
-                onClick={openTradeRouteModal}
-                className="flex space-x-10 text-left hover:text-white md:flex"
-                data-testid="routing"
-              >
-                <IconRouting className="w-12" />
-                <Tooltip
-                  placement="left"
-                  element="You can view and manage the orders that are included in the trade."
-                >
-                  <span>Routing</span>
-                </Tooltip>
-              </button>
-            )}
-          </footer>
-          {IS_TENDERLY_FORK && (
-            <div className="text-14 mt-5 text-right text-white/60">
-              DEBUG: {getLiquidity()}
-            </div>
-          )}
-        </>
-      ) : (
-        <NotEnoughLiquidity
-          source={buy ? target : source}
-          target={buy ? source : target}
-        />
-      )}
-      <Button
-        type="submit"
-        disabled={disabledCTA}
-        loading={isAwaiting}
-        loadingChildren="Waiting for Confirmation"
-        variant={buy ? 'buy' : 'sell'}
-        fullWidth
-        size="lg"
-        className="mt-20"
-        data-testid="submit"
-      >
-        {ctaButtonText}
-      </Button>
-    </form>
-  );
+            <Button
+                type="submit"
+                disabled={disabledCTA}
+                loading={isAwaiting}
+                loadingChildren="Waiting for Confirmation"
+                variant={buy ? 'buy' : 'sell'}
+                fullWidth
+                size="lg"
+                className="mt-20"
+                data-testid="submit"
+            >
+                {ctaButtonText}
+            </Button>
+        </form>
+    );
 };

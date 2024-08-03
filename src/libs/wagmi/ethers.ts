@@ -3,13 +3,13 @@ import { providers } from 'ethers';
 import type { Account, Client, Chain, Transport } from 'viem';
 
 const clientToProvider = (client: Client<Transport, Chain>) => {
-  const { chain, transport } = client;
-  const network = {
-    chainId: chain.id,
-    name: chain.name,
-    ensAddress: chain.contracts?.ensRegistry?.address,
-  };
-  return new providers.Web3Provider(transport, network);
+    const { chain, transport } = client;
+    const network = {
+        chainId: chain.id,
+        name: chain.name,
+        ensAddress: chain.contracts?.ensRegistry?.address,
+    };
+    return new providers.Web3Provider(transport, network);
 };
 
 /**
@@ -19,9 +19,9 @@ const clientToProvider = (client: Client<Transport, Chain>) => {
  * @returns {Web3Provider} ethers.js provider
  */
 export const getEthersProvider = (config: Config, chainId?: number) => {
-  const client = getClient(config, { chainId });
-  if (!client) return;
-  return clientToProvider(client);
+    const client = getClient(config, { chainId });
+    if (!client) return;
+    return clientToProvider(client);
 };
 
 /**
@@ -30,14 +30,14 @@ export const getEthersProvider = (config: Config, chainId?: number) => {
  * @returns {JsonRpcSigner} ethers.js signer
  */
 export const clientToSigner = (client?: Client<Transport, Chain, Account>) => {
-  if (!client) return;
-  const { account, chain, transport } = client;
-  const network = {
-    chainId: chain.id,
-    name: chain.name,
-    ensAddress: chain.contracts?.ensRegistry?.address,
-  };
-  const provider = new providers.Web3Provider(transport, network);
-  const signer = provider.getSigner(account.address);
-  return signer;
+    if (!client) return;
+    const { account, chain, transport } = client;
+    const network = {
+        chainId: chain.id,
+        name: chain.name,
+        ensAddress: chain.contracts?.ensRegistry?.address,
+    };
+    const provider = new providers.Web3Provider(transport, network);
+    const signer = provider.getSigner(account.address);
+    return signer;
 };

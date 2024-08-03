@@ -19,60 +19,51 @@ export type PairMaps = ReturnType<typeof createPairMaps>;
  * Transform a pair of symbols to a pair name
  * pair name is used to be displayed
  */
-export const toPairSlug = (
-  base: { address: string },
-  quote: { address: string }
-) => {
-  return `${base.address}_${quote.address}`.toLowerCase();
+export const toPairSlug = (base: { address: string }, quote: { address: string }) => {
+    return `${base.address}_${quote.address}`.toLowerCase();
 };
 
 /**
  * Transform a pair of symbols to a pair name
  * pair name is used to be displayed
  */
-export const toPairName = (
-  base: { symbol: string },
-  quote: { symbol: string }
-) => {
-  return `${base.symbol}/${quote.symbol}`;
+export const toPairName = (base: { symbol: string }, quote: { symbol: string }) => {
+    return `${base.symbol}/${quote.symbol}`;
 };
 
 /**
  * Transform a slug into a pair key
  * slug comes from a search (query params or input)
  */
-export const fromPairSearch = (
-  value: string,
-  regex: RegExp = pairSearchExp
-) => {
-  const pairKey = value.toLowerCase().replaceAll(regex, '_');
-  return replaceSpecialCharacters(pairKey);
+export const fromPairSearch = (value: string, regex: RegExp = pairSearchExp) => {
+    const pairKey = value.toLowerCase().replaceAll(regex, '_');
+    return replaceSpecialCharacters(pairKey);
 };
 
 export const createPairMaps = (
-  pairs: TradePair[] = [],
-  transformSlugExp: RegExp = pairSearchExp
+    pairs: TradePair[] = [],
+    transformSlugExp: RegExp = pairSearchExp
 ) => {
-  const pairMap = new Map<string, TradePair>();
-  const nameMap = new Map<string, string>();
-  for (const pair of pairs) {
-    const { baseToken: base, quoteToken: quote } = pair;
-    const slug = toPairSlug(base, quote);
-    pairMap.set(slug, pair);
-    const displayName = toPairName(base, quote);
-    const nameRaw = fromPairSearch(displayName, transformSlugExp);
-    const name = replaceSpecialCharacters(nameRaw);
-    nameMap.set(slug, name);
-  }
-  return { pairMap, nameMap };
+    const pairMap = new Map<string, TradePair>();
+    const nameMap = new Map<string, string>();
+    for (const pair of pairs) {
+        const { baseToken: base, quoteToken: quote } = pair;
+        const slug = toPairSlug(base, quote);
+        pairMap.set(slug, pair);
+        const displayName = toPairName(base, quote);
+        const nameRaw = fromPairSearch(displayName, transformSlugExp);
+        const name = replaceSpecialCharacters(nameRaw);
+        nameMap.set(slug, name);
+    }
+    return { pairMap, nameMap };
 };
 
 export const replaceSpecialCharacters = (value: string) => {
-  return value.replace(/(₿)|(₮)/g, (match, p1, p2) => {
-    if (p1) return 'b';
-    if (p2) return 't';
-    return match;
-  });
+    return value.replace(/(₿)|(₮)/g, (match, p1, p2) => {
+        if (p1) return 'b';
+        if (p2) return 't';
+        return match;
+    });
 };
 
 /**
@@ -85,49 +76,44 @@ export const replaceSpecialCharacters = (value: string) => {
  * @returns List of pair keys that match the input in the right order
  */
 export const searchPairKeys = (
-  nameMap: Map<string, string>,
-  search: string,
-  transformSlugExp: RegExp = pairSearchExp
+    nameMap: Map<string, string>,
+    search: string,
+    transformSlugExp: RegExp = pairSearchExp
 ) => {
-  // Transform search into pair
-  const searchSlug = fromPairSearch(search, transformSlugExp);
-  const names: { key: string; name: string }[] = [];
-  for (const [key, name] of nameMap.entries()) {
-    // Skip search results for gasTokens different than 0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE unless specifically searching for it
-    if (
-      isDifferentGasToken &&
-      !includesGasToken(search) &&
-      includesGasToken(key)
-    )
-      continue;
-    if (name.includes(searchSlug)) names.push({ key, name });
-    else if (key.includes(searchSlug)) names.push({ key, name });
-  }
-  return names.sort((a, b) => {
-    if (a.name.startsWith(searchSlug)) {
-      if (!b.name.startsWith(searchSlug)) return -1;
+    // Transform search into pair
+    const searchSlug = fromPairSearch(search, transformSlugExp);
+    const names: { key: string; name: string }[] = [];
+    for (const [key, name] of nameMap.entries()) {
+        // Skip search results for gasTokens different than 0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE unless specifically searching for it
+        if (isDifferentGasToken && !includesGasToken(search) && includesGasToken(key)) continue;
+        if (name.includes(searchSlug)) names.push({ key, name });
+        else if (key.includes(searchSlug)) names.push({ key, name });
     }
-    if (a.key.startsWith(searchSlug)) {
-      if (!b.key.startsWith(searchSlug)) return -1;
-    }
-    if (b.name.startsWith(searchSlug)) {
-      if (!a.name.startsWith(searchSlug)) return 1;
-    }
-    if (b.key.startsWith(searchSlug)) {
-      if (!a.key.startsWith(searchSlug)) return 1;
-    }
-    return a.name.localeCompare(b.name);
-  });
+    return names.sort((a, b) => {
+        if (a.name.startsWith(searchSlug)) {
+            if (!b.name.startsWith(searchSlug)) return -1;
+        }
+        if (a.key.startsWith(searchSlug)) {
+            if (!b.key.startsWith(searchSlug)) return -1;
+        }
+        if (b.name.startsWith(searchSlug)) {
+            if (!a.name.startsWith(searchSlug)) return 1;
+        }
+        if (b.key.startsWith(searchSlug)) {
+            if (!a.key.startsWith(searchSlug)) return 1;
+        }
+        return a.name.localeCompare(b.name);
+    });
 };
 
 /** Filter and search PairTrades based on a search input */
 export const searchPairTrade = (
-  pairMap: Map<string, TradePair>,
-  nameMap: Map<string, string>,
-  search: string,
-  transformSlugExp: RegExp = pairSearchExp
+    pairMap: Map<string, TradePair>,
+    nameMap: Map<string, string>,
+    search: string,
+    transformSlugExp: RegExp = pairSearchExp
 ) => {
-  if (!search && !isDifferentGasToken) return Array.from(pairMap.values());
-  const result = searchPairKeys(nameMap, search, transformSlugExp);
-  return result.map(({ key }) => pairMap.get(key)).filter(exist);
+    if (!search && !isDifferentGasToken) return Array.from(pairMap.values());
+    const result = searchPairKeys(nameMap, search, transformSlugExp);
+    return result.map(({ key }) => pairMap.get(key)).filter(exist);
 };

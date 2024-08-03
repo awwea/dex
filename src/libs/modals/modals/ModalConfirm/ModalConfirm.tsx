@@ -5,81 +5,75 @@ import { Button } from 'components/common/button';
 import { useModal } from 'hooks/useModal';
 import { ApprovalToken, useApproval } from 'hooks/useApproval';
 import {
-  TokenApprovalType,
-  TransactionConfirmationType,
-  StrategyEventType,
-  TradeEventType,
+    TokenApprovalType,
+    TransactionConfirmationType,
+    StrategyEventType,
+    TradeEventType,
 } from 'services/events/types';
 import {
-  handleConfirmationPopupViewEvent,
-  handleAfterConfirmationEvent,
-  handleOnRequestEvent,
+    handleConfirmationPopupViewEvent,
+    handleAfterConfirmationEvent,
+    handleOnRequestEvent,
 } from './utils';
 import { ModalOrMobileSheet } from 'libs/modals/ModalOrMobileSheet';
 
 export type ModalCreateConfirmData = {
-  approvalTokens: ApprovalToken[];
-  onConfirm: Function;
-  context?: 'depositStrategyFunds' | 'createStrategy' | 'trade';
-  buttonLabel?: string;
-  eventData?: (StrategyEventType | TradeEventType) &
-    TokenApprovalType &
-    TransactionConfirmationType;
+    approvalTokens: ApprovalToken[];
+    onConfirm: Function;
+    context?: 'depositStrategyFunds' | 'createStrategy' | 'trade';
+    buttonLabel?: string;
+    eventData?: (StrategyEventType | TradeEventType) &
+        TokenApprovalType &
+        TransactionConfirmationType;
 };
 
 export const ModalConfirm: ModalFC<ModalCreateConfirmData> = ({
-  id,
-  data: {
-    approvalTokens,
-    onConfirm,
-    buttonLabel = 'Confirm',
-    eventData,
-    context,
-  },
+    id,
+    data: { approvalTokens, onConfirm, buttonLabel = 'Confirm', eventData, context },
 }) => {
-  const { closeModal } = useModal();
-  const { approvalQuery, approvalRequired } = useApproval(approvalTokens);
+    const { closeModal } = useModal();
+    const { approvalQuery, approvalRequired } = useApproval(approvalTokens);
 
-  useEffect(() => {
-    handleConfirmationPopupViewEvent(eventData, context);
-  }, [context, eventData]);
+    useEffect(() => {
+        handleConfirmationPopupViewEvent(eventData, context);
+    }, [context, eventData]);
 
-  return (
-    <ModalOrMobileSheet
-      id={id}
-      title="Confirm Transaction"
-      size="md"
-      data-testid="approval-modal"
-    >
-      <h3 className="text-14 my-10 text-white/60">Approve Tokens</h3>
-      <ul className="space-y-20">
-        {approvalQuery.map(({ data, isPending, error }, i) => (
-          <li key={i}>
-            <ApproveToken
-              data={data}
-              isPending={isPending}
-              error={error}
-              eventData={eventData}
-              context={context}
-            />
-          </li>
-        ))}
-      </ul>
-      <Button
-        size="lg"
-        variant="white"
-        fullWidth
-        disabled={approvalRequired}
-        onClick={async () => {
-          handleOnRequestEvent(eventData, context);
-          closeModal(id);
-          await onConfirm();
-          handleAfterConfirmationEvent(eventData, context);
-        }}
-        data-testid="approve-submit"
-      >
-        {buttonLabel}
-      </Button>
-    </ModalOrMobileSheet>
-  );
+    return (
+        <ModalOrMobileSheet
+            id={id}
+            title="Confirm Transaction"
+            size="md"
+            data-testid="approval-modal"
+        >
+            <h3 className="text-14 my-10 text-white/60">Approve Tokens</h3>
+            <ul className="space-y-20">
+                {approvalQuery.map(({ data, isPending, error }, i) => (
+                    <li key={i}>
+                        <ApproveToken
+                            data={data}
+                            isPending={isPending}
+                            error={error}
+                            eventData={eventData}
+                            context={context}
+                        />
+                    </li>
+                ))}
+            </ul>
+            <Button
+                size="lg"
+                variant="white"
+                fullWidth
+                disabled={approvalRequired}
+                onClick={async () => {
+                    handleOnRequestEvent(eventData, context);
+                    closeModal(id);
+                    await onConfirm();
+                    handleAfterConfirmationEvent(eventData, context);
+                }}
+                data-testid="approve-submit"
+            >
+                {buttonLabel}
+            </Button>
+        </ModalOrMobileSheet>
+    );
 };

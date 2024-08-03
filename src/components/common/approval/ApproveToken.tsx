@@ -10,230 +10,218 @@ import { useNotifications } from 'hooks/useNotifications';
 import { useTokens } from 'hooks/useTokens';
 import { carbonEvents } from 'services/events';
 import {
-  TokenApprovalType,
-  StrategyEventOrTradeEvent,
-  StrategyEventType,
-  TradeEventType,
+    TokenApprovalType,
+    StrategyEventOrTradeEvent,
+    StrategyEventType,
+    TradeEventType,
 } from 'services/events/types';
 import { ReactComponent as IconWarning } from 'assets/icons/warning.svg';
 import config from 'config';
 
 type Props = {
-  data?: ApprovalTokenResult;
-  isPending: boolean;
-  error: unknown;
-  eventData?: StrategyEventOrTradeEvent & TokenApprovalType;
-  context?: 'depositStrategyFunds' | 'createStrategy' | 'trade';
+    data?: ApprovalTokenResult;
+    isPending: boolean;
+    error: unknown;
+    eventData?: StrategyEventOrTradeEvent & TokenApprovalType;
+    context?: 'depositStrategyFunds' | 'createStrategy' | 'trade';
 };
 
-export const ApproveToken: FC<Props> = ({
-  data,
-  isPending,
-  error,
-  eventData,
-  context,
-}) => {
-  const inputId = useId();
-  const { dispatchNotification } = useNotifications();
-  const { user } = useWagmi();
-  const { getTokenById } = useTokens();
-  const token = getTokenById(data?.address || '');
-  const mutation = useSetUserApproval();
-  // Gasprice on SEI is cheap, best practice is to use exact amount approval
-  const [isLimited, setIsLimited] = useState(
-    !!config.network.defaultLimitedApproval
-  );
-  const cache = useQueryClient();
-  const [txBusy, setTxBusy] = useState(false);
-  const [txSuccess, setTxSuccess] = useState(false);
+export const ApproveToken: FC<Props> = ({ data, isPending, error, eventData, context }) => {
+    const inputId = useId();
+    const { dispatchNotification } = useNotifications();
+    const { user } = useWagmi();
+    const { getTokenById } = useTokens();
+    const token = getTokenById(data?.address || '');
+    const mutation = useSetUserApproval();
+    // Gasprice on SEI is cheap, best practice is to use exact amount approval
+    const [isLimited, setIsLimited] = useState(!!config.network.defaultLimitedApproval);
+    const cache = useQueryClient();
+    const [txBusy, setTxBusy] = useState(false);
+    const [txSuccess, setTxSuccess] = useState(false);
 
-  const onApprove = async (e: FormEvent) => {
-    e.preventDefault();
+    const onApprove = async (e: FormEvent) => {
+        e.preventDefault();
+        if (!data || !token) {
+            return console.error('No data loaded');
+        }
+        setTxBusy(true);
+        mutation.mutate(
+            { ...data, isLimited },
+            {
+                onSuccess: async ([approve, revoke]) => {
+                    revoke &&
+                        dispatchNotification('revoke', {
+                            txHash: revoke.hash,
+                        });
+
+                    dispatchNotification('approve', {
+                        symbol: token.symbol,
+                        txHash: approve.hash,
+                        limited: isLimited,
+                    });
+
+                    await approve.wait();
+                    await cache.refetchQueries({
+                        queryKey: QueryKey.approval(user!, data.address, data.spender),
+                    });
+                    setTxBusy(false);
+                    setTxSuccess(true);
+                    handleTokenConfirmationApproveEvent();
+                },
+                onError: async () => {
+                    dispatchNotification('approveError', { symbol: token.symbol });
+                    console.error('could not set approval');
+                    await cache.refetchQueries({
+                        queryKey: QueryKey.approval(user!, data.address, data.spender),
+                    });
+                    setTxBusy(false);
+                },
+            }
+        );
+    };
+
+    const handleLimitChange = (value: boolean) => {
+        setIsLimited(!value);
+        handleTokenConfirmationEvent(value);
+    };
+
+    const handleTokenConfirmationApproveEvent = () => {
+        if (eventData && token) {
+            switch (context) {
+                case 'createStrategy':
+                    carbonEvents.tokenApproval.tokenConfirmationUnlimitedApproveStrategyCreate({
+                        ...eventData,
+                        approvalTokens: [token],
+                        isLimited,
+                    } as StrategyEventType & TokenApprovalType);
+                    break;
+                case 'depositStrategyFunds':
+                    carbonEvents.tokenApproval.tokenConfirmationUnlimitedApproveDepositStrategyFunds(
+                        {
+                            ...eventData,
+                            approvalTokens: [token],
+                            isLimited,
+                        } as StrategyEventType & TokenApprovalType
+                    );
+                    break;
+                case 'trade':
+                    carbonEvents.tokenApproval.tokenConfirmationUnlimitedApproveTrade({
+                        ...eventData,
+                        approvalTokens: [token],
+                        isLimited,
+                    } as TradeEventType & TokenApprovalType);
+                    break;
+                default:
+                    break;
+            }
+        }
+    };
+
+    const handleTokenConfirmationEvent = (value: boolean) => {
+        if (eventData) {
+            switch (context) {
+                case 'createStrategy':
+                    carbonEvents.tokenApproval.tokenConfirmationUnlimitedSwitchChangeStrategyCreate(
+                        {
+                            ...eventData,
+                            isLimited: !value,
+                        } as StrategyEventType & TokenApprovalType
+                    );
+                    break;
+                case 'depositStrategyFunds':
+                    carbonEvents.tokenApproval.tokenConfirmationUnlimitedSwitchChangeDepositStrategyFunds(
+                        {
+                            ...eventData,
+                            isLimited: !value,
+                        } as StrategyEventType & TokenApprovalType
+                    );
+
+                    break;
+                case 'trade':
+                    carbonEvents.tokenApproval.tokenConfirmationUnlimitedSwitchChangeTrade({
+                        ...eventData,
+                        isLimited: !value,
+                    } as TradeEventType & TokenApprovalType);
+
+                    break;
+                default:
+                    break;
+            }
+        }
+    };
+
     if (!data || !token) {
-      return console.error('No data loaded');
+        if (isPending) {
+            return <div>is loading</div>;
+        }
+        return <div>Unknown Error</div>;
     }
-    setTxBusy(true);
-    mutation.mutate(
-      { ...data, isLimited },
-      {
-        onSuccess: async ([approve, revoke]) => {
-          revoke &&
-            dispatchNotification('revoke', {
-              txHash: revoke.hash,
-            });
 
-          dispatchNotification('approve', {
-            symbol: token.symbol,
-            txHash: approve.hash,
-            limited: isLimited,
-          });
+    return (
+        <>
+            <div className="bg-content h-85 flex items-center justify-between rounded px-20">
+                <div className="flex items-center gap-10">
+                    <LogoImager alt="Token" src={token.logoURI} className="size-30" />
+                    <p className="font-weight-500">{token.symbol}</p>
+                </div>
 
-          await approve.wait();
-          await cache.refetchQueries({
-            queryKey: QueryKey.approval(user!, data.address, data.spender),
-          });
-          setTxBusy(false);
-          setTxSuccess(true);
-          handleTokenConfirmationApproveEvent();
-        },
-        onError: async () => {
-          dispatchNotification('approveError', { symbol: token.symbol });
-          console.error('could not set approval');
-          await cache.refetchQueries({
-            queryKey: QueryKey.approval(user!, data.address, data.spender),
-          });
-          setTxBusy(false);
-        },
-      }
+                {data.approvalRequired ? (
+                    txBusy ? (
+                        <div>Waiting for Confirmation</div>
+                    ) : (
+                        <form
+                            onSubmit={onApprove}
+                            className="flex flex-col items-end justify-center gap-10"
+                        >
+                            <div className="flex items-center gap-10">
+                                <label
+                                    htmlFor={inputId}
+                                    className={`text-12 font-weight-500 transition-all ${
+                                        isLimited ? 'text-white/60' : 'text-white/85'
+                                    }`}
+                                >
+                                    Unlimited
+                                </label>
+                                <Switch
+                                    id={inputId}
+                                    variant={isLimited ? 'secondary' : 'white'}
+                                    isOn={!isLimited}
+                                    setIsOn={handleLimitChange}
+                                    size="sm"
+                                    data-testid={`approve-limited-${token.symbol}`}
+                                />
+                            </div>
+
+                            <Button
+                                type="submit"
+                                variant="white"
+                                size="sm"
+                                className="text-14 px-10"
+                                data-testid={`approve-${token.symbol}`}
+                            >
+                                {data.nullApprovalRequired ? 'Revoke and Approve' : 'Approve'}
+                            </Button>
+                        </form>
+                    )
+                ) : (
+                    <span className="text-primary" data-testid={`msg-${token.symbol}`}>
+                        {txSuccess ? 'Approved' : 'Pre-Approved'}
+                    </span>
+                )}
+
+                {error ? <pre>{JSON.stringify(error, null, 2)}</pre> : null}
+            </div>
+            {data.nullApprovalRequired && (
+                <div className="text-14 text-warning flex space-x-20">
+                    <div>
+                        <IconWarning className="w-16" />
+                    </div>
+                    <span>
+                        Before updating {token.symbol} allowance, you are required to revoke it to
+                        0.
+                    </span>
+                </div>
+            )}
+        </>
     );
-  };
-
-  const handleLimitChange = (value: boolean) => {
-    setIsLimited(!value);
-    handleTokenConfirmationEvent(value);
-  };
-
-  const handleTokenConfirmationApproveEvent = () => {
-    if (eventData && token) {
-      switch (context) {
-        case 'createStrategy':
-          carbonEvents.tokenApproval.tokenConfirmationUnlimitedApproveStrategyCreate(
-            {
-              ...eventData,
-              approvalTokens: [token],
-              isLimited,
-            } as StrategyEventType & TokenApprovalType
-          );
-          break;
-        case 'depositStrategyFunds':
-          carbonEvents.tokenApproval.tokenConfirmationUnlimitedApproveDepositStrategyFunds(
-            {
-              ...eventData,
-              approvalTokens: [token],
-              isLimited,
-            } as StrategyEventType & TokenApprovalType
-          );
-          break;
-        case 'trade':
-          carbonEvents.tokenApproval.tokenConfirmationUnlimitedApproveTrade({
-            ...eventData,
-            approvalTokens: [token],
-            isLimited,
-          } as TradeEventType & TokenApprovalType);
-          break;
-        default:
-          break;
-      }
-    }
-  };
-
-  const handleTokenConfirmationEvent = (value: boolean) => {
-    if (eventData) {
-      switch (context) {
-        case 'createStrategy':
-          carbonEvents.tokenApproval.tokenConfirmationUnlimitedSwitchChangeStrategyCreate(
-            {
-              ...eventData,
-              isLimited: !value,
-            } as StrategyEventType & TokenApprovalType
-          );
-          break;
-        case 'depositStrategyFunds':
-          carbonEvents.tokenApproval.tokenConfirmationUnlimitedSwitchChangeDepositStrategyFunds(
-            {
-              ...eventData,
-              isLimited: !value,
-            } as StrategyEventType & TokenApprovalType
-          );
-
-          break;
-        case 'trade':
-          carbonEvents.tokenApproval.tokenConfirmationUnlimitedSwitchChangeTrade(
-            {
-              ...eventData,
-              isLimited: !value,
-            } as TradeEventType & TokenApprovalType
-          );
-
-          break;
-        default:
-          break;
-      }
-    }
-  };
-
-  if (!data || !token) {
-    if (isPending) {
-      return <div>is loading</div>;
-    }
-    return <div>Unknown Error</div>;
-  }
-
-  return (
-    <>
-      <div className="bg-content h-85 flex items-center justify-between rounded px-20">
-        <div className="flex items-center gap-10">
-          <LogoImager alt="Token" src={token.logoURI} className="size-30" />
-          <p className="font-weight-500">{token.symbol}</p>
-        </div>
-
-        {data.approvalRequired ? (
-          txBusy ? (
-            <div>Waiting for Confirmation</div>
-          ) : (
-            <form
-              onSubmit={onApprove}
-              className="flex flex-col items-end justify-center gap-10"
-            >
-              <div className="flex items-center gap-10">
-                <label
-                  htmlFor={inputId}
-                  className={`text-12 font-weight-500 transition-all ${
-                    isLimited ? 'text-white/60' : 'text-white/85'
-                  }`}
-                >
-                  Unlimited
-                </label>
-                <Switch
-                  id={inputId}
-                  variant={isLimited ? 'secondary' : 'white'}
-                  isOn={!isLimited}
-                  setIsOn={handleLimitChange}
-                  size="sm"
-                  data-testid={`approve-limited-${token.symbol}`}
-                />
-              </div>
-
-              <Button
-                type="submit"
-                variant="white"
-                size="sm"
-                className="text-14 px-10"
-                data-testid={`approve-${token.symbol}`}
-              >
-                {data.nullApprovalRequired ? 'Revoke and Approve' : 'Approve'}
-              </Button>
-            </form>
-          )
-        ) : (
-          <span className="text-primary" data-testid={`msg-${token.symbol}`}>
-            {txSuccess ? 'Approved' : 'Pre-Approved'}
-          </span>
-        )}
-
-        {error ? <pre>{JSON.stringify(error, null, 2)}</pre> : null}
-      </div>
-      {data.nullApprovalRequired && (
-        <div className="text-14 text-warning flex space-x-20">
-          <div>
-            <IconWarning className="w-16" />
-          </div>
-          <span>
-            Before updating {token.symbol} allowance, you are required to revoke
-            it to 0.
-          </span>
-        </div>
-      )}
-    </>
-  );
 };

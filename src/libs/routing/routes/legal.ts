@@ -4,13 +4,13 @@ import { PrivacyPage } from 'pages/privacy';
 import { TermsPage } from 'pages/terms';
 
 export const termPage = new Route({
-  getParentRoute: () => rootRoute,
-  path: '/terms',
-  component: TermsPage,
+    getParentRoute: () => rootRoute,
+    path: '/terms',
+    component: TermsPage,
 });
 
 export const privacyPage = new Route({
-  getParentRoute: () => rootRoute,
-  path: '/privacy',
-  component: PrivacyPage,
+    getParentRoute: () => rootRoute,
+    path: '/privacy',
+    component: PrivacyPage,
 });

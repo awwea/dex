@@ -4,11 +4,11 @@ import { StrategyCreateFirst } from 'components/strategies/overview/StrategyCrea
 import { useWagmi } from 'libs/wagmi';
 
 export const StrategiesActivityPage = () => {
-  const { user } = useWagmi();
-  const params = { ownerId: user };
-  return (
-    <ActivityProvider params={params} empty={<StrategyCreateFirst />}>
-      <ActivitySection filters={['ids', 'pairs']} />
-    </ActivityProvider>
-  );
+    const { user } = useWagmi();
+    const params = { ownerId: user };
+    return (
+        <ActivityProvider params={params} empty={<StrategyCreateFirst />}>
+            <ActivitySection filters={['ids', 'pairs']} />
+        </ActivityProvider>
+    );
 };

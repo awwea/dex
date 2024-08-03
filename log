@@ -1241,3 +1241,1160 @@ Refer to docs https://vitejs.dev/config/server-options.html#server-fs-allow for 
 11:54:25 PM [vite] hmr update /src/index.css, /src/components/strategies/create/CreateStrategyOption.tsx
 11:54:26 PM [vite] hmr update /src/index.css, /src/components/strategies/create/CreateStrategyOption.tsx
 11:54:26 PM [vite] hmr update /src/index.css, /src/components/strategies/create/CreateStrategyOption.tsx
+11:58:12 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+11:58:13 PM [vite] hmr update /src/index.css, /src/components/common/walletConnect/index.tsx
+11:58:13 PM [vite] hmr update /src/pages/terms/index.tsx, /src/index.css
+11:59:34 PM [vite] page reload index.html
+11:59:34 PM [vite] page reload src/abis/types/common.ts
+11:59:34 PM [vite] page reload src/abis/types/factories/index.ts
+11:59:34 PM [vite] page reload src/abis/types/factories/Token__factory.ts
+11:59:34 PM [vite] page reload src/abis/types/factories/Voucher__factory.ts
+11:59:34 PM [vite] page reload src/abis/types/index.ts
+11:59:34 PM [vite] page reload src/abis/types/Token.ts
+11:59:34 PM [vite] page reload src/abis/types/Voucher.ts
+11:59:34 PM [vite] hmr update /src/components/activity/ActivityNotification.tsx, /src/index.css
+11:59:35 PM [vite] hmr update /src/components/activity/ActivityTable.tsx, /src/index.css
+11:59:35 PM [vite] hmr update /src/components/common/combobox/index.tsx, /src/index.css
+11:59:36 PM [vite] hmr update /src/components/debug/DebugFiatCurrency.tsx, /src/index.css
+11:59:37 PM [vite] hmr update /src/components/strategies/create/CreateForm.tsx, /src/index.css, /src/components/strategies/edit/EditStrategyForm.tsx, /src/components/strategies/overlapping/OverlappingMarketPrice.tsx
+11:59:37 PM [vite] hmr update /src/components/strategies/overlapping/OverlappingAction.tsx, /src/index.css, /src/components/strategies/overlapping/OverlappingAnchor.tsx
+11:59:37 PM [vite] hmr update /src/components/strategies/overlapping/OverlappingGraph.tsx, /src/index.css
+11:59:38 PM [vite] hmr update /src/components/strategies/overlapping/OverlappingSpread.tsx, /src/index.css
+11:59:39 PM [vite] hmr update /src/fonts.css
+11:59:39 PM [vite] hmr update /src/index.css
+11:59:42 PM [vite] changed tsconfig file detected: /opt/dex/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+yarn run v1.22.22
+$ cross-env VITE_NETWORK=dfi vite --host 127.0.0.1 --port 4040
+[33mThe CJS build of Vite's Node API is deprecated. See https://vitejs.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+
+  VITE v5.3.2  ready in 398 ms
+
+  ➜  Local:   http://127.0.0.1:4040/
+yarn run v1.22.22
+$ cross-env VITE_NETWORK=dfi vite --host 127.0.0.1 --port 4040
+[33mThe CJS build of Vite's Node API is deprecated. See https://vitejs.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+
+  VITE v5.3.2  ready in 405 ms
+
+  ➜  Local:   http://127.0.0.1:4040/
+12:02:40 AM [vite] page reload index.html
+12:02:40 AM [vite] page reload src/abis/types/common.ts
+12:02:40 AM [vite] page reload src/abis/types/factories/Token__factory.ts
+12:02:40 AM [vite] page reload src/abis/types/factories/Voucher__factory.ts
+12:02:41 AM [vite] page reload src/abis/types/Token.ts
+12:02:41 AM [vite] page reload src/abis/types/Voucher.ts
+12:02:41 AM [vite] page reload src/App.test.tsx
+12:02:41 AM [vite] hmr update /src/App.tsx, /src/index.css
+12:02:41 AM [vite] hmr update /src/components/activity/ActivityCountDown.tsx, /src/index.css
+12:02:41 AM [vite] hmr update /src/components/activity/ActivityExport.tsx, /src/index.css
+12:02:41 AM [vite] hmr update /src/components/activity/ActivityFilter.tsx, /src/index.css
+12:02:41 AM [vite] hmr update /src/components/activity/ActivityList.tsx, /src/index.css
+12:02:41 AM [vite] hmr update /src/components/activity/ActivityNotification.tsx, /src/index.css
+12:02:41 AM [vite] hmr update /src/components/activity/ActivityNotification.tsx, /src/index.css
+12:02:41 AM [vite] hmr update /src/components/activity/ActivityProvider.tsx, /src/index.css
+12:02:41 AM [vite] hmr update /src/components/activity/ActivitySection.tsx, /src/index.css
+12:02:41 AM [vite] hmr update /src/components/activity/ActivityTable.tsx, /src/index.css
+12:02:41 AM [vite] hmr update /src/components/activity/ActivityTable.tsx, /src/index.css
+12:02:41 AM [vite] hmr update /src/index.css, /src/components/core/MainContent.tsx
+12:02:41 AM [vite] hmr update /src/components/activity/useActivityQuery.tsx, /src/index.css
+12:02:41 AM [vite] hmr update /src/components/activity/useActivityToast.tsx, /src/index.css
+12:02:41 AM [vite] page reload src/components/activity/utils.ts
+12:02:41 AM [vite] hmr update /src/components/common/AnimatedNumber.tsx, /src/index.css
+12:02:41 AM [vite] hmr update /src/components/common/approval/ApproveToken.tsx, /src/index.css
+12:02:41 AM [vite] hmr update /src/index.css, /src/components/strategies/create/CreateStrategyCTA.tsx, /src/components/simulator/mobile-placeholder.tsx, /src/components/strategies/create/CreateStrategyOption.tsx, /src/components/simulator/result/SimResultChart.tsx, /src/components/simulator/result/SimResultSummary.tsx, /src/components/common/walletConnect/index.tsx, /src/components/common/button/index.tsx, /src/components/simulator/input/SimInputChart.tsx, /src/components/strategies/overview/strategyBlock/StrategyBlockManage.tsx, /src/components/simulator/result/SimResultChartDownload.tsx, /src/components/core/menu/mainMenu/MainMenuRightWallet.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmWithdraw.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmDelete.tsx
+12:02:41 AM [vite] hmr update /src/components/common/button/index.tsx, /src/index.css
+12:02:41 AM [vite] page reload src/components/common/buySellPriceRangeIndicator/BuySellPriceRangeIndicator.tsx
+12:02:41 AM [vite] hmr update /src/components/common/calendar/index.tsx, /src/index.css
+12:02:41 AM [vite] hmr update /src/components/common/CarbonLogoLoading.tsx, /src/index.css
+12:02:41 AM [vite] hmr update /src/components/common/Checkbox/Checkbox.tsx, /src/index.css
+12:02:41 AM [vite] hmr update /src/components/common/combobox/index.tsx, /src/index.css
+12:02:41 AM [vite] hmr update /src/components/common/combobox/index.tsx, /src/index.css
+12:02:41 AM [vite] hmr update /src/components/common/datePicker/DateRangePicker.tsx, /src/index.css
+12:02:41 AM [vite] hmr update /src/components/common/dropdownMenu/index.tsx, /src/index.css
+12:02:41 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+12:02:41 AM [vite] hmr update /src/components/common/forwardArrow.tsx, /src/index.css
+12:02:41 AM [vite] hmr update /src/components/common/iconTitleText/IconTitleText.tsx, /src/index.css
+12:02:41 AM [vite] hmr update /src/components/common/imager/Imager.tsx, /src/index.css
+12:02:41 AM [vite] hmr update /src/components/common/inputField/Input.tsx, /src/index.css
+12:02:41 AM [vite] hmr update /src/index.css, /src/components/common/inputField/Input.tsx
+12:02:41 AM [vite] hmr update /src/components/common/inputField/InputUserAccount.tsx, /src/index.css
+12:02:41 AM [vite] hmr update /src/components/common/inputField/Label.tsx, /src/index.css
+12:02:41 AM [vite] hmr update /src/index.css, /src/components/common/inputField/Label.tsx
+12:02:41 AM [vite] hmr update /src/components/common/noOrder.tsx, /src/index.css
+12:02:42 AM [vite] hmr update /src/components/common/NotFound.tsx, /src/index.css
+12:02:42 AM [vite] hmr update /src/components/common/page/index.tsx, /src/index.css
+12:02:42 AM [vite] hmr update /src/components/common/PairLogoName.tsx, /src/index.css
+12:02:42 AM [vite] hmr update /src/components/common/searchInput/index.tsx, /src/index.css
+12:02:42 AM [vite] hmr update /src/components/common/selectToken/index.tsx, /src/index.css
+12:02:42 AM [vite] page reload src/components/common/selectTokens/index.tsx
+12:02:42 AM [vite] hmr update /src/components/common/switch/index.tsx, /src/index.css
+12:02:42 AM [vite] hmr update /src/index.css, /src/components/common/switch/index.tsx
+12:02:42 AM [vite] hmr update /src/components/common/tabs/TabsMenu.tsx, /src/index.css
+12:02:42 AM [vite] hmr update /src/components/common/tabs/TabsMenuButton.tsx, /src/index.css
+12:02:42 AM [vite] hmr update /src/components/common/Toaster/Toast.tsx, /src/index.css
+12:02:42 AM [vite] hmr update /src/components/common/Toaster/Toaster.tsx, /src/index.css
+12:02:42 AM [vite] hmr update /src/components/common/TokenInputField/Slippage.tsx, /src/index.css
+12:02:42 AM [vite] hmr update /src/components/common/TokenInputField/TokenInputField.tsx, /src/index.css
+12:02:42 AM [vite] hmr update /src/components/common/tokensOverlap/index.tsx, /src/index.css
+12:02:42 AM [vite] hmr update /src/components/common/tooltip/FloatTooltip.tsx, /src/index.css
+12:02:42 AM [vite] hmr update /src/components/common/tooltip/Tooltip.tsx, /src/index.css
+12:02:42 AM [vite] page reload src/components/common/variants.ts
+12:02:42 AM [vite] hmr update /src/components/common/walletConnect/index.tsx, /src/index.css
+12:02:42 AM [vite] hmr update /src/index.css, /src/components/common/walletConnect/index.tsx
+12:02:42 AM [vite] hmr update /src/components/common/WalletIcon.tsx, /src/index.css
+12:02:42 AM [vite] hmr update /src/components/common/WarningMessageWithIcon.tsx, /src/index.css
+12:02:42 AM [vite] hmr update /src/components/common/WarningWithTooltip/WarningWithTooltip.tsx, /src/index.css
+12:02:42 AM [vite] hmr update /src/components/core/error/ErrorNetworkConnection.tsx, /src/index.css
+12:02:42 AM [vite] hmr update /src/components/core/error/ErrorSDKStartSync.tsx, /src/index.css
+12:02:42 AM [vite] hmr update /src/components/core/error/ErrorTokenList.tsx, /src/index.css
+12:02:42 AM [vite] hmr update /src/components/core/error/ErrorUnsupportedNetwork.tsx, /src/index.css
+12:02:42 AM [vite] hmr update /src/components/core/error/ErrorUserBlocked.tsx, /src/index.css
+12:02:42 AM [vite] hmr update /src/components/core/error/ErrorWrapper.tsx, /src/index.css
+12:02:42 AM [vite] hmr update /src/components/core/MainContent.tsx, /src/index.css
+12:02:42 AM [vite] hmr update /src/components/core/menu/mainMenu/MainMenu.tsx, /src/index.css
+12:02:42 AM [vite] hmr update /src/components/core/menu/mainMenu/MainMenuLeft.tsx, /src/index.css
+12:02:42 AM [vite] hmr update /src/components/core/menu/mainMenu/MainMenuRight.tsx, /src/index.css
+12:02:42 AM [vite] page reload src/components/core/menu/mainMenu/MainMenuRightBurger/index.tsx
+12:02:42 AM [vite] hmr update /src/components/core/menu/mainMenu/MainMenuRightBurger/MenuItem.tsx, /src/index.css
+12:02:42 AM [vite] hmr update /src/components/core/menu/mainMenu/MainMenuRightBurger/useBurgerMenuItems.tsx, /src/index.css
+12:02:42 AM [vite] hmr update /src/components/core/menu/mainMenu/MainMenuRightBurger/useMenuContext.tsx, /src/index.css
+12:02:42 AM [vite] page reload src/components/core/menu/mainMenu/MainMenuRightChainSelector.tsx
+12:02:42 AM [vite] page reload src/components/core/menu/mainMenu/MainMenuRightModals.tsx
+12:02:42 AM [vite] hmr update /src/components/core/menu/mainMenu/MainMenuRightNotifications.tsx, /src/index.css
+12:02:42 AM [vite] hmr update /src/components/core/menu/mainMenu/MainMenuRightWallet.tsx, /src/index.css
+12:02:42 AM [vite] hmr update /src/components/core/menu/mainMenu/MainMenuTrade.tsx, /src/index.css
+12:02:42 AM [vite] hmr update /src/components/core/menu/mainMenu/MainMenuTradePairs.tsx, /src/index.css
+12:02:42 AM [vite] hmr update /src/components/core/menu/mainMenu/MainMenuTradeSettings.tsx, /src/index.css
+12:02:42 AM [vite] hmr update /src/components/core/menu/mainMenu/MainMenuTradeSwitch.tsx, /src/index.css
+12:02:42 AM [vite] hmr update /src/index.css, /src/App.tsx, /src/components/core/menu/mobileMenu/MobileMenu.tsx, /src/components/core/menu/mainMenu/MainMenuLeft.tsx
+12:02:42 AM [vite] hmr update /src/components/core/menu/mobileMenu/MobileMenu.tsx, /src/index.css
+12:02:42 AM [vite] hmr update /src/index.css, /src/components/core/menu/mobileMenu/MobileMenu.tsx, /src/components/core/menu/mainMenu/MainMenuLeft.tsx
+12:02:42 AM [vite] page reload src/components/debug/DebugBalance.tsx
+12:02:42 AM [vite] hmr update /src/components/debug/DebugCreateStrategy.tsx, /src/index.css
+12:02:42 AM [vite] hmr update /src/components/debug/DebugFiatCurrency.tsx, /src/index.css
+12:02:42 AM [vite] hmr update /src/components/debug/DebugImposter.tsx, /src/index.css
+12:02:42 AM [vite] hmr update /src/components/debug/DebugNotifications.tsx, /src/index.css
+12:02:42 AM [vite] hmr update /src/components/debug/DebugOrderBook.tsx, /src/index.css
+12:02:42 AM [vite] hmr update /src/components/debug/DebugResetDefault.tsx, /src/index.css
+12:02:42 AM [vite] hmr update /src/components/debug/DebugSDKConfig.tsx, /src/index.css
+12:02:42 AM [vite] hmr update /src/components/debug/DebugTenderlyFaucet.tsx, /src/index.css
+12:02:42 AM [vite] hmr update /src/components/debug/DebugTenderlyRPC.tsx, /src/index.css
+12:02:42 AM [vite] hmr update /src/components/debug/DebugTransferNFT.tsx, /src/index.css
+12:02:42 AM [vite] hmr update /src/components/debug/DebugWagmi.tsx, /src/index.css
+12:02:42 AM [vite] hmr update /src/components/explorer/ExplorerSearch.tsx, /src/index.css
+12:02:42 AM [vite] hmr update /src/components/explorer/ExplorerSearchDropdownButton.tsx, /src/index.css
+12:02:42 AM [vite] hmr update /src/components/explorer/ExplorerSearchDropdownItems.tsx, /src/index.css
+12:02:42 AM [vite] hmr update /src/components/explorer/ExplorerSearchInput.tsx, /src/index.css
+12:02:42 AM [vite] hmr update /src/components/explorer/ExplorerSearchInputContainer.tsx, /src/index.css
+12:02:42 AM [vite] hmr update /src/components/explorer/ExplorerTabs.tsx, /src/index.css
+12:02:42 AM [vite] hmr update /src/components/explorer/suggestion/SuggestionCombobox.tsx, /src/index.css
+12:02:42 AM [vite] hmr update /src/components/explorer/suggestion/SuggestionEmpty.tsx, /src/index.css
+12:02:42 AM [vite] hmr update /src/components/explorer/suggestion/SuggestionList.tsx, /src/index.css
+12:02:42 AM [vite] hmr update /src/index.css, /src/components/explorer/suggestion/SuggestionCombobox.tsx, /src/components/explorer/suggestion/SuggestionList.tsx, /src/components/explorer/suggestion/SuggestionEmpty.tsx
+12:02:42 AM [vite] hmr update /src/components/explorer/useExplorer.tsx, /src/index.css
+12:02:42 AM [vite] hmr update /src/index.css, /src/pages/explorer/type/portfolio/token/index.tsx, /src/pages/explorer/type/portfolio/index.tsx, /src/pages/explorer/type/activity/index.tsx, /src/pages/explorer/index.tsx, /src/components/explorer/ExplorerTabs.tsx, /src/components/explorer/useExplorer.tsx, /src/components/explorer/ExplorerSearch.tsx, /src/components/explorer/ExplorerSearchDropdownButton.tsx, /src/components/explorer/ExplorerSearchDropdownItems.tsx
+12:02:42 AM [vite] page reload src/components/explorer/utils.ts
+12:02:42 AM [vite] hmr update /src/components/simulator/input/BuySellBlockNew/BudgetSection.tsx, /src/index.css
+12:02:42 AM [vite] hmr update /src/components/simulator/input/BuySellBlockNew/Header.tsx, /src/index.css
+12:02:42 AM [vite] hmr update /src/components/simulator/input/BuySellBlockNew/index.tsx, /src/index.css
+12:02:43 AM [vite] hmr update /src/components/simulator/input/BuySellBlockNew/LimitRangeSection.tsx, /src/index.css
+12:02:43 AM [vite] hmr update /src/components/simulator/input/d3Chart/Candlesticks.tsx, /src/index.css
+12:02:43 AM [vite] hmr update /src/components/simulator/input/d3Chart/D3ChartCandlesticks.tsx, /src/index.css
+12:02:43 AM [vite] hmr update /src/components/simulator/input/d3Chart/D3ChartHandleLine.tsx, /src/index.css
+12:02:43 AM [vite] hmr update /src/components/simulator/input/d3Chart/D3ChartPriceOutOfScale.tsx, /src/index.css
+12:02:43 AM [vite] hmr update /src/components/simulator/input/d3Chart/D3ChartRect.tsx, /src/index.css
+12:02:43 AM [vite] hmr update /src/components/simulator/input/d3Chart/overlapping/D3ChartOverlapping.tsx, /src/index.css
+12:02:43 AM [vite] hmr update /src/components/simulator/input/d3Chart/overlapping/D3ChartOverlappingHandle.tsx, /src/index.css
+12:02:43 AM [vite] hmr update /src/components/simulator/input/d3Chart/overlapping/D3ChartOverlappingRangeGroup.tsx, /src/index.css
+12:02:43 AM [vite] hmr update /src/index.css, /src/components/simulator/input/d3Chart/overlapping/D3ChartOverlapping.tsx
+12:02:43 AM [vite] hmr update /src/components/simulator/input/d3Chart/recurring/D3ChartHandle.tsx, /src/index.css
+12:02:43 AM [vite] hmr update /src/components/simulator/input/d3Chart/recurring/D3ChartRectDraggable.tsx, /src/index.css
+12:02:43 AM [vite] hmr update /src/components/simulator/input/d3Chart/recurring/D3ChartRecurring.tsx, /src/index.css
+12:02:43 AM [vite] hmr update /src/components/simulator/input/d3Chart/recurring/DragablePriceRange.tsx, /src/index.css
+12:02:43 AM [vite] hmr update /src/index.css, /src/components/simulator/input/d3Chart/recurring/D3ChartRecurring.tsx, /src/components/simulator/input/d3Chart/recurring/DragablePriceRange.tsx
+12:02:43 AM [vite] hmr update /src/index.css, /src/components/simulator/input/d3Chart/D3ChartCandlesticks.tsx, /src/components/simulator/input/d3Chart/overlapping/D3ChartOverlapping.tsx, /src/components/simulator/input/d3Chart/recurring/D3ChartRecurring.tsx, /src/components/simulator/input/d3Chart/recurring/DragablePriceRange.tsx, /src/components/simulator/input/d3Chart/overlapping/D3ChartOverlappingHandle.tsx, /src/components/simulator/input/d3Chart/overlapping/D3ChartOverlappingRangeGroup.tsx, /src/components/simulator/input/d3Chart/recurring/D3ChartHandle.tsx, /src/components/simulator/input/d3Chart/recurring/D3ChartRectDraggable.tsx
+12:02:43 AM [vite] hmr update /src/components/simulator/input/d3Chart/xAxis.tsx, /src/index.css
+12:02:43 AM [vite] hmr update /src/components/simulator/input/overlapping/CreateOverlappingStrategy.tsx, /src/index.css
+12:02:43 AM [vite] hmr update /src/components/simulator/input/SimInputChart.tsx, /src/index.css
+12:02:43 AM [vite] hmr update /src/components/simulator/input/SimInputRecurring.tsx, /src/index.css
+12:02:43 AM [vite] hmr update /src/components/simulator/input/SimInputStrategyType.tsx, /src/index.css
+12:02:43 AM [vite] hmr update /src/components/simulator/input/SimInputTokenSelection.tsx, /src/index.css
+12:02:43 AM [vite] hmr update /src/index.css, /src/pages/simulator/index.tsx
+12:02:43 AM [vite] hmr update /src/components/simulator/mobile-placeholder.tsx, /src/index.css
+12:02:43 AM [vite] hmr update /src/components/simulator/result/d3Charts/D3ChartSimulatorBalance.tsx, /src/index.css
+12:02:43 AM [vite] hmr update /src/components/simulator/result/d3Charts/D3ChartSimulatorPerformance.tsx, /src/index.css
+12:02:43 AM [vite] hmr update /src/components/simulator/result/d3Charts/D3ChartSimulatorPrice.tsx, /src/index.css
+12:02:43 AM [vite] hmr update /src/components/simulator/result/d3Charts/D3ChartSimulatorSummary.tsx, /src/index.css
+12:02:43 AM [vite] hmr update /src/components/simulator/result/d3Charts/D3SimLegend.tsx, /src/index.css
+12:02:43 AM [vite] hmr update /src/components/simulator/result/d3Charts/D3SimPriceRange.tsx, /src/index.css
+12:02:43 AM [vite] hmr update /src/components/simulator/result/d3Charts/EyeIcon.tsx, /src/index.css
+12:02:43 AM [vite] hmr update /src/index.css, /src/components/simulator/result/d3Charts/D3ChartSimulatorSummary.tsx
+12:02:43 AM [vite] hmr update /src/components/simulator/result/SimResultChart.tsx, /src/index.css
+12:02:43 AM [vite] hmr update /src/components/simulator/result/SimResultChartAnimation.tsx, /src/index.css
+12:02:43 AM [vite] hmr update /src/components/simulator/result/SimResultChartControls.tsx, /src/index.css
+12:02:43 AM [vite] hmr update /src/components/simulator/result/SimResultChartDownload.tsx, /src/index.css
+12:02:44 AM [vite] hmr update /src/components/simulator/result/SimResultChartHeader.tsx, /src/index.css
+12:02:44 AM [vite] hmr update /src/components/simulator/result/SimResultChartSummary.tsx, /src/index.css
+12:02:44 AM [vite] hmr update /src/components/simulator/result/SimResultChartTabs.tsx, /src/index.css
+12:02:44 AM [vite] hmr update /src/components/simulator/result/SimResultSummary.tsx, /src/index.css
+12:02:44 AM [vite] hmr update /src/components/simulator/result/SimResultSummaryGains.tsx, /src/index.css
+12:02:44 AM [vite] hmr update /src/components/simulator/result/SimResultSummaryRoi.tsx, /src/index.css
+12:02:44 AM [vite] hmr update /src/components/simulator/result/SimResultSummaryTable.tsx, /src/index.css
+12:02:44 AM [vite] hmr update /src/components/simulator/result/SimResultSummaryTokens.tsx, /src/index.css
+12:02:44 AM [vite] hmr update /src/components/simulator/result/SimulatorProvider.tsx, /src/index.css
+12:02:44 AM [vite] hmr update /src/index.css, /src/components/simulator/input/SimInputChart.tsx, /src/components/simulator/result/SimResultChartHeader.tsx, /src/libs/d3/primitives/D3XAxis.tsx, /src/components/simulator/input/d3Chart/xAxis.tsx
+12:02:44 AM [vite] hmr update /src/components/strategies/common/BudgetDistribution.tsx, /src/index.css
+12:02:44 AM [vite] hmr update /src/components/strategies/create/CreateForm.tsx, /src/index.css, /src/components/strategies/overlapping/OverlappingMarketPrice.tsx, /src/components/strategies/edit/EditStrategyForm.tsx
+12:02:44 AM [vite] hmr update /src/components/strategies/common/InputBudget.tsx, /src/index.css
+12:02:44 AM [vite] hmr update /src/components/strategies/common/InputLimit.tsx, /src/index.css
+12:02:44 AM [vite] hmr update /src/components/strategies/common/InputRange.tsx, /src/index.css
+12:02:44 AM [vite] hmr update /src/components/strategies/common/OrderHeader.tsx, /src/index.css
+12:02:44 AM [vite] hmr update /src/components/strategies/common/StrategyGraph.tsx, /src/index.css
+12:02:44 AM [vite] page reload src/components/strategies/common/types.ts
+12:02:44 AM [vite] hmr update /src/index.css, /src/pages/strategies/edit/prices/disposable.tsx, /src/pages/strategies/edit/budget/recurring.tsx, /src/pages/strategies/create/recurring.tsx, /src/pages/strategies/create/disposable.tsx, /src/pages/strategies/edit/prices/recurring.tsx, /src/pages/strategies/edit/budget/disposable.tsx
+12:02:44 AM [vite] page reload src/components/strategies/common/utils.ts
+12:02:44 AM [vite] hmr update /src/index.css, /src/pages/strategies/create/token.tsx, /src/pages/strategies/create/overlapping.tsx, /src/components/strategies/create/CreateStrategyTokenSelection.tsx, /src/components/strategies/create/CreateStrategyOption.tsx, /src/components/strategies/create/CreateOrder.tsx, /src/components/strategies/create/CreateLayout.tsx, /src/components/strategies/create/CreateForm.tsx, /src/components/strategies/create/CreateOverlapping.tsx, /src/components/strategies/common/StrategyGraph.tsx, /src/components/strategies/overlapping/OverlappingAnchor.tsx
+12:02:44 AM [vite] hmr update /src/components/strategies/create/BuySellBlock/InputLimit.tsx, /src/index.css
+12:02:44 AM [vite] hmr update /src/components/strategies/create/BuySellBlock/InputRange.tsx, /src/index.css
+12:02:44 AM [vite] hmr update /src/components/strategies/create/CreateForm.tsx, /src/index.css
+12:02:44 AM [vite] hmr update /src/components/strategies/create/CreateLayout.tsx, /src/index.css
+12:02:44 AM [vite] hmr update /src/components/strategies/create/CreateOrder.tsx, /src/index.css
+12:02:44 AM [vite] hmr update /src/components/strategies/create/CreateOverlapping.tsx, /src/index.css
+12:02:44 AM [vite] hmr update /src/components/strategies/create/CreateStrategyCTA.tsx, /src/index.css
+12:02:44 AM [vite] hmr update /src/components/strategies/create/CreateStrategyOption.tsx, /src/index.css
+12:02:44 AM [vite] hmr update /src/components/strategies/create/CreateStrategyTokenSelection.tsx, /src/index.css
+12:02:44 AM [vite] hmr update /src/index.css, /src/components/strategies/create/CreateStrategyOption.tsx
+12:02:44 AM [vite] hmr update /src/index.css, /src/components/strategies/create/CreateForm.tsx
+12:02:44 AM [vite] hmr update /src/index.css, /src/libs/modals/modals/ModalDuplicateStrategy/ModalDuplicateStrategy.tsx
+12:02:44 AM [vite] hmr update /src/index.css, /src/components/strategies/overview/strategyBlock/StrategyBlockManage.tsx, /src/components/strategies/edit/EditStrategyForm.tsx, /src/components/strategies/create/CreateForm.tsx
+12:02:44 AM [vite] hmr update /src/index.css, /src/components/strategies/edit/EditStrategyForm.tsx, /src/components/strategies/create/CreateForm.tsx
+12:02:44 AM [vite] hmr update /src/components/strategies/edit/EditBudgetFields.tsx, /src/index.css
+12:02:44 AM [vite] hmr update /src/components/strategies/edit/EditOverlappingBudget.tsx, /src/index.css
+12:02:44 AM [vite] hmr update /src/components/strategies/edit/EditOverlappingPrice.tsx, /src/index.css
+12:02:44 AM [vite] hmr update /src/components/strategies/edit/EditPriceFields.tsx, /src/index.css
+12:02:44 AM [vite] hmr update /src/components/strategies/edit/EditPriceNav.tsx, /src/index.css
+12:02:44 AM [vite] hmr update /src/components/strategies/edit/EditStrategyAllocatedBudget.tsx, /src/index.css
+12:02:44 AM [vite] hmr update /src/components/strategies/edit/EditStrategyContext.tsx, /src/index.css
+12:02:44 AM [vite] hmr update /src/components/strategies/edit/EditStrategyForm.tsx, /src/index.css
+12:02:44 AM [vite] hmr update /src/components/strategies/edit/EditStrategyLayout.tsx, /src/index.css
+12:02:44 AM [vite] hmr update /src/components/strategies/edit/EditStrategyOverlapTokens.tsx, /src/index.css
+12:02:44 AM [vite] hmr update /src/components/strategies/edit/tooltip/TooltipTokenAmount.tsx, /src/index.css
+12:02:44 AM [vite] hmr update /src/components/strategies/edit/tooltip/TooltipTokenRange.tsx, /src/index.css
+12:02:44 AM [vite] hmr update /src/index.css, /src/pages/strategies/edit/prices/disposable.tsx, /src/pages/strategies/edit/budget/recurring.tsx, /src/pages/strategies/edit/layout.tsx, /src/pages/strategies/edit/prices/recurring.tsx, /src/pages/strategies/edit/budget/overlapping.tsx, /src/pages/strategies/edit/budget/disposable.tsx, /src/pages/strategies/edit/prices/overlapping.tsx, /src/components/strategies/edit/EditOverlappingBudget.tsx, /src/components/strategies/overview/strategyBlock/StrategyBlockManage.tsx, /src/components/strategies/edit/EditPriceFields.tsx, /src/components/strategies/edit/EditStrategyForm.tsx, /src/components/strategies/edit/EditOverlappingPrice.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmWithdraw.tsx
+12:02:44 AM [vite] hmr update /src/components/strategies/FullOutcome.tsx, /src/index.css
+12:02:44 AM [vite] page reload src/components/strategies/marketPriceIndication/MarketPriceIndication.test.tsx
+12:02:44 AM [vite] hmr update /src/components/strategies/marketPriceIndication/MarketPriceIndication.tsx, /src/index.css
+12:02:44 AM [vite] hmr update /src/index.css, /src/components/strategies/create/CreateForm.tsx, /src/components/strategies/common/InputRange.tsx, /src/components/strategies/common/InputLimit.tsx, /src/components/strategies/overlapping/OverlappingGraph.tsx, /src/components/strategies/create/BuySellBlock/InputRange.tsx, /src/components/strategies/create/BuySellBlock/InputLimit.tsx, /src/components/simulator/input/BuySellBlockNew/LimitRangeSection.tsx
+12:02:44 AM [vite] hmr update /src/index.css, /src/components/strategies/overlapping/OverlappingGraph.tsx, /src/components/strategies/common/InputRange.tsx, /src/components/strategies/common/InputLimit.tsx, /src/components/strategies/create/BuySellBlock/InputRange.tsx, /src/components/strategies/create/BuySellBlock/InputLimit.tsx, /src/components/strategies/marketPriceIndication/MarketPriceIndication.tsx
+12:02:44 AM [vite] hmr update /src/components/strategies/overlapping/OverlappingAction.tsx, /src/index.css
+12:02:44 AM [vite] hmr update /src/components/strategies/overlapping/OverlappingAnchor.tsx, /src/index.css
+12:02:45 AM [vite] hmr update /src/components/strategies/overlapping/OverlappingAnchor.tsx, /src/index.css, /src/components/strategies/overlapping/OverlappingAction.tsx
+12:02:45 AM [vite] hmr update /src/components/strategies/overlapping/OverlappingBudget.tsx, /src/index.css
+12:02:45 AM [vite] hmr update /src/components/strategies/overlapping/OverlappingGraph.tsx, /src/index.css
+12:02:45 AM [vite] hmr update /src/components/strategies/overlapping/OverlappingGraph.tsx, /src/index.css
+12:02:45 AM [vite] hmr update /src/components/strategies/overlapping/OverlappingMarketPrice.tsx, /src/index.css
+12:02:45 AM [vite] page reload src/components/strategies/overlapping/OverlappingSmallBudget.tsx
+12:02:45 AM [vite] hmr update /src/components/strategies/overlapping/OverlappingSpread.tsx, /src/index.css
+12:02:45 AM [vite] hmr update /src/components/strategies/overlapping/OverlappingSpread.tsx, /src/index.css
+12:02:45 AM [vite] page reload src/components/strategies/overlapping/utils.test.ts
+12:02:45 AM [vite] page reload src/components/strategies/overlapping/utils.ts
+12:02:45 AM [vite] hmr update /src/components/strategies/overview/strategyBlock/StrategyBlock.tsx, /src/index.css
+12:02:45 AM [vite] hmr update /src/components/strategies/overview/strategyBlock/StrategyBlockBudget.tsx, /src/index.css
+12:02:45 AM [vite] hmr update /src/components/strategies/overview/strategyBlock/StrategyBlockBuySell.tsx, /src/index.css
+12:02:45 AM [vite] hmr update /src/components/strategies/overview/strategyBlock/StrategyBlockCreate.tsx, /src/index.css
+12:02:45 AM [vite] hmr update /src/components/strategies/overview/strategyBlock/StrategyBlockHeader.tsx, /src/index.css
+12:02:45 AM [vite] hmr update /src/components/strategies/overview/strategyBlock/StrategyBlockManage.tsx, /src/index.css
+12:02:45 AM [vite] hmr update /src/components/strategies/overview/strategyBlock/StrategyBlockRoi.tsx, /src/index.css
+12:02:45 AM [vite] hmr update /src/components/strategies/overview/strategyBlock/StrategyGraph.tsx, /src/index.css
+12:02:45 AM [vite] hmr update /src/components/strategies/overview/strategyBlock/StrategyGraph.tsx, /src/index.css
+12:02:45 AM [vite] hmr update /src/components/strategies/overview/strategyBlock/TokenPrice.tsx, /src/index.css
+12:02:45 AM [vite] hmr update /src/index.css, /src/components/strategies/overview/strategyBlock/StrategyBlockHeader.tsx, /src/components/strategies/overview/strategyBlock/StrategyBlockManage.tsx
+12:02:45 AM [vite] hmr update /src/index.css, /src/pages/strategies/overview/index.tsx, /src/pages/explorer/type/overview/index.tsx
+12:02:45 AM [vite] hmr update /src/index.css, /src/pages/strategies/overview/index.tsx, /src/pages/explorer/type/overview/index.tsx
+12:02:45 AM [vite] hmr update /src/components/strategies/overview/StrategyCreateFirst.tsx, /src/index.css
+12:02:45 AM [vite] hmr update /src/components/strategies/overview/StrategyFilterSort.tsx, /src/index.css
+12:02:45 AM [vite] hmr update /src/components/strategies/overview/StrategyNotFound.tsx, /src/index.css
+12:02:45 AM [vite] hmr update /src/components/strategies/overview/StrategyPageTitleWidget.tsx, /src/index.css
+12:02:45 AM [vite] hmr update /src/index.css, /src/hooks/useStrategies.tsx, /src/components/strategies/overview/StrategyFilterSort.tsx
+12:02:45 AM [vite] hmr update /src/components/strategies/portfolio/allTokens/PortfolioAllTokens.tsx, /src/index.css
+12:02:45 AM [vite] hmr update /src/components/strategies/portfolio/allTokens/PortfolioAllTokensDesktop.tsx, /src/index.css
+12:02:45 AM [vite] hmr update /src/components/strategies/portfolio/allTokens/PortfolioAllTokensMobile.tsx, /src/index.css
+12:02:45 AM [vite] hmr update /src/components/strategies/portfolio/allTokens/PortfolioAllTokensPieChartCenter.tsx, /src/index.css
+12:02:45 AM [vite] hmr update /src/index.css, /src/components/strategies/portfolio/allTokens/PortfolioAllTokens.tsx
+12:02:45 AM [vite] hmr update /src/components/strategies/portfolio/PortfolioLayout.tsx, /src/index.css
+12:02:45 AM [vite] hmr update /src/components/strategies/portfolio/PortfolioMobileCard.tsx, /src/index.css
+12:02:45 AM [vite] hmr update /src/components/strategies/portfolio/PortfolioPieChart.tsx, /src/index.css
+12:02:45 AM [vite] hmr update /src/components/strategies/portfolio/token/PortfolioToken.tsx, /src/index.css
+12:02:45 AM [vite] hmr update /src/components/strategies/portfolio/token/PortfolioTokenDesktop.tsx, /src/index.css
+12:02:45 AM [vite] hmr update /src/components/strategies/portfolio/token/PortfolioTokenHeader.tsx, /src/index.css
+12:02:45 AM [vite] hmr update /src/components/strategies/portfolio/token/PortfolioTokenMobile.tsx, /src/index.css
+12:02:45 AM [vite] hmr update /src/components/strategies/portfolio/token/PortfolioTokenPieChartCenter.tsx, /src/index.css
+12:02:45 AM [vite] hmr update /src/components/strategies/portfolio/token/usePortfolioToken.tsx, /src/index.css
+12:02:45 AM [vite] hmr update /src/index.css, /src/components/strategies/portfolio/token/PortfolioToken.tsx
+12:02:45 AM [vite] page reload src/components/strategies/portfolio/types.ts
+12:02:45 AM [vite] hmr update /src/index.css, /src/components/strategies/portfolio/allTokens/PortfolioAllTokens.tsx, /src/components/strategies/portfolio/token/usePortfolioToken.tsx
+12:02:45 AM [vite] hmr update /src/index.css, /src/components/strategies/portfolio/allTokens/PortfolioAllTokensDesktop.tsx, /src/components/strategies/portfolio/allTokens/PortfolioAllTokensMobile.tsx, /src/components/strategies/portfolio/allTokens/PortfolioAllTokens.tsx, /src/components/strategies/portfolio/token/PortfolioTokenDesktop.tsx, /src/components/strategies/portfolio/token/PortfolioTokenMobile.tsx, /src/components/strategies/portfolio/token/PortfolioToken.tsx, /src/components/strategies/portfolio/token/PortfolioTokenPieChartCenter.tsx
+12:02:45 AM [vite] hmr update /src/components/strategies/StrategyPageTabs.tsx, /src/index.css
+12:02:45 AM [vite] page reload src/components/strategies/useBudgetWarning.ts
+12:02:45 AM [vite] hmr update /src/index.css, /src/components/strategies/edit/EditStrategyForm.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmDelete.tsx
+12:02:46 AM [vite] hmr update /src/index.css, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmPause.tsx
+12:02:46 AM [vite] hmr update /src/components/strategies/UserMarketPrice.tsx, /src/index.css
+12:02:46 AM [vite] page reload src/components/strategies/utils.test.ts
+12:02:46 AM [vite] hmr update /src/index.css, /src/pages/strategies/create/recurring.tsx, /src/pages/strategies/edit/prices/recurring.tsx, /src/pages/strategies/edit/budget/overlapping.tsx, /src/pages/strategies/edit/prices/overlapping.tsx, /src/pages/strategies/create/overlapping.tsx, /src/components/strategies/create/CreateForm.tsx, /src/components/simulator/input/SimInputRecurring.tsx, /src/components/strategies/edit/EditStrategyForm.tsx, /src/components/simulator/input/overlapping/CreateOverlappingStrategy.tsx, /src/components/strategies/edit/EditOverlappingPrice.tsx, /src/components/strategies/create/CreateOverlapping.tsx, /src/components/strategies/overlapping/OverlappingGraph.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmPause.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmDelete.tsx
+12:02:46 AM [vite] hmr update /src/components/trade/depthChartWidget/DepthChartWidget.tsx, /src/index.css
+12:02:46 AM [vite] hmr update /src/index.css, /src/components/trade/depthChartWidget/DepthChartWidget.tsx
+12:02:46 AM [vite] hmr update /src/components/trade/orderWidget/OrderBookSide.tsx, /src/index.css
+12:02:46 AM [vite] hmr update /src/components/trade/orderWidget/OrderBookWidget.tsx, /src/index.css
+12:02:46 AM [vite] hmr update /src/components/trade/orderWidget/OrderBookWidgetHeader.tsx, /src/index.css
+12:02:46 AM [vite] hmr update /src/components/trade/orderWidget/OrderBookWidgetRate.tsx, /src/index.css
+12:02:46 AM [vite] hmr update /src/components/trade/orderWidget/OrderBookWidgetRow.tsx, /src/index.css
+12:02:46 AM [vite] hmr update /src/index.css, /src/components/trade/orderWidget/OrderBookWidget.tsx
+12:02:46 AM [vite] hmr update /src/components/trade/settings/TradeSettings.tsx, /src/index.css
+12:02:46 AM [vite] hmr update /src/components/trade/settings/TradeSettingsRow.tsx, /src/index.css
+12:02:46 AM [vite] hmr update /src/index.css, /src/components/trade/settings/TradeSettingsRow.tsx
+12:02:46 AM [vite] hmr update /src/components/trade/tradeWidget/NotEnoughLiquidity.tsx, /src/index.css
+12:02:46 AM [vite] hmr update /src/components/trade/tradeWidget/TradeWidget.tsx, /src/index.css
+12:02:46 AM [vite] hmr update /src/components/trade/tradeWidget/TradeWidgetBuySell.tsx, /src/index.css
+12:02:46 AM [vite] hmr update /src/index.css, /src/components/trade/tradeWidget/TradeWidgetBuySell.tsx
+12:02:46 AM [vite] hmr update /src/index.css, /src/components/trade/tradeWidget/TradeWidgetBuySell.tsx, /src/libs/modals/modals/ModalTradeRouting/ModalTradeRouting.tsx
+12:02:46 AM [vite] hmr update /src/index.css, /src/pages/trade/index.tsx, /src/components/core/menu/mainMenu/MainMenuTradePairs.tsx, /src/libs/modals/modals/ModalTradeTokenList/useModalTradeTokenList.tsx
+12:02:46 AM [vite] hmr update /src/index.css, /src/pages/trade/index.tsx, /src/components/core/menu/mainMenu/MainMenuTrade.tsx
+12:02:46 AM [vite] hmr update /src/components/tradingviewChart/copyrights.tsx, /src/index.css
+12:02:46 AM [vite] hmr update /src/components/tradingviewChart/index.tsx, /src/index.css
+12:02:46 AM [vite] hmr update /src/components/tradingviewChart/widget.tsx, /src/index.css
+12:02:46 AM [vite] page reload src/config/celo/common.ts
+12:02:46 AM [vite] page reload src/config/celo/development.ts
+12:02:46 AM [vite] page reload src/config/celo/production.ts
+12:02:46 AM [vite] page reload src/config/dfi/common.ts
+12:02:46 AM [vite] page reload src/config/dfi/development.ts
+12:02:46 AM [vite] page reload src/config/dfi/production.ts
+12:02:46 AM [vite] page reload src/config/ethereum/common.ts
+12:02:46 AM [vite] page reload src/config/ethereum/development.ts
+12:02:46 AM [vite] page reload src/config/ethereum/production.ts
+12:02:46 AM [vite] page reload src/config/index.ts
+12:02:46 AM [vite] page reload src/config/sei/common.ts
+12:02:46 AM [vite] page reload src/config/sei/development.ts
+12:02:46 AM [vite] page reload src/config/sei/production.ts
+12:02:46 AM [vite] page reload src/config/sei/types.ts
+12:02:46 AM [vite] page reload src/config/sei/utils.ts
+12:02:46 AM [vite] page reload src/config/types.ts
+12:02:46 AM [vite] page reload src/config/utils.ts
+12:02:46 AM [vite] hmr update /src/fonts.css
+12:02:46 AM [vite] page reload src/global-shim.ts
+12:02:46 AM [vite] hmr update /src/index.css, /src/components/strategies/edit/EditStrategyForm.tsx, /src/components/strategies/create/CreateForm.tsx, /src/components/trade/tradeWidget/TradeWidgetBuySell.tsx, /src/libs/modals/modals/ModalTradeRouting/ModalTradeRouting.tsx, /src/libs/modals/modals/ModalConfirm/ModalConfirm.tsx
+12:02:46 AM [vite] hmr update /src/index.css, /src/pages/simulator/index.tsx, /src/pages/trade/index.tsx, /src/pages/simulator/result/index.tsx, /src/pages/strategies/index.tsx, /src/components/activity/ActivitySection.tsx, /src/components/strategies/create/CreateStrategyOption.tsx, /src/components/trade/tradeWidget/TradeWidget.tsx, /src/components/strategies/overview/strategyBlock/StrategyBlockManage.tsx, /src/components/core/menu/mainMenu/MainMenu.tsx, /src/components/common/datePicker/DateRangePicker.tsx, /src/components/core/menu/mainMenu/MainMenuRight.tsx, /src/components/strategies/portfolio/PortfolioLayout.tsx, /src/components/strategies/portfolio/allTokens/PortfolioAllTokens.tsx, /src/components/strategies/portfolio/token/PortfolioToken.tsx, /src/libs/modals/ModalOrMobileSheet.tsx, /src/libs/modals/modals/ModalTradeTokenList/ModalTradeTokenList.tsx, /src/libs/modals/modals/ModalTokenList/ModalTokenList.tsx
+12:02:46 AM [vite] page reload src/hooks/useCarbonInit.ts
+12:02:46 AM [vite] page reload src/hooks/useContract.ts
+12:02:46 AM [vite] page reload src/hooks/useDebounce.ts
+12:02:46 AM [vite] hmr update /src/index.css, /src/pages/simulator/overlapping/index.tsx, /src/components/simulator/result/SimulatorProvider.tsx, /src/pages/simulator/recurring/index.tsx, /src/components/explorer/ExplorerSearch.tsx
+12:02:46 AM [vite] page reload src/hooks/useDimensions.ts
+12:02:46 AM [vite] hmr update /src/index.css, /src/components/debug/DebugFiatCurrency.tsx, /src/pages/strategies/edit/prices/disposable.tsx, /src/pages/strategies/edit/budget/recurring.tsx, /src/pages/strategies/create/recurring.tsx, /src/pages/strategies/create/disposable.tsx, /src/pages/strategies/edit/prices/recurring.tsx, /src/pages/strategies/edit/budget/overlapping.tsx, /src/pages/strategies/edit/budget/disposable.tsx, /src/pages/strategies/edit/prices/overlapping.tsx, /src/pages/strategies/create/overlapping.tsx, /src/components/strategies/overlapping/OverlappingMarketPrice.tsx, /src/components/strategies/edit/EditOverlappingPrice.tsx, /src/components/strategies/overview/strategyBlock/StrategyGraph.tsx, /src/components/strategies/create/CreateForm.tsx, /src/components/strategies/common/InputLimit.tsx, /src/components/strategies/UserMarketPrice.tsx, /src/components/strategies/overlapping/OverlappingGraph.tsx, /src/components/strategies/common/InputRange.tsx, /src/components/strategies/create/BuySellBlock/InputRange.tsx, /src/components/strategies/create/BuySellBlock/InputLimit.tsx, /src/components/simulator/input/BuySellBlockNew/LimitRangeSection.tsx, /src/components/strategies/overview/strategyBlock/StrategyBlockBudget.tsx, /src/components/strategies/overview/strategyBlock/StrategyBlockBuySell.tsx, /src/components/strategies/common/InputBudget.tsx, /src/components/trade/tradeWidget/TradeWidgetBuySell.tsx, /src/components/strategies/overview/strategyBlock/StrategyBlockManage.tsx, /src/components/strategies/edit/EditStrategyForm.tsx, /src/components/trade/orderWidget/OrderBookWidgetRate.tsx, /src/components/trade/orderWidget/OrderBookWidget.tsx, /src/components/common/TokenInputField/TokenInputField.tsx, /src/components/strategies/common/BudgetDistribution.tsx, /src/components/strategies/edit/tooltip/TooltipTokenAmount.tsx, /src/components/strategies/edit/tooltip/TooltipTokenRange.tsx, /src/components/core/menu/mainMenu/MainMenuRightBurger/useBurgerMenuItems.tsx, /src/components/common/TokenInputField/Slippage.tsx, /src/libs/modals/modals/ModalTradeRouting/ModalTradeRouting.tsx, /src/libs/modals/modals/ModalTradeRouting/ModalTradeRoutingRow.tsx
+12:02:46 AM [vite] hmr update /src/index.css, /src/components/strategies/common/BudgetDistribution.tsx, /src/components/strategies/edit/tooltip/TooltipTokenAmount.tsx, /src/components/strategies/edit/tooltip/TooltipTokenRange.tsx
+12:02:46 AM [vite] hmr update /src/index.css, /src/components/trade/tradeWidget/TradeWidget.tsx, /src/components/trade/tradeWidget/TradeWidgetBuySell.tsx
+12:02:46 AM [vite] hmr update /src/index.css, /src/libs/notifications/NotificationsProvider.tsx
+12:02:46 AM [vite] hmr update /src/index.css, /src/components/strategies/overview/strategyBlock/StrategyBlockManage.tsx
+12:02:46 AM [vite] page reload src/hooks/useKeyPress/index.ts
+12:02:46 AM [vite] page reload src/hooks/useKeyPress/useKeyPress.test.ts
+12:02:46 AM [vite] page reload src/hooks/useList.tsx
+12:02:46 AM [vite] hmr update /src/index.css, /src/pages/strategies/edit/prices/disposable.tsx, /src/pages/strategies/edit/budget/recurring.tsx, /src/pages/strategies/create/recurring.tsx, /src/pages/strategies/create/disposable.tsx, /src/pages/strategies/edit/prices/recurring.tsx, /src/pages/strategies/edit/budget/overlapping.tsx, /src/pages/strategies/edit/budget/disposable.tsx, /src/pages/strategies/edit/prices/overlapping.tsx, /src/pages/strategies/create/overlapping.tsx, /src/components/strategies/overlapping/OverlappingMarketPrice.tsx, /src/components/strategies/edit/EditOverlappingPrice.tsx, /src/components/strategies/overview/strategyBlock/StrategyGraph.tsx, /src/components/strategies/create/CreateForm.tsx, /src/components/strategies/common/InputLimit.tsx, /src/components/strategies/UserMarketPrice.tsx, /src/components/strategies/overlapping/OverlappingGraph.tsx, /src/components/strategies/common/InputRange.tsx, /src/components/strategies/create/BuySellBlock/InputRange.tsx, /src/components/strategies/create/BuySellBlock/InputLimit.tsx, /src/components/simulator/input/BuySellBlockNew/LimitRangeSection.tsx
+12:02:46 AM [vite] page reload src/hooks/useModal.ts
+12:02:46 AM [vite] hmr update /src/index.css, /src/components/debug/DebugNotifications.tsx, /src/components/strategies/edit/EditStrategyForm.tsx, /src/libs/notifications/NotificationsProvider.tsx, /src/components/core/MainContent.tsx, /src/components/strategies/create/CreateForm.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmDelete.tsx, /src/components/core/menu/mainMenu/MainMenuRightNotifications.tsx, /src/libs/modals/modals/ModalNotifications.tsx, /src/components/trade/tradeWidget/TradeWidgetBuySell.tsx, /src/libs/modals/modals/ModalTradeRouting/ModalTradeRouting.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmPause.tsx, /src/components/common/approval/ApproveToken.tsx
+12:02:46 AM [vite] page reload src/hooks/useOutsideClick.ts
+12:02:46 AM [vite] hmr update /src/index.css, /src/pages/trade/index.tsx, /src/components/core/menu/mainMenu/MainMenuTradePairs.tsx, /src/libs/modals/modals/ModalTradeTokenList/useModalTradeTokenList.tsx, /src/components/explorer/useExplorer.tsx, /src/components/explorer/ExplorerSearch.tsx
+12:02:46 AM [vite] hmr update /src/index.css, /src/pages/simulator/recurring/index.tsx
+12:02:46 AM [vite] hmr update /src/index.css, /src/pages/simulator/overlapping/index.tsx
+12:02:46 AM [vite] hmr update /src/hooks/useStrategies.tsx, /src/index.css
+12:02:46 AM [vite] hmr update /src/index.css, /src/components/simulator/result/SimulatorProvider.tsx, /src/pages/simulator/recurring/index.tsx
+12:02:46 AM [vite] page reload src/hooks/useTokens.ts
+12:02:46 AM [vite] hmr update /src/index.css
+12:02:46 AM [vite] page reload src/index.tsx
+12:02:46 AM [vite] page reload src/init-sentry.ts
+12:02:47 AM [vite] hmr update /src/index.css, /src/components/simulator/result/SimResultChartDownload.tsx
+12:02:47 AM [vite] hmr update /src/libs/d3/D3ChartWrapper.tsx, /src/index.css
+12:02:47 AM [vite] hmr update /src/libs/d3/primitives/D3AreaPath.tsx, /src/index.css
+12:02:47 AM [vite] hmr update /src/libs/d3/primitives/D3ChartTitle.tsx, /src/index.css
+12:02:47 AM [vite] hmr update /src/libs/d3/primitives/D3LinePath.tsx, /src/index.css
+12:02:47 AM [vite] hmr update /src/libs/d3/primitives/D3XAxis.tsx, /src/index.css
+12:02:47 AM [vite] hmr update /src/libs/d3/primitives/D3YAxisLeft.tsx, /src/index.css
+12:02:47 AM [vite] hmr update /src/libs/d3/primitives/D3YAxisRight.tsx, /src/index.css
+12:02:47 AM [vite] hmr update /src/index.css, /src/components/simulator/input/SimInputChart.tsx, /src/libs/d3/D3ChartWrapper.tsx, /src/components/simulator/result/d3Charts/D3ChartSimulatorBalance.tsx, /src/components/simulator/input/d3Chart/D3ChartCandlesticks.tsx, /src/components/simulator/input/d3Chart/overlapping/D3ChartOverlappingHandle.tsx, /src/components/simulator/input/d3Chart/recurring/D3ChartHandle.tsx
+12:02:47 AM [vite] hmr update /src/index.css, /src/components/simulator/input/SimInputChart.tsx, /src/libs/d3/D3ChartWrapper.tsx, /src/components/simulator/result/d3Charts/D3ChartSimulatorBalance.tsx, /src/components/simulator/input/d3Chart/D3ChartCandlesticks.tsx, /src/components/simulator/input/d3Chart/overlapping/D3ChartOverlappingHandle.tsx, /src/components/simulator/input/d3Chart/recurring/D3ChartHandle.tsx
+12:02:47 AM [vite] hmr update /src/index.css, /src/components/simulator/input/SimInputChart.tsx, /src/libs/d3/D3ChartWrapper.tsx, /src/components/simulator/result/d3Charts/D3ChartSimulatorBalance.tsx, /src/components/simulator/input/d3Chart/D3ChartCandlesticks.tsx, /src/components/simulator/input/d3Chart/overlapping/D3ChartOverlappingHandle.tsx, /src/components/simulator/input/d3Chart/recurring/D3ChartHandle.tsx, /src/components/simulator/result/d3Charts/D3ChartSimulatorPerformance.tsx, /src/components/simulator/result/d3Charts/D3ChartSimulatorPrice.tsx, /src/components/simulator/result/d3Charts/D3ChartSimulatorSummary.tsx
+12:02:47 AM [vite] hmr update /src/index.css, /src/components/simulator/input/SimInputChart.tsx, /src/libs/d3/D3ChartWrapper.tsx, /src/components/simulator/result/d3Charts/D3ChartSimulatorBalance.tsx, /src/components/simulator/input/d3Chart/D3ChartCandlesticks.tsx, /src/components/simulator/input/d3Chart/overlapping/D3ChartOverlappingHandle.tsx, /src/components/simulator/input/d3Chart/recurring/D3ChartHandle.tsx, /src/components/simulator/result/d3Charts/D3ChartSimulatorPrice.tsx, /src/components/simulator/result/d3Charts/D3ChartSimulatorSummary.tsx, /src/components/simulator/result/d3Charts/D3ChartSimulatorPerformance.tsx
+12:02:47 AM [vite] hmr update /src/index.css, /src/components/debug/DebugNotifications.tsx, /src/components/strategies/edit/EditStrategyForm.tsx, /src/libs/notifications/NotificationsProvider.tsx, /src/components/core/MainContent.tsx, /src/components/strategies/create/CreateForm.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmDelete.tsx, /src/components/core/menu/mainMenu/MainMenuRightNotifications.tsx, /src/libs/modals/modals/ModalNotifications.tsx, /src/components/trade/tradeWidget/TradeWidgetBuySell.tsx, /src/libs/modals/modals/ModalTradeRouting/ModalTradeRouting.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmPause.tsx, /src/components/common/approval/ApproveToken.tsx, /src/libs/notifications/TxNotification.tsx
+12:02:47 AM [vite] hmr update /src/libs/modals/Modal.tsx, /src/index.css
+12:02:47 AM [vite] hmr update /src/libs/modals/ModalOrMobileSheet.tsx, /src/index.css
+12:02:47 AM [vite] hmr update /src/libs/modals/ModalProvider.tsx, /src/index.css
+12:02:47 AM [vite] page reload src/libs/modals/modals.types.ts
+12:02:48 AM [vite] hmr update /src/libs/modals/modals/common/CategoryWithCounter.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/libs/modals/modals/common/CategoryWithCounter.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/index.css, /src/libs/modals/ModalProvider.tsx
+12:02:48 AM [vite] hmr update /src/libs/modals/modals/ModalBurgerMenu.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/libs/modals/modals/ModalConfirm/ModalConfirm.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/index.css, /src/libs/modals/modals/ModalConfirm/ModalConfirm.tsx
+12:02:48 AM [vite] hmr update /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmDelete.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmPause.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmWithdraw.tsx, /src/index.css
+12:02:48 AM [vite] page reload src/libs/modals/modals/ModalConfirmStrategy/utils.tsx
+12:02:48 AM [vite] page reload src/libs/modals/modals/ModalDuplicateStrategy/ModalDuplicateStrategy.test.tsx
+12:02:48 AM [vite] hmr update /src/libs/modals/modals/ModalDuplicateStrategy/ModalDuplicateStrategy.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/index.css, /src/libs/modals/modals/ModalDuplicateStrategy/ModalDuplicateStrategy.tsx
+12:02:48 AM [vite] hmr update /src/libs/modals/modals/ModalGenericInfo.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/libs/modals/modals/ModalImportToken.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/libs/modals/modals/ModalNotifications.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/libs/modals/modals/ModalRestrictedCountry.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/libs/modals/modals/ModalSimulatorDisclaimer.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/libs/modals/modals/ModalTokenList/ModalTokenImportNotification.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/libs/modals/modals/ModalTokenList/ModalTokenList.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/libs/modals/modals/ModalTokenList/ModalTokenListContent.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/libs/modals/modals/ModalTokenList/ModalTokenListError.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/libs/modals/modals/ModalTokenList/ModalTokenListImport.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/libs/modals/modals/ModalTokenList/ModalTokenListLoading.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/libs/modals/modals/ModalTokenList/ModalTokenListNotFound.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/index.css, /src/libs/modals/modals/ModalTokenList/ModalTokenList.tsx
+12:02:48 AM [vite] hmr update /src/libs/modals/modals/ModalTradeRouting/ModalTradeRouting.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/libs/modals/modals/ModalTradeRouting/ModalTradeRoutingRow.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/libs/modals/modals/ModalTradeRouting/ModalTradeRoutingRowCell.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/index.css, /src/libs/modals/modals/ModalTradeRouting/ModalTradeRouting.tsx
+12:02:48 AM [vite] hmr update /src/libs/modals/modals/ModalTradeSettings.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/libs/modals/modals/ModalTradeTokenList/ModalTradeTokenList.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/libs/modals/modals/ModalTradeTokenList/ModalTradeTokenListContent.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/libs/modals/modals/ModalTradeTokenList/useModalTradeTokenList.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/libs/modals/modals/ModalWithdrawOrDelete.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/libs/modals/modals/WalletModal/ModalWallet.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/libs/modals/modals/WalletModal/ModalWalletContent.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/libs/modals/modals/WalletModal/ModalWalletError.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/libs/modals/ModalSheet.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/libs/modals/ModalSlideOver.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/libs/modals/Overlay.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/libs/motion/index.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/libs/motion/index.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/index.css, /src/components/debug/DebugNotifications.tsx, /src/components/strategies/edit/EditStrategyForm.tsx, /src/libs/notifications/NotificationsProvider.tsx, /src/components/core/MainContent.tsx, /src/components/strategies/create/CreateForm.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmDelete.tsx, /src/components/core/menu/mainMenu/MainMenuRightNotifications.tsx, /src/libs/modals/modals/ModalNotifications.tsx, /src/components/trade/tradeWidget/TradeWidgetBuySell.tsx, /src/libs/modals/modals/ModalTradeRouting/ModalTradeRouting.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmPause.tsx, /src/components/common/approval/ApproveToken.tsx
+12:02:48 AM [vite] hmr update /src/libs/notifications/NotificationLine.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/libs/notifications/NotificationPreferences.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/libs/notifications/NotificationsProvider.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/libs/notifications/TxNotification.tsx, /src/index.css
+12:02:48 AM [vite] page reload src/libs/notifications/types.ts
+12:02:48 AM [vite] hmr update /src/index.css, /src/libs/notifications/NotificationsProvider.tsx, /src/components/debug/DebugNotifications.tsx, /src/components/strategies/edit/EditStrategyForm.tsx, /src/components/core/MainContent.tsx, /src/components/strategies/create/CreateForm.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmDelete.tsx, /src/components/core/menu/mainMenu/MainMenuRightNotifications.tsx, /src/libs/modals/modals/ModalNotifications.tsx, /src/components/trade/tradeWidget/TradeWidgetBuySell.tsx, /src/libs/modals/modals/ModalTradeRouting/ModalTradeRouting.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmPause.tsx, /src/components/common/approval/ApproveToken.tsx
+12:02:48 AM [vite] hmr update /src/index.css, /src/components/strategies/edit/EditStrategyForm.tsx, /src/components/strategies/create/CreateForm.tsx, /src/components/trade/tradeWidget/TradeWidgetBuySell.tsx, /src/libs/modals/modals/ModalTradeRouting/ModalTradeRouting.tsx, /src/libs/modals/modals/ModalConfirm/ModalConfirm.tsx, /src/components/common/approval/ApproveToken.tsx
+12:02:48 AM [vite] page reload src/libs/queries/chain/balance.ts
+12:02:48 AM [vite] page reload src/libs/queries/chain/ens.ts
+12:02:48 AM [vite] hmr update /src/index.css, /src/libs/modals/modals/ModalImportToken.tsx
+12:02:48 AM [vite] hmr update /src/index.css, /src/components/strategies/overview/strategyBlock/StrategyBlockManage.tsx
+12:02:48 AM [vite] page reload src/libs/queries/extApi/activity.ts
+12:02:48 AM [vite] page reload src/libs/queries/extApi/roi.ts
+12:02:48 AM [vite] page reload src/libs/queries/extApi/simulator.ts
+12:02:48 AM [vite] page reload src/libs/queries/extApi/tokenPrice.ts
+12:02:48 AM [vite] page reload src/libs/queries/extApi/tokens.ts
+12:02:48 AM [vite] page reload src/libs/queries/index.ts
+12:02:48 AM [vite] page reload src/libs/queries/queryKey.ts
+12:02:48 AM [vite] hmr update /src/libs/queries/QueryProvider.tsx, /src/index.css
+12:02:48 AM [vite] page reload src/libs/queries/sdk/maxSourceAmount.ts
+12:02:48 AM [vite] page reload src/libs/queries/sdk/orderBook.ts
+12:02:48 AM [vite] page reload src/libs/queries/sdk/pairs.ts
+12:02:48 AM [vite] page reload src/libs/queries/sdk/strategy.ts
+12:02:48 AM [vite] page reload src/libs/queries/sdk/trade.ts
+12:02:48 AM [vite] hmr update /src/index.css, /src/libs/modals/modals/ModalTradeRouting/ModalTradeRouting.tsx
+12:02:48 AM [vite] page reload src/libs/queries/sdk/tradeLiquidity.ts
+12:02:48 AM [vite] page reload src/libs/routing/externalLinks.ts
+12:02:48 AM [vite] page reload src/libs/routing/index.ts
+12:02:48 AM [vite] hmr update /src/libs/routing/NewTabLink.tsx, /src/index.css
+12:02:48 AM [vite] page reload src/libs/routing/router.tsx
+12:02:48 AM [vite] page reload src/libs/routing/routes/debug.ts
+12:02:48 AM [vite] page reload src/libs/routing/routes/explorer.ts
+12:02:48 AM [vite] page reload src/libs/routing/routes/index.ts
+12:02:48 AM [vite] page reload src/libs/routing/routes/legal.ts
+12:02:48 AM [vite] page reload src/libs/routing/routes/myStrategies.ts
+12:02:48 AM [vite] page reload src/libs/routing/routes/root.ts
+12:02:48 AM [vite] page reload src/libs/routing/routes/sim.tsx
+12:02:48 AM [vite] page reload src/libs/routing/routes/strategy.ts
+12:02:48 AM [vite] page reload src/libs/routing/routes/strategyCreate.ts
+12:02:48 AM [vite] page reload src/libs/routing/routes/strategyEdit.ts
+12:02:48 AM [vite] page reload src/libs/routing/routes/trade.ts
+12:02:48 AM [vite] page reload src/libs/routing/utils.ts
+12:02:48 AM [vite] page reload src/libs/safedecimal/index.ts
+12:02:48 AM [vite] page reload src/libs/safedecimal/safedecimal.test.ts
+12:02:48 AM [vite] page reload src/libs/sdk/index.ts
+12:02:48 AM [vite] hmr update /src/libs/table/Table.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/libs/table/TBody.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/libs/table/TFoot.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/libs/table/THead.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/libs/table/TPagination.tsx, /src/index.css
+12:02:48 AM [vite] page reload src/libs/table/types.ts
+12:02:48 AM [vite] page reload src/libs/testing-library/drivers/CreateOverlappingDriver.tsx
+12:02:48 AM [vite] page reload src/libs/testing-library/index.tsx
+12:02:48 AM [vite] page reload src/libs/testing-library/setup.ts
+12:02:48 AM [vite] page reload src/libs/testing-library/utils/index.ts
+12:02:48 AM [vite] page reload src/libs/testing-library/utils/mock.ts
+12:02:48 AM [vite] page reload src/libs/testing-library/utils/routing.ts
+12:02:48 AM [vite] page reload src/libs/testing-library/utils/types.ts
+12:02:48 AM [vite] page reload src/libs/tokens/token.types.ts
+12:02:48 AM [vite] page reload src/libs/tokens/tokenHelperFn.ts
+12:02:48 AM [vite] page reload src/libs/twmerge/index.ts
+12:02:48 AM [vite] page reload src/libs/twmerge/twmerge.test.ts
+12:02:48 AM [vite] page reload src/libs/wagmi/chains.ts
+12:02:48 AM [vite] hmr update /src/index.css, /src/libs/wagmi/WagmiReactWrapper.tsx, /src/libs/wagmi/useWagmiNetwork.tsx
+12:02:48 AM [vite] hmr update /src/index.css, /src/libs/wagmi/WagmiReactWrapper.tsx, /src/libs/wagmi/useWagmiNetwork.tsx
+12:02:48 AM [vite] hmr update /src/index.css, /src/libs/wagmi/WagmiProvider.tsx, /src/libs/wagmi/useWagmiNetwork.tsx
+12:02:48 AM [vite] page reload src/libs/wagmi/index.ts
+12:02:48 AM [vite] hmr update /src/index.css, /src/libs/wagmi/WagmiProvider.tsx
+12:02:48 AM [vite] hmr update /src/libs/wagmi/useWagmiNetwork.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/index.css, /src/libs/wagmi/WagmiProvider.tsx
+12:02:48 AM [vite] hmr update /src/index.css, /src/libs/wagmi/WagmiProvider.tsx
+12:02:48 AM [vite] page reload src/libs/wagmi/wagmi.constants.ts
+12:02:48 AM [vite] page reload src/libs/wagmi/wagmi.types.ts
+12:02:48 AM [vite] hmr update /src/index.css, /src/libs/wagmi/WagmiProvider.tsx
+12:02:48 AM [vite] hmr update /src/libs/wagmi/WagmiProvider.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/libs/wagmi/WagmiReactWrapper.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/pages/debug/index.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/pages/explorer/index.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/pages/explorer/type/activity/index.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/pages/explorer/type/index.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/pages/explorer/type/overview/index.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/pages/explorer/type/portfolio/index.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/pages/explorer/type/portfolio/token/index.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/pages/privacy/index.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/pages/simulator/index.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/pages/simulator/overlapping/index.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/pages/simulator/recurring/index.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/pages/simulator/result/index.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/pages/strategies/activity/index.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/pages/strategies/create/disposable.tsx, /src/index.css
+12:02:48 AM [vite] page reload src/pages/strategies/create/overlapping.test.tsx
+12:02:48 AM [vite] hmr update /src/pages/strategies/create/overlapping.tsx, /src/index.css
+12:02:48 AM [vite] page reload src/pages/strategies/create/recurring.test.tsx
+12:02:48 AM [vite] hmr update /src/pages/strategies/create/recurring.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/pages/strategies/create/token.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/index.css, /src/pages/strategies/create/token.tsx, /src/pages/strategies/create/recurring.tsx, /src/pages/strategies/create/disposable.tsx, /src/pages/strategies/create/overlapping.tsx
+12:02:48 AM [vite] hmr update /src/pages/strategies/edit/budget/disposable.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/pages/strategies/edit/budget/overlapping.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/pages/strategies/edit/budget/recurring.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/pages/strategies/edit/layout.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/pages/strategies/edit/prices/disposable.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/pages/strategies/edit/prices/overlapping.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/pages/strategies/edit/prices/recurring.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/pages/strategies/index.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/pages/strategies/overview/index.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/pages/strategies/portfolio/index.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/pages/strategies/portfolio/token/index.tsx, /src/index.css
+12:02:48 AM [vite] hmr update /src/pages/strategy/index.tsx, /src/index.css
+12:02:50 AM [vite] hmr update /src/pages/terms/index.tsx, /src/index.css
+12:02:50 AM [vite] hmr update /src/pages/trade/index.tsx, /src/index.css
+12:02:50 AM [vite] page reload src/reportWebVitals.ts
+12:02:50 AM [vite] hmr update /src/index.css, /src/libs/wagmi/WagmiProvider.tsx, /src/components/strategies/create/CreateStrategyCTA.tsx, /src/components/core/MainContent.tsx, /src/components/strategies/create/CreateStrategyTokenSelection.tsx, /src/components/strategies/create/CreateStrategyOption.tsx, /src/components/strategies/create/CreateLayout.tsx, /src/components/strategies/edit/EditStrategyLayout.tsx, /src/components/trade/tradeWidget/TradeWidget.tsx, /src/components/strategies/overview/strategyBlock/StrategyBlockManage.tsx, /src/components/strategies/edit/EditStrategyForm.tsx, /src/components/strategies/overview/strategyBlock/StrategyBlockCreate.tsx, /src/components/strategies/create/CreateForm.tsx, /src/components/strategies/common/InputRange.tsx, /src/components/strategies/common/InputLimit.tsx, /src/components/strategies/common/StrategyGraph.tsx, /src/components/common/tooltip/Tooltip.tsx, /src/components/trade/tradeWidget/TradeWidgetBuySell.tsx, /src/components/core/menu/mainMenu/MainMenuTradeSettings.tsx, /src/components/core/menu/mainMenu/MainMenuTradePairs.tsx, /src/components/core/menu/mainMenu/MainMenuTradeSwitch.tsx, /src/components/core/menu/mobileMenu/MobileMenu.tsx, /src/components/core/menu/mainMenu/MainMenuLeft.tsx, /src/components/strategies/create/BuySellBlock/InputRange.tsx, /src/components/core/menu/mainMenu/MainMenuRightWallet.tsx, /src/components/core/menu/mainMenu/MainMenuRightNotifications.tsx, /src/libs/modals/modals/ModalTradeSettings.tsx, /src/libs/modals/modals/WalletModal/ModalWallet.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmPause.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmWithdraw.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmDelete.tsx, /src/components/strategies/create/BuySellBlock/InputLimit.tsx, /src/libs/modals/modals/ModalConfirm/ModalConfirm.tsx, /src/components/trade/settings/TradeSettings.tsx, /src/components/trade/settings/TradeSettingsRow.tsx, /src/components/common/approval/ApproveToken.tsx, /src/pages/explorer/index.tsx
+12:02:50 AM [vite] hmr update /src/index.css, /src/libs/wagmi/WagmiProvider.tsx, /src/components/strategies/create/CreateStrategyCTA.tsx, /src/components/core/MainContent.tsx, /src/components/strategies/create/CreateStrategyTokenSelection.tsx, /src/components/strategies/create/CreateStrategyOption.tsx, /src/components/strategies/create/CreateLayout.tsx, /src/components/strategies/edit/EditStrategyLayout.tsx, /src/components/trade/tradeWidget/TradeWidget.tsx, /src/components/strategies/overview/strategyBlock/StrategyBlockManage.tsx, /src/components/strategies/edit/EditStrategyForm.tsx, /src/components/strategies/overview/strategyBlock/StrategyBlockCreate.tsx, /src/components/strategies/create/CreateForm.tsx, /src/components/strategies/common/InputRange.tsx, /src/components/strategies/common/InputLimit.tsx, /src/components/strategies/common/StrategyGraph.tsx, /src/components/common/tooltip/Tooltip.tsx, /src/components/trade/tradeWidget/TradeWidgetBuySell.tsx, /src/components/core/menu/mainMenu/MainMenuTradeSettings.tsx, /src/components/core/menu/mainMenu/MainMenuTradePairs.tsx, /src/components/core/menu/mainMenu/MainMenuTradeSwitch.tsx, /src/components/core/menu/mobileMenu/MobileMenu.tsx, /src/components/core/menu/mainMenu/MainMenuLeft.tsx, /src/components/strategies/create/BuySellBlock/InputRange.tsx, /src/components/core/menu/mainMenu/MainMenuRightWallet.tsx, /src/components/core/menu/mainMenu/MainMenuRightNotifications.tsx, /src/libs/modals/modals/ModalTradeSettings.tsx, /src/libs/modals/modals/WalletModal/ModalWallet.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmPause.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmWithdraw.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmDelete.tsx, /src/components/strategies/create/BuySellBlock/InputLimit.tsx, /src/libs/modals/modals/ModalConfirm/ModalConfirm.tsx, /src/components/trade/settings/TradeSettings.tsx, /src/components/trade/settings/TradeSettingsRow.tsx, /src/components/common/approval/ApproveToken.tsx
+12:02:50 AM [vite] hmr update /src/index.css, /src/libs/wagmi/WagmiProvider.tsx, /src/components/strategies/create/CreateStrategyCTA.tsx, /src/components/core/MainContent.tsx, /src/components/strategies/create/CreateStrategyTokenSelection.tsx, /src/components/strategies/create/CreateStrategyOption.tsx, /src/components/strategies/create/CreateLayout.tsx, /src/components/strategies/edit/EditStrategyLayout.tsx, /src/components/trade/tradeWidget/TradeWidget.tsx, /src/components/strategies/overview/strategyBlock/StrategyBlockManage.tsx, /src/components/strategies/edit/EditStrategyForm.tsx, /src/components/strategies/overview/strategyBlock/StrategyBlockCreate.tsx, /src/components/strategies/create/CreateForm.tsx, /src/components/strategies/common/InputRange.tsx, /src/components/strategies/common/InputLimit.tsx, /src/components/strategies/common/StrategyGraph.tsx, /src/components/common/tooltip/Tooltip.tsx, /src/components/trade/tradeWidget/TradeWidgetBuySell.tsx, /src/components/core/menu/mainMenu/MainMenuTradeSettings.tsx, /src/components/core/menu/mainMenu/MainMenuTradePairs.tsx, /src/components/core/menu/mainMenu/MainMenuTradeSwitch.tsx, /src/components/core/menu/mobileMenu/MobileMenu.tsx, /src/components/core/menu/mainMenu/MainMenuLeft.tsx, /src/components/strategies/create/BuySellBlock/InputRange.tsx, /src/components/core/menu/mainMenu/MainMenuRightWallet.tsx, /src/components/core/menu/mainMenu/MainMenuRightNotifications.tsx, /src/libs/modals/modals/ModalTradeSettings.tsx, /src/libs/modals/modals/WalletModal/ModalWallet.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmPause.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmWithdraw.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmDelete.tsx, /src/components/strategies/create/BuySellBlock/InputLimit.tsx, /src/libs/modals/modals/ModalConfirm/ModalConfirm.tsx, /src/components/trade/settings/TradeSettings.tsx, /src/components/trade/settings/TradeSettingsRow.tsx, /src/components/common/approval/ApproveToken.tsx, /src/pages/explorer/index.tsx
+12:02:50 AM [vite] page reload src/services/events/googleTagManager/types.ts
+12:02:50 AM [vite] hmr update /src/index.css, /src/libs/wagmi/WagmiProvider.tsx, /src/components/strategies/create/CreateStrategyCTA.tsx, /src/components/core/MainContent.tsx, /src/components/strategies/create/CreateStrategyTokenSelection.tsx, /src/components/strategies/create/CreateStrategyOption.tsx, /src/components/strategies/create/CreateLayout.tsx, /src/components/strategies/edit/EditStrategyLayout.tsx, /src/components/trade/tradeWidget/TradeWidget.tsx, /src/components/strategies/overview/strategyBlock/StrategyBlockManage.tsx, /src/components/strategies/edit/EditStrategyForm.tsx, /src/components/strategies/overview/strategyBlock/StrategyBlockCreate.tsx, /src/components/strategies/create/CreateForm.tsx, /src/components/strategies/common/InputRange.tsx, /src/components/strategies/common/InputLimit.tsx, /src/components/strategies/common/StrategyGraph.tsx, /src/components/common/tooltip/Tooltip.tsx, /src/components/trade/tradeWidget/TradeWidgetBuySell.tsx, /src/components/core/menu/mainMenu/MainMenuTradeSettings.tsx, /src/components/core/menu/mainMenu/MainMenuTradePairs.tsx, /src/components/core/menu/mainMenu/MainMenuTradeSwitch.tsx, /src/components/core/menu/mobileMenu/MobileMenu.tsx, /src/components/core/menu/mainMenu/MainMenuLeft.tsx, /src/components/strategies/create/BuySellBlock/InputRange.tsx, /src/components/core/menu/mainMenu/MainMenuRightWallet.tsx, /src/components/core/menu/mainMenu/MainMenuRightNotifications.tsx, /src/libs/modals/modals/ModalTradeSettings.tsx, /src/libs/modals/modals/WalletModal/ModalWallet.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmPause.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmWithdraw.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmDelete.tsx, /src/components/strategies/create/BuySellBlock/InputLimit.tsx, /src/libs/modals/modals/ModalConfirm/ModalConfirm.tsx, /src/components/trade/settings/TradeSettings.tsx, /src/components/trade/settings/TradeSettingsRow.tsx, /src/components/common/approval/ApproveToken.tsx
+12:02:50 AM [vite] hmr update /src/index.css, /src/libs/wagmi/WagmiProvider.tsx, /src/components/strategies/create/CreateStrategyCTA.tsx, /src/components/core/MainContent.tsx, /src/components/strategies/create/CreateStrategyTokenSelection.tsx, /src/components/strategies/create/CreateStrategyOption.tsx, /src/components/strategies/create/CreateLayout.tsx, /src/components/strategies/edit/EditStrategyLayout.tsx, /src/components/trade/tradeWidget/TradeWidget.tsx, /src/components/strategies/overview/strategyBlock/StrategyBlockManage.tsx, /src/components/strategies/edit/EditStrategyForm.tsx, /src/components/strategies/overview/strategyBlock/StrategyBlockCreate.tsx, /src/components/strategies/create/CreateForm.tsx, /src/components/strategies/common/InputRange.tsx, /src/components/strategies/common/InputLimit.tsx, /src/components/strategies/common/StrategyGraph.tsx, /src/components/common/tooltip/Tooltip.tsx, /src/components/trade/tradeWidget/TradeWidgetBuySell.tsx, /src/components/core/menu/mainMenu/MainMenuTradeSettings.tsx, /src/components/core/menu/mainMenu/MainMenuTradePairs.tsx, /src/components/core/menu/mainMenu/MainMenuTradeSwitch.tsx, /src/components/core/menu/mobileMenu/MobileMenu.tsx, /src/components/core/menu/mainMenu/MainMenuLeft.tsx, /src/components/strategies/create/BuySellBlock/InputRange.tsx, /src/components/core/menu/mainMenu/MainMenuRightWallet.tsx, /src/components/core/menu/mainMenu/MainMenuRightNotifications.tsx, /src/libs/modals/modals/ModalTradeSettings.tsx, /src/libs/modals/modals/WalletModal/ModalWallet.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmPause.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmWithdraw.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmDelete.tsx, /src/components/strategies/create/BuySellBlock/InputLimit.tsx, /src/libs/modals/modals/ModalConfirm/ModalConfirm.tsx, /src/components/trade/settings/TradeSettings.tsx, /src/components/trade/settings/TradeSettingsRow.tsx, /src/components/common/approval/ApproveToken.tsx
+12:02:50 AM [vite] hmr update /src/index.css, /src/libs/wagmi/WagmiProvider.tsx, /src/components/strategies/create/CreateStrategyCTA.tsx, /src/components/core/MainContent.tsx, /src/components/strategies/create/CreateStrategyTokenSelection.tsx, /src/components/strategies/create/CreateStrategyOption.tsx, /src/components/strategies/create/CreateLayout.tsx, /src/components/strategies/edit/EditStrategyLayout.tsx, /src/components/trade/tradeWidget/TradeWidget.tsx, /src/components/strategies/overview/strategyBlock/StrategyBlockManage.tsx, /src/components/strategies/edit/EditStrategyForm.tsx, /src/components/strategies/overview/strategyBlock/StrategyBlockCreate.tsx, /src/components/strategies/create/CreateForm.tsx, /src/components/strategies/common/InputRange.tsx, /src/components/strategies/common/InputLimit.tsx, /src/components/strategies/common/StrategyGraph.tsx, /src/components/common/tooltip/Tooltip.tsx, /src/components/trade/tradeWidget/TradeWidgetBuySell.tsx, /src/components/core/menu/mainMenu/MainMenuTradeSettings.tsx, /src/components/core/menu/mainMenu/MainMenuTradePairs.tsx, /src/components/core/menu/mainMenu/MainMenuTradeSwitch.tsx, /src/components/core/menu/mobileMenu/MobileMenu.tsx, /src/components/core/menu/mainMenu/MainMenuLeft.tsx, /src/components/strategies/create/BuySellBlock/InputRange.tsx, /src/components/core/menu/mainMenu/MainMenuRightWallet.tsx, /src/components/core/menu/mainMenu/MainMenuRightNotifications.tsx, /src/libs/modals/modals/ModalTradeSettings.tsx, /src/libs/modals/modals/WalletModal/ModalWallet.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmPause.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmWithdraw.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmDelete.tsx, /src/components/strategies/create/BuySellBlock/InputLimit.tsx, /src/libs/modals/modals/ModalConfirm/ModalConfirm.tsx, /src/components/trade/settings/TradeSettings.tsx, /src/components/trade/settings/TradeSettingsRow.tsx, /src/components/common/approval/ApproveToken.tsx
+12:02:50 AM [vite] hmr update /src/index.css, /src/libs/wagmi/WagmiProvider.tsx, /src/components/strategies/create/CreateStrategyCTA.tsx, /src/components/core/MainContent.tsx, /src/components/strategies/create/CreateStrategyTokenSelection.tsx, /src/components/strategies/create/CreateStrategyOption.tsx, /src/components/strategies/create/CreateLayout.tsx, /src/components/strategies/edit/EditStrategyLayout.tsx, /src/components/trade/tradeWidget/TradeWidget.tsx, /src/components/strategies/overview/strategyBlock/StrategyBlockManage.tsx, /src/components/strategies/edit/EditStrategyForm.tsx, /src/components/strategies/overview/strategyBlock/StrategyBlockCreate.tsx, /src/components/strategies/create/CreateForm.tsx, /src/components/strategies/common/InputRange.tsx, /src/components/strategies/common/InputLimit.tsx, /src/components/strategies/common/StrategyGraph.tsx, /src/components/common/tooltip/Tooltip.tsx, /src/components/trade/tradeWidget/TradeWidgetBuySell.tsx, /src/components/core/menu/mainMenu/MainMenuTradeSettings.tsx, /src/components/core/menu/mainMenu/MainMenuTradePairs.tsx, /src/components/core/menu/mainMenu/MainMenuTradeSwitch.tsx, /src/components/core/menu/mobileMenu/MobileMenu.tsx, /src/components/core/menu/mainMenu/MainMenuLeft.tsx, /src/components/strategies/create/BuySellBlock/InputRange.tsx, /src/components/core/menu/mainMenu/MainMenuRightWallet.tsx, /src/components/core/menu/mainMenu/MainMenuRightNotifications.tsx, /src/libs/modals/modals/ModalTradeSettings.tsx, /src/libs/modals/modals/WalletModal/ModalWallet.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmPause.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmWithdraw.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmDelete.tsx, /src/components/strategies/create/BuySellBlock/InputLimit.tsx, /src/libs/modals/modals/ModalConfirm/ModalConfirm.tsx, /src/components/trade/settings/TradeSettings.tsx, /src/components/trade/settings/TradeSettingsRow.tsx, /src/components/common/approval/ApproveToken.tsx, /src/pages/explorer/index.tsx
+12:02:50 AM [vite] hmr update /src/index.css, /src/libs/wagmi/WagmiProvider.tsx, /src/components/strategies/create/CreateStrategyCTA.tsx, /src/components/core/MainContent.tsx, /src/components/strategies/create/CreateStrategyTokenSelection.tsx, /src/components/strategies/create/CreateStrategyOption.tsx, /src/components/strategies/create/CreateLayout.tsx, /src/components/strategies/edit/EditStrategyLayout.tsx, /src/components/trade/tradeWidget/TradeWidget.tsx, /src/components/strategies/overview/strategyBlock/StrategyBlockManage.tsx, /src/components/strategies/edit/EditStrategyForm.tsx, /src/components/strategies/overview/strategyBlock/StrategyBlockCreate.tsx, /src/components/strategies/create/CreateForm.tsx, /src/components/strategies/common/InputRange.tsx, /src/components/strategies/common/InputLimit.tsx, /src/components/strategies/common/StrategyGraph.tsx, /src/components/common/tooltip/Tooltip.tsx, /src/components/trade/tradeWidget/TradeWidgetBuySell.tsx, /src/components/core/menu/mainMenu/MainMenuTradeSettings.tsx, /src/components/core/menu/mainMenu/MainMenuTradePairs.tsx, /src/components/core/menu/mainMenu/MainMenuTradeSwitch.tsx, /src/components/core/menu/mobileMenu/MobileMenu.tsx, /src/components/core/menu/mainMenu/MainMenuLeft.tsx, /src/components/strategies/create/BuySellBlock/InputRange.tsx, /src/components/core/menu/mainMenu/MainMenuRightWallet.tsx, /src/components/core/menu/mainMenu/MainMenuRightNotifications.tsx, /src/libs/modals/modals/ModalTradeSettings.tsx, /src/libs/modals/modals/WalletModal/ModalWallet.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmPause.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmWithdraw.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmDelete.tsx, /src/components/strategies/create/BuySellBlock/InputLimit.tsx, /src/libs/modals/modals/ModalConfirm/ModalConfirm.tsx, /src/components/trade/settings/TradeSettings.tsx, /src/components/trade/settings/TradeSettingsRow.tsx, /src/components/common/approval/ApproveToken.tsx
+12:02:50 AM [vite] hmr update /src/index.css, /src/libs/wagmi/WagmiProvider.tsx, /src/components/strategies/create/CreateStrategyCTA.tsx, /src/components/core/MainContent.tsx, /src/components/strategies/create/CreateStrategyTokenSelection.tsx, /src/components/strategies/create/CreateStrategyOption.tsx, /src/components/strategies/create/CreateLayout.tsx, /src/components/strategies/edit/EditStrategyLayout.tsx, /src/components/trade/tradeWidget/TradeWidget.tsx, /src/components/strategies/overview/strategyBlock/StrategyBlockManage.tsx, /src/components/strategies/edit/EditStrategyForm.tsx, /src/components/strategies/overview/strategyBlock/StrategyBlockCreate.tsx, /src/components/strategies/create/CreateForm.tsx, /src/components/strategies/common/InputRange.tsx, /src/components/strategies/common/InputLimit.tsx, /src/components/strategies/common/StrategyGraph.tsx, /src/components/common/tooltip/Tooltip.tsx, /src/components/trade/tradeWidget/TradeWidgetBuySell.tsx, /src/components/core/menu/mainMenu/MainMenuTradeSettings.tsx, /src/components/core/menu/mainMenu/MainMenuTradePairs.tsx, /src/components/core/menu/mainMenu/MainMenuTradeSwitch.tsx, /src/components/core/menu/mobileMenu/MobileMenu.tsx, /src/components/core/menu/mainMenu/MainMenuLeft.tsx, /src/components/strategies/create/BuySellBlock/InputRange.tsx, /src/components/core/menu/mainMenu/MainMenuRightWallet.tsx, /src/components/core/menu/mainMenu/MainMenuRightNotifications.tsx, /src/libs/modals/modals/ModalTradeSettings.tsx, /src/libs/modals/modals/WalletModal/ModalWallet.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmPause.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmWithdraw.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmDelete.tsx, /src/components/strategies/create/BuySellBlock/InputLimit.tsx, /src/libs/modals/modals/ModalConfirm/ModalConfirm.tsx, /src/components/trade/settings/TradeSettings.tsx, /src/components/trade/settings/TradeSettingsRow.tsx, /src/components/common/approval/ApproveToken.tsx
+12:02:50 AM [vite] hmr update /src/index.css, /src/libs/wagmi/WagmiProvider.tsx, /src/components/strategies/create/CreateStrategyCTA.tsx, /src/components/core/MainContent.tsx, /src/components/strategies/create/CreateStrategyTokenSelection.tsx, /src/components/strategies/create/CreateStrategyOption.tsx, /src/components/strategies/create/CreateLayout.tsx, /src/components/strategies/edit/EditStrategyLayout.tsx, /src/components/trade/tradeWidget/TradeWidget.tsx, /src/components/strategies/overview/strategyBlock/StrategyBlockManage.tsx, /src/components/strategies/edit/EditStrategyForm.tsx, /src/components/strategies/overview/strategyBlock/StrategyBlockCreate.tsx, /src/components/strategies/create/CreateForm.tsx, /src/components/strategies/common/InputRange.tsx, /src/components/strategies/common/InputLimit.tsx, /src/components/strategies/common/StrategyGraph.tsx, /src/components/common/tooltip/Tooltip.tsx, /src/components/trade/tradeWidget/TradeWidgetBuySell.tsx, /src/components/core/menu/mainMenu/MainMenuTradeSettings.tsx, /src/components/core/menu/mainMenu/MainMenuTradePairs.tsx, /src/components/core/menu/mainMenu/MainMenuTradeSwitch.tsx, /src/components/core/menu/mobileMenu/MobileMenu.tsx, /src/components/core/menu/mainMenu/MainMenuLeft.tsx, /src/components/strategies/create/BuySellBlock/InputRange.tsx, /src/components/core/menu/mainMenu/MainMenuRightWallet.tsx, /src/components/core/menu/mainMenu/MainMenuRightNotifications.tsx, /src/libs/modals/modals/ModalTradeSettings.tsx, /src/libs/modals/modals/WalletModal/ModalWallet.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmPause.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmWithdraw.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmDelete.tsx, /src/components/strategies/create/BuySellBlock/InputLimit.tsx, /src/libs/modals/modals/ModalConfirm/ModalConfirm.tsx, /src/components/trade/settings/TradeSettings.tsx, /src/components/trade/settings/TradeSettingsRow.tsx, /src/components/common/approval/ApproveToken.tsx
+12:02:50 AM [vite] page reload src/services/events/types.ts
+12:02:50 AM [vite] hmr update /src/index.css, /src/libs/wagmi/WagmiProvider.tsx, /src/components/strategies/create/CreateStrategyCTA.tsx, /src/components/core/MainContent.tsx, /src/components/strategies/create/CreateStrategyTokenSelection.tsx, /src/components/strategies/create/CreateStrategyOption.tsx, /src/components/strategies/create/CreateLayout.tsx, /src/components/strategies/edit/EditStrategyLayout.tsx, /src/components/trade/tradeWidget/TradeWidget.tsx, /src/components/strategies/overview/strategyBlock/StrategyBlockManage.tsx, /src/components/strategies/edit/EditStrategyForm.tsx, /src/components/strategies/overview/strategyBlock/StrategyBlockCreate.tsx, /src/components/strategies/create/CreateForm.tsx, /src/components/strategies/common/InputRange.tsx, /src/components/strategies/common/InputLimit.tsx, /src/components/strategies/common/StrategyGraph.tsx, /src/components/common/tooltip/Tooltip.tsx, /src/components/trade/tradeWidget/TradeWidgetBuySell.tsx, /src/components/core/menu/mainMenu/MainMenuTradeSettings.tsx, /src/components/core/menu/mainMenu/MainMenuTradePairs.tsx, /src/components/core/menu/mainMenu/MainMenuTradeSwitch.tsx, /src/components/core/menu/mobileMenu/MobileMenu.tsx, /src/components/core/menu/mainMenu/MainMenuLeft.tsx, /src/components/strategies/create/BuySellBlock/InputRange.tsx, /src/components/core/menu/mainMenu/MainMenuRightWallet.tsx, /src/components/core/menu/mainMenu/MainMenuRightNotifications.tsx, /src/libs/modals/modals/ModalTradeSettings.tsx, /src/libs/modals/modals/WalletModal/ModalWallet.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmPause.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmWithdraw.tsx, /src/libs/modals/modals/ModalConfirmStrategy/ModalConfirmDelete.tsx, /src/components/strategies/create/BuySellBlock/InputLimit.tsx, /src/libs/modals/modals/ModalConfirm/ModalConfirm.tsx, /src/components/trade/settings/TradeSettings.tsx, /src/components/trade/settings/TradeSettingsRow.tsx, /src/components/common/approval/ApproveToken.tsx
+12:02:50 AM [vite] page reload src/services/localeStorage/index.ts
+12:02:50 AM [vite] hmr update /src/store/StoreProvider.tsx, /src/index.css
+12:02:50 AM [vite] hmr update /src/store/StoreProvider.tsx, /src/index.css
+12:02:50 AM [vite] hmr update /src/store/StoreProvider.tsx, /src/index.css
+12:02:50 AM [vite] hmr update /src/store/StoreProvider.tsx, /src/index.css
+12:02:50 AM [vite] hmr update /src/store/StoreProvider.tsx, /src/index.css
+12:02:50 AM [vite] hmr update /src/store/StoreProvider.tsx, /src/index.css
+12:02:50 AM [vite] hmr update /src/store/StoreProvider.tsx, /src/index.css
+12:02:50 AM [vite] hmr update /src/store/StoreProvider.tsx, /src/index.css
+12:02:50 AM [vite] hmr update /src/store/StoreProvider.tsx, /src/index.css
+12:02:50 AM [vite] page reload src/types/extractDataById.types.ts
+12:02:50 AM [vite] hmr update /src/index.css, /src/components/strategies/edit/EditStrategyForm.tsx, /src/components/strategies/create/CreateForm.tsx, /src/components/trade/tradeWidget/TradeWidgetBuySell.tsx, /src/libs/modals/modals/ModalTradeRouting/ModalTradeRouting.tsx, /src/libs/modals/modals/ModalConfirm/ModalConfirm.tsx, /src/components/common/approval/ApproveToken.tsx
+12:02:50 AM [vite] hmr update /src/index.css, /src/components/activity/ActivityTable.tsx, /src/libs/notifications/TxNotification.tsx, /src/libs/modals/modals/ModalImportToken.tsx
+12:02:50 AM [vite] page reload src/utils/carbonApi.ts
+12:02:50 AM [vite] hmr update /src/index.css, /src/components/strategies/portfolio/allTokens/PortfolioAllTokensDesktop.tsx, /src/components/strategies/portfolio/allTokens/PortfolioAllTokens.tsx, /src/components/strategies/portfolio/token/PortfolioTokenDesktop.tsx, /src/components/strategies/portfolio/token/PortfolioToken.tsx, /src/components/strategies/portfolio/PortfolioMobileCard.tsx
+12:02:50 AM [vite] page reload src/utils/fullOutcome.test.ts
+12:02:50 AM [vite] page reload src/utils/fullOutcome.ts
+12:02:50 AM [vite] page reload src/utils/helpers/helpers.test.ts
+12:02:50 AM [vite] page reload src/utils/helpers/index.ts
+12:02:50 AM [vite] page reload src/utils/helpers/number.test.ts
+12:02:50 AM [vite] page reload src/utils/helpers/number.ts
+12:02:50 AM [vite] page reload src/utils/helpers/operators.ts
+12:02:50 AM [vite] page reload src/utils/helpers/schema.ts
+12:02:50 AM [vite] page reload src/utils/managedLocalStorage.ts
+12:02:50 AM [vite] page reload src/utils/migrateLocalStorage.test.ts
+12:02:50 AM [vite] page reload src/utils/migrateLocalStorage.ts
+12:02:50 AM [vite] page reload src/utils/pairSearch.test.ts
+12:02:50 AM [vite] hmr update /src/index.css, /src/pages/explorer/index.tsx, /src/hooks/useStrategies.tsx, /src/pages/trade/index.tsx, /src/components/core/menu/mainMenu/MainMenuTradePairs.tsx, /src/libs/modals/modals/ModalTradeTokenList/useModalTradeTokenList.tsx, /src/components/strategies/overview/strategyBlock/StrategyBlockManage.tsx, /src/components/activity/useActivityToast.tsx, /src/components/activity/ActivityFilter.tsx, /src/components/explorer/ExplorerSearch.tsx, /src/components/explorer/useExplorer.tsx, /src/components/common/combobox/index.tsx, /src/components/explorer/suggestion/SuggestionCombobox.tsx, /src/components/explorer/suggestion/SuggestionList.tsx
+12:02:50 AM [vite] hmr update /src/index.css, /src/libs/wagmi/WagmiProvider.tsx
+12:02:50 AM [vite] hmr update /src/index.css, /src/components/core/menu/mainMenu/MainMenuRightBurger/useMenuContext.tsx
+12:02:50 AM [vite] page reload src/utils/tenderly.ts
+12:02:50 AM [vite] page reload src/utils/tokens.ts
+12:02:50 AM [vite] page reload src/vite-env.d.ts
+12:02:50 AM [vite] page reload src/workers/runtime-config.ts
+12:02:50 AM [vite] page reload src/workers/sdk.ts
+12:02:50 AM [vite] page reload tailwind.config.ts
+12:02:50 AM [vite] changed tsconfig file detected: /opt/dex/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+12:02:50 AM [vite] vite.config.ts changed, restarting server...
+12:02:53 AM [vite] page reload src/abis/types/Voucher.ts
+12:02:53 AM [vite] hmr update /src/libs/modals/modals/common/CategoryWithCounter.tsx, /src/index.css
+12:02:53 AM [vite] hmr update /src/components/activity/ActivityNotification.tsx, /src/index.css
+12:02:53 AM [vite] hmr update /src/components/strategies/overlapping/OverlappingSpread.tsx, /src/index.css
+12:02:53 AM [vite] hmr update /src/components/strategies/overlapping/OverlappingGraph.tsx, /src/index.css
+12:02:53 AM [vite] hmr update /src/components/common/iconTitleText/IconTitleText.tsx, /src/index.css
+12:02:53 AM [vite] hmr update /src/components/common/approval/ApproveToken.tsx, /src/index.css
+12:02:53 AM [vite] hmr update /src/components/common/combobox/index.tsx, /src/index.css
+12:02:53 AM [vite] hmr update /src/fonts.css
+12:02:53 AM [vite] server restarted.
+yarn run v1.22.22
+$ cross-env VITE_NETWORK=dfi vite --host 127.0.0.1 --port 4040
+[33mThe CJS build of Vite's Node API is deprecated. See https://vitejs.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+
+  VITE v5.3.2  ready in 403 ms
+
+  ➜  Local:   http://127.0.0.1:4040/
+12:47:25 AM [vite] hmr update /src/index.css, /src/App.tsx, /src/components/core/menu/mobileMenu/MobileMenu.tsx, /src/components/core/menu/mainMenu/MainMenuLeft.tsx
+12:47:25 AM [vite] hmr update /src/index.css, /src/App.tsx, /src/components/core/menu/mobileMenu/MobileMenu.tsx, /src/components/core/menu/mainMenu/MainMenuLeft.tsx
+12:47:25 AM [vite] hmr update /src/index.css, /src/App.tsx, /src/components/core/menu/mobileMenu/MobileMenu.tsx, /src/components/core/menu/mainMenu/MainMenuLeft.tsx
+12:47:33 AM [vite] hmr update /src/index.css, /src/App.tsx, /src/components/core/menu/mobileMenu/MobileMenu.tsx, /src/components/core/menu/mainMenu/MainMenuLeft.tsx
+12:47:33 AM [vite] hmr update /src/index.css, /src/App.tsx, /src/components/core/menu/mobileMenu/MobileMenu.tsx, /src/components/core/menu/mainMenu/MainMenuLeft.tsx
+12:47:34 AM [vite] hmr update /src/index.css, /src/App.tsx, /src/components/core/menu/mobileMenu/MobileMenu.tsx, /src/components/core/menu/mainMenu/MainMenuLeft.tsx
+1:37:21 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+1:37:21 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+1:37:21 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+1:38:08 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+1:38:09 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+1:38:09 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+1:38:47 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+1:38:47 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+1:38:48 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+1:39:58 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+1:39:58 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+1:39:59 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+1:40:47 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+1:40:47 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+1:40:48 AM [vite] hmr update /src/index.css, /src/App.tsx
+1:40:48 AM [vite] hmr invalidate /src/components/common/Footer/Footer.tsx Could not Fast Refresh (export removed)
+1:40:48 AM [vite] hmr update /src/index.css, /src/App.tsx
+1:40:48 AM [vite] hmr invalidate /src/components/common/Footer/Footer.tsx Could not Fast Refresh (export removed)
+1:40:48 AM [vite] hmr update /src/index.css, /src/App.tsx
+1:40:48 AM [vite] hmr invalidate /src/components/common/Footer/Footer.tsx Could not Fast Refresh (export removed)
+1:40:48 AM [vite] hmr update /src/index.css, /src/App.tsx
+1:41:37 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+1:41:37 AM [vite] hmr update /src/index.css, /src/App.tsx
+1:41:38 AM [vite] hmr update /src/index.css, /src/App.tsx
+1:41:38 AM [vite] hmr invalidate /src/components/common/Footer/Footer.tsx Could not Fast Refresh (export removed)
+1:41:38 AM [vite] hmr update /src/index.css, /src/App.tsx
+1:41:38 AM [vite] hmr invalidate /src/components/common/Footer/Footer.tsx Could not Fast Refresh (export removed)
+1:41:38 AM [vite] hmr update /src/index.css, /src/App.tsx
+1:42:09 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+1:42:09 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+1:42:09 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+1:42:43 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+1:42:43 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+1:42:43 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+1:43:48 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+1:43:48 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+1:43:48 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+1:46:57 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+1:46:57 AM [vite] hmr update /src/index.css, /src/App.tsx
+1:46:58 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+The request url "/opt/dex/.env" is outside of Vite serving allow list.
+
+- /opt/dex
+
+Refer to docs https://vitejs.dev/config/server-options.html#server-fs-allow for configurations and more details.
+
+The request url "/opt/dex/.env" is outside of Vite serving allow list.
+2:05:44 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:05:44 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:05:45 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:06:11 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:06:11 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:06:12 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:06:41 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:06:41 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:06:42 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:08:00 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:08:01 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:08:01 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:08:50 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:08:50 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:08:50 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:09:06 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:09:06 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:09:06 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:09:38 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:09:39 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:09:39 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:11:08 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:11:09 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:11:09 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:11:09 AM [vite] Internal server error: /opt/dex/src/components/common/Footer/Footer.tsx: Unexpected token (8:102)
+
+   6 |     return (
+   7 |         <footer className="border-background-800 mb-80 border-t bg-black md:mb-0">
+>  8 |         <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between"">
+     |                                                                                                       ^
+   9 |             <div className="flex items-center">
+  10 |                 <span className="text-14 font-weight-400 block">
+  11 |                     Copyright © 2020 - {new Date().getFullYear()}
+  Plugin: vite:react-babel
+  File: /opt/dex/src/components/common/Footer/Footer.tsx:8:102
+  6  |      return (
+  7  |          <footer className="border-background-800 mb-80 border-t bg-black md:mb-0">
+  8  |          <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between"">
+     |                                                                                                        ^
+  9  |              <div className="flex items-center">
+  10 |                  <span className="text-14 font-weight-400 block">
+      at constructor (/opt/dex/node_modules/@babel/parser/lib/index.js:351:19)
+      at TypeScriptParserMixin.raise (/opt/dex/node_modules/@babel/parser/lib/index.js:3233:19)
+      at TypeScriptParserMixin.unexpected (/opt/dex/node_modules/@babel/parser/lib/index.js:3253:16)
+      at TypeScriptParserMixin.jsxParseIdentifier (/opt/dex/node_modules/@babel/parser/lib/index.js:6586:12)
+      at TypeScriptParserMixin.jsxParseNamespacedName (/opt/dex/node_modules/@babel/parser/lib/index.js:6593:23)
+      at TypeScriptParserMixin.jsxParseAttribute (/opt/dex/node_modules/@babel/parser/lib/index.js:6669:22)
+      at TypeScriptParserMixin.jsxParseOpeningElementAfterName (/opt/dex/node_modules/@babel/parser/lib/index.js:6684:28)
+      at TypeScriptParserMixin.jsxParseOpeningElementAfterName (/opt/dex/node_modules/@babel/parser/lib/index.js:9632:18)
+      at TypeScriptParserMixin.jsxParseOpeningElementAt (/opt/dex/node_modules/@babel/parser/lib/index.js:6679:17)
+      at TypeScriptParserMixin.jsxParseElementAt (/opt/dex/node_modules/@babel/parser/lib/index.js:6703:33)
+      at TypeScriptParserMixin.jsxParseElementAt (/opt/dex/node_modules/@babel/parser/lib/index.js:6715:32)
+      at TypeScriptParserMixin.jsxParseElement (/opt/dex/node_modules/@babel/parser/lib/index.js:6766:17)
+      at TypeScriptParserMixin.parseExprAtom (/opt/dex/node_modules/@babel/parser/lib/index.js:6776:19)
+      at TypeScriptParserMixin.parseExprSubscripts (/opt/dex/node_modules/@babel/parser/lib/index.js:10568:23)
+      at TypeScriptParserMixin.parseUpdate (/opt/dex/node_modules/@babel/parser/lib/index.js:10551:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/opt/dex/node_modules/@babel/parser/lib/index.js:10529:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/opt/dex/node_modules/@babel/parser/lib/index.js:9430:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/opt/dex/node_modules/@babel/parser/lib/index.js:10383:61)
+      at TypeScriptParserMixin.parseExprOps (/opt/dex/node_modules/@babel/parser/lib/index.js:10388:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/opt/dex/node_modules/@babel/parser/lib/index.js:10365:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/opt/dex/node_modules/@babel/parser/lib/index.js:10326:21)
+      at /opt/dex/node_modules/@babel/parser/lib/index.js:9368:39
+      at TypeScriptParserMixin.tryParse (/opt/dex/node_modules/@babel/parser/lib/index.js:3564:20)
+      at TypeScriptParserMixin.parseMaybeAssign (/opt/dex/node_modules/@babel/parser/lib/index.js:9368:18)
+      at /opt/dex/node_modules/@babel/parser/lib/index.js:10296:39
+      at TypeScriptParserMixin.allowInAnd (/opt/dex/node_modules/@babel/parser/lib/index.js:11920:12)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (/opt/dex/node_modules/@babel/parser/lib/index.js:10296:17)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (/opt/dex/node_modules/@babel/parser/lib/index.js:11177:28)
+      at TypeScriptParserMixin.parseExprAtom (/opt/dex/node_modules/@babel/parser/lib/index.js:10835:23)
+      at TypeScriptParserMixin.parseExprAtom (/opt/dex/node_modules/@babel/parser/lib/index.js:6781:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/opt/dex/node_modules/@babel/parser/lib/index.js:10568:23)
+      at TypeScriptParserMixin.parseUpdate (/opt/dex/node_modules/@babel/parser/lib/index.js:10551:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/opt/dex/node_modules/@babel/parser/lib/index.js:10529:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/opt/dex/node_modules/@babel/parser/lib/index.js:9430:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/opt/dex/node_modules/@babel/parser/lib/index.js:10383:61)
+      at TypeScriptParserMixin.parseExprOps (/opt/dex/node_modules/@babel/parser/lib/index.js:10388:23)
+      at TypeSc
+... and 13 lines more
+2:11:10 AM [vite] Internal server error: /opt/dex/src/components/common/Footer/Footer.tsx: Unexpected token (8:102)
+
+   6 |     return (
+   7 |         <footer className="border-background-800 mb-80 border-t bg-black md:mb-0">
+>  8 |         <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between"">
+     |                                                                                                       ^
+   9 |             <div className="flex items-center">
+  10 |                 <span className="text-14 font-weight-400 block">
+  11 |                     Copyright © 2020 - {new Date().getFullYear()}
+  Plugin: vite:react-babel
+  File: /opt/dex/src/components/common/Footer/Footer.tsx:8:102
+  6  |      return (
+  7  |          <footer className="border-background-800 mb-80 border-t bg-black md:mb-0">
+  8  |          <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between"">
+     |                                                                                                        ^
+  9  |              <div className="flex items-center">
+  10 |                  <span className="text-14 font-weight-400 block">
+      at constructor (/opt/dex/node_modules/@babel/parser/lib/index.js:351:19)
+      at TypeScriptParserMixin.raise (/opt/dex/node_modules/@babel/parser/lib/index.js:3233:19)
+      at TypeScriptParserMixin.unexpected (/opt/dex/node_modules/@babel/parser/lib/index.js:3253:16)
+      at TypeScriptParserMixin.jsxParseIdentifier (/opt/dex/node_modules/@babel/parser/lib/index.js:6586:12)
+      at TypeScriptParserMixin.jsxParseNamespacedName (/opt/dex/node_modules/@babel/parser/lib/index.js:6593:23)
+      at TypeScriptParserMixin.jsxParseAttribute (/opt/dex/node_modules/@babel/parser/lib/index.js:6669:22)
+      at TypeScriptParserMixin.jsxParseOpeningElementAfterName (/opt/dex/node_modules/@babel/parser/lib/index.js:6684:28)
+      at TypeScriptParserMixin.jsxParseOpeningElementAfterName (/opt/dex/node_modules/@babel/parser/lib/index.js:9632:18)
+      at TypeScriptParserMixin.jsxParseOpeningElementAt (/opt/dex/node_modules/@babel/parser/lib/index.js:6679:17)
+      at TypeScriptParserMixin.jsxParseElementAt (/opt/dex/node_modules/@babel/parser/lib/index.js:6703:33)
+      at TypeScriptParserMixin.jsxParseElementAt (/opt/dex/node_modules/@babel/parser/lib/index.js:6715:32)
+      at TypeScriptParserMixin.jsxParseElement (/opt/dex/node_modules/@babel/parser/lib/index.js:6766:17)
+      at TypeScriptParserMixin.parseExprAtom (/opt/dex/node_modules/@babel/parser/lib/index.js:6776:19)
+      at TypeScriptParserMixin.parseExprSubscripts (/opt/dex/node_modules/@babel/parser/lib/index.js:10568:23)
+      at TypeScriptParserMixin.parseUpdate (/opt/dex/node_modules/@babel/parser/lib/index.js:10551:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/opt/dex/node_modules/@babel/parser/lib/index.js:10529:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/opt/dex/node_modules/@babel/parser/lib/index.js:9430:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/opt/dex/node_modules/@babel/parser/lib/index.js:10383:61)
+      at TypeScriptParserMixin.parseExprOps (/opt/dex/node_modules/@babel/parser/lib/index.js:10388:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/opt/dex/node_modules/@babel/parser/lib/index.js:10365:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/opt/dex/node_modules/@babel/parser/lib/index.js:10326:21)
+      at /opt/dex/node_modules/@babel/parser/lib/index.js:9368:39
+      at TypeScriptParserMixin.tryParse (/opt/dex/node_modules/@babel/parser/lib/index.js:3564:20)
+      at TypeScriptParserMixin.parseMaybeAssign (/opt/dex/node_modules/@babel/parser/lib/index.js:9368:18)
+      at /opt/dex/node_modules/@babel/parser/lib/index.js:10296:39
+      at TypeScriptParserMixin.allowInAnd (/opt/dex/node_modules/@babel/parser/lib/index.js:11920:12)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (/opt/dex/node_modules/@babel/parser/lib/index.js:10296:17)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (/opt/dex/node_modules/@babel/parser/lib/index.js:11177:28)
+      at TypeScriptParserMixin.parseExprAtom (/opt/dex/node_modules/@babel/parser/lib/index.js:10835:23)
+      at TypeScriptParserMixin.parseExprAtom (/opt/dex/node_modules/@babel/parser/lib/index.js:6781:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/opt/dex/node_modules/@babel/parser/lib/index.js:10568:23)
+      at TypeScriptParserMixin.parseUpdate (/opt/dex/node_modules/@babel/parser/lib/index.js:10551:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/opt/dex/node_modules/@babel/parser/lib/index.js:10529:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/opt/dex/node_modules/@babel/parser/lib/index.js:9430:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/opt/dex/node_modules/@babel/parser/lib/index.js:10383:61)
+      at TypeScriptParserMixin.parseExprOps (/opt/dex/node_modules/@babel/parser/lib/index.js:10388:23)
+      at TypeSc
+... and 13 lines more
+2:11:10 AM [vite] Internal server error: /opt/dex/src/components/common/Footer/Footer.tsx: Unexpected token (8:102)
+
+   6 |     return (
+   7 |         <footer className="border-background-800 mb-80 border-t bg-black md:mb-0">
+>  8 |         <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between"">
+     |                                                                                                       ^
+   9 |             <div className="flex items-center">
+  10 |                 <span className="text-14 font-weight-400 block">
+  11 |                     Copyright © 2020 - {new Date().getFullYear()}
+  Plugin: vite:react-babel
+  File: /opt/dex/src/components/common/Footer/Footer.tsx:8:102
+  6  |      return (
+  7  |          <footer className="border-background-800 mb-80 border-t bg-black md:mb-0">
+  8  |          <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between"">
+     |                                                                                                        ^
+  9  |              <div className="flex items-center">
+  10 |                  <span className="text-14 font-weight-400 block">
+      at constructor (/opt/dex/node_modules/@babel/parser/lib/index.js:351:19)
+      at TypeScriptParserMixin.raise (/opt/dex/node_modules/@babel/parser/lib/index.js:3233:19)
+      at TypeScriptParserMixin.unexpected (/opt/dex/node_modules/@babel/parser/lib/index.js:3253:16)
+      at TypeScriptParserMixin.jsxParseIdentifier (/opt/dex/node_modules/@babel/parser/lib/index.js:6586:12)
+      at TypeScriptParserMixin.jsxParseNamespacedName (/opt/dex/node_modules/@babel/parser/lib/index.js:6593:23)
+      at TypeScriptParserMixin.jsxParseAttribute (/opt/dex/node_modules/@babel/parser/lib/index.js:6669:22)
+      at TypeScriptParserMixin.jsxParseOpeningElementAfterName (/opt/dex/node_modules/@babel/parser/lib/index.js:6684:28)
+      at TypeScriptParserMixin.jsxParseOpeningElementAfterName (/opt/dex/node_modules/@babel/parser/lib/index.js:9632:18)
+      at TypeScriptParserMixin.jsxParseOpeningElementAt (/opt/dex/node_modules/@babel/parser/lib/index.js:6679:17)
+      at TypeScriptParserMixin.jsxParseElementAt (/opt/dex/node_modules/@babel/parser/lib/index.js:6703:33)
+      at TypeScriptParserMixin.jsxParseElementAt (/opt/dex/node_modules/@babel/parser/lib/index.js:6715:32)
+      at TypeScriptParserMixin.jsxParseElement (/opt/dex/node_modules/@babel/parser/lib/index.js:6766:17)
+      at TypeScriptParserMixin.parseExprAtom (/opt/dex/node_modules/@babel/parser/lib/index.js:6776:19)
+      at TypeScriptParserMixin.parseExprSubscripts (/opt/dex/node_modules/@babel/parser/lib/index.js:10568:23)
+      at TypeScriptParserMixin.parseUpdate (/opt/dex/node_modules/@babel/parser/lib/index.js:10551:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/opt/dex/node_modules/@babel/parser/lib/index.js:10529:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/opt/dex/node_modules/@babel/parser/lib/index.js:9430:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/opt/dex/node_modules/@babel/parser/lib/index.js:10383:61)
+      at TypeScriptParserMixin.parseExprOps (/opt/dex/node_modules/@babel/parser/lib/index.js:10388:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/opt/dex/node_modules/@babel/parser/lib/index.js:10365:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/opt/dex/node_modules/@babel/parser/lib/index.js:10326:21)
+      at /opt/dex/node_modules/@babel/parser/lib/index.js:9368:39
+      at TypeScriptParserMixin.tryParse (/opt/dex/node_modules/@babel/parser/lib/index.js:3564:20)
+      at TypeScriptParserMixin.parseMaybeAssign (/opt/dex/node_modules/@babel/parser/lib/index.js:9368:18)
+      at /opt/dex/node_modules/@babel/parser/lib/index.js:10296:39
+      at TypeScriptParserMixin.allowInAnd (/opt/dex/node_modules/@babel/parser/lib/index.js:11920:12)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (/opt/dex/node_modules/@babel/parser/lib/index.js:10296:17)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (/opt/dex/node_modules/@babel/parser/lib/index.js:11177:28)
+      at TypeScriptParserMixin.parseExprAtom (/opt/dex/node_modules/@babel/parser/lib/index.js:10835:23)
+      at TypeScriptParserMixin.parseExprAtom (/opt/dex/node_modules/@babel/parser/lib/index.js:6781:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/opt/dex/node_modules/@babel/parser/lib/index.js:10568:23)
+      at TypeScriptParserMixin.parseUpdate (/opt/dex/node_modules/@babel/parser/lib/index.js:10551:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/opt/dex/node_modules/@babel/parser/lib/index.js:10529:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/opt/dex/node_modules/@babel/parser/lib/index.js:9430:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/opt/dex/node_modules/@babel/parser/lib/index.js:10383:61)
+      at TypeScriptParserMixin.parseExprOps (/opt/dex/node_modules/@babel/parser/lib/index.js:10388:23)
+      at TypeSc
+... and 13 lines more
+2:11:10 AM [vite] Pre-transform error: /opt/dex/src/components/common/Footer/Footer.tsx: Unexpected token (8:102)
+
+   6 |     return (
+   7 |         <footer className="border-background-800 mb-80 border-t bg-black md:mb-0">
+>  8 |         <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between"">
+     |                                                                                                       ^
+   9 |             <div className="flex items-center">
+  10 |                 <span className="text-14 font-weight-400 block">
+  11 |                     Copyright © 2020 - {new Date().getFullYear()}
+2:11:13 AM [vite] Internal server error: /opt/dex/src/components/common/Footer/Footer.tsx: Unexpected token (8:102)
+
+   6 |     return (
+   7 |         <footer className="border-background-800 mb-80 border-t bg-black md:mb-0">
+>  8 |         <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between"">
+     |                                                                                                       ^
+   9 |             <div className="flex items-center">
+  10 |                 <span className="text-14 font-weight-400 block">
+  11 |                     Copyright © 2020 - {new Date().getFullYear()}
+  Plugin: vite:react-babel
+  File: /opt/dex/src/components/common/Footer/Footer.tsx:8:102
+  6  |      return (
+  7  |          <footer className="border-background-800 mb-80 border-t bg-black md:mb-0">
+  8  |          <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between"">
+     |                                                                                                        ^
+  9  |              <div className="flex items-center">
+  10 |                  <span className="text-14 font-weight-400 block">
+      at constructor (/opt/dex/node_modules/@babel/parser/lib/index.js:351:19)
+      at TypeScriptParserMixin.raise (/opt/dex/node_modules/@babel/parser/lib/index.js:3233:19)
+      at TypeScriptParserMixin.unexpected (/opt/dex/node_modules/@babel/parser/lib/index.js:3253:16)
+      at TypeScriptParserMixin.jsxParseIdentifier (/opt/dex/node_modules/@babel/parser/lib/index.js:6586:12)
+      at TypeScriptParserMixin.jsxParseNamespacedName (/opt/dex/node_modules/@babel/parser/lib/index.js:6593:23)
+      at TypeScriptParserMixin.jsxParseAttribute (/opt/dex/node_modules/@babel/parser/lib/index.js:6669:22)
+      at TypeScriptParserMixin.jsxParseOpeningElementAfterName (/opt/dex/node_modules/@babel/parser/lib/index.js:6684:28)
+      at TypeScriptParserMixin.jsxParseOpeningElementAfterName (/opt/dex/node_modules/@babel/parser/lib/index.js:9632:18)
+      at TypeScriptParserMixin.jsxParseOpeningElementAt (/opt/dex/node_modules/@babel/parser/lib/index.js:6679:17)
+      at TypeScriptParserMixin.jsxParseElementAt (/opt/dex/node_modules/@babel/parser/lib/index.js:6703:33)
+      at TypeScriptParserMixin.jsxParseElementAt (/opt/dex/node_modules/@babel/parser/lib/index.js:6715:32)
+      at TypeScriptParserMixin.jsxParseElement (/opt/dex/node_modules/@babel/parser/lib/index.js:6766:17)
+      at TypeScriptParserMixin.parseExprAtom (/opt/dex/node_modules/@babel/parser/lib/index.js:6776:19)
+      at TypeScriptParserMixin.parseExprSubscripts (/opt/dex/node_modules/@babel/parser/lib/index.js:10568:23)
+      at TypeScriptParserMixin.parseUpdate (/opt/dex/node_modules/@babel/parser/lib/index.js:10551:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/opt/dex/node_modules/@babel/parser/lib/index.js:10529:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/opt/dex/node_modules/@babel/parser/lib/index.js:9430:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/opt/dex/node_modules/@babel/parser/lib/index.js:10383:61)
+      at TypeScriptParserMixin.parseExprOps (/opt/dex/node_modules/@babel/parser/lib/index.js:10388:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/opt/dex/node_modules/@babel/parser/lib/index.js:10365:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/opt/dex/node_modules/@babel/parser/lib/index.js:10326:21)
+      at /opt/dex/node_modules/@babel/parser/lib/index.js:9368:39
+      at TypeScriptParserMixin.tryParse (/opt/dex/node_modules/@babel/parser/lib/index.js:3564:20)
+      at TypeScriptParserMixin.parseMaybeAssign (/opt/dex/node_modules/@babel/parser/lib/index.js:9368:18)
+      at /opt/dex/node_modules/@babel/parser/lib/index.js:10296:39
+      at TypeScriptParserMixin.allowInAnd (/opt/dex/node_modules/@babel/parser/lib/index.js:11920:12)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (/opt/dex/node_modules/@babel/parser/lib/index.js:10296:17)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (/opt/dex/node_modules/@babel/parser/lib/index.js:11177:28)
+      at TypeScriptParserMixin.parseExprAtom (/opt/dex/node_modules/@babel/parser/lib/index.js:10835:23)
+      at TypeScriptParserMixin.parseExprAtom (/opt/dex/node_modules/@babel/parser/lib/index.js:6781:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/opt/dex/node_modules/@babel/parser/lib/index.js:10568:23)
+      at TypeScriptParserMixin.parseUpdate (/opt/dex/node_modules/@babel/parser/lib/index.js:10551:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/opt/dex/node_modules/@babel/parser/lib/index.js:10529:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/opt/dex/node_modules/@babel/parser/lib/index.js:9430:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/opt/dex/node_modules/@babel/parser/lib/index.js:10383:61)
+      at TypeScriptParserMixin.parseExprOps (/opt/dex/node_modules/@babel/parser/lib/index.js:10388:23)
+      at TypeSc
+... and 13 lines more
+2:11:23 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:11:23 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:11:24 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:12:00 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:12:01 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:12:01 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:15:14 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:15:14 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:15:15 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:15:43 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:15:43 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:15:43 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:16:47 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:16:47 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:16:48 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:17:13 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:17:13 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:17:14 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:17:51 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:17:51 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:17:52 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:18:16 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:18:16 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:18:16 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:19:49 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:19:49 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:19:49 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:20:47 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:20:47 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:20:47 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:22:36 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:22:36 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:22:36 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:24:08 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:24:08 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:24:09 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:24:49 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:24:49 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:24:49 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:25:48 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:25:48 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:25:48 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:29:14 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:29:14 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:29:14 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:29:43 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:29:44 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:29:44 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:29:58 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:29:58 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:29:59 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:30:14 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:30:14 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:30:14 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:30:29 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:30:29 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:30:29 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:35:15 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:35:15 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:35:15 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:36:51 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:36:51 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:36:52 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+The request url "/opt/dex/.env" is outside of Vite serving allow list.
+2:38:51 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:38:51 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:38:52 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:39:15 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:39:15 AM [vite] hmr update /src/index.css, /src/App.tsx
+2:39:16 AM [vite] hmr update /src/index.css, /src/App.tsx
+2:39:16 AM [vite] hmr invalidate /src/components/common/Footer/Footer.tsx Could not Fast Refresh (export removed)
+2:39:16 AM [vite] hmr update /src/index.css, /src/App.tsx
+2:39:16 AM [vite] hmr invalidate /src/components/common/Footer/Footer.tsx Could not Fast Refresh (export removed)
+2:39:16 AM [vite] hmr update /src/index.css, /src/App.tsx
+2:39:16 AM [vite] hmr invalidate /src/components/common/Footer/Footer.tsx Could not Fast Refresh (export removed)
+2:39:16 AM [vite] hmr update /src/index.css, /src/App.tsx
+2:39:59 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:39:59 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:39:59 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:40:48 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:40:48 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:40:48 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:41:22 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:41:22 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:41:22 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:41:49 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:41:49 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:41:49 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:44:31 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:44:31 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:44:32 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:44:55 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:44:56 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:44:56 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:45:05 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:45:06 AM [vite] hmr update /src/index.css, /src/App.tsx
+2:45:06 AM [vite] hmr update /src/index.css, /src/App.tsx
+2:45:07 AM [vite] hmr invalidate /src/components/common/Footer/Footer.tsx Could not Fast Refresh (export removed)
+2:45:07 AM [vite] hmr update /src/index.css, /src/App.tsx
+2:45:07 AM [vite] hmr invalidate /src/components/common/Footer/Footer.tsx Could not Fast Refresh (export removed)
+2:45:07 AM [vite] hmr update /src/index.css, /src/App.tsx
+2:45:07 AM [vite] hmr invalidate /src/components/common/Footer/Footer.tsx Could not Fast Refresh (export removed)
+2:45:07 AM [vite] hmr update /src/index.css, /src/App.tsx
+2:46:02 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:46:03 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+2:46:03 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+The request url "/opt/dex/.env" is outside of Vite serving allow list.
+The request url "/opt/dex/.env" is outside of Vite serving allow list.
+The request url "/opt/dex/.env" is outside of Vite serving allow list.
+The request url "/opt/dex/.env" is outside of Vite serving allow list.
+The request url "/opt/dex/.env" is outside of Vite serving allow list.
+The request url "/opt/dex/.env" is outside of Vite serving allow list.
+The request url "/opt/dex/.env" is outside of Vite serving allow list.
+4:56:53 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+4:56:53 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+4:56:54 AM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+The request url "/opt/dex/.env" is outside of Vite serving allow list.
+The request url "/opt/dex/.env" is outside of Vite serving allow list.
+The request url "/opt/dex/.env" is outside of Vite serving allow list.
+The request url "/opt/dex/.env" is outside of Vite serving allow list.
+The request url "/opt/dex/.env" is outside of Vite serving allow list.
+The request url "/opt/dex/.env" is outside of Vite serving allow list.
+The request url "/opt/dex/.env" is outside of Vite serving allow list.
+The request url "/opt/dex/.env" is outside of Vite serving allow list.
+The request url "/opt/dex/.env" is outside of Vite serving allow list.
+The request url "/opt/dex/.env" is outside of Vite serving allow list.
+The request url "/opt/dex/.env" is outside of Vite serving allow list.
+The request url "/opt/dex/.env" is outside of Vite serving allow list.
+The request url "/opt/dex/.env" is outside of Vite serving allow list.
+12:49:49 PM [vite] hmr update /src/index.css, /src/App.tsx, /src/components/core/menu/mobileMenu/MobileMenu.tsx, /src/components/core/menu/mainMenu/MainMenuLeft.tsx
+12:49:49 PM [vite] hmr update /src/index.css, /src/App.tsx, /src/components/core/menu/mobileMenu/MobileMenu.tsx, /src/components/core/menu/mainMenu/MainMenuLeft.tsx
+12:49:49 PM [vite] hmr update /src/index.css, /src/App.tsx, /src/components/core/menu/mobileMenu/MobileMenu.tsx, /src/components/core/menu/mainMenu/MainMenuLeft.tsx
+4:36:52 PM [vite] hmr update /src/index.css, /src/App.tsx, /src/components/core/menu/mobileMenu/MobileMenu.tsx, /src/components/core/menu/mainMenu/MainMenuLeft.tsx
+4:36:52 PM [vite] hmr update /src/index.css, /src/App.tsx, /src/components/core/menu/mobileMenu/MobileMenu.tsx, /src/components/core/menu/mainMenu/MainMenuLeft.tsx
+4:36:53 PM [vite] hmr update /src/index.css, /src/App.tsx, /src/components/core/menu/mobileMenu/MobileMenu.tsx, /src/components/core/menu/mainMenu/MainMenuLeft.tsx
+4:38:36 PM [vite] hmr update /src/components/strategies/create/CreateStrategyTokenSelection.tsx, /src/index.css
+4:38:36 PM [vite] hmr update /src/components/strategies/create/CreateStrategyTokenSelection.tsx, /src/index.css
+4:38:36 PM [vite] hmr update /src/components/strategies/create/CreateStrategyTokenSelection.tsx, /src/index.css
+4:41:27 PM [vite] hmr update /src/components/strategies/create/CreateStrategyTokenSelection.tsx, /src/index.css
+4:41:27 PM [vite] hmr update /src/components/strategies/create/CreateStrategyTokenSelection.tsx, /src/index.css
+4:41:27 PM [vite] hmr update /src/components/strategies/create/CreateStrategyTokenSelection.tsx, /src/index.css
+4:42:30 PM [vite] hmr update /src/components/strategies/create/CreateStrategyTokenSelection.tsx, /src/index.css
+4:42:30 PM [vite] hmr update /src/components/strategies/create/CreateStrategyTokenSelection.tsx, /src/index.css
+4:42:31 PM [vite] hmr update /src/components/strategies/create/CreateStrategyTokenSelection.tsx, /src/index.css
+4:46:20 PM [vite] hmr update /src/components/strategies/create/CreateStrategyTokenSelection.tsx, /src/index.css
+4:46:20 PM [vite] hmr update /src/components/strategies/create/CreateStrategyTokenSelection.tsx, /src/index.css
+4:46:21 PM [vite] hmr update /src/components/strategies/create/CreateStrategyTokenSelection.tsx, /src/index.css
+4:46:37 PM [vite] hmr update /src/components/strategies/create/CreateStrategyTokenSelection.tsx, /src/index.css
+4:46:38 PM [vite] hmr update /src/components/strategies/create/CreateStrategyTokenSelection.tsx, /src/index.css
+4:46:39 PM [vite] hmr update /src/components/strategies/create/CreateStrategyTokenSelection.tsx, /src/index.css
+4:46:56 PM [vite] hmr update /src/components/strategies/create/CreateStrategyTokenSelection.tsx, /src/index.css
+4:46:56 PM [vite] hmr update /src/index.css, /src/pages/strategies/create/token.tsx
+4:46:57 PM [vite] hmr update /src/index.css, /src/pages/strategies/create/token.tsx
+4:47:18 PM [vite] hmr update /src/components/strategies/create/CreateStrategyTokenSelection.tsx, /src/index.css
+4:47:18 PM [vite] hmr update /src/index.css, /src/pages/strategies/create/token.tsx
+4:47:18 PM [vite] hmr update /src/components/strategies/create/CreateStrategyTokenSelection.tsx, /src/index.css
+4:48:10 PM [vite] hmr update /src/components/strategies/create/CreateStrategyTokenSelection.tsx, /src/index.css
+4:48:10 PM [vite] hmr update /src/index.css, /src/pages/strategies/create/token.tsx
+4:48:11 PM [vite] hmr update /src/index.css, /src/pages/strategies/create/token.tsx
+4:48:30 PM [vite] hmr update /src/components/strategies/create/CreateStrategyTokenSelection.tsx, /src/index.css
+4:48:30 PM [vite] hmr update /src/components/strategies/create/CreateStrategyTokenSelection.tsx, /src/index.css
+4:48:30 PM [vite] hmr update /src/components/strategies/create/CreateStrategyTokenSelection.tsx, /src/index.css
+4:50:41 PM [vite] hmr update /src/components/strategies/create/CreateStrategyOption.tsx, /src/index.css
+4:50:41 PM [vite] hmr update /src/components/strategies/create/CreateStrategyOption.tsx, /src/index.css
+4:50:42 PM [vite] hmr update /src/components/strategies/create/CreateStrategyOption.tsx, /src/index.css
+4:52:10 PM [vite] hmr update /src/components/strategies/create/CreateOrder.tsx, /src/index.css
+4:52:10 PM [vite] hmr update /src/components/strategies/create/CreateOrder.tsx, /src/index.css
+4:52:10 PM [vite] hmr update /src/index.css, /src/pages/strategies/create/recurring.tsx, /src/pages/strategies/create/disposable.tsx
+4:52:12 PM [vite] hmr invalidate /src/components/strategies/create/CreateOrder.tsx Could not Fast Refresh (export removed)
+4:52:12 PM [vite] hmr update /src/index.css, /src/pages/strategies/create/recurring.tsx, /src/pages/strategies/create/disposable.tsx
+4:53:34 PM [vite] hmr update /src/components/strategies/create/CreateStrategyTokenSelection.tsx, /src/index.css
+4:53:34 PM [vite] hmr update /src/components/strategies/create/CreateStrategyTokenSelection.tsx, /src/index.css
+4:53:35 PM [vite] hmr update /src/index.css, /src/pages/strategies/create/token.tsx
+4:53:36 PM [vite] hmr invalidate /src/components/strategies/create/CreateStrategyTokenSelection.tsx Could not Fast Refresh (export removed)
+4:53:36 PM [vite] hmr update /src/index.css, /src/pages/strategies/create/token.tsx
+4:54:27 PM [vite] hmr update /src/components/strategies/create/CreateStrategyTokenSelection.tsx, /src/index.css
+4:54:27 PM [vite] hmr update /src/components/strategies/create/CreateStrategyTokenSelection.tsx, /src/index.css
+4:54:27 PM [vite] hmr update /src/components/strategies/create/CreateStrategyTokenSelection.tsx, /src/index.css
+4:56:26 PM [vite] hmr update /src/components/strategies/create/CreateStrategyTokenSelection.tsx, /src/index.css
+4:56:27 PM [vite] hmr update /src/components/strategies/create/CreateStrategyTokenSelection.tsx, /src/index.css
+4:56:27 PM [vite] hmr update /src/components/strategies/create/CreateStrategyTokenSelection.tsx, /src/index.css
+4:57:15 PM [vite] hmr update /src/components/strategies/create/CreateStrategyTokenSelection.tsx, /src/index.css
+4:57:15 PM [vite] hmr update /src/components/strategies/create/CreateStrategyTokenSelection.tsx, /src/index.css
+4:57:16 PM [vite] hmr update /src/components/strategies/create/CreateStrategyTokenSelection.tsx, /src/index.css
+4:58:19 PM [vite] hmr update /src/components/strategies/create/CreateStrategyTokenSelection.tsx, /src/index.css
+4:58:20 PM [vite] hmr update /src/index.css, /src/pages/strategies/create/token.tsx
+4:58:22 PM [vite] hmr invalidate /src/components/strategies/create/CreateStrategyTokenSelection.tsx Could not Fast Refresh (export removed)
+4:58:22 PM [vite] hmr update /src/index.css, /src/pages/strategies/create/token.tsx
+4:58:22 PM [vite] hmr invalidate /src/components/strategies/create/CreateStrategyTokenSelection.tsx Could not Fast Refresh (export removed)
+4:58:22 PM [vite] hmr update /src/index.css, /src/pages/strategies/create/token.tsx
+4:58:22 PM [vite] hmr invalidate /src/components/strategies/create/CreateStrategyTokenSelection.tsx Could not Fast Refresh (export removed)
+4:58:22 PM [vite] hmr update /src/index.css, /src/pages/strategies/create/token.tsx
+4:59:21 PM [vite] hmr update /src/components/strategies/create/CreateStrategyTokenSelection.tsx, /src/index.css
+4:59:22 PM [vite] hmr update /src/index.css, /src/pages/strategies/create/token.tsx
+4:59:22 PM [vite] hmr update /src/index.css, /src/pages/strategies/create/token.tsx
+4:59:23 PM [vite] hmr invalidate /src/components/strategies/create/CreateStrategyTokenSelection.tsx Could not Fast Refresh (export removed)
+4:59:23 PM [vite] hmr update /src/index.css, /src/pages/strategies/create/token.tsx
+5:00:15 PM [vite] hmr update /src/components/strategies/create/CreateStrategyTokenSelection.tsx, /src/index.css
+5:00:15 PM [vite] hmr update /src/components/strategies/create/CreateStrategyTokenSelection.tsx, /src/index.css
+5:00:16 PM [vite] hmr update /src/components/strategies/create/CreateStrategyTokenSelection.tsx, /src/index.css
+5:01:00 PM [vite] hmr update /src/components/strategies/create/CreateStrategyTokenSelection.tsx, /src/index.css
+5:01:00 PM [vite] hmr update /src/components/strategies/create/CreateStrategyTokenSelection.tsx, /src/index.css
+5:01:00 PM [vite] hmr update /src/index.css, /src/pages/strategies/create/token.tsx
+5:01:01 PM [vite] hmr invalidate /src/components/strategies/create/CreateStrategyTokenSelection.tsx Could not Fast Refresh (export removed)
+5:01:01 PM [vite] hmr update /src/index.css, /src/pages/strategies/create/token.tsx
+5:01:01 PM [vite] hmr invalidate /src/components/strategies/create/CreateStrategyTokenSelection.tsx Could not Fast Refresh (export removed)
+5:01:01 PM [vite] hmr update /src/index.css, /src/pages/strategies/create/token.tsx
+5:01:01 PM [vite] hmr invalidate /src/components/strategies/create/CreateStrategyTokenSelection.tsx Could not Fast Refresh (export removed)
+5:01:01 PM [vite] hmr update /src/index.css, /src/pages/strategies/create/token.tsx
+5:01:19 PM [vite] hmr update /src/components/strategies/create/CreateStrategyTokenSelection.tsx, /src/index.css
+5:01:20 PM [vite] hmr update /src/index.css, /src/pages/strategies/create/token.tsx
+5:01:20 PM [vite] hmr update /src/index.css, /src/pages/strategies/create/token.tsx
+5:01:39 PM [vite] hmr update /src/components/strategies/create/CreateStrategyOption.tsx, /src/index.css
+5:01:39 PM [vite] hmr update /src/components/strategies/create/CreateStrategyOption.tsx, /src/index.css
+5:01:39 PM [vite] hmr update /src/components/strategies/create/CreateStrategyOption.tsx, /src/index.css
+5:08:59 PM [vite] hmr update /src/index.css, /src/components/strategies/create/CreateStrategyOption.tsx
+5:08:59 PM [vite] hmr update /src/index.css, /src/components/strategies/create/CreateStrategyOption.tsx
+5:09:00 PM [vite] hmr update /src/index.css, /src/components/strategies/create/CreateStrategyOption.tsx
+5:09:50 PM [vite] hmr update /src/components/strategies/create/CreateStrategyOption.tsx, /src/index.css
+5:09:51 PM [vite] hmr update /src/index.css, /src/pages/strategies/create/token.tsx
+5:09:52 PM [vite] hmr invalidate /src/components/strategies/create/CreateStrategyOption.tsx Could not Fast Refresh (export removed)
+5:09:52 PM [vite] hmr update /src/index.css, /src/pages/strategies/create/token.tsx
+5:09:52 PM [vite] hmr invalidate /src/components/strategies/create/CreateStrategyOption.tsx Could not Fast Refresh (export removed)
+5:09:52 PM [vite] hmr update /src/index.css, /src/pages/strategies/create/token.tsx
+5:09:52 PM [vite] hmr invalidate /src/components/strategies/create/CreateStrategyOption.tsx Could not Fast Refresh (export removed)
+5:09:52 PM [vite] hmr update /src/index.css, /src/pages/strategies/create/token.tsx
+5:10:35 PM [vite] hmr update /src/components/strategies/create/CreateStrategyOption.tsx, /src/index.css
+5:10:35 PM [vite] hmr update /src/index.css, /src/pages/strategies/create/token.tsx
+5:10:35 PM [vite] hmr update /src/components/strategies/create/CreateStrategyOption.tsx, /src/index.css
+5:11:21 PM [vite] hmr update /src/components/strategies/create/CreateStrategyOption.tsx, /src/index.css
+5:11:21 PM [vite] hmr update /src/components/strategies/create/CreateStrategyOption.tsx, /src/index.css
+5:11:22 PM [vite] hmr update /src/components/strategies/create/CreateStrategyOption.tsx, /src/index.css
+5:12:25 PM [vite] hmr update /src/components/strategies/create/CreateStrategyOption.tsx, /src/index.css
+5:12:26 PM [vite] hmr update /src/index.css, /src/pages/strategies/create/token.tsx
+5:12:26 PM [vite] hmr update /src/index.css, /src/pages/strategies/create/token.tsx
+5:12:28 PM [vite] hmr invalidate /src/components/strategies/create/CreateStrategyOption.tsx Could not Fast Refresh (export removed)
+5:12:28 PM [vite] hmr update /src/index.css, /src/pages/strategies/create/token.tsx
+5:13:08 PM [vite] hmr update /src/components/strategies/create/CreateStrategyOption.tsx, /src/index.css
+5:13:08 PM [vite] hmr update /src/components/strategies/create/CreateStrategyOption.tsx, /src/index.css
+5:13:09 PM [vite] hmr update /src/components/strategies/create/CreateStrategyOption.tsx, /src/index.css
+5:16:09 PM [vite] hmr update /src/components/common/Footer/Footer.tsx, /src/index.css
+5:16:12 PM [vite] hmr update /src/components/strategies/create/CreateStrategyTokenSelection.tsx, /src/index.css
+5:16:12 PM [vite] hmr update /src/index.css, /src/components/strategies/create/CreateStrategyOption.tsx

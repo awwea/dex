@@ -11,43 +11,35 @@ import { extent } from 'd3';
 import { prettifyNumber } from 'utils/helpers';
 
 interface Props extends SimulatorReturn {
-  dms: D3ChartSettings;
+    dms: D3ChartSettings;
 }
 
 export const D3ChartSimulatorPrice = ({ dms, data, bounds }: Props) => {
-  const x = useLinearScale({
-    domain: extent(data, (d) => d.date) as [number, number],
-    range: [0, dms.boundedWidth],
-    pixelsPerTick: 100,
-  });
+    const x = useLinearScale({
+        domain: extent(data, (d) => d.date) as [number, number],
+        range: [0, dms.boundedWidth],
+        pixelsPerTick: 100,
+    });
 
-  const y = useLinearScale({
-    domain: getPriceDomain({ data, bounds }),
-    range: [dms.boundedHeight, 0],
-    domainTolerance: 0.05,
-  });
+    const y = useLinearScale({
+        domain: getPriceDomain({ data, bounds }),
+        range: [dms.boundedHeight, 0],
+        domainTolerance: 0.05,
+    });
 
-  const rangeProps = { x, y, data, bounds };
-  if (!dms.width || !dms.height) return null;
-  return (
-    <>
-      <D3XAxis ticks={x.ticks} dms={dms} />
-      <D3YAxisLeft
-        ticks={y.ticks}
-        dms={dms}
-        formatter={(value) => prettifyNumber(value)}
-      />
+    const rangeProps = { x, y, data, bounds };
+    if (!dms.width || !dms.height) return null;
+    return (
+        <>
+            <D3XAxis ticks={x.ticks} dms={dms} />
+            <D3YAxisLeft ticks={y.ticks} dms={dms} formatter={(value) => prettifyNumber(value)} />
 
-      <D3SimPriceRange type="bid" {...rangeProps} />
-      <D3SimPriceRange type="ask" {...rangeProps} />
+            <D3SimPriceRange type="bid" {...rangeProps} />
+            <D3SimPriceRange type="ask" {...rangeProps} />
 
-      <D3LinePath
-        data={data}
-        xAcc={x.accessor('date')}
-        yAcc={y.accessor('price')}
-      />
+            <D3LinePath data={data} xAcc={x.accessor('date')} yAcc={y.accessor('price')} />
 
-      <D3ChartTitle dms={dms} title="Price Chart" width={100} />
-    </>
-  );
+            <D3ChartTitle dms={dms} title="Price Chart" width={100} />
+        </>
+    );
 };

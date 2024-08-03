@@ -6,49 +6,42 @@ import { handleOnItemClick } from 'components/core/menu/utils';
 import { menuItems } from 'components/core/menu';
 
 export const MainMenuLeft: FC = () => {
-  const { pathname } = useRouterState().location;
-  const match = useMatchRoute();
+    const { pathname } = useRouterState().location;
+    const match = useMatchRoute();
 
-  const isSamePageLink = (to: string) => {
-    if (pathname.startsWith('/strategies') && to === '/') return true;
-    return !!match({ to, search: {}, params: {}, fuzzy: true });
-  };
+    const isSamePageLink = (to: string) => {
+        if (pathname.startsWith('/strategies') && to === '/') return true;
+        return !!match({ to, search: {}, params: {}, fuzzy: true });
+    };
 
-  return (
-    <nav
-      className="flex items-center space-x-24"
-      aria-label="Main"
-      data-testid="main-nav"
-    >
-      <Link
-        to="/"
-        onClick={() => carbonEvents.navigation.navHomeClick(undefined)}
-      >
-        <LogoCarbon className="w-34" />
-      </Link>
-
-      <div className="hidden space-x-16 md:block">
-        {menuItems.map(({ label, href }, index) => {
-          const isSamePage = isSamePageLink(href);
-
-          return (
-            <Link
-              key={index}
-              onClick={() => handleOnItemClick(href)}
-              to={href}
-              // TODO: fix this
-              params={{}}
-              search={{}}
-              aria-current={isSamePage ? 'page' : 'false'}
-              className={`font-title px-3 py-3 transition-colors duration-300 ${
-                isSamePage ? 'text-white' : 'hover:text-white'
-              }`}
-            >
-              {label}
+    return (
+        <nav className="flex items-center space-x-24" aria-label="Main" data-testid="main-nav">
+            <Link to="/" onClick={() => carbonEvents.navigation.navHomeClick(undefined)}>
+                <LogoCarbon className="w-34" />
             </Link>
-          );
-        })}
-      </div>
-    </nav>
-  );
+
+            <div className="hidden space-x-16 md:block">
+                {menuItems.map(({ label, href }, index) => {
+                    const isSamePage = isSamePageLink(href);
+
+                    return (
+                        <Link
+                            key={index}
+                            onClick={() => handleOnItemClick(href)}
+                            to={href}
+                            // TODO: fix this
+                            params={{}}
+                            search={{}}
+                            aria-current={isSamePage ? 'page' : 'false'}
+                            className={`font-title px-3 py-3 transition-colors duration-300 ${
+                                isSamePage ? 'text-white' : 'hover:text-white'
+                            }`}
+                        >
+                            {label}
+                        </Link>
+                    );
+                })}
+            </div>
+        </nav>
+    );
 };

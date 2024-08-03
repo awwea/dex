@@ -15,79 +15,73 @@ import { carbonEvents } from 'services/events';
 import { getStatusTextByTxStatus } from 'components/strategies/utils';
 
 export interface ModalConfirmDeleteData {
-  strategy: Strategy;
-  strategyEvent: StrategyEditEventType;
+    strategy: Strategy;
+    strategyEvent: StrategyEditEventType;
 }
 
-export const ModalConfirmDelete: ModalFC<ModalConfirmDeleteData> = ({
-  id,
-  data,
-}) => {
-  const { closeModal } = useModal();
-  const { strategy, strategyEvent } = data;
-  const { deleteStrategy, deleteMutation, isProcessing } = useDeleteStrategy();
-  const isAwaiting = deleteMutation.isPending;
+export const ModalConfirmDelete: ModalFC<ModalConfirmDeleteData> = ({ id, data }) => {
+    const { closeModal } = useModal();
+    const { strategy, strategyEvent } = data;
+    const { deleteStrategy, deleteMutation, isProcessing } = useDeleteStrategy();
+    const isAwaiting = deleteMutation.isPending;
 
-  const loadingChildren = getStatusTextByTxStatus(isAwaiting, isProcessing);
-  const isPending = deleteMutation.isPending || isProcessing;
+    const loadingChildren = getStatusTextByTxStatus(isAwaiting, isProcessing);
+    const isPending = deleteMutation.isPending || isProcessing;
 
-  const isOverlapping = isOverlappingStrategy(strategy);
+    const isOverlapping = isOverlappingStrategy(strategy);
 
-  const onClick = () => {
-    deleteStrategy(
-      strategy,
-      () => carbonEvents.strategyEdit.strategyDelete(strategyEvent),
-      () => closeModal(id)
-    );
-  };
+    const onClick = () => {
+        deleteStrategy(
+            strategy,
+            () => carbonEvents.strategyEdit.strategyDelete(strategyEvent),
+            () => closeModal(id)
+        );
+    };
 
-  const editPrices = () => {
-    carbonEvents.strategyEdit.strategyEditPricesClick({
-      origin: 'delete',
-      ...strategyEvent,
-    });
-    closeModal(id);
-  };
+    const editPrices = () => {
+        carbonEvents.strategyEdit.strategyEditPricesClick({
+            origin: 'delete',
+            ...strategyEvent,
+        });
+        closeModal(id);
+    };
 
-  return (
-    <ModalOrMobileSheet id={id} title="Delete Strategy">
-      <IconTitleText
-        variant="error"
-        icon={<IconTrash className="size-24" />}
-        title="Are you sure you would like to delete your strategy?"
-        text="Deleting your strategy will result in all strategy data being lost and impossible to restore. All funds will be withdrawn to your wallet."
-      />
-      {!isOverlapping && (
-        <article className="bg-background-800 grid grid-cols-[1fr_auto] grid-rows-[auto_auto] gap-8 rounded p-16">
-          <h3 className="text-14 font-weight-500">Did you know ?</h3>
-          <Link
-            onClick={editPrices}
-            disabled={isAwaiting || isProcessing}
-            to="/strategies/edit/$strategyId"
-            params={{ strategyId: strategy.id }}
-            search={{ editType: 'editPrices' }}
-            className={cn(
-              'row-span-2 self-center',
-              buttonStyles({ variant: 'white' })
+    return (
+        <ModalOrMobileSheet id={id} title="Delete Strategy">
+            <IconTitleText
+                variant="error"
+                icon={<IconTrash className="size-24" />}
+                title="Are you sure you would like to delete your strategy?"
+                text="Deleting your strategy will result in all strategy data being lost and impossible to restore. All funds will be withdrawn to your wallet."
+            />
+            {!isOverlapping && (
+                <article className="bg-background-800 grid grid-cols-[1fr_auto] grid-rows-[auto_auto] gap-8 rounded p-16">
+                    <h3 className="text-14 font-weight-500">Did you know ?</h3>
+                    <Link
+                        onClick={editPrices}
+                        disabled={isAwaiting || isProcessing}
+                        to="/strategies/edit/$strategyId"
+                        params={{ strategyId: strategy.id }}
+                        search={{ editType: 'editPrices' }}
+                        className={cn('row-span-2 self-center', buttonStyles({ variant: 'white' }))}
+                    >
+                        Edit Prices
+                    </Link>
+                    <p className="text-12 text-white/80">
+                        Editing prices is cheaper and keeps your strategy working for you.
+                    </p>
+                </article>
             )}
-          >
-            Edit Prices
-          </Link>
-          <p className="text-12 text-white/80">
-            Editing prices is cheaper and keeps your strategy working for you.
-          </p>
-        </article>
-      )}
 
-      <Button
-        variant="white"
-        onClick={onClick}
-        loading={isPending}
-        loadingChildren={loadingChildren}
-        data-testid="delete-strategy-btn"
-      >
-        Delete Strategy
-      </Button>
-    </ModalOrMobileSheet>
-  );
+            <Button
+                variant="white"
+                onClick={onClick}
+                loading={isPending}
+                loadingChildren={loadingChildren}
+                data-testid="delete-strategy-btn"
+            >
+                Delete Strategy
+            </Button>
+        </ModalOrMobileSheet>
+    );
 };

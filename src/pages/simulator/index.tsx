@@ -14,44 +14,41 @@ export const defaultStart = () => getUnixTime(subDays(new Date(), 364));
 export const defaultEnd = () => getUnixTime(new Date());
 
 export const SimulatorPage = () => {
-  useSimDisclaimer();
-  const searchState = simulatorInputRootRoute.useSearch();
-  const { isError } = useGetTokenPriceHistory({
-    baseToken: searchState.baseToken,
-    quoteToken: searchState.quoteToken,
-    start: searchState.start,
-    end: searchState.end,
-  });
+    useSimDisclaimer();
+    const searchState = simulatorInputRootRoute.useSearch();
+    const { isError } = useGetTokenPriceHistory({
+        baseToken: searchState.baseToken,
+        quoteToken: searchState.quoteToken,
+        start: searchState.start,
+        end: searchState.end,
+    });
 
-  useEffect(() => {
-    if (!searchState.baseToken || !searchState.quoteToken) return;
-    lsService.setItem('tradePair', [
-      searchState.baseToken,
-      searchState.quoteToken,
-    ]);
-  }, [searchState.baseToken, searchState.quoteToken]);
+    useEffect(() => {
+        if (!searchState.baseToken || !searchState.quoteToken) return;
+        lsService.setItem('tradePair', [searchState.baseToken, searchState.quoteToken]);
+    }, [searchState.baseToken, searchState.quoteToken]);
 
-  const { aboveBreakpoint } = useBreakpoints();
+    const { aboveBreakpoint } = useBreakpoints();
 
-  if (!aboveBreakpoint('md')) return <SimulatorMobilePlaceholder />;
+    if (!aboveBreakpoint('md')) return <SimulatorMobilePlaceholder />;
 
-  return (
-    <>
-      <h1 className="text-24 font-weight-500 mb-16 px-20">Simulate Strategy</h1>
-      <div className="flex gap-20 px-20">
-        <div className="flex w-[440px] flex-col gap-20">
-          <SimInputTokenSelection
-            baseToken={searchState.baseToken}
-            quoteToken={searchState.quoteToken}
-            noPriceHistory={isError}
-          />
-          <SimInputStrategyType
-            baseToken={searchState.baseToken}
-            quoteToken={searchState.quoteToken}
-          />
-          <Outlet />
-        </div>
-      </div>
-    </>
-  );
+    return (
+        <>
+            <h1 className="text-24 font-weight-500 mb-16 px-20">Simulate Strategy</h1>
+            <div className="flex gap-20 px-20">
+                <div className="flex w-[440px] flex-col gap-20">
+                    <SimInputTokenSelection
+                        baseToken={searchState.baseToken}
+                        quoteToken={searchState.quoteToken}
+                        noPriceHistory={isError}
+                    />
+                    <SimInputStrategyType
+                        baseToken={searchState.baseToken}
+                        quoteToken={searchState.quoteToken}
+                    />
+                    <Outlet />
+                </div>
+            </div>
+        </>
+    );
 };

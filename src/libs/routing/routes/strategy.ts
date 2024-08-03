@@ -4,8 +4,8 @@ import { Route } from '@tanstack/react-router';
 import { validateActivityParams } from 'components/activity/utils';
 
 export const strategyPage = new Route({
-  getParentRoute: () => rootRoute,
-  path: 'strategy/$id',
-  component: StrategyPage,
-  validateSearch: validateActivityParams,
+    getParentRoute: () => rootRoute,
+    path: 'strategy/$id',
+    component: StrategyPage,
+    validateSearch: validateActivityParams,
 });

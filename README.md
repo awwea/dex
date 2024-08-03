@@ -21,8 +21,8 @@ Carbon DeFi is an advanced onchain trading protocol enabling automated limit ord
 
 To run the app locally, you need the following:
 
-- Node.js 20+
-- Yarn
+-   Node.js 20+
+-   Yarn
 
 For E2E testing you need a Tenderly account and API Key.
 
@@ -96,30 +96,30 @@ The build is minified and the filenames include the hashes. Your app is ready to
 
 The '/debug' route is available to debug the app (ex: localhost:3000/debug). It can be accessed by pressing the `Debug` main menu option which is shown when the app is ran locally. From the debug page you can access the following features:
 
-- Set Imposter Account: Allows to set any account in the active network to impersonate.
-- Set Tenderly RPC: Allows to set the RPC URL from a Tenderly fork, as well as setting custom addresses for the [carbonController contract](https://github.com/bancorprotocol/carbon-contracts/blob/dev/contracts/carbon/CarbonController.sol) and the [carbonVoucher contract](https://github.com/bancorprotocol/carbon-contracts/blob/dev/contracts/voucher/Voucher.sol). Leaving `Unchecked Signer` checked is recommended as it avoids the need to populate all details of the transaction before returning it, and avoids transaction errors when using the app.
-- Tenderly Faucet: After setting the Tenderly RPC and Tenderly Account, the faucet can be used to add tokens to the impersonated wallet.
-- Transfer Strategy NFT allows to transfer the NFT that represents the strategy with ID `Strategy ID` to the `Recipient` wallet. The active wallet must be the owner of the NFT to be able to transfer it.
-- Notifications: allows to test `loading`, `success`, `failure` and `transaction` rejected notifications.
-- Set E2E flag: allows to set the E2E flag to true or false - used when running e2e tests.
-- Create Strategy: Allows to easily create multiple strategies - useful for debugging and used in E2E tests. A strategy template must follow the form:
+-   Set Imposter Account: Allows to set any account in the active network to impersonate.
+-   Set Tenderly RPC: Allows to set the RPC URL from a Tenderly fork, as well as setting custom addresses for the [carbonController contract](https://github.com/bancorprotocol/carbon-contracts/blob/dev/contracts/carbon/CarbonController.sol) and the [carbonVoucher contract](https://github.com/bancorprotocol/carbon-contracts/blob/dev/contracts/voucher/Voucher.sol). Leaving `Unchecked Signer` checked is recommended as it avoids the need to populate all details of the transaction before returning it, and avoids transaction errors when using the app.
+-   Tenderly Faucet: After setting the Tenderly RPC and Tenderly Account, the faucet can be used to add tokens to the impersonated wallet.
+-   Transfer Strategy NFT allows to transfer the NFT that represents the strategy with ID `Strategy ID` to the `Recipient` wallet. The active wallet must be the owner of the NFT to be able to transfer it.
+-   Notifications: allows to test `loading`, `success`, `failure` and `transaction` rejected notifications.
+-   Set E2E flag: allows to set the E2E flag to true or false - used when running e2e tests.
+-   Create Strategy: Allows to easily create multiple strategies - useful for debugging and used in E2E tests. A strategy template must follow the form:
 
 ```json
 {
-  "base": "ETH",
-  "quote": "DAI",
-  "buy": {
-    "min": "1500",
-    "max": "1700",
-    "budget": "10"
-  },
-  "sell": {
-    "min": "2000",
-    "max": "2200",
-    "budget": "1000"
-  },
-  "value": "10",
-  "spread": "5"
+    "base": "ETH",
+    "quote": "DAI",
+    "buy": {
+        "min": "1500",
+        "max": "1700",
+        "budget": "10"
+    },
+    "sell": {
+        "min": "2000",
+        "max": "2200",
+        "budget": "1000"
+    },
+    "value": "10",
+    "spread": "5"
 }
 ```
 
@@ -145,15 +145,15 @@ import polygonDev from './polygon/development';
 import polygonProd from './polygon/production';
 
 const configs = {
-  ethereum: {
-    development: ethereumDev,
-    production: ethereumProd,
-  },
-  // add polygon here
-  polygon: {
-    development: polygonDev,
-    production: polygonProd,
-  },
+    ethereum: {
+        development: ethereumDev,
+        production: ethereumProd,
+    },
+    // add polygon here
+    polygon: {
+        development: polygonDev,
+        production: polygonProd,
+    },
 };
 ```
 
@@ -182,27 +182,27 @@ and it is recommended to set VITE_LEGACY_TRADE_BY_SOURCE_RANGE to true in .env t
 
 The file `common.ts` with type [`AppConfig`](src/config/types.ts) contains important configuration for the app and network. It includes the following:
 
-- `appUrl`: The URL of the app.
-- `carbonApi`: The URL of the API.
-- `walletConnectProjectId`: The WalletConnect project ID If you wish to add walletConnect, make sure to add it to `selectableConnectionTypes` as well.
-- `selectedConnectors`: List of connectors to make available by default in the wallet selection modal that will be shown even if the connector is not injected.
-- `blockedConnectors`: List of EIP-6963 injected connectors names to block in the wallet selection modal.
-- `isSimulatorEnabled`: Flag to enable the simulation page.
-- `network`
-  - `name`: Network name.
-  - `logoUrl`: Network logo URL.
-  - `chainId`: Chain ID.
-  - `defaultLimitedApproval`: Optional flag to set the default ERC-20 approval to limited approval. For chains where gas is low, it is recommended to set this flag to true.
-  - `gasToken`: Gas token name, symbol, decimals, address and logoURI. This parameter will take priority over the `tokenListOverride`.
-  - `blockExplorer`: The name and URL of the block explorer to be used in the notifications and when the network is added to the injected wallet.
-  - `rpc`: The RPC url and headers of the network, used to add the network to the injected wallet and to fetch data from the chain.
-- `defaultTokenPair`: Default token pair to be used in the app when opening the trade, explore, and simulation pages.
-- `popularPairs`: List of popular pairs to be used in the app when opening the token selection modal.
-- `popularTokens`: List of popular tokens to be used in the app when opening the token selection modal.
-- `addresses`/`carbon` and `addresses/utils`: CarbonController, Voucher and multicall3 contract addresses.
-- `tokenListOverride`: Token list override to be used in the app when fetching the token list. Tokens in the list will override any other token with the same address.
-- `tokenLists`: List of token lists including the uri and the parser to be used to parse the token list.
-- `sdk`/`cacheTTL`: When the app loads, it will ignore any cached data if it is older than the cacheTTL time in milliseconds. If set to 0, the app will always ignore the cache data and fetch new data on load.
+-   `appUrl`: The URL of the app.
+-   `carbonApi`: The URL of the API.
+-   `walletConnectProjectId`: The WalletConnect project ID If you wish to add walletConnect, make sure to add it to `selectableConnectionTypes` as well.
+-   `selectedConnectors`: List of connectors to make available by default in the wallet selection modal that will be shown even if the connector is not injected.
+-   `blockedConnectors`: List of EIP-6963 injected connectors names to block in the wallet selection modal.
+-   `isSimulatorEnabled`: Flag to enable the simulation page.
+-   `network`
+    -   `name`: Network name.
+    -   `logoUrl`: Network logo URL.
+    -   `chainId`: Chain ID.
+    -   `defaultLimitedApproval`: Optional flag to set the default ERC-20 approval to limited approval. For chains where gas is low, it is recommended to set this flag to true.
+    -   `gasToken`: Gas token name, symbol, decimals, address and logoURI. This parameter will take priority over the `tokenListOverride`.
+    -   `blockExplorer`: The name and URL of the block explorer to be used in the notifications and when the network is added to the injected wallet.
+    -   `rpc`: The RPC url and headers of the network, used to add the network to the injected wallet and to fetch data from the chain.
+-   `defaultTokenPair`: Default token pair to be used in the app when opening the trade, explore, and simulation pages.
+-   `popularPairs`: List of popular pairs to be used in the app when opening the token selection modal.
+-   `popularTokens`: List of popular tokens to be used in the app when opening the token selection modal.
+-   `addresses`/`carbon` and `addresses/utils`: CarbonController, Voucher and multicall3 contract addresses.
+-   `tokenListOverride`: Token list override to be used in the app when fetching the token list. Tokens in the list will override any other token with the same address.
+-   `tokenLists`: List of token lists including the uri and the parser to be used to parse the token list.
+-   `sdk`/`cacheTTL`: When the app loads, it will ignore any cached data if it is older than the cacheTTL time in milliseconds. If set to 0, the app will always ignore the cache data and fetch new data on load.
 
 #### Gas token different than native token
 
@@ -218,10 +218,10 @@ The file [`pairsToExchangeMapping.ts`](src/config/utils.ts) contains the mapping
 
 To change the logo in the app, you can replace the following files with your own:
 
-- Logo file: [`carbon.svg`](src/assets/logos/carbon.svg).
-- Banner file: [`carbon.jpg`](public/carbon.jpg) - used when sharing links to the app.
-- Carbon Logo Loading: [`CarbonLogoLoading.tsx`](src/components/common/CarbonLogoLoading.tsx) - Used for loading animations in the app.
-- Favicon file: [`favicon.ico`](public/favicon.ico).
+-   Logo file: [`carbon.svg`](src/assets/logos/carbon.svg).
+-   Banner file: [`carbon.jpg`](public/carbon.jpg) - used when sharing links to the app.
+-   Carbon Logo Loading: [`CarbonLogoLoading.tsx`](src/components/common/CarbonLogoLoading.tsx) - Used for loading animations in the app.
+-   Favicon file: [`favicon.ico`](public/favicon.ico).
 
 Please do not replace the [`carbondefi.svg`](src/assets/logos/carbondefi.svg) file as it is used for the "Powered by CarbonDeFi" logo in the footer.
 
@@ -230,13 +230,13 @@ Please do not replace the [`carbondefi.svg`](src/assets/logos/carbondefi.svg) fi
 The theme is defined in the [`tailwind.config.ts`](./tailwind.config.ts#L36) file.
 You can update these colors:
 
-- **background**: used for surfaces
-- **primary**: used for buttons and other actionable elements
-- **success**: used for positive information like positive ROI.
-- **error**: used for error messages & buttons
-- **warning**: used for warning messages (mainly in forms)
-- **buy**: used for any information related to buy operation
-- **sell**: used for any information related to sell operation
+-   **background**: used for surfaces
+-   **primary**: used for buttons and other actionable elements
+-   **success**: used for positive information like positive ROI.
+-   **error**: used for error messages & buttons
+-   **warning**: used for warning messages (mainly in forms)
+-   **buy**: used for any information related to buy operation
+-   **sell**: used for any information related to sell operation
 
 > **oklch**: colors are using oklch function to keep contrast no matter the color used. For browser support reason we decided to used the library `culari` to transform oklch into rgb instead of the native css method.
 
@@ -246,8 +246,8 @@ To get the oklch value of an hex color you can use this webapp: https://oklch.co
 
 Background shades are calculated based on hue and chroma. In [`tailwind.config.ts`](./tailwind.config.ts#L37) you can specify `hue` and `chroma` of the background.
 
-- `hue`: from 0 (pink) to 360 (pink).
-- `chroma`: It's recommended to use 0.01 or 0.02 depending on the hue.
+-   `hue`: from 0 (pink) to 360 (pink).
+-   `chroma`: It's recommended to use 0.01 or 0.02 depending on the hue.
 
 ### Foreground
 
@@ -267,13 +267,13 @@ You can change the % of the `lighten` & `darken` function with the [`lightDark`]
 
 The application uses two fonts :
 
-- BW Gradual for the titles
-- Euclid Circle A for the text
+-   BW Gradual for the titles
+-   Euclid Circle A for the text
 
 You can change the font by changing the files under :
 
-- [`src/assets/font/title`](src/assets/font/title)
-- [`src/assets/font/text`](src/assets/font/text)
+-   [`src/assets/font/title`](src/assets/font/title)
+-   [`src/assets/font/text`](src/assets/font/text)
 
 Use the same naming as the current files.
 

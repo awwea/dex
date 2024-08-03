@@ -8,66 +8,58 @@ import { CarbonLogoLoading } from 'components/common/CarbonLogoLoading';
 import { AnimatePresence, m } from 'framer-motion';
 
 type OrderBookSideProps = {
-  orders: OrderRow[];
-  buy?: boolean;
-  base: Token;
-  quote: Token;
-  isPending: boolean;
+    orders: OrderRow[];
+    buy?: boolean;
+    base: Token;
+    quote: Token;
+    isPending: boolean;
 };
 
-export const OrderBookSide: FC<OrderBookSideProps> = ({
-  orders,
-  buy,
-  base,
-  quote,
-  isPending,
-}) => {
-  return (
-    <AnimatePresence mode="wait">
-      {isPending ? (
-        <m.div
-          key="loading"
-          className="flex h-[392px] w-full items-center justify-center"
-          initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 1, scale: 1 }}
-          exit={{ opacity: 0 }}
-        >
-          <div className="h-[80px]">
-            <CarbonLogoLoading />
-          </div>
-        </m.div>
-      ) : orders?.length > 0 ? (
-        <m.div
-          key="orders"
-          className="grid grid-cols-3 gap-x-10"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-        >
-          {orderBy(orders, ({ rate }) => Number(rate), 'desc').map(
-            (props, i) => (
-              <OrderBookWidgetRow
-                key={`orderbook-${buy ? 'buy' : 'sell'}-${props.rate}-${i}-${
-                  base.address
-                }-${quote.address}`}
-                buy={buy}
-                base={base}
-                quote={quote}
-                {...props}
-              />
-            )
-          )}
-        </m.div>
-      ) : (
-        <m.div
-          className="rounded-10 flex h-[392px] items-center justify-center bg-black text-center"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-        >
-          <NoOrders />
-        </m.div>
-      )}
-    </AnimatePresence>
-  );
+export const OrderBookSide: FC<OrderBookSideProps> = ({ orders, buy, base, quote, isPending }) => {
+    return (
+        <AnimatePresence mode="wait">
+            {isPending ? (
+                <m.div
+                    key="loading"
+                    className="flex h-[392px] w-full items-center justify-center"
+                    initial={{ opacity: 0, scale: 0.5 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    exit={{ opacity: 0 }}
+                >
+                    <div className="h-[80px]">
+                        <CarbonLogoLoading />
+                    </div>
+                </m.div>
+            ) : orders?.length > 0 ? (
+                <m.div
+                    key="orders"
+                    className="grid grid-cols-3 gap-x-10"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                >
+                    {orderBy(orders, ({ rate }) => Number(rate), 'desc').map((props, i) => (
+                        <OrderBookWidgetRow
+                            key={`orderbook-${buy ? 'buy' : 'sell'}-${props.rate}-${i}-${
+                                base.address
+                            }-${quote.address}`}
+                            buy={buy}
+                            base={base}
+                            quote={quote}
+                            {...props}
+                        />
+                    ))}
+                </m.div>
+            ) : (
+                <m.div
+                    className="rounded-10 flex h-[392px] items-center justify-center bg-black text-center"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                >
+                    <NoOrders />
+                </m.div>
+            )}
+        </AnimatePresence>
+    );
 };

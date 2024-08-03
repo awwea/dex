@@ -1,21 +1,21 @@
 .strategy-graph {
-  width: 100%;
-  height: unset;
-  aspect-ratio: 400 / 130;
+    width: 100%;
+    height: unset;
+    aspect-ratio: 400 / 130;
 }
 
 .strategy-graph g.buySellAreas:hover g.buy:not(:hover) {
-  opacity: 0.25;
+    opacity: 0.25;
 }
 .strategy-graph g.buySellAreas:hover g.sell:not(:hover) {
-  opacity: 0.25;
+    opacity: 0.25;
 }
 
 .strategy-graph .lineBuySell:hover,
 .strategy-graph .rectBuySell:hover line {
-  stroke-width: 4;
+    stroke-width: 4;
 }
 
 .strategy-graph .priceLine {
-  transition: all 0.5s;
+    transition: all 0.5s;
 }

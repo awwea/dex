@@ -6,54 +6,54 @@ import { debugTokens } from './types';
 import { TestCaseSwap, TradeTestCase } from './trade/types';
 
 export class TradeDriver {
-  public form = this.page.getByTestId(`${this.testCase.mode}-form`);
+    public form = this.page.getByTestId(`${this.testCase.mode}-form`);
 
-  constructor(private page: Page, private testCase: TradeTestCase) {}
+    constructor(private page: Page, private testCase: TradeTestCase) {}
 
-  getPayInput() {
-    return this.form.getByLabel('You Pay');
-  }
+    getPayInput() {
+        return this.form.getByLabel('You Pay');
+    }
 
-  getReceiveInput() {
-    return this.form.getByLabel('You Receive');
-  }
+    getReceiveInput() {
+        return this.form.getByLabel('You Receive');
+    }
 
-  async selectPair() {
-    const { mode, target, source } = this.testCase;
+    async selectPair() {
+        const { mode, target, source } = this.testCase;
 
-    await this.page.getByTestId('select-trade-pair').click();
-    await waitModalOpen(this.page);
-    const pair = mode === 'buy' ? [target, source] : [source, target];
-    const pairKey = [debugTokens[pair[0]], debugTokens[pair[1]]].join('_');
-    this.page.getByTestId('search-token-pair').fill(`${pair.join(' ')}`);
-    const select = await waitFor(this.page, `select-${pairKey}`);
-    await select.click();
-    await waitModalClose(this.page);
-  }
+        await this.page.getByTestId('select-trade-pair').click();
+        await waitModalOpen(this.page);
+        const pair = mode === 'buy' ? [target, source] : [source, target];
+        const pairKey = [debugTokens[pair[0]], debugTokens[pair[1]]].join('_');
+        this.page.getByTestId('search-token-pair').fill(`${pair.join(' ')}`);
+        const select = await waitFor(this.page, `select-${pairKey}`);
+        await select.click();
+        await waitModalClose(this.page);
+    }
 
-  setPay(swap: TestCaseSwap) {
-    const { sourceValue } = swap;
-    return this.form.getByLabel('You Pay').fill(sourceValue);
-  }
+    setPay(swap: TestCaseSwap) {
+        const { sourceValue } = swap;
+        return this.form.getByLabel('You Pay').fill(sourceValue);
+    }
 
-  awaitSuccess() {
-    return this.page
-      .getByTestId('notification-trade')
-      .getByLabel('Success')
-      .waitFor({ state: 'visible', timeout: 10_000 });
-  }
+    awaitSuccess() {
+        return this.page
+            .getByTestId('notification-trade')
+            .getByLabel('Success')
+            .waitFor({ state: 'visible', timeout: 10_000 });
+    }
 
-  async openRouting() {
-    await this.form.getByTestId('routing').click();
-    const modal = await waitFor(this.page, 'modal-container');
-    return {
-      getSource: () => modal.getByTestId('confirm-source'),
-      getTarget: () => modal.getByTestId('confirm-target'),
-      close: () => closeModal(this.page),
-    };
-  }
+    async openRouting() {
+        await this.form.getByTestId('routing').click();
+        const modal = await waitFor(this.page, 'modal-container');
+        return {
+            getSource: () => modal.getByTestId('confirm-source'),
+            getTarget: () => modal.getByTestId('confirm-target'),
+            close: () => closeModal(this.page),
+        };
+    }
 
-  submit() {
-    return this.form.getByTestId('submit').click();
-  }
+    submit() {
+        return this.form.getByTestId('submit').click();
+    }
 }

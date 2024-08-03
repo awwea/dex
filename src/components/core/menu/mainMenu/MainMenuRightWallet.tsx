@@ -17,138 +17,133 @@ import { WalletIcon } from 'components/common/WalletIcon';
 const iconProps = { className: 'w-20' };
 
 export const MainMenuRightWallet: FC = () => {
-  const {
-    user,
-    isSupportedNetwork,
-    imposterAccount,
-    isUserBlocked,
-    currentConnector,
-  } = useWagmi();
-  const { openModal } = useModal();
-  const selectedWallet = currentConnector?.name;
+    const { user, isSupportedNetwork, imposterAccount, isUserBlocked, currentConnector } =
+        useWagmi();
+    const { openModal } = useModal();
+    const selectedWallet = currentConnector?.name;
 
-  const onClickOpenModal = () => {
-    carbonEvents.navigation.navWalletConnectClick(undefined);
-    openModal('wallet', undefined);
-  };
+    const onClickOpenModal = () => {
+        carbonEvents.navigation.navWalletConnectClick(undefined);
+        openModal('wallet', undefined);
+    };
 
-  const { data: ensName } = useGetEnsFromAddress(user || '');
+    const { data: ensName } = useGetEnsFromAddress(user || '');
 
-  const buttonVariant = useMemo(() => {
-    if (isUserBlocked) return 'error';
-    if (!isSupportedNetwork) return 'error';
-    return 'secondary';
-  }, [isSupportedNetwork, isUserBlocked]);
+    const buttonVariant = useMemo(() => {
+        if (isUserBlocked) return 'error';
+        if (!isSupportedNetwork) return 'error';
+        return 'secondary';
+    }, [isSupportedNetwork, isUserBlocked]);
 
-  const buttonText = useMemo(() => {
-    if (isUserBlocked) return 'Wallet Blocked';
-    if (!isSupportedNetwork) return 'Wrong Network';
-    if (!user) return 'Connect';
-    return shortenString(ensName || user);
-  }, [ensName, isSupportedNetwork, isUserBlocked, user]);
+    const buttonText = useMemo(() => {
+        if (isUserBlocked) return 'Wallet Blocked';
+        if (!isSupportedNetwork) return 'Wrong Network';
+        if (!user) return 'Connect';
+        return shortenString(ensName || user);
+    }, [ensName, isSupportedNetwork, isUserBlocked, user]);
 
-  const buttonIcon = useMemo(() => {
-    if (isUserBlocked) return <IconWarning {...iconProps} />;
-    if (!isSupportedNetwork) return <IconWarning {...iconProps} />;
-    if (!user) return <IconWallet {...iconProps} />;
+    const buttonIcon = useMemo(() => {
+        if (isUserBlocked) return <IconWarning {...iconProps} />;
+        if (!isSupportedNetwork) return <IconWarning {...iconProps} />;
+        if (!user) return <IconWallet {...iconProps} />;
+        return (
+            <WalletIcon
+                className="w-20"
+                isImposter={!!imposterAccount}
+                selectedWallet={selectedWallet}
+                icon={currentConnector?.icon}
+            />
+        );
+    }, [
+        isUserBlocked,
+        isSupportedNetwork,
+        user,
+        imposterAccount,
+        selectedWallet,
+        currentConnector?.icon,
+    ]);
+
+    if (user) {
+        return (
+            <DropdownMenu
+                placement="bottom-end"
+                className="rounded-[5px] p-8"
+                button={(attr) => (
+                    <button
+                        {...attr}
+                        className={cn(
+                            buttonStyles({ variant: buttonVariant }),
+                            'flex items-center space-x-5 pl-16'
+                        )}
+                        onClick={(e) => {
+                            carbonEvents.navigation.navWalletClick(undefined);
+                            attr.onClick(e);
+                        }}
+                        data-testid="user-wallet"
+                    >
+                        {buttonIcon}
+                        <span>{buttonText}</span>
+                    </button>
+                )}
+            >
+                <ConnectedMenu />
+            </DropdownMenu>
+        );
+    }
+
     return (
-      <WalletIcon
-        className="w-20"
-        isImposter={!!imposterAccount}
-        selectedWallet={selectedWallet}
-        icon={currentConnector?.icon}
-      />
-    );
-  }, [
-    isUserBlocked,
-    isSupportedNetwork,
-    user,
-    imposterAccount,
-    selectedWallet,
-    currentConnector?.icon,
-  ]);
-
-  if (user) {
-    return (
-      <DropdownMenu
-        placement="bottom-end"
-        className="rounded-[5px] p-8"
-        button={(attr) => (
-          <button
-            {...attr}
-            className={cn(
-              buttonStyles({ variant: buttonVariant }),
-              'flex items-center space-x-5 pl-16'
-            )}
-            onClick={(e) => {
-              carbonEvents.navigation.navWalletClick(undefined);
-              attr.onClick(e);
-            }}
-            data-testid="user-wallet"
-          >
+        <Button
+            variant={buttonVariant}
+            onClick={onClickOpenModal}
+            className="flex items-center space-x-5"
+        >
             {buttonIcon}
             <span>{buttonText}</span>
-          </button>
-        )}
-      >
-        <ConnectedMenu />
-      </DropdownMenu>
+        </Button>
     );
-  }
-
-  return (
-    <Button
-      variant={buttonVariant}
-      onClick={onClickOpenModal}
-      className="flex items-center space-x-5"
-    >
-      {buttonIcon}
-      <span>{buttonText}</span>
-    </Button>
-  );
 };
 
 const ConnectedMenu: FC = () => {
-  const { toaster } = useStore();
-  const { setMenuOpen } = useMenuCtx();
-  const { user, disconnect, isSupportedNetwork, switchNetwork } = useWagmi();
-  const copyAddress = async () => {
-    if (!user) return;
-    await navigator.clipboard.writeText(user);
-    setMenuOpen(false);
-    toaster.addToast('Address copied in Clipboard 👍');
-  };
+    const { toaster } = useStore();
+    const { setMenuOpen } = useMenuCtx();
+    const { user, disconnect, isSupportedNetwork, switchNetwork } = useWagmi();
+    const copyAddress = async () => {
+        if (!user) return;
+        await navigator.clipboard.writeText(user);
+        setMenuOpen(false);
+        toaster.addToast('Address copied in Clipboard 👍');
+    };
 
-  return (
-    <div role="menu" className="font-weight-400 space-y-10 text-white">
-      {isSupportedNetwork ? (
-        <>
-          <button
-            role="menuitem"
-            className="rounded-6 flex w-full items-center space-x-10 p-8 hover:bg-black"
-            onClick={copyAddress}
-          >
-            <IconCopy className="w-16" />
-            <span>Copy Address</span>
-          </button>
-        </>
-      ) : (
-        <button
-          role="menuitem"
-          className="rounded-6 text-error/80 hover:text-error flex w-full p-8 hover:bg-black"
-          onClick={switchNetwork}
-        >
-          Switch Network
-        </button>
-      )}
-      <button
-        role="menuitem"
-        className="rounded-6 flex w-full items-center space-x-10 p-8 hover:bg-black"
-        onClick={disconnect}
-      >
-        <IconDisconnect className="w-16" />
-        <span>Disconnect</span>
-      </button>
-    </div>
-  );
+    return (
+        <div role="menu" className="font-weight-400 space-y-10 text-white">
+            {isSupportedNetwork ? (
+                <>
+                    <button
+                        role="menuitem"
+                        className="rounded-6 flex w-full items-center space-x-10 p-8 hover:bg-black"
+                        onClick={copyAddress}
+                    >
+                        <IconCopy className="w-16" />
+                        <span>Copy Address</span>
+                    </button>
+                </>
+            ) : (
+                <button
+                    role="menuitem"
+                    className="rounded-6 text-error/80 hover:text-error flex w-full p-8 hover:bg-black"
+                    onClick={switchNetwork}
+                >
+                    Switch Network
+                </button>
+            )}
+            <button
+                role="menuitem"
+                className="rounded-6 flex w-full items-center space-x-10 p-8 hover:bg-black"
+                onClick={disconnect}
+            >
+                <IconDisconnect className="w-16" />
+                <span>Disconnect</span>
+            </button>
+        </div>
+    );
 };

@@ -11,77 +11,77 @@ import { PortfolioTokenMobile } from './PortfolioTokenMobile';
 import { usePortfolioTokenPieChart } from './usePortfolioTokenPieChart';
 
 interface Props {
-  address: string;
-  strategies?: Strategy[];
-  isPending?: boolean;
-  backLinkHref: Pathnames;
-  backLinkHrefParams?: PathParams;
+    address: string;
+    strategies?: Strategy[];
+    isPending?: boolean;
+    backLinkHref: Pathnames;
+    backLinkHrefParams?: PathParams;
 }
 
 const _PortfolioToken = ({
-  strategies,
-  isPending: _isPending,
-  address,
-  backLinkHref,
-  backLinkHrefParams,
-}: Props) => {
-  const { tableData, isPending, selectedToken } = usePortfolioToken({
-    address,
     strategies,
     isPending: _isPending,
-  });
+    address,
+    backLinkHref,
+    backLinkHrefParams,
+}: Props) => {
+    const { tableData, isPending, selectedToken } = usePortfolioToken({
+        address,
+        strategies,
+        isPending: _isPending,
+    });
 
-  const { pieChartOptions } = usePortfolioTokenPieChart(
-    tableData,
-    // TODO fix undefined token
-    selectedToken?.token!
-  );
+    const { pieChartOptions } = usePortfolioTokenPieChart(
+        tableData,
+        // TODO fix undefined token
+        selectedToken?.token!
+    );
 
-  if (!selectedToken && !isPending) {
-    return <div>error token not found</div>;
-  }
+    if (!selectedToken && !isPending) {
+        return <div>error token not found</div>;
+    }
 
-  return (
-    <PortfolioLayout
-      headerElement={
-        <PortfolioTokenHeader
-          backLinkHref={backLinkHref}
-          backLinkHrefParams={backLinkHrefParams}
-          symbol={selectedToken?.token.symbol}
-          logoURI={selectedToken?.token.logoURI}
+    return (
+        <PortfolioLayout
+            headerElement={
+                <PortfolioTokenHeader
+                    backLinkHref={backLinkHref}
+                    backLinkHrefParams={backLinkHrefParams}
+                    symbol={selectedToken?.token.symbol}
+                    logoURI={selectedToken?.token.logoURI}
+                />
+            }
+            desktopView={
+                <PortfolioTokenDesktop
+                    data={tableData}
+                    isPending={isPending}
+                    // TODO selectedToken should not be undefined
+                    selectedToken={selectedToken?.token!}
+                />
+            }
+            mobileView={
+                <PortfolioTokenMobile
+                    data={tableData}
+                    isPending={isPending}
+                    // TODO selectedToken should not be undefined
+                    selectedToken={selectedToken?.token!}
+                />
+            }
+            pieChartElement={
+                <PortfolioPieChart
+                    options={pieChartOptions}
+                    centerElement={<PortfolioTokenPieChartCenter data={selectedToken} />}
+                    isPending={isPending}
+                    hideChart={selectedToken?.value.isZero()}
+                />
+            }
         />
-      }
-      desktopView={
-        <PortfolioTokenDesktop
-          data={tableData}
-          isPending={isPending}
-          // TODO selectedToken should not be undefined
-          selectedToken={selectedToken?.token!}
-        />
-      }
-      mobileView={
-        <PortfolioTokenMobile
-          data={tableData}
-          isPending={isPending}
-          // TODO selectedToken should not be undefined
-          selectedToken={selectedToken?.token!}
-        />
-      }
-      pieChartElement={
-        <PortfolioPieChart
-          options={pieChartOptions}
-          centerElement={<PortfolioTokenPieChartCenter data={selectedToken} />}
-          isPending={isPending}
-          hideChart={selectedToken?.value.isZero()}
-        />
-      }
-    />
-  );
+    );
 };
 
 export const PortfolioToken = memo(
-  _PortfolioToken,
-  (prev, next) =>
-    prev.isPending === next.isPending &&
-    JSON.stringify(prev.strategies) === JSON.stringify(next.strategies)
+    _PortfolioToken,
+    (prev, next) =>
+        prev.isPending === next.isPending &&
+        JSON.stringify(prev.strategies) === JSON.stringify(next.strategies)
 );

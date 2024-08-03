@@ -6,35 +6,31 @@ import { useCarbonInit } from 'hooks/useCarbonInit';
 import { ONE_DAY_IN_MS } from 'utils/time';
 
 type Props = {
-  sourceToken: string;
-  targetToken: string;
-  actionsWei: MatchActionBNStr[];
-  isTradeBySource: boolean;
+    sourceToken: string;
+    targetToken: string;
+    actionsWei: MatchActionBNStr[];
+    isTradeBySource: boolean;
 };
 
 export const useGetTradeActionsQuery = ({
-  isTradeBySource,
-  actionsWei,
-  sourceToken,
-  targetToken,
+    isTradeBySource,
+    actionsWei,
+    sourceToken,
+    targetToken,
 }: Props) => {
-  const { isInitialized } = useCarbonInit();
+    const { isInitialized } = useCarbonInit();
 
-  return useQuery({
-    queryKey: QueryKey.tradeActions(
-      [sourceToken, targetToken],
-      isTradeBySource,
-      actionsWei
-    ),
-    queryFn: async () => {
-      return carbonSDK.getTradeDataFromActions(
-        sourceToken,
-        targetToken,
-        !isTradeBySource,
-        actionsWei
-      );
-    },
-    enabled: isInitialized,
-    staleTime: ONE_DAY_IN_MS,
-  });
+    return useQuery({
+        queryKey: QueryKey.tradeActions([sourceToken, targetToken], isTradeBySource, actionsWei),
+        queryFn: async () => {
+            return carbonSDK.getTradeDataFromActions(
+                sourceToken,
+                targetToken,
+                !isTradeBySource,
+                actionsWei
+            );
+        },
+        enabled: isInitialized,
+        staleTime: ONE_DAY_IN_MS,
+    });
 };

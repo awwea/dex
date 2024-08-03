@@ -11,25 +11,25 @@ import { currentChain } from './chains';
 // ********************************** //
 
 const defaultValue: CarbonWagmiProviderContext = {
-  user: undefined,
-  imposterAccount: undefined,
-  setImposterAccount: () => {},
-  isNetworkActive: false,
-  provider: undefined,
-  signer: undefined,
-  currentConnector: undefined,
-  connectors: [],
-  chainId: currentChain.id,
-  accountChainId: undefined,
-  handleTenderlyRPC: () => {},
-  disconnect: async () => {},
-  connect: async () => {},
-  networkError: undefined,
-  isSupportedNetwork: true,
-  switchNetwork: () => {},
-  isUserBlocked: false,
-  isUncheckedSigner: false,
-  setIsUncheckedSigner: () => {},
+    user: undefined,
+    imposterAccount: undefined,
+    setImposterAccount: () => {},
+    isNetworkActive: false,
+    provider: undefined,
+    signer: undefined,
+    currentConnector: undefined,
+    connectors: [],
+    chainId: currentChain.id,
+    accountChainId: undefined,
+    handleTenderlyRPC: () => {},
+    disconnect: async () => {},
+    connect: async () => {},
+    networkError: undefined,
+    isSupportedNetwork: true,
+    switchNetwork: () => {},
+    isUserBlocked: false,
+    isUncheckedSigner: false,
+    setIsUncheckedSigner: () => {},
 };
 
 const CarbonWagmiCTX = createContext(defaultValue);
@@ -40,63 +40,55 @@ export const useWagmi = () => useContext(CarbonWagmiCTX);
 // WAGMI PROVIDER
 // ********************************** //
 
-export const CarbonWagmiProvider: FC<{ children: ReactNode }> = ({
-  children,
-}) => {
-  const {
-    chainId,
-    provider,
-    connectors,
-    isNetworkActive,
-    networkError,
-    switchNetwork,
-  } = useWagmiNetwork();
+export const CarbonWagmiProvider: FC<{ children: ReactNode }> = ({ children }) => {
+    const { chainId, provider, connectors, isNetworkActive, networkError, switchNetwork } =
+        useWagmiNetwork();
 
-  const { imposterAccount, setImposterAccount } = useWagmiImposter();
+    const { imposterAccount, setImposterAccount } = useWagmiImposter();
 
-  const { handleTenderlyRPC } = useWagmiTenderly();
+    const { handleTenderlyRPC } = useWagmiTenderly();
 
-  const {
-    user,
-    signer,
-    currentConnector,
-    connect,
-    disconnect,
-    isUserBlocked,
-    isUncheckedSigner,
-    setIsUncheckedSigner,
-    isSupportedNetwork,
-    accountChainId,
-  } = useWagmiUser({
-    imposterAccount,
-    setImposterAccount,
-  });
-
-  return (
-    <CarbonWagmiCTX.Provider
-      value={{
+    const {
         user,
-        isNetworkActive,
-        provider,
         signer,
         currentConnector,
-        connectors,
-        chainId,
-        accountChainId,
-        handleTenderlyRPC,
-        imposterAccount,
-        setImposterAccount,
         connect,
         disconnect,
-        networkError,
-        isSupportedNetwork,
-        switchNetwork,
         isUserBlocked,
         isUncheckedSigner,
         setIsUncheckedSigner,
-      }}
-    >
-      {children}
-    </CarbonWagmiCTX.Provider>
-  );
+        isSupportedNetwork,
+        accountChainId,
+    } = useWagmiUser({
+        imposterAccount,
+        setImposterAccount,
+    });
+
+    return (
+        <CarbonWagmiCTX.Provider
+            value={{
+                user,
+                isNetworkActive,
+                provider,
+                signer,
+                currentConnector,
+                connectors,
+                chainId,
+                accountChainId,
+                handleTenderlyRPC,
+                imposterAccount,
+                setImposterAccount,
+                connect,
+                disconnect,
+                networkError,
+                isSupportedNetwork,
+                switchNetwork,
+                isUserBlocked,
+                isUncheckedSigner,
+                setIsUncheckedSigner,
+            }}
+        >
+            {children}
+        </CarbonWagmiCTX.Provider>
+    );
 };

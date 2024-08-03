@@ -5,15 +5,15 @@ import { useBreakpoints } from 'hooks/useBreakpoints';
 import { MainMenuTrade } from 'components/core/menu/mainMenu/MainMenuTrade';
 
 export const MainMenu: FC = () => {
-  const { aboveBreakpoint } = useBreakpoints();
+    const { aboveBreakpoint } = useBreakpoints();
 
-  return (
-    <header className="fixed top-0 z-40 w-full" data-testid="main-menu">
-      <div className="main-menu uppercase">
-        <MainMenuLeft />
-        {aboveBreakpoint('md') && <MainMenuTrade />}
-        <MainMenuRight />
-      </div>
-    </header>
-  );
+    return (
+        <header className="fixed top-0 z-40 w-full" data-testid="main-menu">
+            <div className="main-menu uppercase">
+                <MainMenuLeft />
+                {aboveBreakpoint('md') && <MainMenuTrade />}
+                <MainMenuRight />
+            </div>
+        </header>
+    );
 };

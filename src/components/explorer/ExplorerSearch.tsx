@@ -1,12 +1,4 @@
-import {
-  FC,
-  FormEvent,
-  memo,
-  useCallback,
-  useEffect,
-  useMemo,
-  useState,
-} from 'react';
+import { FC, FormEvent, memo, useCallback, useEffect, useMemo, useState } from 'react';
 import { Button } from 'components/common/button';
 import { DropdownMenu } from 'components/common/dropdownMenu';
 import { ExplorerSearchDropdownButton } from 'components/explorer/ExplorerSearchDropdownButton';
@@ -26,141 +18,136 @@ import { useGetAddressFromEns } from 'libs/queries';
 import { useDebouncedValue } from 'hooks/useDebouncedValue';
 
 export const _ExplorerSearch: FC = () => {
-  const navigate = useNavigate();
-  const pairs = usePairs();
-  const { type, slug } = useExplorerParams();
-  const [search, setSearch] = useState(slug ?? '');
-  const [debouncedSearch] = useDebouncedValue<string>(search, 300); // Debounce search input for ens query
+    const navigate = useNavigate();
+    const pairs = usePairs();
+    const { type, slug } = useExplorerParams();
+    const [search, setSearch] = useState(slug ?? '');
+    const [debouncedSearch] = useDebouncedValue<string>(search, 300); // Debounce search input for ens query
 
-  const ensAddressQuery = useGetAddressFromEns(debouncedSearch.toLowerCase());
+    const ensAddressQuery = useGetAddressFromEns(debouncedSearch.toLowerCase());
 
-  const isInvalidEnsAddress = !ensAddressQuery.data;
+    const isInvalidEnsAddress = !ensAddressQuery.data;
 
-  const waitingToFetchEns =
-    debouncedSearch !== search || !ensAddressQuery.isSuccess;
+    const waitingToFetchEns = debouncedSearch !== search || !ensAddressQuery.isSuccess;
 
-  const isInvalidAddress = useMemo(() => {
-    if (type !== 'wallet' || !search.length) return false;
-    if (search === config.addresses.tokens.ZERO) return true;
+    const isInvalidAddress = useMemo(() => {
+        if (type !== 'wallet' || !search.length) return false;
+        if (search === config.addresses.tokens.ZERO) return true;
+
+        return !utils.isAddress(search.toLowerCase()) && isInvalidEnsAddress && !waitingToFetchEns;
+    }, [type, search, isInvalidEnsAddress, waitingToFetchEns]);
+
+    useEffect(() => {
+        if (!slug) return setSearch('');
+        if (type === 'wallet') return setSearch(slug);
+        if (type === 'token-pair') {
+            const name = pairs.names.get(slug);
+            const displayName = name?.replace('_', '/').toUpperCase();
+            return setSearch(displayName || '');
+        }
+    }, [slug, type, pairs.names]);
+
+    const onSearchHandler = useCallback(
+        (value: string) => {
+            if (value.length === 0) return;
+            const slug = fromPairSearch(value);
+            if (type === 'token-pair' && !pairs.names.has(slug)) return;
+            if (type === 'wallet' && (waitingToFetchEns || isInvalidAddress)) return;
+            navigate({
+                to: '/explore/$type/$slug',
+                params: { type, slug },
+            });
+        },
+        [waitingToFetchEns, isInvalidAddress, navigate, pairs.names, type]
+    );
+
+    const submitHandler = (e: FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        const data = new FormData(e.target as HTMLFormElement);
+        const value = data.get('search')?.toString();
+        if (value) onSearchHandler(value);
+    };
+
+    const resetHandler = (e: FormEvent<HTMLFormElement>) => {
+        setSearch('');
+        const selector = 'input[name="search"]';
+        const input = (e.target as Element).querySelector<HTMLElement>(selector);
+        input?.focus();
+    };
+
+    const inputProps = {
+        invalid: isInvalidAddress,
+        search,
+        setSearch,
+    };
+
+    const suggestionProps = {
+        pairMap: pairs.map,
+        nameMap: pairs.names,
+        search,
+        setSearch,
+    };
 
     return (
-      !utils.isAddress(search.toLowerCase()) &&
-      isInvalidEnsAddress &&
-      !waitingToFetchEns
-    );
-  }, [type, search, isInvalidEnsAddress, waitingToFetchEns]);
-
-  useEffect(() => {
-    if (!slug) return setSearch('');
-    if (type === 'wallet') return setSearch(slug);
-    if (type === 'token-pair') {
-      const name = pairs.names.get(slug);
-      const displayName = name?.replace('_', '/').toUpperCase();
-      return setSearch(displayName || '');
-    }
-  }, [slug, type, pairs.names]);
-
-  const onSearchHandler = useCallback(
-    (value: string) => {
-      if (value.length === 0) return;
-      const slug = fromPairSearch(value);
-      if (type === 'token-pair' && !pairs.names.has(slug)) return;
-      if (type === 'wallet' && (waitingToFetchEns || isInvalidAddress)) return;
-      navigate({
-        to: '/explore/$type/$slug',
-        params: { type, slug },
-      });
-    },
-    [waitingToFetchEns, isInvalidAddress, navigate, pairs.names, type]
-  );
-
-  const submitHandler = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    const data = new FormData(e.target as HTMLFormElement);
-    const value = data.get('search')?.toString();
-    if (value) onSearchHandler(value);
-  };
-
-  const resetHandler = (e: FormEvent<HTMLFormElement>) => {
-    setSearch('');
-    const selector = 'input[name="search"]';
-    const input = (e.target as Element).querySelector<HTMLElement>(selector);
-    input?.focus();
-  };
-
-  const inputProps = {
-    invalid: isInvalidAddress,
-    search,
-    setSearch,
-  };
-
-  const suggestionProps = {
-    pairMap: pairs.map,
-    nameMap: pairs.names,
-    search,
-    setSearch,
-  };
-
-  return (
-    <div className="relative">
-      <form
-        role="search"
-        onSubmit={submitHandler}
-        onReset={resetHandler}
-        className="flex gap-16"
-      >
-        <div
-          className={cn(
-            'relative',
-            'flex',
-            'h-40',
-            'w-full',
-            'items-center',
-            'space-x-8',
-            'rounded-full',
-            'border',
-            'border-primary',
-            'px-16',
-            'md:space-x-16',
-            isInvalidAddress && 'border-error'
-          )}
-        >
-          <div className="shrink-0">
-            <DropdownMenu
-              placement="bottom-start"
-              className="-ml-17 mt-10 p-10"
-              button={(attr) => <ExplorerSearchDropdownButton {...attr} />}
+        <div className="relative">
+            <form
+                role="search"
+                onSubmit={submitHandler}
+                onReset={resetHandler}
+                className="flex gap-16"
             >
-              <ExplorerSearchDropdownItems setSearch={setSearch} />
-            </DropdownMenu>
-          </div>
-          <div role="separator" className="h-20 w-1 bg-white/40"></div>
-          <div className="flex w-full flex-grow items-center md:relative">
-            {type === 'token-pair' && (
-              <ExplorerSearchSuggestions {...suggestionProps} />
-            )}
-            {type === 'wallet' && <ExplorerSearchInput {...inputProps} />}
-          </div>
-        </div>
+                <div
+                    className={cn(
+                        'relative',
+                        'flex',
+                        'h-40',
+                        'w-full',
+                        'items-center',
+                        'space-x-8',
+                        'rounded-full',
+                        'border',
+                        'border-primary',
+                        'px-16',
+                        'md:space-x-16',
+                        isInvalidAddress && 'border-error'
+                    )}
+                >
+                    <div className="shrink-0">
+                        <DropdownMenu
+                            placement="bottom-start"
+                            className="-ml-17 mt-10 p-10"
+                            button={(attr) => <ExplorerSearchDropdownButton {...attr} />}
+                        >
+                            <ExplorerSearchDropdownItems setSearch={setSearch} />
+                        </DropdownMenu>
+                    </div>
+                    <div role="separator" className="h-20 w-1 bg-white/40"></div>
+                    <div className="flex w-full flex-grow items-center md:relative">
+                        {type === 'token-pair' && (
+                            <ExplorerSearchSuggestions {...suggestionProps} />
+                        )}
+                        {type === 'wallet' && <ExplorerSearchInput {...inputProps} />}
+                    </div>
+                </div>
 
-        <Button
-          type="submit"
-          variant="success"
-          size="md"
-          className="w-40 shrink-0 px-0 md:w-[180px]"
-        >
-          <IconSearch className="size-16 md:mr-8" />
-          <span className="hidden md:block">Search</span>
-        </Button>
-      </form>
-      {isInvalidAddress && (
-        <div className="text-14 text-error absolute mt-4 flex items-center">
-          <IconWarning className="mr-10 size-16" />
-          Invalid Wallet Address
+                <Button
+                    type="submit"
+                    variant="success"
+                    size="md"
+                    className="w-40 shrink-0 px-0 md:w-[180px]"
+                >
+                    <IconSearch className="size-16 md:mr-8" />
+                    <span className="hidden md:block">Search</span>
+                </Button>
+            </form>
+            {isInvalidAddress && (
+                <div className="text-14 text-error absolute mt-4 flex items-center">
+                    <IconWarning className="mr-10 size-16" />
+                    Invalid Wallet Address
+                </div>
+            )}
         </div>
-      )}
-    </div>
-  );
+    );
 };
 
 export const ExplorerSearch = memo(_ExplorerSearch);

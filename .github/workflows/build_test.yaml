@@ -1,36 +1,36 @@
 name: Build
 
 on:
-  pull_request:
-    types: [opened, reopened, synchronize]
+    pull_request:
+        types: [opened, reopened, synchronize]
 
 jobs:
-  build:
-    name: Build
-    runs-on: ubuntu-latest
+    build:
+        name: Build
+        runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [20.x]
+        strategy:
+            matrix:
+                node-version: [20.x]
 
-    steps:
-      - uses: actions/checkout@v4
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ matrix.node-version }}
-      - uses: actions/cache@v4
-        id: yarn-cache
-        with:
-          path: |
-            **/node_modules
-            ${{ steps.yarn-cache-dir-path.outputs.dir }}
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-yarn-
-      - name: Install Dependencies
-        run: yarn install --frozen-lockfile
-      - name: Build
-        env:
-          CI: false
-        run: yarn build
+        steps:
+            - uses: actions/checkout@v4
+            - name: Use Node.js ${{ matrix.node-version }}
+              uses: actions/setup-node@v4
+              with:
+                  node-version: ${{ matrix.node-version }}
+            - uses: actions/cache@v4
+              id: yarn-cache
+              with:
+                  path: |
+                      **/node_modules
+                      ${{ steps.yarn-cache-dir-path.outputs.dir }}
+                  key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+                  restore-keys: |
+                      ${{ runner.os }}-yarn-
+            - name: Install Dependencies
+              run: yarn install --frozen-lockfile
+            - name: Build
+              env:
+                  CI: false
+              run: yarn build

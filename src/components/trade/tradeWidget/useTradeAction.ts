@@ -11,147 +11,142 @@ import { Token } from 'libs/tokens';
 import { useApproval } from 'hooks/useApproval';
 
 type TradeProps = {
-  source: Token;
-  target: Token;
-  tradeActions: TradeActionBNStr[];
-  isTradeBySource: boolean;
-  sourceInput: string;
-  targetInput: string;
-  setIsAwaiting: Dispatch<SetStateAction<boolean>>;
+    source: Token;
+    target: Token;
+    tradeActions: TradeActionBNStr[];
+    isTradeBySource: boolean;
+    sourceInput: string;
+    targetInput: string;
+    setIsAwaiting: Dispatch<SetStateAction<boolean>>;
 };
 
 type Props = Pick<TradeProps, 'source' | 'isTradeBySource' | 'sourceInput'> & {
-  onSuccess?: Function;
+    onSuccess?: Function;
 };
 
-export const useTradeAction = ({
-  source,
-  isTradeBySource,
-  sourceInput,
-  onSuccess,
-}: Props) => {
-  const {
-    trade: {
-      settings: { slippage, deadline },
-    },
-  } = useStore();
-  const { dispatchNotification } = useNotifications();
-  const cache = useQueryClient();
-  const { user, signer } = useWagmi();
+export const useTradeAction = ({ source, isTradeBySource, sourceInput, onSuccess }: Props) => {
+    const {
+        trade: {
+            settings: { slippage, deadline },
+        },
+    } = useStore();
+    const { dispatchNotification } = useNotifications();
+    const cache = useQueryClient();
+    const { user, signer } = useWagmi();
 
-  const calcMinReturn = useCallback(
-    (amount: string) => {
-      const slippageBn = new SafeDecimal(slippage).div(100);
-      return new SafeDecimal(1).minus(slippageBn).times(amount).toString();
-    },
-    [slippage]
-  );
+    const calcMinReturn = useCallback(
+        (amount: string) => {
+            const slippageBn = new SafeDecimal(slippage).div(100);
+            return new SafeDecimal(1).minus(slippageBn).times(amount).toString();
+        },
+        [slippage]
+    );
 
-  const calcMaxInput = useCallback(
-    (amount: string) => {
-      const slippageBn = new SafeDecimal(slippage).div(100);
-      return new SafeDecimal(1).plus(slippageBn).times(amount).toString();
-    },
-    [slippage]
-  );
+    const calcMaxInput = useCallback(
+        (amount: string) => {
+            const slippageBn = new SafeDecimal(slippage).div(100);
+            return new SafeDecimal(1).plus(slippageBn).times(amount).toString();
+        },
+        [slippage]
+    );
 
-  const calcDeadline = useCallback((value: string) => {
-    const deadlineInMs = new SafeDecimal(value).times(60).times(1000);
-    return deadlineInMs.plus(Date.now()).toString();
-  }, []);
+    const calcDeadline = useCallback((value: string) => {
+        const deadlineInMs = new SafeDecimal(value).times(60).times(1000);
+        return deadlineInMs.plus(Date.now()).toString();
+    }, []);
 
-  const trade = useCallback(
-    async ({
-      source,
-      target,
-      isTradeBySource,
-      sourceInput,
-      targetInput,
-      tradeActions,
-      setIsAwaiting,
-    }: TradeProps) => {
-      if (!user || !signer) {
-        throw new Error('No user or signer');
-      }
-      try {
-        let unsignedTx: PopulatedTransaction;
-        if (isTradeBySource) {
-          unsignedTx = await carbonSDK.composeTradeBySourceTransaction(
-            source.address,
-            target.address,
+    const trade = useCallback(
+        async ({
+            source,
+            target,
+            isTradeBySource,
+            sourceInput,
+            targetInput,
             tradeActions,
-            calcDeadline(deadline),
-            calcMinReturn(targetInput)
-          );
-        } else {
-          unsignedTx = await carbonSDK.composeTradeByTargetTransaction(
-            source.address,
-            target.address,
-            tradeActions,
-            calcDeadline(deadline),
-            calcMaxInput(sourceInput)
-          );
-        }
+            setIsAwaiting,
+        }: TradeProps) => {
+            if (!user || !signer) {
+                throw new Error('No user or signer');
+            }
+            try {
+                let unsignedTx: PopulatedTransaction;
+                if (isTradeBySource) {
+                    unsignedTx = await carbonSDK.composeTradeBySourceTransaction(
+                        source.address,
+                        target.address,
+                        tradeActions,
+                        calcDeadline(deadline),
+                        calcMinReturn(targetInput)
+                    );
+                } else {
+                    unsignedTx = await carbonSDK.composeTradeByTargetTransaction(
+                        source.address,
+                        target.address,
+                        tradeActions,
+                        calcDeadline(deadline),
+                        calcMaxInput(sourceInput)
+                    );
+                }
 
-        const tx = await signer.sendTransaction(unsignedTx);
-        dispatchNotification('trade', {
-          txHash: tx.hash,
-          amount: sourceInput,
-          from: source.symbol,
-          to: target.symbol,
-        });
+                const tx = await signer.sendTransaction(unsignedTx);
+                dispatchNotification('trade', {
+                    txHash: tx.hash,
+                    amount: sourceInput,
+                    from: source.symbol,
+                    to: target.symbol,
+                });
 
-        await tx.wait();
-        onSuccess?.(tx.hash);
-        void cache.invalidateQueries({
-          queryKey: QueryKey.balance(user, source.address),
-        });
-        void cache.invalidateQueries({
-          queryKey: QueryKey.balance(user, target.address),
-        });
-        void cache.invalidateQueries({
-          queryKey: QueryKey.approval(
+                await tx.wait();
+                onSuccess?.(tx.hash);
+                void cache.invalidateQueries({
+                    queryKey: QueryKey.balance(user, source.address),
+                });
+                void cache.invalidateQueries({
+                    queryKey: QueryKey.balance(user, target.address),
+                });
+                void cache.invalidateQueries({
+                    queryKey: QueryKey.approval(
+                        user,
+                        source.address,
+                        config.addresses.carbon.carbonController
+                    ),
+                });
+            } catch (error) {
+                console.error(error);
+                setIsAwaiting(false);
+            }
+        },
+        [
+            cache,
+            calcDeadline,
+            calcMaxInput,
+            calcMinReturn,
+            deadline,
+            dispatchNotification,
+            onSuccess,
+            signer,
             user,
-            source.address,
-            config.addresses.carbon.carbonController
-          ),
-        });
-      } catch (error) {
-        console.error(error);
-        setIsAwaiting(false);
-      }
-    },
-    [
-      cache,
-      calcDeadline,
-      calcMaxInput,
-      calcMinReturn,
-      deadline,
-      dispatchNotification,
-      onSuccess,
-      signer,
-      user,
-    ]
-  );
+        ]
+    );
 
-  const approvalTokens = useMemo(
-    () => [
-      {
-        ...source,
-        spender: config.addresses.carbon.carbonController,
-        amount: isTradeBySource ? sourceInput : calcMaxInput(sourceInput),
-      },
-    ],
-    [calcMaxInput, sourceInput, isTradeBySource, source]
-  );
+    const approvalTokens = useMemo(
+        () => [
+            {
+                ...source,
+                spender: config.addresses.carbon.carbonController,
+                amount: isTradeBySource ? sourceInput : calcMaxInput(sourceInput),
+            },
+        ],
+        [calcMaxInput, sourceInput, isTradeBySource, source]
+    );
 
-  const approval = useApproval(approvalTokens);
+    const approval = useApproval(approvalTokens);
 
-  return {
-    trade,
-    calcMaxInput,
-    calcMinReturn,
-    calcDeadline,
-    approval,
-  };
+    return {
+        trade,
+        calcMaxInput,
+        calcMinReturn,
+        calcDeadline,
+        approval,
+    };
 };

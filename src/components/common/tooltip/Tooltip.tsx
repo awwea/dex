@@ -8,94 +8,94 @@ import { carbonEvents } from 'services/events';
 import { cn } from 'utils/helpers';
 
 interface Props extends TippyProps {
-  element: ReactNode;
-  className?: string;
-  iconClassName?: string;
-  sendEventOnMount?: {
-    buy?: boolean | undefined;
-  };
-  disabled?: boolean;
-  damping?: number;
-  stiffness?: number;
+    element: ReactNode;
+    className?: string;
+    iconClassName?: string;
+    sendEventOnMount?: {
+        buy?: boolean | undefined;
+    };
+    disabled?: boolean;
+    damping?: number;
+    stiffness?: number;
 }
 
 export const Tooltip: FC<Props> = ({
-  element,
-  className = '',
-  iconClassName = '',
-  maxWidth = 350,
-  sendEventOnMount,
-  disabled = false,
-  damping = 15,
-  stiffness = 300,
-  children = (
-    <span>
-      <IconTooltip className={cn('size-18', iconClassName)} />
-    </span>
-  ),
-  ...props
+    element,
+    className = '',
+    iconClassName = '',
+    maxWidth = 350,
+    sendEventOnMount,
+    disabled = false,
+    damping = 15,
+    stiffness = 300,
+    children = (
+        <span>
+            <IconTooltip className={cn('size-18', iconClassName)} />
+        </span>
+    ),
+    ...props
 }) => {
-  const springConfig = { damping, stiffness };
-  const initialScale = 0.5;
-  const opacity = useSpring(0, springConfig);
-  const scale = useSpring(initialScale, springConfig);
+    const springConfig = { damping, stiffness };
+    const initialScale = 0.5;
+    const opacity = useSpring(0, springConfig);
+    const scale = useSpring(initialScale, springConfig);
 
-  const onMount = () => {
-    scale.set(1);
-    opacity.set(1);
-    sendEventOnMount &&
-      carbonEvents.strategy.strategyTooltipShow({
-        buy: sendEventOnMount?.buy,
-        message: isValidElement(element)
-          ? ReactDOMServer.renderToString(element)
-          : element
-          ? element.toString()
-          : '',
-      });
-  };
+    const onMount = () => {
+        scale.set(1);
+        opacity.set(1);
+        sendEventOnMount &&
+            carbonEvents.strategy.strategyTooltipShow({
+                buy: sendEventOnMount?.buy,
+                message: isValidElement(element)
+                    ? ReactDOMServer.renderToString(element)
+                    : element
+                    ? element.toString()
+                    : '',
+            });
+    };
 
-  const onHide = ({ unmount }: Instance) => {
-    const cleanup = scale.onChange((value) => {
-      if (value <= initialScale) {
-        cleanup();
-        unmount();
-      }
-    });
+    const onHide = ({ unmount }: Instance) => {
+        const cleanup = scale.onChange((value) => {
+            if (value <= initialScale) {
+                cleanup();
+                unmount();
+            }
+        });
 
-    scale.set(initialScale);
-    opacity.set(0);
-  };
+        scale.set(initialScale);
+        opacity.set(0);
+    };
 
-  if (disabled) {
-    return children;
-  }
+    if (disabled) {
+        return children;
+    }
 
-  return (
-    <Tippy
-      appendTo={() => document.body}
-      hideOnClick={false}
-      delay={500}
-      render={(attrs) => (
-        <m.div
-          className={cn(
-            'border-background-800 bg-background-800/30 text-14 rounded border px-24 py-16 text-white shadow-lg backdrop-blur-2xl',
-            className
-          )}
-          style={{ scale, opacity, maxWidth }}
-          data-testid="tippy-tooltip"
-          {...attrs}
+    return (
+        <Tippy
+            appendTo={() => document.body}
+            hideOnClick={false}
+            delay={500}
+            render={(attrs) => (
+                <m.div
+                    className={cn(
+                        'border-background-800 bg-background-800/30 text-14 rounded border px-24 py-16 text-white shadow-lg backdrop-blur-2xl',
+                        className
+                    )}
+                    style={{ scale, opacity, maxWidth }}
+                    data-testid="tippy-tooltip"
+                    {...attrs}
+                >
+                    {element}
+                </m.div>
+            )}
+            interactive
+            offset={[0, 8]}
+            animation={true}
+            onMount={onMount}
+            onHide={onHide}
+            {...props}
         >
-          {element}
-        </m.div>
-      )}
-      interactive
-      offset={[0, 8]}
-      animation={true}
-      onMount={onMount}
-      onHide={onHide}
-      {...props}
-    >
-      {children}
-    </Tippy>
-  );
+            {children}
+        </Tippy>
+    );
 };

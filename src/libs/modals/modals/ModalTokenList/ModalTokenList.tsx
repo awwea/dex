@@ -13,70 +13,70 @@ import { useBreakpoints } from 'hooks/useBreakpoints';
 import { KeyboardEvent } from 'react';
 
 export type ModalTokenListData = {
-  onClick: (token: Token) => void;
-  excludedTokens?: string[];
-  includedTokens?: string[];
-  isBaseToken?: boolean;
+    onClick: (token: Token) => void;
+    excludedTokens?: string[];
+    includedTokens?: string[];
+    isBaseToken?: boolean;
 };
 
 export const ModalTokenList: ModalFC<ModalTokenListData> = ({ id, data }) => {
-  const { belowBreakpoint } = useBreakpoints();
+    const { belowBreakpoint } = useBreakpoints();
 
-  const {
-    search,
-    setSearch,
-    showImportToken,
-    showNoResults,
-    filteredTokens,
-    onSelect,
-    isError,
-    isPending,
-    addFavoriteToken,
-    removeFavoriteToken,
-    favoriteTokens,
-    popularTokens,
-  } = useModalTokenList({ id, data });
+    const {
+        search,
+        setSearch,
+        showImportToken,
+        showNoResults,
+        filteredTokens,
+        onSelect,
+        isError,
+        isPending,
+        addFavoriteToken,
+        removeFavoriteToken,
+        favoriteTokens,
+        popularTokens,
+    } = useModalTokenList({ id, data });
 
-  const handleKeyDown = (e: KeyboardEvent) => {
-    if (e.key === 'Enter' && !!filteredTokens.length) {
-      onSelect(filteredTokens[0]);
-    }
-  };
+    const handleKeyDown = (e: KeyboardEvent) => {
+        if (e.key === 'Enter' && !!filteredTokens.length) {
+            onSelect(filteredTokens[0]);
+        }
+    };
 
-  return (
-    <ModalOrMobileSheet id={id} title="Select Token">
-      <SearchInput
-        aria-labelledby="modal-title"
-        aria-description="search by token symbol"
-        autoFocus={!belowBreakpoint('md')}
-        value={search}
-        setValue={setSearch}
-        className="rounded-8"
-        onKeyDown={handleKeyDown}
-      />
-      {!showNoResults && !showImportToken && <ModalTokenImportNotification />}
+    return (
+        <ModalOrMobileSheet id={id} title="Select Token">
+            <SearchInput
+                aria-labelledby="modal-title"
+                aria-description="search by token symbol"
+                autoFocus={!belowBreakpoint('md')}
+                value={search}
+                setValue={setSearch}
+                className="rounded-8"
+                onKeyDown={handleKeyDown}
+            />
+            {!showNoResults && !showImportToken && <ModalTokenImportNotification />}
 
-      {isError ? (
-        <ModalTokenListError />
-      ) : isPending ? (
-        <ModalTokenListLoading />
-      ) : showImportToken ? (
-        <ModalTokenListImport address={search} />
-      ) : showNoResults ? (
-        <ModalTokenListNotFound />
-      ) : (
-        <ModalTokenListContent
-          tokens={{
-            all: filteredTokens,
-            favorites: favoriteTokens,
-            popular: popularTokens,
-          }}
-          onSelect={onSelect}
-          search={search}
-          onAddFavorite={addFavoriteToken}
-          onRemoveFavorite={removeFavoriteToken}
-        />
-      )}
-    </ModalOrMobileSheet>
-  );
+            {isError ? (
+                <ModalTokenListError />
+            ) : isPending ? (
+                <ModalTokenListLoading />
+            ) : showImportToken ? (
+                <ModalTokenListImport address={search} />
+            ) : showNoResults ? (
+                <ModalTokenListNotFound />
+            ) : (
+                <ModalTokenListContent
+                    tokens={{
+                        all: filteredTokens,
+                        favorites: favoriteTokens,
+                        popular: popularTokens,
+                    }}
+                    onSelect={onSelect}
+                    search={search}
+                    onAddFavorite={addFavoriteToken}
+                    onRemoveFavorite={removeFavoriteToken}
+                />
+            )}
+        </ModalOrMobileSheet>
+    );
 };

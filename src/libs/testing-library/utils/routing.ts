@@ -1,25 +1,18 @@
-import {
-  RootRoute,
-  Route,
-  Router,
-  createMemoryHistory,
-} from '@tanstack/react-router';
+import { RootRoute, Route, Router, createMemoryHistory } from '@tanstack/react-router';
 import { RouterRenderParams } from './types';
 import { parseSearchWith } from 'libs/routing/utils';
 import { isAddress } from 'ethers/lib/utils';
 
 const encodeValue = (value: string | number | symbol) => {
-  if (typeof value == 'string' && isAddress(value)) return value;
-  if (!isNaN(Number(value))) return `"${String(value)}"`;
-  return `${String(value)}`;
+    if (typeof value == 'string' && isAddress(value)) return value;
+    if (!isNaN(Number(value))) return `"${String(value)}"`;
+    return `${String(value)}`;
 };
 
-const encodeParams = (
-  searchParams: Record<string, string | number | symbol>
-): string => {
-  return Object.entries(searchParams)
-    .map(([key, value]) => `${key}=${encodeValue(value)}`)
-    .join('&');
+const encodeParams = (searchParams: Record<string, string | number | symbol>): string => {
+    return Object.entries(searchParams)
+        .map(([key, value]) => `${key}=${encodeValue(value)}`)
+        .join('&');
 };
 
 /**
@@ -35,27 +28,27 @@ const encodeParams = (
  * @returns A promise that resolves to the initialized and loaded router.
  */
 export const loadRouter = async ({
-  component,
-  basePath = '/',
-  search = {},
-}: RouterRenderParams) => {
-  const rootRoute = new RootRoute();
-  const subPath = encodeParams(search);
-  const path = `${basePath}?${subPath}`;
-
-  const componentRoute = new Route({
-    getParentRoute: () => rootRoute,
-    path: basePath,
     component,
-  });
+    basePath = '/',
+    search = {},
+}: RouterRenderParams) => {
+    const rootRoute = new RootRoute();
+    const subPath = encodeParams(search);
+    const path = `${basePath}?${subPath}`;
 
-  const customRouter = new Router({
-    routeTree: rootRoute.addChildren([componentRoute]),
-    parseSearch: parseSearchWith(JSON.parse),
-    history: createMemoryHistory({ initialEntries: [path] }),
-  });
+    const componentRoute = new Route({
+        getParentRoute: () => rootRoute,
+        path: basePath,
+        component,
+    });
 
-  await customRouter.load();
+    const customRouter = new Router({
+        routeTree: rootRoute.addChildren([componentRoute]),
+        parseSearch: parseSearchWith(JSON.parse),
+        history: createMemoryHistory({ initialEntries: [path] }),
+    });
 
-  return customRouter;
+    await customRouter.load();
+
+    return customRouter;
 };

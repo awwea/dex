@@ -14,50 +14,48 @@ let didInitCheck = false;
 let didInitSDK = false;
 
 export const App = () => {
-  const { initCheck, initSDK } = useCarbonInit();
-  const { setInnerHeight } = useStore();
+    const { initCheck, initSDK } = useCarbonInit();
+    const { setInnerHeight } = useStore();
 
-  const match = useMatchRoute();
-  // Add more routes here to skip SDK init
-  const skipSDKInit = [match({ to: '/simulate', fuzzy: true })].some(
-    (x) => !!x
-  );
+    const match = useMatchRoute();
+    // Add more routes here to skip SDK init
+    const skipSDKInit = [match({ to: '/simulate', fuzzy: true })].some((x) => !!x);
 
-  useEffect(() => {
-    if (!didInitCheck) {
-      didInitCheck = true;
-      void initCheck();
-    }
-  }, [initCheck]);
+    useEffect(() => {
+        if (!didInitCheck) {
+            didInitCheck = true;
+            void initCheck();
+        }
+    }, [initCheck]);
 
-  useEffect(() => {
-    if (!didInitSDK && !skipSDKInit) {
-      didInitSDK = true;
-      void initSDK();
-    }
-  }, [initSDK, skipSDKInit]);
+    useEffect(() => {
+        if (!didInitSDK && !skipSDKInit) {
+            didInitSDK = true;
+            void initSDK();
+        }
+    }, [initSDK, skipSDKInit]);
 
-  useEffect(() => {
-    window.addEventListener('resize', (e) => {
-      // @ts-ignore
-      const h = e.target?.innerHeight || 0;
-      setInnerHeight(h);
-    });
-    return () => window.removeEventListener('resize', () => {});
-  }, [setInnerHeight]);
+    useEffect(() => {
+        window.addEventListener('resize', (e) => {
+            // @ts-ignore
+            const h = e.target?.innerHeight || 0;
+            setInnerHeight(h);
+        });
+        return () => window.removeEventListener('resize', () => {});
+    }, [setInnerHeight]);
 
-  return (
-    <>
-      <NotificationAlerts />
-      <MainMenu />
-      <main className="mb-16 mt-80 grid flex-grow">
-        <MainContent />
-      </main>
-      <Footer />
-      <MobileMenu />
-      <ModalProvider />
-      <Toaster />
-      <CreateStrategyCTAMobile />
-    </>
-  );
+    return (
+        <>
+            <NotificationAlerts />
+            <MainMenu />
+            <main className="mb-16 mt-80 grid flex-grow">
+                <MainContent />
+            </main>
+            <Footer />
+            <MobileMenu />
+            <ModalProvider />
+            <Toaster />
+            <CreateStrategyCTAMobile />
+        </>
+    );
 };

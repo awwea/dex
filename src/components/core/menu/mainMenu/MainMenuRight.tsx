@@ -7,26 +7,26 @@ import { Button } from 'components/common/button';
 import { useBurgerMenuItems } from './MainMenuRightBurger/useBurgerMenuItems';
 
 const TenderlyForkAlert = () => {
-  return IS_TENDERLY_FORK ? (
-    <Button variant="error" size="sm">
-      Fork
-    </Button>
-  ) : null;
+    return IS_TENDERLY_FORK ? (
+        <Button variant="error" size="sm">
+            Fork
+        </Button>
+    ) : null;
 };
 
 export const MainMenuRight: FC = () => {
-  const { menuMapping } = useBurgerMenuItems();
-  const { aboveBreakpoint } = useBreakpoints();
+    const { menuMapping } = useBurgerMenuItems();
+    const { aboveBreakpoint } = useBreakpoints();
 
-  // <MainMenuRightChainSelector networks={networks} />
-  // {aboveBreakpoint('md') && (
-  // <MainMenuRightBurger menuMapping={menuMapping} />
-  // )}
-  return (
-    <div className="flex items-center gap-8 sm:gap-16">
-      <TenderlyForkAlert />
-      <MainMenuRightNotifications />
-      <MainMenuRightWallet />
-    </div>
-  );
+    // <MainMenuRightChainSelector networks={networks} />
+    // {aboveBreakpoint('md') && (
+    // <MainMenuRightBurger menuMapping={menuMapping} />
+    // )}
+    return (
+        <div className="flex items-center gap-8 sm:gap-16">
+            <TenderlyForkAlert />
+            <MainMenuRightNotifications />
+            <MainMenuRightWallet />
+        </div>
+    );
 };

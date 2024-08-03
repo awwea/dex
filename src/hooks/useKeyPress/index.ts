@@ -1,21 +1,21 @@
 import { useCallback, useEffect, useState } from 'react';
 
 export const useKeyPress = () => {
-  const [keyPressed, setKeyPressed] = useState('');
+    const [keyPressed, setKeyPressed] = useState('');
 
-  const handleKeyDown = useCallback((event: KeyboardEvent) => {
-    setKeyPressed(event.key);
-  }, []);
+    const handleKeyDown = useCallback((event: KeyboardEvent) => {
+        setKeyPressed(event.key);
+    }, []);
 
-  useEffect(() => {
-    document.addEventListener('keydown', handleKeyDown);
+    useEffect(() => {
+        document.addEventListener('keydown', handleKeyDown);
 
-    return () => {
-      document.removeEventListener('keydown', handleKeyDown);
+        return () => {
+            document.removeEventListener('keydown', handleKeyDown);
+        };
+    }, [handleKeyDown]);
+
+    return {
+        keyPressed,
     };
-  }, [handleKeyDown]);
-
-  return {
-    keyPressed,
-  };
 };

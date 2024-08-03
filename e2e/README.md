@@ -34,10 +34,10 @@ yarn e2e --ui
 
 E2E run in a github action on:
 
-- Every commit
-- When draft PR become ready for review
-- When PRs are opened or re-opened
-- If PR is against main
+-   Every commit
+-   When draft PR become ready for review
+-   When PRs are opened or re-opened
+-   If PR is against main
 
 ## Screenshots
 
@@ -45,9 +45,9 @@ Screenshots are taken during E2E and images are pushed automatically on the curr
 
 Screenshots are only taken:
 
-- In a Github Action
-- If PR is not draft
-- If PR is against main branch
+-   In a Github Action
+-   If PR is not draft
+-   If PR is against main branch
 
 <p style="border:solid 1px #303030; background-color: #30303030; border-radius:4px; padding:8px 16px">
 Screenshots are not taken on draft PRs as the local branch would need to be merged on each change.
@@ -80,10 +80,10 @@ await expect(first.getTestId('strategy-pair')).toHaveText('ETH/DAI');
 
 As the same network was used for all tests, mutating a strategy in one test might impact another test. For now, it is suggested to try to use different token pairs for each test to avoid unwanted side effect, for example:
 
-- `ETH/DAI`: Create recurring strategy
-- `ETH/BNT`: Create concentrated liquidity strategy (overlapping in the code)
-- `ETH/USDC`: Trade Buy
-- `USDC/USDT`: Trade Sell
+-   `ETH/DAI`: Create recurring strategy
+-   `ETH/BNT`: Create concentrated liquidity strategy (overlapping in the code)
+-   `ETH/USDC`: Trade Buy
+-   `USDC/USDT`: Trade Sell
 
 ### Mock data
 
@@ -96,7 +96,7 @@ If you need to mock the date, you can use the `mockDate` function. This function
 ```typescript
 import { mockDate } from '../utils/mock-date';
 test.beforeEach(async ({ page }) => {
-  await mockDate(page, '2024-03-01T00:00:00.000Z')
+    await mockDate(page, '2024-03-01T00:00:00.000Z');
 });
 ```
 
@@ -109,20 +109,18 @@ const historyPricesRegExp = /.*api\.carbondefi\.xyz\/v1\/history\/prices.*$/;
 await this.page.waitForResponse(historyPricesRegExp);
 ```
 
-
-
 ## Common Errors
 
-- **Error**: `Executable doesn't exist`
-- **Solution**: run `yarn playwright install`
-- **Description**: Browsers are not installed locally yet
+-   **Error**: `Executable doesn't exist`
+-   **Solution**: run `yarn playwright install`
+-   **Description**: Browsers are not installed locally yet
 
 ---
 
-- **Error**: `Page is closed`
-- **Solution**: Increase timeout of test
-- **Description**: This error happens if test is longer that the default timeout (120s). It can be appended at any stage of the test or the default timeout can be changed in the [playwright config file](.././playwright.config.ts).
-- **Example**:
+-   **Error**: `Page is closed`
+-   **Solution**: Increase timeout of test
+-   **Description**: This error happens if test is longer that the default timeout (120s). It can be appended at any stage of the test or the default timeout can be changed in the [playwright config file](.././playwright.config.ts).
+-   **Example**:
 
 ```typescript
 test('Create strategy', ({ page }) => {

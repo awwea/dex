@@ -7,26 +7,26 @@ import { carbonEvents } from 'services/events';
 import { Token } from 'libs/tokens';
 
 type Props = {
-  baseToken: Token;
-  quoteToken: Token;
+    baseToken: Token;
+    quoteToken: Token;
 };
 
 export const MainMenuTradeSettings: FC<Props> = ({ baseToken, quoteToken }) => {
-  const { openModal } = useModal();
+    const { openModal } = useModal();
 
-  return (
-    <Button
-      variant="secondary"
-      className="flex w-40 items-center justify-center p-0"
-      onClick={() => {
-        openModal('tradeSettings', { base: baseToken, quote: quoteToken });
-        carbonEvents.trade.tradeSettingsClick({
-          buyToken: baseToken,
-          sellToken: quoteToken,
-        });
-      }}
-    >
-      <IconCog className="size-20" />
-    </Button>
-  );
+    return (
+        <Button
+            variant="secondary"
+            className="flex w-40 items-center justify-center p-0"
+            onClick={() => {
+                openModal('tradeSettings', { base: baseToken, quote: quoteToken });
+                carbonEvents.trade.tradeSettingsClick({
+                    buyToken: baseToken,
+                    sellToken: quoteToken,
+                });
+            }}
+        >
+            <IconCog className="size-20" />
+        </Button>
+    );
 };

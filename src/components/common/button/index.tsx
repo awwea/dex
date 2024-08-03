@@ -1,53 +1,45 @@
-import {
-  AriaAttributes,
-  ButtonHTMLAttributes,
-  DetailedHTMLProps,
-  FC,
-  ReactNode,
-} from 'react';
+import { AriaAttributes, ButtonHTMLAttributes, DetailedHTMLProps, FC, ReactNode } from 'react';
 import { VariantProps } from 'class-variance-authority';
 import { buttonStyles } from 'components/common/button/buttonStyles';
 import { m } from 'libs/motion';
 import { cn } from 'utils/helpers';
 
 export type ButtonHTMLProps = DetailedHTMLProps<
-  ButtonHTMLAttributes<HTMLButtonElement>,
-  HTMLButtonElement
+    ButtonHTMLAttributes<HTMLButtonElement>,
+    HTMLButtonElement
 > &
-  AriaAttributes;
+    AriaAttributes;
 
 export type ButtonProps = ButtonHTMLProps &
-  VariantProps<typeof buttonStyles> & {
-    loading?: boolean;
-    loadingChildren?: string | ReactNode;
-  };
+    VariantProps<typeof buttonStyles> & {
+        loading?: boolean;
+        loadingChildren?: string | ReactNode;
+    };
 
 export const Button: FC<ButtonProps> = ({
-  variant,
-  size,
-  fullWidth,
-  className,
-  loading,
-  loadingChildren,
-  ...props
+    variant,
+    size,
+    fullWidth,
+    className,
+    loading,
+    loadingChildren,
+    ...props
 }) => {
-  return (
-    // @ts-ignore
-    <m.button
-      className={cn(
-        buttonStyles({ variant, size, fullWidth, class: className })
-      )}
-      {...props}
-      disabled={props.disabled || loading}
-    >
-      {loading ? (
-        <>
-          {loadingChildren || props.children}
-          <span className="dot-pulse ml-30" />
-        </>
-      ) : (
-        props.children
-      )}
-    </m.button>
-  );
+    return (
+        // @ts-ignore
+        <m.button
+            className={cn(buttonStyles({ variant, size, fullWidth, class: className }))}
+            {...props}
+            disabled={props.disabled || loading}
+        >
+            {loading ? (
+                <>
+                    {loadingChildren || props.children}
+                    <span className="dot-pulse ml-30" />
+                </>
+            ) : (
+                props.children
+            )}
+        </m.button>
+    );
 };

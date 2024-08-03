@@ -12,22 +12,20 @@ import 'utils/buffer';
 import 'fonts.css';
 import 'index.css';
 
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
+const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 
 root.render(
-  <React.StrictMode>
-    <QueryProvider>
-      <StoreProvider>
-        <WagmiReactWrapper>
-          <LazyMotion>
-            <RouterProvider router={router} />
-          </LazyMotion>
-        </WagmiReactWrapper>
-      </StoreProvider>
-    </QueryProvider>
-  </React.StrictMode>
+    <React.StrictMode>
+        <QueryProvider>
+            <StoreProvider>
+                <WagmiReactWrapper>
+                    <LazyMotion>
+                        <RouterProvider router={router} />
+                    </LazyMotion>
+                </WagmiReactWrapper>
+            </StoreProvider>
+        </QueryProvider>
+    </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

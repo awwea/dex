@@ -1,21 +1,17 @@
 // Action types
 type MigrationActionWithFormatter = ({
-  prevFormattedKey,
-  nextFormattedKey,
+    prevFormattedKey,
+    nextFormattedKey,
 }: {
-  prevFormattedKey: string;
-  nextFormattedKey: string;
+    prevFormattedKey: string;
+    nextFormattedKey: string;
 }) => void;
 
-type MigrationActionWithoutFormatter = ({
-  prevFormattedKey,
-}: {
-  prevFormattedKey: string;
-}) => void;
+type MigrationActionWithoutFormatter = ({ prevFormattedKey }: { prevFormattedKey: string }) => void;
 
 // Migration type
 export type Migration = {
-  migrate: (prevFormattedKey: string) => void;
+    migrate: (prevFormattedKey: string) => void;
 };
 
 // ************************** /
@@ -32,24 +28,21 @@ export type Migration = {
  * @param {string} params.nextFormattedKey - The next key in localStorage to migrate data to.
  */
 export const migrateAndRemoveItem: MigrationActionWithFormatter = ({
-  prevFormattedKey,
-  nextFormattedKey,
+    prevFormattedKey,
+    nextFormattedKey,
 }) => {
-  const prevObj = localStorage.getItem(prevFormattedKey);
-  localStorage.removeItem(prevFormattedKey);
-  if (!prevObj || !nextFormattedKey) return;
-  try {
-    const prevObjParsed = JSON.parse(prevObj);
-    if (!localStorage.getItem(nextFormattedKey) && !!prevObjParsed) {
-      localStorage.setItem(nextFormattedKey, prevObj);
+    const prevObj = localStorage.getItem(prevFormattedKey);
+    localStorage.removeItem(prevFormattedKey);
+    if (!prevObj || !nextFormattedKey) return;
+    try {
+        const prevObjParsed = JSON.parse(prevObj);
+        if (!localStorage.getItem(nextFormattedKey) && !!prevObjParsed) {
+            localStorage.setItem(nextFormattedKey, prevObj);
+        }
+    } catch (e) {
+        localStorage.removeItem(nextFormattedKey);
+        console.error(`Migration from ${prevFormattedKey} to ${nextFormattedKey} has failed`, e);
     }
-  } catch (e) {
-    localStorage.removeItem(nextFormattedKey);
-    console.error(
-      `Migration from ${prevFormattedKey} to ${nextFormattedKey} has failed`,
-      e
-    );
-  }
 };
 
 /**
@@ -58,6 +51,5 @@ export const migrateAndRemoveItem: MigrationActionWithFormatter = ({
  * @param {Object} params - The parameters object.
  * @param {string} params.prevFormattedKey - The key in localStorage to be removed.
  */
-export const removeItem: MigrationActionWithoutFormatter = ({
-  prevFormattedKey,
-}) => localStorage.removeItem(prevFormattedKey);
+export const removeItem: MigrationActionWithoutFormatter = ({ prevFormattedKey }) =>
+    localStorage.removeItem(prevFormattedKey);

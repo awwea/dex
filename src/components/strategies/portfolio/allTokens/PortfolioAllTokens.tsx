@@ -8,83 +8,80 @@ import { PortfolioAllTokensMobile } from './PortfolioAllTokensMobile';
 import { usePortfolioAllTokensPieChart } from 'components/strategies/portfolio/allTokens/usePortfolioAllTokensPieChart';
 import { PortfolioLayout } from './../PortfolioLayout';
 import { PortfolioPieChart } from './../PortfolioPieChart';
-import {
-  PortfolioData,
-  usePortfolioData,
-} from 'components/strategies/portfolio/usePortfolioData';
+import { PortfolioData, usePortfolioData } from 'components/strategies/portfolio/usePortfolioData';
 import { StrategyCreateFirst } from 'components/strategies/overview/StrategyCreateFirst';
 import { NotFound } from 'components/common/NotFound';
 
 interface Props {
-  strategies?: Strategy[];
-  isPending?: boolean;
-  isExplorer?: boolean;
-  onRowClick: (row: Row<PortfolioData>) => void;
-  getHref: GetPortfolioTokenHref;
+    strategies?: Strategy[];
+    isPending?: boolean;
+    isExplorer?: boolean;
+    onRowClick: (row: Row<PortfolioData>) => void;
+    getHref: GetPortfolioTokenHref;
 }
 
 const _PortfolioAllTokens = ({
-  strategies,
-  isPending: _isPending,
-  isExplorer,
-  onRowClick,
-  getHref,
-}: Props) => {
-  const { tableData, totalValue, isPending } = usePortfolioData({
     strategies,
     isPending: _isPending,
-  });
-  const { pieChartOptions } = usePortfolioAllTokensPieChart(tableData);
+    isExplorer,
+    onRowClick,
+    getHref,
+}: Props) => {
+    const { tableData, totalValue, isPending } = usePortfolioData({
+        strategies,
+        isPending: _isPending,
+    });
+    const { pieChartOptions } = usePortfolioAllTokensPieChart(tableData);
 
-  if (!isPending && tableData && tableData.length === 0) {
-    if (isExplorer) {
-      return (
-        <NotFound
-          variant="error"
-          title="We couldn't find any strategies"
-          text="Try entering a different wallet address or choose a different token pair or reset your filters."
-          bordered
-        />
-      );
+    if (!isPending && tableData && tableData.length === 0) {
+        if (isExplorer) {
+            return (
+                <NotFound
+                    variant="error"
+                    title="We couldn't find any strategies"
+                    text="Try entering a different wallet address or choose a different token pair or reset your filters."
+                    bordered
+                />
+            );
+        }
+        return <StrategyCreateFirst />;
     }
-    return <StrategyCreateFirst />;
-  }
 
-  return (
-    <PortfolioLayout
-      desktopView={
-        <PortfolioAllTokensDesktop
-          data={tableData}
-          isPending={isPending}
-          onRowClick={onRowClick}
+    return (
+        <PortfolioLayout
+            desktopView={
+                <PortfolioAllTokensDesktop
+                    data={tableData}
+                    isPending={isPending}
+                    onRowClick={onRowClick}
+                />
+            }
+            mobileView={
+                <PortfolioAllTokensMobile
+                    data={tableData}
+                    isPending={isPending}
+                    getHref={getHref}
+                />
+            }
+            pieChartElement={
+                <PortfolioPieChart
+                    options={pieChartOptions}
+                    centerElement={
+                        <PortfolioAllTokensPieChartCenter
+                            totalValue={totalValue}
+                            assetsCount={tableData.length}
+                        />
+                    }
+                    isPending={isPending}
+                />
+            }
         />
-      }
-      mobileView={
-        <PortfolioAllTokensMobile
-          data={tableData}
-          isPending={isPending}
-          getHref={getHref}
-        />
-      }
-      pieChartElement={
-        <PortfolioPieChart
-          options={pieChartOptions}
-          centerElement={
-            <PortfolioAllTokensPieChartCenter
-              totalValue={totalValue}
-              assetsCount={tableData.length}
-            />
-          }
-          isPending={isPending}
-        />
-      }
-    />
-  );
+    );
 };
 
 export const PortfolioAllTokens = memo(
-  _PortfolioAllTokens,
-  (prev, next) =>
-    prev.isPending === next.isPending &&
-    JSON.stringify(prev.strategies) === JSON.stringify(next.strategies)
+    _PortfolioAllTokens,
+    (prev, next) =>
+        prev.isPending === next.isPending &&
+        JSON.stringify(prev.strategies) === JSON.stringify(next.strategies)
 );

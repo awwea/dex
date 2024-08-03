@@ -9,67 +9,58 @@ import { ReactComponent as IconWallet } from 'assets/icons/wallet.svg';
 import { cn } from 'utils/helpers';
 import { carbonEvents } from 'services/events';
 import { StrategyEditEventType } from 'services/events/types';
-import {
-  getEditBudgetPage,
-  getEditPricesPage,
-} from 'components/strategies/edit/utils';
+import { getEditBudgetPage, getEditPricesPage } from 'components/strategies/edit/utils';
 
 export interface ModalConfirmWithdrawData {
-  strategy: Strategy;
-  strategyEvent: StrategyEditEventType;
+    strategy: Strategy;
+    strategyEvent: StrategyEditEventType;
 }
 
-export const ModalConfirmWithdraw: ModalFC<ModalConfirmWithdrawData> = ({
-  id,
-  data,
-}) => {
-  const { closeModal } = useModal();
-  const { strategyEvent, strategy } = data;
-  const editPrices = getEditPricesPage(strategy, 'editPrices');
-  const withdraw = getEditBudgetPage(strategy, 'withdraw');
+export const ModalConfirmWithdraw: ModalFC<ModalConfirmWithdrawData> = ({ id, data }) => {
+    const { closeModal } = useModal();
+    const { strategyEvent, strategy } = data;
+    const editPrices = getEditPricesPage(strategy, 'editPrices');
+    const withdraw = getEditBudgetPage(strategy, 'withdraw');
 
-  const edit = () => {
-    carbonEvents.strategyEdit.strategyEditPricesClick({
-      origin: 'withdraw',
-      ...strategyEvent,
-    });
-    closeModal(id);
-  };
+    const edit = () => {
+        carbonEvents.strategyEdit.strategyEditPricesClick({
+            origin: 'withdraw',
+            ...strategyEvent,
+        });
+        closeModal(id);
+    };
 
-  return (
-    <ModalOrMobileSheet id={id} title="Withdraw Funds">
-      <IconTitleText
-        icon={<IconWallet className="size-24" />}
-        title="Are you sure you would like to withdraw your funds?"
-      />
-      <article className="grid grid-cols-[1fr_auto] grid-rows-[auto_auto] gap-8 rounded bg-white/10 p-16">
-        <h3 className="text-14 font-weight-500">Did you know ?</h3>
-        <Link
-          onClick={edit}
-          to={editPrices.to}
-          search={editPrices.search}
-          params={{ strategyId: strategy.id }}
-          className={cn(
-            'row-span-2 self-center',
-            buttonStyles({ variant: 'white' })
-          )}
-        >
-          Edit Prices
-        </Link>
-        <p className="text-12 text-white/80">
-          Editing prices is cheaper and keeps your strategy working for you.
-        </p>
-      </article>
-      <Link
-        onClick={edit}
-        to={withdraw.to}
-        search={withdraw.search}
-        params={{ strategyId: strategy.id }}
-        className={buttonStyles({ variant: 'white' })}
-        data-testid="withdraw-strategy-btn"
-      >
-        Withdraw Funds
-      </Link>
-    </ModalOrMobileSheet>
-  );
+    return (
+        <ModalOrMobileSheet id={id} title="Withdraw Funds">
+            <IconTitleText
+                icon={<IconWallet className="size-24" />}
+                title="Are you sure you would like to withdraw your funds?"
+            />
+            <article className="grid grid-cols-[1fr_auto] grid-rows-[auto_auto] gap-8 rounded bg-white/10 p-16">
+                <h3 className="text-14 font-weight-500">Did you know ?</h3>
+                <Link
+                    onClick={edit}
+                    to={editPrices.to}
+                    search={editPrices.search}
+                    params={{ strategyId: strategy.id }}
+                    className={cn('row-span-2 self-center', buttonStyles({ variant: 'white' }))}
+                >
+                    Edit Prices
+                </Link>
+                <p className="text-12 text-white/80">
+                    Editing prices is cheaper and keeps your strategy working for you.
+                </p>
+            </article>
+            <Link
+                onClick={edit}
+                to={withdraw.to}
+                search={withdraw.search}
+                params={{ strategyId: strategy.id }}
+                className={buttonStyles({ variant: 'white' })}
+                data-testid="withdraw-strategy-btn"
+            >
+                Withdraw Funds
+            </Link>
+        </ModalOrMobileSheet>
+    );
 };

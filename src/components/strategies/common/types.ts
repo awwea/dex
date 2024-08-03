@@ -1,19 +1,19 @@
 import { StrategySettings } from 'libs/routing';
 
 export interface BaseOrder {
-  min: string;
-  max: string;
-  marginalPrice?: string;
-  budget: string;
+    min: string;
+    max: string;
+    marginalPrice?: string;
+    budget: string;
 }
 
 export interface OverlappingOrder extends BaseOrder {
-  marginalPrice: string;
+    marginalPrice: string;
 }
 
 export interface OrderBlock extends BaseOrder {
-  settings: StrategySettings;
+    settings: StrategySettings;
 }
 export interface EditOrderBlock extends OrderBlock {
-  action: 'deposit' | 'withdraw';
+    action: 'deposit' | 'withdraw';
 }

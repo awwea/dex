@@ -5,23 +5,23 @@ import { CreateRecurringStrategyPage } from './recurring';
 
 const basePath = '/strategies/create/recurring';
 afterEach(async () => {
-  window.history.replaceState(null, 'root', '/');
+    window.history.replaceState(null, 'root', '/');
 });
 
 test('run recurring form', async () => {
-  // ARRANGE
-  const { router } = await renderWithRouter({
-    component: () => <CreateRecurringStrategyPage />,
-    basePath,
-    search: {
-      base: debugTokens.ETH,
-      quote: debugTokens.USDC,
-    },
-  });
+    // ARRANGE
+    const { router } = await renderWithRouter({
+        component: () => <CreateRecurringStrategyPage />,
+        basePath,
+        search: {
+            base: debugTokens.ETH,
+            quote: debugTokens.USDC,
+        },
+    });
 
-  expect(router.state.location.pathname).toBe(basePath);
-  expect(router.state.location.search).toStrictEqual({
-    base: debugTokens.ETH,
-    quote: debugTokens.USDC,
-  });
+    expect(router.state.location.pathname).toBe(basePath);
+    expect(router.state.location.search).toStrictEqual({
+        base: debugTokens.ETH,
+        quote: debugTokens.USDC,
+    });
 });

@@ -12,82 +12,82 @@ import { validateActivityParams } from 'components/activity/utils';
 // Used for redirecting old explorer route to new explorer route
 // TODO: remove this on May 2024
 export const oldExplorerLayout = new Route({
-  getParentRoute: () => rootRoute,
-  path: '/explorer/*',
-  beforeLoad: ({ params }) => {
-    const allParams = (params as any)['*'];
-    redirect({
-      to: `/explore/${allParams}`,
-      throw: true,
-      replace: true,
-    } as any);
-  },
+    getParentRoute: () => rootRoute,
+    path: '/explorer/*',
+    beforeLoad: ({ params }) => {
+        const allParams = (params as any)['*'];
+        redirect({
+            to: `/explore/${allParams}`,
+            throw: true,
+            replace: true,
+        } as any);
+    },
 });
 
 export const explorerLayout = new Route({
-  getParentRoute: () => rootRoute,
-  path: '/explore',
+    getParentRoute: () => rootRoute,
+    path: '/explore',
 });
 
 export const explorerRedirect = new Route({
-  getParentRoute: () => explorerLayout,
-  path: '/',
-  beforeLoad: () => {
-    redirect({
-      to: '/explore/$type',
-      params: { type: 'token-pair' },
-      throw: true,
-      replace: true,
-    });
-  },
+    getParentRoute: () => explorerLayout,
+    path: '/',
+    beforeLoad: () => {
+        redirect({
+            to: '/explore/$type',
+            params: { type: 'token-pair' },
+            throw: true,
+            replace: true,
+        });
+    },
 });
 
 export const explorerPage = new Route({
-  getParentRoute: () => explorerLayout,
-  path: '$type',
-  parseParams: (params: Record<string, string>) => {
-    return { type: params.type as ExplorerType };
-  },
-  component: ExplorerPage,
+    getParentRoute: () => explorerLayout,
+    path: '$type',
+    parseParams: (params: Record<string, string>) => {
+        return { type: params.type as ExplorerType };
+    },
+    component: ExplorerPage,
 });
 
 export const explorerTypePage = new Route({
-  getParentRoute: () => explorerPage,
-  path: '/',
-  component: ExplorerTypePage,
+    getParentRoute: () => explorerPage,
+    path: '/',
+    component: ExplorerTypePage,
 });
 
 export const explorerResultLayout = new Route({
-  getParentRoute: () => explorerPage,
-  path: '$slug',
+    getParentRoute: () => explorerPage,
+    path: '$slug',
 });
 
 export const explorerOverviewPage = new Route({
-  getParentRoute: () => explorerResultLayout,
-  path: '/',
-  component: ExplorerTypeOverviewPage,
+    getParentRoute: () => explorerResultLayout,
+    path: '/',
+    component: ExplorerTypeOverviewPage,
 });
 
 export const explorerPortfolioLayout = new Route({
-  getParentRoute: () => explorerResultLayout,
-  path: 'portfolio',
+    getParentRoute: () => explorerResultLayout,
+    path: 'portfolio',
 });
 
 export const explorerPortfolioPage = new Route({
-  getParentRoute: () => explorerPortfolioLayout,
-  path: '/',
-  component: ExplorerTypePortfolioPage,
+    getParentRoute: () => explorerPortfolioLayout,
+    path: '/',
+    component: ExplorerTypePortfolioPage,
 });
 
 export const explorerPortfolioTokenPage = new Route({
-  getParentRoute: () => explorerPortfolioLayout,
-  path: 'token/$address',
-  component: ExplorerTypePortfolioTokenPage,
+    getParentRoute: () => explorerPortfolioLayout,
+    path: 'token/$address',
+    component: ExplorerTypePortfolioTokenPage,
 });
 
 export const explorerActivityPage = new Route({
-  getParentRoute: () => explorerResultLayout,
-  path: '/activity',
-  component: ExplorerActivityPage,
-  validateSearch: validateActivityParams,
+    getParentRoute: () => explorerResultLayout,
+    path: '/activity',
+    component: ExplorerActivityPage,
+    validateSearch: validateActivityParams,
 });

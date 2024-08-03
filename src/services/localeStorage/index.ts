@@ -5,18 +5,14 @@ import { TradePair } from 'libs/modals/modals/ModalTradeTokenList';
 import { TradePairCategory } from 'libs/modals/modals/ModalTradeTokenList/ModalTradeTokenListContent';
 import { ChooseTokenCategory } from 'libs/modals/modals/ModalTokenList/ModalTokenListContent';
 import {
-  EnumStrategyFilter,
-  EnumStrategySort,
-  StrategyFilter,
-  StrategySort,
+    EnumStrategyFilter,
+    EnumStrategySort,
+    StrategyFilter,
+    StrategySort,
 } from 'components/strategies/overview/StrategyFilterSort';
 import { APP_ID, APP_VERSION, NETWORK } from 'utils/constants';
 import { FiatSymbol } from 'utils/carbonApi';
-import {
-  Migration,
-  migrateAndRemoveItem,
-  removeItem,
-} from 'utils/migrateLocalStorage';
+import { Migration, migrateAndRemoveItem, removeItem } from 'utils/migrateLocalStorage';
 import { NotificationPreference } from 'libs/notifications/NotificationPreferences';
 
 // ************************** /
@@ -24,33 +20,33 @@ import { NotificationPreference } from 'libs/notifications/NotificationPreferenc
 // ************************** /
 
 interface LocalStorageSchema {
-  tenderlyRpc: string;
-  carbonApi: string;
-  imposterAccount: string;
-  importedTokens: Token[];
-  [k: `notifications-${string}`]: Notification[];
-  [k: `favoriteTradePairs-${string}`]: TradePair[];
-  [k: `favoriteTokens-${string}`]: Token[];
-  tradePairsCategory: TradePairCategory;
-  tradePair: [string, string];
-  currentCurrency: FiatSymbol;
-  tradeSlippage: string;
-  tradeDeadline: string;
-  tradeMaxOrders: string;
-  chooseTokenCategory: ChooseTokenCategory;
-  carbonControllerAddress: string;
-  strategyOverviewFilter: StrategyFilter | EnumStrategyFilter;
-  strategyOverviewSort: StrategySort | EnumStrategySort;
-  voucherContractAddress: string;
-  tokenListCache: { tokens: Token[]; timestamp: number };
-  sdkCompressedCacheData: string;
-  tokenPairsCache: { pairs: TradePair[]; timestamp: number };
-  isUncheckedSigner: boolean;
-  hasSeenRestrictedCountryModal: boolean;
-  hasSeenCreateStratExpertMode: boolean;
-  simDisclaimerLastSeen: number;
-  lastSdkCache: { timestamp: number; ttl: number };
-  notificationPreferences: NotificationPreference;
+    tenderlyRpc: string;
+    carbonApi: string;
+    imposterAccount: string;
+    importedTokens: Token[];
+    [k: `notifications-${string}`]: Notification[];
+    [k: `favoriteTradePairs-${string}`]: TradePair[];
+    [k: `favoriteTokens-${string}`]: Token[];
+    tradePairsCategory: TradePairCategory;
+    tradePair: [string, string];
+    currentCurrency: FiatSymbol;
+    tradeSlippage: string;
+    tradeDeadline: string;
+    tradeMaxOrders: string;
+    chooseTokenCategory: ChooseTokenCategory;
+    carbonControllerAddress: string;
+    strategyOverviewFilter: StrategyFilter | EnumStrategyFilter;
+    strategyOverviewSort: StrategySort | EnumStrategySort;
+    voucherContractAddress: string;
+    tokenListCache: { tokens: Token[]; timestamp: number };
+    sdkCompressedCacheData: string;
+    tokenPairsCache: { pairs: TradePair[]; timestamp: number };
+    isUncheckedSigner: boolean;
+    hasSeenRestrictedCountryModal: boolean;
+    hasSeenCreateStratExpertMode: boolean;
+    simDisclaimerLastSeen: number;
+    lastSdkCache: { timestamp: number; ttl: number };
+    notificationPreferences: NotificationPreference;
 }
 
 // ************************** /
@@ -64,28 +60,28 @@ interface LocalStorageSchema {
  * @property {Function} migrate - A function that takes the prevFormattedKey of each localStorage object key to be migrated and performs any migration operations.
  */
 const migrations: Migration[] = [
-  {
-    migrate: (prevFormattedKey) => {
-      const prefix = 'carbon-v1-';
-      const isMatch = prevFormattedKey.startsWith(prefix);
-      if (!isMatch) return;
-      removeItem({ prevFormattedKey });
+    {
+        migrate: (prevFormattedKey) => {
+            const prefix = 'carbon-v1-';
+            const isMatch = prevFormattedKey.startsWith(prefix);
+            if (!isMatch) return;
+            removeItem({ prevFormattedKey });
+        },
     },
-  },
-  {
-    migrate: (prevFormattedKey) => {
-      const prefix = 'carbon-v1.1-';
-      const isMatch = prevFormattedKey.startsWith(prefix);
-      if (!isMatch) return;
-      const key = prevFormattedKey.slice(prefix.length);
-      if (!key) return;
-      const nextFormattedKey = ['carbon', NETWORK, 'v1.1', key].join('-');
-      migrateAndRemoveItem({ prevFormattedKey, nextFormattedKey });
+    {
+        migrate: (prevFormattedKey) => {
+            const prefix = 'carbon-v1.1-';
+            const isMatch = prevFormattedKey.startsWith(prefix);
+            if (!isMatch) return;
+            const key = prevFormattedKey.slice(prefix.length);
+            if (!key) return;
+            const nextFormattedKey = ['carbon', NETWORK, 'v1.1', key].join('-');
+            migrateAndRemoveItem({ prevFormattedKey, nextFormattedKey });
+        },
     },
-  },
 ];
 
 export const lsService = new ManagedLocalStorage<LocalStorageSchema>(
-  (key) => [APP_ID, NETWORK, APP_VERSION, key].join('-'),
-  migrations
+    (key) => [APP_ID, NETWORK, APP_VERSION, key].join('-'),
+    migrations
 );

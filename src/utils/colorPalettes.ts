@@ -1,18 +1,18 @@
 const COLOR_PALETTE = [
-  '#017AFF',
-  '#6C47FF',
-  '#39C0C8',
-  '#F34971',
-  '#F96300',
-  '#F439BF',
-  '#F5C900',
-  '#CDAD7A',
-  '#C3E42A',
-  '#20BF6C',
+    '#017AFF',
+    '#6C47FF',
+    '#39C0C8',
+    '#F34971',
+    '#F96300',
+    '#F439BF',
+    '#F5C900',
+    '#CDAD7A',
+    '#C3E42A',
+    '#20BF6C',
 ];
 
 export const getColorByIndex = (i: number) => {
-  return COLOR_PALETTE[i % COLOR_PALETTE.length];
+    return COLOR_PALETTE[i % COLOR_PALETTE.length];
 };
 
 // const COLOR_PALETTE = [

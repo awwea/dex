@@ -12,21 +12,21 @@ import { DebugOrderBook } from 'components/debug/DebugOrderBook';
 import { DebugSDKConfig } from 'components/debug/DebugSDKConfig';
 
 export const DebugPage = () => {
-  return (
-    <Page title="Debug">
-      <div className="grid grid-cols-1 gap-20 md:grid-cols-2">
-        <DebugResetDefault />
-        <DebugWagmi />
-        <DebugImposter />
-        <DebugTenderlyRPC />
-        <DebugTenderlyFaucet />
-        <DebugTransferNFT />
-        <DebugNotifications />
-        <DebugCreateStrategy />
-        <DebugFiatCurrency />
-        <DebugOrderBook />
-        <DebugSDKConfig />
-      </div>
-    </Page>
-  );
+    return (
+        <Page title="Debug">
+            <div className="grid grid-cols-1 gap-20 md:grid-cols-2">
+                <DebugResetDefault />
+                <DebugWagmi />
+                <DebugImposter />
+                <DebugTenderlyRPC />
+                <DebugTenderlyFaucet />
+                <DebugTransferNFT />
+                <DebugNotifications />
+                <DebugCreateStrategy />
+                <DebugFiatCurrency />
+                <DebugOrderBook />
+                <DebugSDKConfig />
+            </div>
+        </Page>
+    );
 };

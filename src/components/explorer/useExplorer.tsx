@@ -4,20 +4,20 @@ import { usePairs } from 'hooks/usePairs';
 import { useMemo } from 'react';
 
 export const useExplorer = () => {
-  const { slug, type } = useExplorerParams();
-  const pairs = usePairs();
+    const { slug, type } = useExplorerParams();
+    const pairs = usePairs();
 
-  // PAIR
-  const exactMatch = useMemo(() => pairs.map.get(slug), [pairs.map, slug]);
-  const pairQuery = useGetPairStrategies({
-    token0: exactMatch?.baseToken.address,
-    token1: exactMatch?.quoteToken.address,
-  });
+    // PAIR
+    const exactMatch = useMemo(() => pairs.map.get(slug), [pairs.map, slug]);
+    const pairQuery = useGetPairStrategies({
+        token0: exactMatch?.baseToken.address,
+        token1: exactMatch?.quoteToken.address,
+    });
 
-  // WALLET
-  const walletQuery = useGetUserStrategies({
-    user: type === 'wallet' ? slug : undefined,
-  });
+    // WALLET
+    const walletQuery = useGetUserStrategies({
+        user: type === 'wallet' ? slug : undefined,
+    });
 
-  return type === 'wallet' ? walletQuery : pairQuery;
+    return type === 'wallet' ? walletQuery : pairQuery;
 };

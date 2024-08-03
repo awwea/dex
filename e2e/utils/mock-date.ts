@@ -15,8 +15,8 @@ import { Page } from '@playwright/test';
  * @param fakeDate Date in string form, e.g. '2024-03-01T00:00:00.000Z'
  */
 export const mockDate = async (page: Page, fakeDate: string) => {
-  const fakeNow = new Date(fakeDate).valueOf();
-  await page.addInitScript(`{
+    const fakeNow = new Date(fakeDate).valueOf();
+    await page.addInitScript(`{
     // Extend Date constructor to default to fakeNow
     Date = class extends Date {
         constructor(...args) {

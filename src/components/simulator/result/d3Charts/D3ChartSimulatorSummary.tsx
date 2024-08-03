@@ -14,95 +14,95 @@ import { useState } from 'react';
 import { prettifyNumber } from 'utils/helpers';
 
 interface Props extends SimulatorReturn {
-  dms: D3ChartSettings;
+    dms: D3ChartSettings;
 }
 
 export const D3ChartSimulatorSummary = ({ dms, data, bounds }: Props) => {
-  const x = useLinearScale({
-    domain: extent(data, (d) => d.date) as [number, number],
-    range: [0, dms.boundedWidth],
-    pixelsPerTick: 100,
-  });
-
-  const yLeft = useLinearScale({
-    domain: getPriceDomain({ data, bounds }),
-    range: [dms.boundedHeight, 0],
-    domainTolerance: 0.05,
-  });
-
-  const yRight = useLinearScale({
-    domain: yRightDomain(data),
-    range: [dms.boundedHeight, 0],
-    domainTolerance: 0.05,
-  });
-  const yRightTicks: D3AxisTick[] = yLeft.ticks.map(({ offset }) => ({
-    value: yRight.scale.invert(offset),
-    offset,
-  }));
-
-  const xAcc = x.accessor('date');
-  const rangeProps = { x, y: yLeft, data, bounds };
-
-  const [legend, setLegend] = useState(defaultLegend);
-
-  const toggleLegend = (key: D3SimLegendEntry) => {
-    setLegend((prev) => {
-      return {
-        ...prev,
-        [key]: {
-          ...prev[key],
-          isDisabled: !prev[key].isDisabled,
-        },
-      };
+    const x = useLinearScale({
+        domain: extent(data, (d) => d.date) as [number, number],
+        range: [0, dms.boundedWidth],
+        pixelsPerTick: 100,
     });
-  };
 
-  if (!dms.width || !dms.height) return null;
+    const yLeft = useLinearScale({
+        domain: getPriceDomain({ data, bounds }),
+        range: [dms.boundedHeight, 0],
+        domainTolerance: 0.05,
+    });
 
-  return (
-    <>
-      <D3XAxis ticks={x.ticks} dms={dms} />
-      <D3YAxisLeft
-        ticks={yLeft.ticks}
-        dms={dms}
-        formatter={(value) => prettifyNumber(value)}
-      />
-      <D3YAxisRight
-        ticks={yRightTicks}
-        dms={dms}
-        formatter={(value) => prettifyNumber(value)}
-      />
-      {!legend.bid.isDisabled && <D3SimPriceRange type="bid" {...rangeProps} />}
-      {!legend.ask.isDisabled && <D3SimPriceRange type="ask" {...rangeProps} />}
-      {!legend.price.isDisabled && (
-        <D3LinePath data={data} xAcc={xAcc} yAcc={yLeft.accessor('price')} />
-      )}
-      {!legend.portfolio.isDisabled && (
-        <D3LinePath
-          data={data}
-          xAcc={xAcc}
-          yAcc={yRight.accessor('portfolioValue')}
-          stroke={legend.portfolio.color}
-        />
-      )}
-      {!legend.portion.isDisabled && (
-        <D3LinePath
-          data={data}
-          xAcc={xAcc}
-          yAcc={yRight.accessor('portionCASH')}
-          stroke={legend.portion.color}
-          strokeDasharray={2}
-        />
-      )}
-      {!legend.hodl.isDisabled && (
-        <D3LinePath
-          data={data}
-          xAcc={xAcc}
-          yAcc={yRight.accessor('hodlValue')}
-          stroke={legend.hodl.color}
-        />
-      )}
-      <D3SimLegend legend={legend} toggleLegend={toggleLegend} />
-    </>
-  );
+    const yRight = useLinearScale({
+        domain: yRightDomain(data),
+        range: [dms.boundedHeight, 0],
+        domainTolerance: 0.05,
+    });
+    const yRightTicks: D3AxisTick[] = yLeft.ticks.map(({ offset }) => ({
+        value: yRight.scale.invert(offset),
+        offset,
+    }));
+
+    const xAcc = x.accessor('date');
+    const rangeProps = { x, y: yLeft, data, bounds };
+
+    const [legend, setLegend] = useState(defaultLegend);
+
+    const toggleLegend = (key: D3SimLegendEntry) => {
+        setLegend((prev) => {
+            return {
+                ...prev,
+                [key]: {
+                    ...prev[key],
+                    isDisabled: !prev[key].isDisabled,
+                },
+            };
+        });
+    };
+
+    if (!dms.width || !dms.height) return null;
+
+    return (
+        <>
+            <D3XAxis ticks={x.ticks} dms={dms} />
+            <D3YAxisLeft
+                ticks={yLeft.ticks}
+                dms={dms}
+                formatter={(value) => prettifyNumber(value)}
+            />
+            <D3YAxisRight
+                ticks={yRightTicks}
+                dms={dms}
+                formatter={(value) => prettifyNumber(value)}
+            />
+            {!legend.bid.isDisabled && <D3SimPriceRange type="bid" {...rangeProps} />}
+            {!legend.ask.isDisabled && <D3SimPriceRange type="ask" {...rangeProps} />}
+            {!legend.price.isDisabled && (
+                <D3LinePath data={data} xAcc={xAcc} yAcc={yLeft.accessor('price')} />
+            )}
+            {!legend.portfolio.isDisabled && (
+                <D3LinePath
+                    data={data}
+                    xAcc={xAcc}
+                    yAcc={yRight.accessor('portfolioValue')}
+                    stroke={legend.portfolio.color}
+                />
+            )}
+            {!legend.portion.isDisabled && (
+                <D3LinePath
+                    data={data}
+                    xAcc={xAcc}
+                    yAcc={yRight.accessor('portionCASH')}
+                    stroke={legend.portion.color}
+                    strokeDasharray={2}
+                />
+            )}
+            {!legend.hodl.isDisabled && (
+                <D3LinePath
+                    data={data}
+                    xAcc={xAcc}
+                    yAcc={yRight.accessor('hodlValue')}
+                    stroke={legend.hodl.color}
+                />
+            )}
+            <D3SimLegend legend={legend} toggleLegend={toggleLegend} />
+        </>
+    );
 };

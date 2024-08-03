@@ -7,44 +7,43 @@ import { cn, formatNumberWithApproximation } from 'utils/helpers';
 import { Strategy } from 'libs/queries';
 
 interface Props {
-  strategy: Strategy;
+    strategy: Strategy;
 }
 
 export const StrategyBlockRoi: FC<Props> = ({ strategy }) => {
-  const roi = strategy.roi;
-  const roiFormatted = formatNumberWithApproximation(roi, {
-    isPercentage: true,
-    approximateBelow: 0.01,
-  });
-  const color = roi.gte(0) ? 'text-success' : 'text-error';
+    const roi = strategy.roi;
+    const roiFormatted = formatNumberWithApproximation(roi, {
+        isPercentage: true,
+        approximateBelow: 0.01,
+    });
+    const color = roi.gte(0) ? 'text-success' : 'text-error';
 
-  return (
-    <article
-      className={cn(
-        'rounded-8 border-background-800 flex flex-col border-2 p-16',
-        strategy.status === 'active' ? '' : 'opacity-50'
-      )}
-    >
-      <Tooltip element={<TooltipContent />}>
-        <h4 className="text-12 flex items-center gap-4 text-white/60">
-          ROI
-          <IconTooltip className="size-10" />
-        </h4>
-      </Tooltip>
-      <p className={`text-18 font-weight-500 ${color}`}>{roiFormatted.value}</p>
-    </article>
-  );
+    return (
+        <article
+            className={cn(
+                'rounded-8 border-background-800 flex flex-col border-2 p-16',
+                strategy.status === 'active' ? '' : 'opacity-50'
+            )}
+        >
+            <Tooltip element={<TooltipContent />}>
+                <h4 className="text-12 flex items-center gap-4 text-white/60">
+                    ROI
+                    <IconTooltip className="size-10" />
+                </h4>
+            </Tooltip>
+            <p className={`text-18 font-weight-500 ${color}`}>{roiFormatted.value}</p>
+        </article>
+    );
 };
 
 const TooltipContent: FC<{}> = () => (
-  <>
-    <span className="align-middle">
-      Total percentage returns of the strategy from its creation as compared to
-      HODL.&nbsp;
-    </span>
-    <NewTabLink to={externalLinks.roiLearnMore} className="text-primary">
-      <span className="align-middle">Learn how ROI is calculated.</span>
-      <IconLink className="mb-1 inline-block size-14 align-middle" />
-    </NewTabLink>
-  </>
+    <>
+        <span className="align-middle">
+            Total percentage returns of the strategy from its creation as compared to HODL.&nbsp;
+        </span>
+        <NewTabLink to={externalLinks.roiLearnMore} className="text-primary">
+            <span className="align-middle">Learn how ROI is calculated.</span>
+            <IconLink className="mb-1 inline-block size-14 align-middle" />
+        </NewTabLink>
+    </>
 );

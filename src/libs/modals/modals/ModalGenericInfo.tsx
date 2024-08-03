@@ -8,53 +8,48 @@ import { useModal } from 'hooks/useModal';
 import { ModalOrMobileSheet } from 'libs/modals/ModalOrMobileSheet';
 
 export type ModalGenericInfoData = {
-  title: string;
-  text?: string | ReactNode;
-  variant?: 'warning' | 'error';
-  onConfirm: Function;
-  buttonLabel?: string;
+    title: string;
+    text?: string | ReactNode;
+    variant?: 'warning' | 'error';
+    onConfirm: Function;
+    buttonLabel?: string;
 };
 
 export const ModalGenericInfo: ModalFC<ModalGenericInfoData> = ({
-  id,
-  data: { variant = 'error', title, text, buttonLabel = 'Confirm', onConfirm },
+    id,
+    data: { variant = 'error', title, text, buttonLabel = 'Confirm', onConfirm },
 }) => {
-  const { closeModal } = useModal();
+    const { closeModal } = useModal();
 
-  const icon = useMemo(() => {
-    switch (variant) {
-      case 'warning':
-        return <IconWarning />;
-      case 'error':
-        return <IconError />;
-      default:
-        return <IconWarning />;
-    }
-  }, [variant]);
+    const icon = useMemo(() => {
+        switch (variant) {
+            case 'warning':
+                return <IconWarning />;
+            case 'error':
+                return <IconError />;
+            default:
+                return <IconWarning />;
+        }
+    }, [variant]);
 
-  return (
-    <ModalOrMobileSheet id={id}>
-      <div className="my-20">
-        <IconTitleText
-          variant={variant}
-          icon={icon}
-          title={title}
-          text={text}
-        />
-      </div>
-      <Button
-        variant="white"
-        fullWidth
-        onClick={() => {
-          closeModal(id);
-          onConfirm();
-        }}
-      >
-        {buttonLabel}
-      </Button>
-      <Button variant="black" fullWidth onClick={() => closeModal(id)}>
-        Cancel
-      </Button>
-    </ModalOrMobileSheet>
-  );
+    return (
+        <ModalOrMobileSheet id={id}>
+            <div className="my-20">
+                <IconTitleText variant={variant} icon={icon} title={title} text={text} />
+            </div>
+            <Button
+                variant="white"
+                fullWidth
+                onClick={() => {
+                    closeModal(id);
+                    onConfirm();
+                }}
+            >
+                {buttonLabel}
+            </Button>
+            <Button variant="black" fullWidth onClick={() => closeModal(id)}>
+                Cancel
+            </Button>
+        </ModalOrMobileSheet>
+    );
 };

@@ -5,12 +5,12 @@ import { fetchTokenData } from 'libs/tokens/tokenHelperFn';
 import { ONE_DAY_IN_MS } from 'utils/time';
 
 export const useGetTokenData = (address: string) => {
-  const { Token } = useContract();
+    const { Token } = useContract();
 
-  return useQuery({
-    queryKey: QueryKey.token(address),
-    queryFn: () => fetchTokenData(Token, address),
-    retry: 1,
-    staleTime: ONE_DAY_IN_MS,
-  });
+    return useQuery({
+        queryKey: QueryKey.token(address),
+        queryFn: () => fetchTokenData(Token, address),
+        retry: 1,
+        staleTime: ONE_DAY_IN_MS,
+    });
 };

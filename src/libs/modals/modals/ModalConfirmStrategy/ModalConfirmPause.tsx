@@ -11,58 +11,55 @@ import { StrategyEditEventType } from 'services/events/types';
 import { ReactComponent as IconPause } from 'assets/icons/pause.svg';
 
 export type ModalConfirmPauseData = {
-  strategy: Strategy;
-  strategyEvent: StrategyEditEventType;
+    strategy: Strategy;
+    strategyEvent: StrategyEditEventType;
 };
 
-export const ModalConfirmPause: ModalFC<ModalConfirmPauseData> = ({
-  id,
-  data,
-}) => {
-  const { strategy, strategyEvent } = data;
-  const { closeModal } = useModal();
-  const { pauseStrategy, isProcessing, updateMutation } = usePauseStrategy();
+export const ModalConfirmPause: ModalFC<ModalConfirmPauseData> = ({ id, data }) => {
+    const { strategy, strategyEvent } = data;
+    const { closeModal } = useModal();
+    const { pauseStrategy, isProcessing, updateMutation } = usePauseStrategy();
 
-  const isPending = updateMutation.isPending;
-  const isLoading = isPending || isProcessing;
+    const isPending = updateMutation.isPending;
+    const isLoading = isPending || isProcessing;
 
-  const handleOnActionClick = () => {
-    pauseStrategy(
-      strategy,
-      () => carbonEvents.strategyEdit.strategyPause(strategyEvent),
-      () => closeModal(id)
+    const handleOnActionClick = () => {
+        pauseStrategy(
+            strategy,
+            () => carbonEvents.strategyEdit.strategyPause(strategyEvent),
+            () => closeModal(id)
+        );
+    };
+
+    const loadingChildren = getStatusTextByTxStatus(isPending, isProcessing);
+
+    return (
+        <ModalOrMobileSheet id={id} title="Pause Strategy">
+            <IconTitleText
+                icon={<IconPause className="size-24" />}
+                title="Are you sure you would like to pause your strategy?"
+                text="This will prevent your strategy from being traded against, however you will retain access to any associated funds."
+            />
+            <Button
+                onClick={handleOnActionClick}
+                loading={isLoading}
+                loadingChildren={loadingChildren}
+                variant="white"
+                size="lg"
+                fullWidth
+                data-testid="pause-strategy-btn"
+            >
+                Pause Strategy
+            </Button>
+            <Button
+                onClick={() => closeModal(id)}
+                disabled={isLoading}
+                variant="black"
+                size="lg"
+                fullWidth
+            >
+                Cancel
+            </Button>
+        </ModalOrMobileSheet>
     );
-  };
-
-  const loadingChildren = getStatusTextByTxStatus(isPending, isProcessing);
-
-  return (
-    <ModalOrMobileSheet id={id} title="Pause Strategy">
-      <IconTitleText
-        icon={<IconPause className="size-24" />}
-        title="Are you sure you would like to pause your strategy?"
-        text="This will prevent your strategy from being traded against, however you will retain access to any associated funds."
-      />
-      <Button
-        onClick={handleOnActionClick}
-        loading={isLoading}
-        loadingChildren={loadingChildren}
-        variant="white"
-        size="lg"
-        fullWidth
-        data-testid="pause-strategy-btn"
-      >
-        Pause Strategy
-      </Button>
-      <Button
-        onClick={() => closeModal(id)}
-        disabled={isLoading}
-        variant="black"
-        size="lg"
-        fullWidth
-      >
-        Cancel
-      </Button>
-    </ModalOrMobileSheet>
-  );
 };

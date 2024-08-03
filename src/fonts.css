@@ -1,11 +1,9 @@
-
 /* In carbon app: BW */
 @font-face {
     font-family: 'Carbon-Title';
     font-weight: 900;
     font-display: swap;
-    src: url('assets/font/title/black.woff2')
-    format('woff');
+    src: url('assets/font/title/black.woff2') format('woff');
 }
 
 @font-face {
@@ -75,14 +73,12 @@
     font-family: 'Carbon-Text';
     font-weight: 400, normal;
     font-display: swap;
-    src: url('assets/font/text/regular.ttf')
-    format('truetype');
+    src: url('assets/font/text/regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Carbon-Text';
     font-weight: 300;
     font-display: swap;
-    src: url('assets/font/text/light.ttf')
-    format('truetype');
+    src: url('assets/font/text/light.ttf') format('truetype');
 }

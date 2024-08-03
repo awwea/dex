@@ -7,13 +7,13 @@ import { loadRouter, type RouterRenderParams } from './utils';
 import { RouterProvider } from '@tanstack/react-router';
 
 const AllTheProviders = ({ children }: { children: ReactNode }) => {
-  return (
-    <QueryProvider>
-      <StoreProvider>
-        <WagmiReactWrapper>{children}</WagmiReactWrapper>
-      </StoreProvider>
-    </QueryProvider>
-  );
+    return (
+        <QueryProvider>
+            <StoreProvider>
+                <WagmiReactWrapper>{children}</WagmiReactWrapper>
+            </StoreProvider>
+        </QueryProvider>
+    );
 };
 
 /**
@@ -28,14 +28,11 @@ const AllTheProviders = ({ children }: { children: ReactNode }) => {
  * @example
  * renderWithProviders(<MyComponent />);
  */
-export const renderWithProviders = (
-  ui: ReactElement,
-  options?: Omit<RenderOptions, 'wrapper'>
-) =>
-  render(ui, {
-    wrapper: AllTheProviders,
-    ...options,
-  });
+export const renderWithProviders = (ui: ReactElement, options?: Omit<RenderOptions, 'wrapper'>) =>
+    render(ui, {
+        wrapper: AllTheProviders,
+        ...options,
+    });
 
 /**
  * Asynchronously renders a component within a custom router and returns the rendered container and router instance.
@@ -63,11 +60,11 @@ export const renderWithProviders = (
  * });
  */
 export const renderWithRouter = async (params: RouterRenderParams) => {
-  const customRouter = await loadRouter(params);
-  return {
-    container: renderWithProviders(<RouterProvider router={customRouter} />),
-    router: customRouter,
-  };
+    const customRouter = await loadRouter(params);
+    return {
+        container: renderWithProviders(<RouterProvider router={customRouter} />),
+        router: customRouter,
+    };
 };
 
 export * from '@testing-library/react';
