@@ -26,7 +26,7 @@ export const commonConfig: AppConfig = {
     mode: 'development',
     appName: 'DFI',
     appUrl: 'https://app.daofinance.me',
-    carbonApi: 'https://explorer.daofinance.me/api/v1/',
+    carbonApi: 'https://dex.daofinance.me/api/v1/',
     externalLinks: {
         analytics: 'http://analytics.daofinance.me',
         interactiveSim: 'https://simulator.daofinance.me/',
